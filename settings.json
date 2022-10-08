@@ -4,6 +4,10 @@
     "actions": 
     [
         {
+            "command": "find",
+            "keys": "ctrl+shift+f"
+        },
+        {
             "command": "paste",
             "keys": "ctrl+v"
         },
@@ -14,10 +18,6 @@
                 "singleLine": false
             },
             "keys": "ctrl+c"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -31,7 +31,7 @@
     ],
     "copyFormatting": "none",
     "copyOnSelect": false,
-    "defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+    "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
     "profiles": 
     {
         "defaults": 
@@ -59,35 +59,23 @@
                 "name": "Command Prompt"
             },
             {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "elevate": true,
+                "guid": "{f77b0973-05c9-443c-8acb-1696e458674b}",
                 "hidden": false,
+                "name": "Git Bash"
+            },
+            {
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "never",
+                "colorScheme": "Sublette",
+                "commandline": "C:\\Windows\\system32\\wsl.exe -d Ubuntu-22.04",
+                "elevate": false,
+                "guid": "{56e50aa8-073e-486a-a083-e1afbfb3377b}",
+                "hidden": false,
+                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
                 "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
-                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
-                "hidden": false,
-                "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
-            },
-            {
-                "background": "#350425",
-                "commandline": "multipass shell",
-                "cursorShape": "filledBox",
-                "font": 
-                {
-                    "face": "Ubuntu Mono"
-                },
-                "guid": "{aaaa9e6d-1e09-4be6-b76c-82b4ba1885fb}",
-                "historySize": 50000,
-                "icon": "C:/Program Files/Multipass/bin/multipass_wt.ico",
-                "name": "Multipass"
-            },
-            {
-                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
-                "hidden": false,
-                "name": "Git Bash",
-                "source": "Git"
+                "startingDirectory": "/mnt/c/Users/denbl"
             }
         ]
     },
@@ -6235,6 +6223,29 @@
             "yellow": "#C4A000"
         },
         {
+            "background": "#300A24",
+            "black": "#171421",
+            "blue": "#0037DA",
+            "brightBlack": "#767676",
+            "brightBlue": "#08458F",
+            "brightCyan": "#2C9FB3",
+            "brightGreen": "#26A269",
+            "brightPurple": "#A347BA",
+            "brightRed": "#C01C28",
+            "brightWhite": "#F2F2F2",
+            "brightYellow": "#A2734C",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#3A96DD",
+            "foreground": "#FFFFFF",
+            "green": "#26A269",
+            "name": "Ubuntu-22.04-ColorScheme",
+            "purple": "#881798",
+            "red": "#C21A23",
+            "selectionBackground": "#FFFFFF",
+            "white": "#CCCCCC",
+            "yellow": "#A2734C"
+        },
+        {
             "background": "#000000",
             "black": "#000000",
             "blue": "#82AAFF",
@@ -7475,6 +7486,29 @@
             "selectionBackground": "#D7D7D7",
             "white": "#353535",
             "yellow": "#944927"
+        },
+        {
+            "background": "#002B36",
+            "black": "#002B36",
+            "blue": "#268BD2",
+            "brightBlack": "#657B83",
+            "brightBlue": "#839496",
+            "brightCyan": "#D33682",
+            "brightGreen": "#B58900",
+            "brightPurple": "#EEE8D5",
+            "brightRed": "#CB4B16",
+            "brightWhite": "#FDF6E3",
+            "brightYellow": "#586E75",
+            "cursorColor": "#FFFFFF",
+            "cyan": "#2AA198",
+            "foreground": "#93A1A1",
+            "green": "#859900",
+            "name": "wsl",
+            "purple": "#6C71C4",
+            "red": "#DC322F",
+            "selectionBackground": "#FFFFFF",
+            "white": "#93A1A1",
+            "yellow": "#B58900"
         },
         {
             "background": "#F0EDEC",
