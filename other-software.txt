@@ -1,0 +1,7 @@
+java11
+languagetool office
+canva
+jetbrains toolbox
+intellij idea
+wsl
+ubuntu
