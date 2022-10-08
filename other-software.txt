@@ -1,7 +1,14 @@
-java11
-languagetool office
-canva
+wsl
+
 jetbrains toolbox
 intellij idea
-wsl
-ubuntu
+data grip
+
+java17
+
+xodo pdf reader
+canva
+
+
+languagetool for word
+mendeley plugin for word
