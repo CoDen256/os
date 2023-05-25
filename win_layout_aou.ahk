@@ -10,7 +10,7 @@ Return
 ; add russion keyboard
 ; add german-us keyboard
 ; to remove existent - just add it to the language list (via settings), and then remove it again(via settings)
-; test alloha hui ålohui ähahåh åspån dristön üpstön
+; test alloha hui ålohui ähahåh åspån dristön üpstön ы І Ї
 $F1:: SetInputLang(0x0419)
 return
 
@@ -65,6 +65,19 @@ else if (clipboard == "s"){
 else if (clipboard == "Ä"){
     Send Å
 }
+else if (clipboard == "и"){
+    Send і
+}
+else if (clipboard == "И"){
+    Send І
+}
+else if (clipboard == "й"){
+    Send ї
+}
+else if (clipboard == "Й"){
+    Send Ї
+}
+
 else {
     Send {Right}
 } 
