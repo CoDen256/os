@@ -1,88 +1,107 @@
-﻿#SingleInstance, Force
-SendMode Input
-SetWorkingDir, %A_ScriptDir%
-
-LWin::
-Send {Esc} 
-Return 
+﻿
+; Disable left Win key
+LWin::{
+    Send("{Esc}")
+}
 
 ; add us english-us keyboard
-; add russion keyboard
+; add russian keyboard
 ; add german-us keyboard
-; to remove existent - just add it to the language list (via settings), and then remove it again(via settings)
-; test alloha hui ålohui ähahåh åspån dristön üpstön ы І Ї
-$F1:: SetInputLang(0x0419)
-return
+; to remove existent - just add it to the language list (via settings), and then remove it again(viä settings)
+; test allöhä hui ålohui ähahåh åspån drison OAUAUAUAÖÄUAßÄüpston іїґэ ийгє````ÄÖÜoöOoöÖÖÖÖÖO  ÜÜUÜ äöüß ßÄ  ääää äöüI  ß ö ö ü І Ї  И і Э э a aöIü И ö oöoöUÜa Ä; u  Ä Ao U OOÖÖ
+$F1:: {
+    SetInputLang(0x0419)
+}
 
-$F3:: SetInputLang(0x0407) ; de-de
-return
+$F3:: {
+    SetInputLang(0x0407) ; de-de
+}
+
+$F4:: {
+    SetInputLang(0x0409) ; english-ÜS
+}
+
+; Map the letter to its similar-language variation with rotation (a -> ä -> a)
+$`:: {
 
 
-$F4:: SetInputLang(0x0409) ; english-ÜS
-return
+    ClipSaved := A_Clipboard ; store temporärily original clipboard
 
+    Send("{Left}{LShift down}{Right down}{LShift up}{Right up}") ; Select left character. DO NOT CHANGE, its ok, its indended
+    Send("^c") ; Copy selected left character to the clipboard
+
+
+    sleep(50) ; delay a lil bit
+
+    Mapped := MapLetter(A_Clipboard) ; map the letter
+
+
+    ; MsgBox(Mapped)
+
+    Send(Mapped) ;replace it with its mapped version
+
+    if (Mapped = ""){ ; if no letter, map it to pressing right
+        Send("{Right}")
+    }
+
+
+    ;restore the original clipboard
+    A_Clipboard := ClipSaved   
+    ClipSaved := ""   
+
+    return
+}
+
+ CapsLock::{
+     Send("``")
+ }
 
 
 SetInputLang(Lang)
 {
-    WinExist("A")
-    ControlGetFocus, CtrlInFocus
-    PostMessage, 0x50, 0, % Lang, %CtrlInFocus%
+    hWnd := WinActive("A")
+    PostMessage(0x50, 0, Lang, hWnd)
 }
 
-`::
-
-ClipSaved := ClipboardAll 
-
-
-Send {Left}{LShift down}{Right down}{LShift up}{Right up}
-
-Send ^c
-sleep, 50
-if (clipboard == "a"){
-    Send ä
-}
-else if (clipboard == "A"){
-    Send Ä
-}
-else if (clipboard == "o"){
-    Send ö
-}
-else if (clipboard == "O"){
-    Send Ö
-}
-else if (clipboard == "u"){
-    Send ü
-}
-else if (clipboard == "U"){
-    Send Ü
-}
-else if (clipboard == "s"){
-    Send ß
-}else if (clipboard == "ä"){
-    Send å
-}
-else if (clipboard == "Ä"){
-    Send Å
-}
-else if (clipboard == "и"){
-    Send і
-}
-else if (clipboard == "И"){
-    Send І
-}
-else if (clipboard == "й"){
-    Send ї
-}
-else if (clipboard == "Й"){
-    Send Ї
+MapLetter(letter)
+{
+    ; MsgBox(letter . StrLen(letter))
+    if (LetterMapping.has(letter)){
+        return LetterMapping[letter]
+    }else {
+        return ""
+    }
 }
 
-else {
-    Send {Right}
-} 
-
-Clipboard := ClipSaved   
-ClipSaved := ""   
-
-return
+LetterMapping := Map(
+    "a", "ä",
+    "A", "Ä",
+    "o", "ö",
+    "O", "Ö",
+    "u", "ü",
+    "U", "Ü",
+    "s", "ß",
+    "ä", "a",
+    "Ä", "A",
+    "ö", "o",
+    "Ö", "O",
+    "ü", "u",
+    "Ü", "U",
+    "ß", "s",
+    "и", "і",
+    "И", "І",
+    "й", "ї",
+    "Й", "Ї",
+    "э", "є",
+    "Э", "Є",
+    "г", "ґ",
+    "Г", "Ґ",
+    "і", "и",
+    "І", "И",
+    "ї", "й",
+    "Ї", "Й",
+    "є", "э",
+    "Є", "Э",
+    "ґ", "г",
+    "Ґ", "Г"
+)
