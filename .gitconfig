@@ -9,5 +9,3 @@
     path = ~/.default.gitconfig
 [includeIf "gitdir:C:/alpha"] ; REPLACE
     path = ~/.alpha.gitconfig
-[includeIf "gitdir:C:/ome/"]
-    path = ~/.ome.gitconfig

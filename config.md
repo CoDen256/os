@@ -1,24 +1,26 @@
-###### CHOCOLATELY #########
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-choco feature enable -n allowGlobalConfirmation
-choco install packages.config
+###### CHOCOLATELY
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    choco feature enable -n allowGlobalConfirmation
+    choco install packages.config
 
-###### WSL ######
-wsl --install 
-# installs wsl 2
+###### WSL 2 Install
+    wsl --install -d Ubuntu-22.04
 
-###### GIT ######
-# set git config global
-git config --global user.name "Denys Chernyshov"
-git config --global user.email "denys-chernyshov@"
-# locally
-git config user.email "den.blackshov@gmail.com" 
+###### GIT 
 
+    cp .gitconfig ~/.gitconfig
+    cp .default.gitconfig ~/.default.gitconfig
 
-###### Flow launcher ######
-#  - enable saving of settings in one folder via portable mode
-# Copy UserData to C:\Users\denbl\AppData\Local\FlowLauncher\app-1.9.5\UserData\Settings
-# - verify python directory
+If needed:
+
+    cp .alpha.gitconfig ~/.alpha.gitconfig
+
+###### Flow Launcher
+    Set-Variable -Name "FLOW_PATH" (Get-ChildItem -Dir -Path "$($env:LOCALAPPDATA)\FlowLauncher\" -Filter 'app*').FullName
+    rm "$($env:FLOW_PATH)\UserData\Settings" -r
+    rm "$($env:FLOW_PATH)\UserData\Themes" -r
+    New-Item -Path "$FLOW_PATH\UserData\Settings" -ItemType Junction -Value ./flow-launcher\Settings
+    New-Item -Path "$FLOW_PATH\UserData\Themes" -ItemType Junction -Value ./flow-launcher\Themes
 
 
 ###### Terminal ######
