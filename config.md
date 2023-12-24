@@ -6,8 +6,8 @@
 ###### WSL 2 Install
     wsl --install -d Ubuntu-22.04
 
-###### GIT 
-
+###### GIT
+    git config core.autocrlf true               # for this project
     cp .gitconfig ~/.gitconfig
     cp .default.gitconfig ~/.default.gitconfig
 
@@ -16,11 +16,16 @@ If needed:
     cp .alpha.gitconfig ~/.alpha.gitconfig
 
 ###### Flow Launcher
-    Set-Variable -Name "FLOW_PATH" (Get-ChildItem -Dir -Path "$($env:LOCALAPPDATA)\FlowLauncher\" -Filter 'app*').FullName
-    rm "$($env:FLOW_PATH)\UserData\Settings" -r
-    rm "$($env:FLOW_PATH)\UserData\Themes" -r
-    New-Item -Path "$FLOW_PATH\UserData\Settings" -ItemType Junction -Value ./flow-launcher\Settings
-    New-Item -Path "$FLOW_PATH\UserData\Themes" -ItemType Junction -Value ./flow-launcher\Themes
+    taskkill /f /im Flow*
+    Set-Variable -Name "FLOW_PATH" "$($env:APPDATA)\FlowLauncher"
+    Remove-Item -Force -Recurse -Path "$FLOW_PATH\Plugins" 
+    Remove-Item -Force -Recurse -Path "$FLOW_PATH\Themes"
+    Remove-Item -Force -Recurse -Path "$FLOW_PATH\Settings"
+
+    New-Item -Path "$FLOW_PATH\Settings" -ItemType Junction -Value $PWD\flow-launcher\Settings
+    New-Item -Path "$FLOW_PATH\Themes" -ItemType Junction -Value $PWD\flow-launcher\Themes
+    New-Item -Path "$FLOW_PATH\Plugins" -ItemType Junction -Value $PWD\flow-launcher\Plugins
+    Start-Process -FilePath "$($env:LOCALAPPDATA)\FlowLauncher\Flow.Launcher.exe"
 
 
 ###### Terminal ######

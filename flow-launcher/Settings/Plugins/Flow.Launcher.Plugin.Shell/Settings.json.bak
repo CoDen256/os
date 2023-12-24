@@ -1,0 +1,11 @@
+{
+  "Shell": 2,
+  "ReplaceWinR": false,
+  "LeaveShellOpen": false,
+  "RunAsAdministrator": true,
+  "ShowOnlyMostUsedCMDs": false,
+  "ShowOnlyMostUsedCMDsNumber": 5,
+  "CommandHistory": {
+    "shell:startup": 2
+  }
+}
