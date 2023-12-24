@@ -1,9 +1,4 @@
 ﻿
-; Disable left Win key
-LWin::{
-    Send("{Esc}")
-}
-
 ; add us english-us keyboard
 ; add russian keyboard
 ; add german-us keyboard

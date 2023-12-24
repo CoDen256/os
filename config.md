@@ -30,7 +30,6 @@ If needed:
 
     Set-Variable -Name "FLOW_PATH_BUILT_IN" (Get-ChildItem -Dir -Path "$($env:LOCALAPPDATA)\FlowLauncher\" -Filter 'app*').FullName
     Remove-Item -Force -Recurse -Path "$FLOW_PATH_BUILT_IN\Plugins\Flow.Launcher.Plugin.Explorer" 
-    Remove-Item -Force -Recurse -Path "$FLOW_PATH_BUILT_IN\Plugins\Flow.Launcher.Plugin.Url" 
     Remove-Item -Force -Recurse -Path "$FLOW_PATH_BUILT_IN\Plugins\Flow.Launcher.Plugin.BrowserBookmark"
 
     Set-Variable -Name "FLOW_PATH" "$($env:APPDATA)\FlowLauncher"
@@ -50,30 +49,27 @@ If needed:
     wsl --install -d Ubuntu-22.04
 
 ###### Terminal
-1. Install fonts for windows if you are using zsh agnoster:
-https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
-
+[Install fonts for windows if you are using zsh agnoster](https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58):
 
     git clone https://github.com/powerline/fonts
     Set-ExecutionPolicy Bypass
     .\fonts\install.ps1
     Remove-Item -Force -Recurse -Path "fonts" 
-    
+ 
 
-2. Use `settings.json` in Windows terminal
+Use `settings.json` in Windows terminal
 
     New-Item -Path "$($env:LOCALAPPDATA)\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Value .\win-terminal\settings.json -Force
 
-3. Terminal Ubuntu zsh + oh my zsh
-
+Terminal Ubuntu zsh + oh my zsh
 
     wsl sudo apt update
     wsl sudo apt install git zsh -y
     wsl sh -c '$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)'
 
 
-4. Terminal Ubuntu zsh Pure (https://turlucode.com/oh-my-zsh-installation-guide/)
 
+[Terminal Ubuntu zsh Pure](https://turlucode.com/oh-my-zsh-installation-guide/)
 
     cd ~/.oh-my-zsh/custom
     wsl git clone https://github.com/sindresorhus/pure ~/.oh-my-zsh/custom/pure
