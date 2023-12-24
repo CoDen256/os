@@ -83,7 +83,12 @@ https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
 
 
 ###### Java
-
+# https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.msi
+# JAVA_HOME = C:\Program Files...\Java\jdk-17
+# PATH = PATH + JAVA_HOME\bin
+# verify
+# java -verions
+# mvn -v
 
 ###### VS Code
 1. Login via Github
@@ -100,41 +105,8 @@ https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
 2. IntelliJ -> File -> Manage IDE Settings -> Settings Sync
 
 
-## BRAVE ## 
-# bitwarden -> sync code
-# Profiles:
-# 1. Home (different primary google account)
-# 2. Chill
-# 3. Work
-# Extensions:
-1. Bitwarden
-2. Languagetool
-3. Stayfocusd
-4. Vimium
-5. json vue
-6. Colorzilla
-7. Mendeley
-8. Reverso context
-9. (SponsorBlock for Youtube)
 
+###### XODO PDF
+[Install via Microsoft store](ms-windows-store://pdp?hl=en-us&gl=ps&productid=9WZDNCRDJXP4&mode=mini&pos=5%2C6%2C1920%2C902&referrer=storeforweb&source=https%3A%2F%2Fwww.google.com%2F)
 
-
-
-
-
-## XODO PDF VIEIWER ##
-
-## JAVA 17 ##
-# https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.msi
-# JAVA_HOME = C:\Program Files...\Java\jdk-17
-# PATH = PATH + JAVA_HOME\bin
-# verify
-# java -verions
-# mvn -v
-
-
-## MAVEN ##
-
-## Fix startup ##
-# Disable jetbrains toolbox, canva, discord, edge
-# Fix autostartup
+###### Fix Autostart apps

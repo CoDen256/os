@@ -1,6 +1,12 @@
 {
-  "LastIndexTime": "2023-12-24T16:36:11.288455+01:00",
+  "LastIndexTime": "2023-12-24T16:42:46.3275907+01:00",
   "ProgramSources": [
+    {
+      "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs",
+      "Name": "Programs",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\programdata\\microsoft\\windows\\start menu\\programs"
+    },
     {
       "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code",
       "Name": "Visual Studio Code",
