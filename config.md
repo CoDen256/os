@@ -12,6 +12,10 @@ Install manually
     New-Item -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" -ItemType SymbolicLink -Value win_layout_aou.ahk
     rm ./ahk2.exe
 
+###### SSH Keys
+
+    ssh-keygen -t rsa -b 4096 -C "den.blackshov@gmail.com"  # Add to gitlab and github
+
 ###### GIT
     git config core.autocrlf true               # for this project
     cp .gitconfig ~/.gitconfig
@@ -78,6 +82,13 @@ https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
     wsl ln -s ~/.oh-my-zsh/custom/pure/async.zsh ~/.oh-my-zsh/custom
     wsl sed -i s/robbyrussel/refined/g ~/.zshrc                     # change ZSH_THEME to refined
 
+
+###### Java
+
+
+## VISUAL STUDIO CODE ##
+# just login via github and turn the sync on
+
 ## BRAVE ## 
 # bitwarden -> sync code
 # Profiles:
@@ -96,8 +107,7 @@ https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
 9. (SponsorBlock for Youtube)
 
 
-## VISUAL STUDIO CODE ##
-# just login via github and turn the sync on
+
 
 
 ### TOOLBOX ###
@@ -123,11 +133,6 @@ https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
 
 
 ## MAVEN ##
-
-
-## GENERATE SSH KEY ##
-## Add ssh key for gitlab
-## Add ssh key for github
 
 ## Fix startup ##
 # Discord -> log in -> Windows settings -> disable tray and disable startup\
