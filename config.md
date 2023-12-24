@@ -3,8 +3,14 @@
     choco feature enable -n allowGlobalConfirmation
     choco install packages.config
 
-###### WSL 2 Install
-    wsl --install -d Ubuntu-22.04
+###### AutoHotKey
+Install manually
+    
+    curl https://www.autohotkey.com/download/ahk-v2.exe -o ahk2.exe
+    ./ahk2.exe
+    cp win_layout_aou.ahk "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup"
+    New-Item -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" -ItemType SymbolicLink -Value win_layout_aou.ahk
+    rm ./ahk2.exe
 
 ###### GIT
     git config core.autocrlf true               # for this project
@@ -17,6 +23,12 @@ If needed:
 
 ###### Flow Launcher
     taskkill /f /im Flow*
+
+    Set-Variable -Name "FLOW_PATH_BUILT_IN" (Get-ChildItem -Dir -Path "$($env:LOCALAPPDATA)\FlowLauncher\" -Filter 'app*').FullName
+    Remove-Item -Force -Recurse -Path "$FLOW_PATH_BUILT_IN\Plugins\Flow.Launcher.Plugin.Explorer" 
+    Remove-Item -Force -Recurse -Path "$FLOW_PATH_BUILT_IN\Plugins\Flow.Launcher.Plugin.Url" 
+    Remove-Item -Force -Recurse -Path "$FLOW_PATH_BUILT_IN\Plugins\Flow.Launcher.Plugin.BrowserBookmark"
+
     Set-Variable -Name "FLOW_PATH" "$($env:APPDATA)\FlowLauncher"
     Remove-Item -Force -Recurse -Path "$FLOW_PATH\Plugins" 
     Remove-Item -Force -Recurse -Path "$FLOW_PATH\Themes"
@@ -27,39 +39,44 @@ If needed:
     New-Item -Path "$FLOW_PATH\Plugins" -ItemType Junction -Value $PWD\flow-launcher\Plugins
     Start-Process -FilePath "$($env:LOCALAPPDATA)\FlowLauncher\Flow.Launcher.exe"
 
+###### WSL 2 Install
+    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart\
+    wsl --update
+    wsl --set-default-version 2
+    wsl --install -d Ubuntu-22.04
 
-###### Terminal ######
-# 1.Install fonts for windows if you are using zsh agnoster:
-# https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
-# https://github.com/powerline/fonts -> download
-cd fonts-master
-Set-ExecutionPolicy Bypass
-./install.ps1
+###### Terminal
+1. Install fonts for windows if you are using zsh agnoster:
+https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
 
-# 2.use settings.json in windows terminal
 
-## 3.Terminal Ubuntu zsh + oh my zsh
-sudo apt update
-sudo apt install git zsh -y
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    git clone https://github.com/powerline/fonts
+    Set-ExecutionPolicy Bypass
+    .\fonts\install.ps1
+    Remove-Item -Force -Recurse -Path "fonts" 
+    
 
-## 4. Terminal Ubuntu zsh Pure (https://turlucode.com/oh-my-zsh-installation-guide/)
-cd ~/.oh-my-zsh/custom 
-git clone https://github.com/sindresorhus/pure 
-ln -s pure/pure.zsh-theme . 
-ln -s pure/async.zsh . 
-# Change in ~/.zshrc the ZSH_THEME to ZSH_THEME=refined
+2. Use `settings.json` in Windows terminal
 
-## 5. Terminal Git bash zsh (https://gist.github.com/fworks/af4c896c9de47d827d4caa6fd7154b6b)
-# install peazip to unpack .zst and delete it
-# unpack .zst file
-# unpack .tar file to C:/ProgramFiles/Git or where it is located, so that the usr folder is merged
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cd ~/.oh-my-zsh/custom
-git clone https://github.com/sindresorhus/pure 
-ln -s pure/pure.zsh-theme . 
-ln -s pure/async.zsh . 
 
+    New-Item -Path "$($env:LOCALAPPDATA)\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Value .\win-terminal\settings.json -Force
+
+3. Terminal Ubuntu zsh + oh my zsh
+
+
+    wsl sudo apt update
+    wsl sudo apt install git zsh -y
+    wsl sh -c '$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)'
+
+
+4. Terminal Ubuntu zsh Pure (https://turlucode.com/oh-my-zsh-installation-guide/)
+
+
+    cd ~/.oh-my-zsh/custom
+    wsl git clone https://github.com/sindresorhus/pure ~/.oh-my-zsh/custom/pure
+    wsl ln -s ~/.oh-my-zsh/custom/pure/pure.zsh ~/.oh-my-zsh/custom
+    wsl ln -s ~/.oh-my-zsh/custom/pure/async.zsh ~/.oh-my-zsh/custom
+    wsl sed -i s/robbyrussel/refined/g ~/.zshrc                     # change ZSH_THEME to refined
 
 ## BRAVE ## 
 # bitwarden -> sync code

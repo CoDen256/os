@@ -219,6 +219,70 @@
     {
       "Query": "settings",
       "ExecutedDateTime": "2023-12-24T03:53:12.4997044+01:00"
+    },
+    {
+      "Query": "\u003E",
+      "ExecutedDateTime": "2023-12-24T04:06:02.1409086+01:00"
+    },
+    {
+      "Query": "run",
+      "ExecutedDateTime": "2023-12-24T04:12:08.3539629+01:00"
+    },
+    {
+      "Query": "SHUT",
+      "ExecutedDateTime": "2023-12-24T04:12:25.9573714+01:00"
+    },
+    {
+      "Query": "sett",
+      "ExecutedDateTime": "2023-12-24T14:09:25.1237042+01:00"
+    },
+    {
+      "Query": "settings",
+      "ExecutedDateTime": "2023-12-24T14:10:22.2906151+01:00"
+    },
+    {
+      "Query": "sett",
+      "ExecutedDateTime": "2023-12-24T14:13:19.1485521+01:00"
+    },
+    {
+      "Query": "brave",
+      "ExecutedDateTime": "2023-12-24T14:14:07.6684706+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-24T14:14:54.3951511+01:00"
+    },
+    {
+      "Query": "Windows upd",
+      "ExecutedDateTime": "2023-12-24T14:21:11.1198671+01:00"
+    },
+    {
+      "Query": "t",
+      "ExecutedDateTime": "2023-12-24T14:36:02.8861361+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-24T14:40:03.5913367+01:00"
+    },
+    {
+      "Query": "setti",
+      "ExecutedDateTime": "2023-12-24T15:03:57.4683719+01:00"
+    },
+    {
+      "Query": "set",
+      "ExecutedDateTime": "2023-12-24T15:04:56.7789271+01:00"
+    },
+    {
+      "Query": "settings",
+      "ExecutedDateTime": "2023-12-24T15:05:21.2643692+01:00"
+    },
+    {
+      "Query": "set",
+      "ExecutedDateTime": "2023-12-24T15:07:45.0789445+01:00"
+    },
+    {
+      "Query": "pm install Browser Bookmarks",
+      "ExecutedDateTime": "2023-12-24T15:07:57.6678032+01:00"
     }
   ]
 }

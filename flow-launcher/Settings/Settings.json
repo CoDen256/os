@@ -105,20 +105,20 @@
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 5,
-  "ActivateTimes": 125,
+  "ActivateTimes": 170,
   "CustomPluginHotkeys": [],
   "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
   "EnableUpdateLog": false,
   "StartFlowLauncherOnSystemStartup": true,
-  "HideOnStartup": true,
+  "HideOnStartup": false,
   "HideNotifyIcon": false,
   "LeaveCmdOpen": false,
   "HideWhenDeactivated": true,
   "SearchWindowScreen": "Cursor",
   "SearchWindowAlign": "Center",
   "CustomScreenNumber": 1,
-  "IgnoreHotkeysOnFullscreen": false,
+  "IgnoreHotkeysOnFullscreen": true,
   "Proxy": {
     "Enabled": false,
     "Server": null,
@@ -238,9 +238,9 @@
         "Name": "JetBrainsIDEProjects",
         "Version": "2.1.0",
         "ActionKeywords": [
-          "*"
+          "j"
         ],
-        "Priority": 0,
+        "Priority": 5,
         "Disabled": false
       },
       "8025ce8b-b1ce-49cd-af48-b343a0df8606": {
@@ -269,6 +269,40 @@
         "Version": "1.0.2",
         "ActionKeywords": [
           "wst"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "572be03c74c642baae319fc283e561a8": {
+        "ID": "572be03c74c642baae319fc283e561a8",
+        "Name": "Explorer",
+        "Version": "3.1.3",
+        "ActionKeywords": [
+          "*",
+          "doc:",
+          "*",
+          "*",
+          "*"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "0308FD86DE0A4DEE8D62B9B535370992": {
+        "ID": "0308FD86DE0A4DEE8D62B9B535370992",
+        "Name": "URL",
+        "Version": "3.0.3",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "0ECADE17459B49F587BF81DC3A125110": {
+        "ID": "0ECADE17459B49F587BF81DC3A125110",
+        "Name": "Browser Bookmarks",
+        "Version": "3.1.4",
+        "ActionKeywords": [
+          "b"
         ],
         "Priority": 0,
         "Disabled": false

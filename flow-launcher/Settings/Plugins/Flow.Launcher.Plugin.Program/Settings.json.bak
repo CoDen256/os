@@ -1,6 +1,19 @@
 {
-  "LastIndexTime": "2023-12-23T15:34:14.0879245+01:00",
-  "ProgramSources": [],
+  "LastIndexTime": "2023-12-24T14:36:36.1479929+01:00",
+  "ProgramSources": [
+    {
+      "Location": "C:\\Users\\denbl\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\JetBrains Toolbox",
+      "Name": "JetBrains Toolbox",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\users\\denbl\\appdata\\roaming\\microsoft\\windows\\start menu\\programs\\jetbrains toolbox"
+    },
+    {
+      "Location": "C:\\Users\\denbl",
+      "Name": "denbl",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\users\\denbl"
+    }
+  ],
   "DisabledProgramSources": [],
   "CustomSuffixes": [],
   "CustomProtocols": [],

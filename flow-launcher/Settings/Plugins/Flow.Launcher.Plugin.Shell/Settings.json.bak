@@ -6,6 +6,6 @@
   "ShowOnlyMostUsedCMDs": false,
   "ShowOnlyMostUsedCMDsNumber": 5,
   "CommandHistory": {
-    "shell:startup": 2
+    "shell:startup": 3
   }
 }
