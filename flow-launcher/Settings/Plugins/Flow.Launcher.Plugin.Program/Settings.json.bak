@@ -1,17 +1,17 @@
 {
-  "LastIndexTime": "2023-12-24T14:36:36.1479929+01:00",
+  "LastIndexTime": "2023-12-24T16:36:11.288455+01:00",
   "ProgramSources": [
+    {
+      "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code",
+      "Name": "Visual Studio Code",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\programdata\\microsoft\\windows\\start menu\\programs\\visual studio code"
+    },
     {
       "Location": "C:\\Users\\denbl\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\JetBrains Toolbox",
       "Name": "JetBrains Toolbox",
       "Enabled": true,
       "UniqueIdentifier": "c:\\users\\denbl\\appdata\\roaming\\microsoft\\windows\\start menu\\programs\\jetbrains toolbox"
-    },
-    {
-      "Location": "C:\\Users\\denbl",
-      "Name": "denbl",
-      "Enabled": true,
-      "UniqueIdentifier": "c:\\users\\denbl"
     }
   ],
   "DisabledProgramSources": [],
@@ -31,7 +31,7 @@
   "UseCustomProtocols": false,
   "EnableStartMenuSource": true,
   "EnableDescription": false,
-  "HideAppsPath": true,
+  "HideAppsPath": false,
   "EnableRegistrySource": true,
   "EnablePathSource": false,
   "EnableUWP": true

@@ -18,8 +18,8 @@ Install manually
 
 ###### GIT
     git config core.autocrlf true               # for this project
-    cp .gitconfig ~/.gitconfig
-    cp .default.gitconfig ~/.default.gitconfig
+    cp git-configs/.gitconfig ~/.gitconfig
+    cp git-configs/.default.gitconfig ~/.default.gitconfig
 
 If needed:
 
@@ -62,7 +62,6 @@ https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
 
 2. Use `settings.json` in Windows terminal
 
-
     New-Item -Path "$($env:LOCALAPPDATA)\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Value .\win-terminal\settings.json -Force
 
 3. Terminal Ubuntu zsh + oh my zsh
@@ -86,8 +85,20 @@ https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
 ###### Java
 
 
-## VISUAL STUDIO CODE ##
-# just login via github and turn the sync on
+###### VS Code
+1. Login via Github
+2. Turn the sync on
+
+###### Jetbrains Toolbox ###
+
+- IntelliJ
+- DataGrip
+- Pycharm
+- Android Studio
+
+1. Login via Jetbrains account
+2. IntelliJ -> File -> Manage IDE Settings -> Settings Sync
+
 
 ## BRAVE ## 
 # bitwarden -> sync code
@@ -110,18 +121,8 @@ https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
 
 
 
-### TOOLBOX ###
-# https://www.jetbrains.com/de-de/toolbox-app/
-# 1.intellij
-# 2.datagrip
-# Login to Jetbrains account for CoDen(not CoDen256)
-# Open Intellij -> File -> Manage IDE Settings -> Enable sync from accont -> Login -> 
-# -> Manage IDE Settings -> Load from Account 
-# -> Manage IDE Settings -> IDE Settings Sync -> Select plugins to sync
 
-## XODO PDF VIEIWER ## 
-## CANVA ## 
-# via Microsoft Store
+## XODO PDF VIEIWER ##
 
 ## JAVA 17 ##
 # https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.msi
@@ -135,10 +136,5 @@ https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58
 ## MAVEN ##
 
 ## Fix startup ##
-# Discord -> log in -> Windows settings -> disable tray and disable startup\
 # Disable jetbrains toolbox, canva, discord, edge
 # Fix autostartup
-
-## AHK DISABLE WIN, LAYOUT, AUO ##
-# ctrl tab -> run -> shell:startup 
-# put win_layout_auo.ahk 
