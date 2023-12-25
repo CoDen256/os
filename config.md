@@ -18,6 +18,13 @@
     setx JAVA_HOME "$($env:USERPROFILE)\tools\java\jdk-21.0.1"
     rm jdk.zip
 
+###### Kotlin
+    curl https://github.com/JetBrains/kotlin/releases/download/v1.9.22/kotlin-compiler-1.9.22.zip -o kot.zip
+    Expand-Archive .\kot.zip -DestinationPath ~\tools\kotlin
+    mv ~\tools\kotlin\kotlinc ~\tools\kotlin\kotlinc-1.9.22
+    setx KOTLIN_HOME "$($env:USERPROFILE)\tools\kotlin\kotlinc-1.9.22"
+    rm kot.zip
+
 ###### Python
     curl https://www.python.org/ftp/python/3.12.1/python-3.12.1-amd64.exe -o py.exe
     ./py.exe            # install dir ~/tools/python 
@@ -30,9 +37,9 @@
     setx GRADLE_HOME $(dir C:\ProgramData\chocolatey\lib\gradle\tools\gradle-*).FullName
 
     pathed /append "$($env:JAVA_HOME)\bin" /user
+    pathed /append "$($env:KOTLIN_HOME)\bin" /user   
     pathed /append "$($env:USERPROFILE)\tools\maven\bin" /user 
-    pathed /append "$($env:USERPROFILE)\tools\gradle\bin" /user 
-    pathed /append "$($env:USERPROFILE)\tools\python\python312" /user 
+    pathed /append "$($env:USERPROFILE)\tools\gradle\bin" /user
     pathed /append "$($env:USERPROFILE)\tools\openssl\bin" /user
     pathed /append "$($env:USERPROFILE)\tools\git\bin" /user
     pathed /append "$($env:USERPROFILE)\tools\git\" /user 
@@ -41,6 +48,7 @@
     mvn -v
     gradle -v
     java -version
+    kotlinc -version
     python --version
     git --version
 
