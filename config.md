@@ -1,4 +1,7 @@
 ###### CHOCOLATELY
+    mkdir ~\tools
+    mkdir C:\dev
+
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
     choco feature enable -n allowGlobalConfirmation
     choco install packages.config
@@ -13,7 +16,8 @@ Install manually
     rm ./ahk2.exe
 
 ###### SSH Keys
-
+    Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
+    Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
     ssh-keygen -t rsa -b 4096 -C "den.blackshov@gmail.com"  # Add to gitlab and github
 
 ###### GIT
@@ -78,8 +82,41 @@ Terminal Ubuntu zsh + oh my zsh
     wsl sed -i s/robbyrussel/refined/g ~/.zshrc                     # change ZSH_THEME to refined
 
 
+###### Gtools 
+
+    curl http://www.p-nand-q.com/download/gtools/gtools-current.exe -o gtools.exe   # pathed and which
+    ./gtools.exe    
+    rm ./gtools.exe
+    & "$($env:USERPROFILE)\tools\Gtools\pathed.exe" /append "$($env:USERPROFILE)\tools\Gtools\" /user
+
 ###### Java
-# https://download.oracle.com/java/17/latest/jdk-17_windows-x64_bin.msi
+    curl https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.zip -o jdk.zip
+    Expand-Archive .\jdk.zip -DestinationPath ~\tools\java
+    setx JAVA_HOME "$($env:USERPROFILE)\tools\java\jdk-21.0.1"
+    rm jdk.zip
+
+    
+###### Update Path and link tools
+
+
+    New-Item -Path "$($env:USERPROFILE)\tools\maven\" -ItemType SymbolicLink -Value C:\ProgramData\chocolatey\lib\maven\apache-maven*
+
+    New-Item -Path "$($env:USERPROFILE)\tools\gradle\" -ItemType SymbolicLink -Value C:\ProgramData\chocolatey\lib\gradle\tools\gradle-*
+    setx GRADLE_HOME $(dir C:\ProgramData\chocolatey\lib\gradle\tools\gradle-*).FullName
+
+
+    pathed /append "$($env:JAVA_HOME)\bin" /user
+    pathed /append "$($env:USERPROFILE)\tools\maven\bin" /user 
+    pathed /append "$($env:USERPROFILE)\tools\gradle\bin" /user 
+    pathed /append "$($env:USERPROFILE)\tools\python\python312" /user 
+    pathed /append "$($env:USERPROFILE)\tools\openssl\bin" /user
+    pathed /append "$($env:USERPROFILE)\tools\git\bin" /user
+    pathed /append "$($env:USERPROFILE)\tools\git\" /user 
+    pathed /append "$($env:USERPROFILE)\tools" /user
+
+
+    mvn -v
+    gradle -v
 # JAVA_HOME = C:\Program Files...\Java\jdk-17
 # PATH = PATH + JAVA_HOME\bin
 # verify

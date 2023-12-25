@@ -443,6 +443,218 @@
     {
       "Query": "pm install URL",
       "ExecutedDateTime": "2023-12-24T18:05:44.8825913+01:00"
+    },
+    {
+      "Query": "github.com",
+      "ExecutedDateTime": "2023-12-24T18:06:05.4215067+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-24T18:09:21.4487526+01:00"
+    },
+    {
+      "Query": "vis",
+      "ExecutedDateTime": "2023-12-24T18:13:36.6494783+01:00"
+    },
+    {
+      "Query": "data",
+      "ExecutedDateTime": "2023-12-24T18:15:09.8762038+01:00"
+    },
+    {
+      "Query": "pyc",
+      "ExecutedDateTime": "2023-12-24T18:16:24.3829652+01:00"
+    },
+    {
+      "Query": "java download windows",
+      "ExecutedDateTime": "2023-12-24T18:17:38.9903508+01:00"
+    },
+    {
+      "Query": "windows unzip",
+      "ExecutedDateTime": "2023-12-24T18:21:26.4374691+01:00"
+    },
+    {
+      "Query": "maven windows install",
+      "ExecutedDateTime": "2023-12-24T18:27:08.8086342+01:00"
+    },
+    {
+      "Query": "maven latest download",
+      "ExecutedDateTime": "2023-12-24T18:27:37.098402+01:00"
+    },
+    {
+      "Query": "maven github",
+      "ExecutedDateTime": "2023-12-24T18:29:45.9368314+01:00"
+    },
+    {
+      "Query": "choco specify install path",
+      "ExecutedDateTime": "2023-12-24T18:30:21.9685759+01:00"
+    },
+    {
+      "Query": "un gi",
+      "ExecutedDateTime": "2023-12-24T18:31:45.1122407+01:00"
+    },
+    {
+      "Query": "choco git install params",
+      "ExecutedDateTime": "2023-12-24T18:33:16.79913+01:00"
+    },
+    {
+      "Query": "git --install-arguments",
+      "ExecutedDateTime": "2023-12-24T18:34:48.4026144+01:00"
+    },
+    {
+      "Query": "choco packages config",
+      "ExecutedDateTime": "2023-12-24T18:36:04.9186042+01:00"
+    },
+    {
+      "Query": "choco installArguments",
+      "ExecutedDateTime": "2023-12-24T18:37:55.0637358+01:00"
+    },
+    {
+      "Query": "git latest version",
+      "ExecutedDateTime": "2023-12-24T18:40:31.2339848+01:00"
+    },
+    {
+      "Query": "choco python",
+      "ExecutedDateTime": "2023-12-24T18:41:35.9603505+01:00"
+    },
+    {
+      "Query": "git choco package parameters",
+      "ExecutedDateTime": "2023-12-24T18:43:28.8469135+01:00"
+    },
+    {
+      "Query": "choco install openssl",
+      "ExecutedDateTime": "2023-12-24T18:58:50.427689+01:00"
+    },
+    {
+      "Query": "choco Install dir option",
+      "ExecutedDateTime": "2023-12-24T19:02:33.1330824+01:00"
+    },
+    {
+      "Query": "choco jav",
+      "ExecutedDateTime": "2023-12-24T19:20:48.1643716+01:00"
+    },
+    {
+      "Query": "maven choco",
+      "ExecutedDateTime": "2023-12-24T19:23:42.7682432+01:00"
+    },
+    {
+      "Query": "choco install maven folder",
+      "ExecutedDateTime": "2023-12-24T19:28:39.6247293+01:00"
+    },
+    {
+      "Query": "maven silent install",
+      "ExecutedDateTime": "2023-12-24T19:30:10.9589232+01:00"
+    },
+    {
+      "Query": "install java windows and add to path",
+      "ExecutedDateTime": "2023-12-24T19:31:29.4840488+01:00"
+    },
+    {
+      "Query": "choco openssl",
+      "ExecutedDateTime": "2023-12-24T19:33:52.5580269+01:00"
+    },
+    {
+      "Query": "windows install openssl",
+      "ExecutedDateTime": "2023-12-24T19:35:29.0127129+01:00"
+    },
+    {
+      "Query": "windows install openssh",
+      "ExecutedDateTime": "2023-12-24T19:35:40.9236222+01:00"
+    },
+    {
+      "Query": "windows ssh keygen",
+      "ExecutedDateTime": "2023-12-24T19:36:47.2978163+01:00"
+    },
+    {
+      "Query": "windows java path update programmatically",
+      "ExecutedDateTime": "2023-12-24T19:38:50.7791376+01:00"
+    },
+    {
+      "Query": "windows ser JAVA_HOME programmatically",
+      "ExecutedDateTime": "2023-12-24T19:39:58.9573303+01:00"
+    },
+    {
+      "Query": "visua",
+      "ExecutedDateTime": "2023-12-24T19:40:03.6688659+01:00"
+    },
+    {
+      "Query": "envi",
+      "ExecutedDateTime": "2023-12-24T19:41:25.7965203+01:00"
+    },
+    {
+      "Query": "edit en",
+      "ExecutedDateTime": "2023-12-24T19:41:29.7169727+01:00"
+    },
+    {
+      "Query": "setx /M PATH for user",
+      "ExecutedDateTime": "2023-12-24T19:41:56.8010044+01:00"
+    },
+    {
+      "Query": "setx /M",
+      "ExecutedDateTime": "2023-12-24T19:42:09.7306879+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-24T19:43:34.592973+01:00"
+    },
+    {
+      "Query": "windows home directory env variable",
+      "ExecutedDateTime": "2023-12-24T19:44:02.7572576+01:00"
+    },
+    {
+      "Query": "envir",
+      "ExecutedDateTime": "2023-12-24T19:44:37.2348641+01:00"
+    },
+    {
+      "Query": "env",
+      "ExecutedDateTime": "2023-12-24T19:44:54.7081199+01:00"
+    },
+    {
+      "Query": "edit evn",
+      "ExecutedDateTime": "2023-12-24T19:46:25.5377475+01:00"
+    },
+    {
+      "Query": "java_home system or user",
+      "ExecutedDateTime": "2023-12-24T19:46:49.7729524+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-24T19:47:07.9238626+01:00"
+    },
+    {
+      "Query": "envir",
+      "ExecutedDateTime": "2023-12-24T19:47:17.4222444+01:00"
+    },
+    {
+      "Query": "powershell echo user environmental variable",
+      "ExecutedDateTime": "2023-12-24T19:47:44.5517993+01:00"
+    },
+    {
+      "Query": "symlink windowqs",
+      "ExecutedDateTime": "2023-12-24T19:49:17.0867838+01:00"
+    },
+    {
+      "Query": "New-Item -ItemType",
+      "ExecutedDateTime": "2023-12-24T19:49:39.2453313+01:00"
+    },
+    {
+      "Query": "windows update path setx",
+      "ExecutedDateTime": "2023-12-24T19:52:29.7710796+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-24T19:53:06.6452331+01:00"
+    },
+    {
+      "Query": "print PATH foor user powershell",
+      "ExecutedDateTime": "2023-12-24T19:53:32.3632432+01:00"
+    },
+    {
+      "Query": "envir",
+      "ExecutedDateTime": "2023-12-24T19:54:16.6347668+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-24T20:01:32.3952696+01:00"
     }
   ]
 }

@@ -71,7 +71,7 @@
                 "name": "Command Prompt"
             },
             {
-                "commandline": "C:\\Program Files\\Git\\bin\\bash.exe",
+                "commandline": "%USERPROFILE%/tools/git/bin/bash",
                 "elevate": true,
                 "guid": "{f77b0973-05c9-443c-8acb-1696e458674b}",
                 "hidden": false,
