@@ -6,14 +6,20 @@
     choco feature enable -n allowGlobalConfirmation
     choco install packages.config
 
-###### AutoHotKey
-Install manually
-    
-    curl https://www.autohotkey.com/download/ahk-v2.exe -o ahk2.exe
-    ./ahk2.exe
+###### Gtools 
+    curl http://www.p-nand-q.com/download/gtools/gtools-current.exe -o gtools.exe   # CLI: `pathed` and `which`
+    ./gtools.exe                                                                    # specify installed dir as ~/tools/Gtools
+    rm ./gtools.exe                                                                 
+    & "$($env:USERPROFILE)\tools\Gtools\pathed.exe" /append "$($env:USERPROFILE)\tools\Gtools\" /user
+
+###### AutoHotKey    
+    curl https://www.autohotkey.com/download/ahk-v2.zip -o ahk2.zip
+    Expand-Archive .\ahk2.zip -DestinationPath ~\tools\ahk
+    pathed /append "$($env:USERPROFILE)\tools\ahk\" /user
+
     cp win_layout_aou.ahk "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup"
     New-Item -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" -ItemType SymbolicLink -Value win_layout_aou.ahk
-    rm ./ahk2.exe
+    rm ahk2.zip
 
 ###### SSH Keys
     Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
@@ -81,13 +87,6 @@ Terminal Ubuntu zsh + oh my zsh
     wsl ln -s ~/.oh-my-zsh/custom/pure/async.zsh ~/.oh-my-zsh/custom
     wsl sed -i s/robbyrussel/refined/g ~/.zshrc                     # change ZSH_THEME to refined
 
-
-###### Gtools 
-
-    curl http://www.p-nand-q.com/download/gtools/gtools-current.exe -o gtools.exe   # pathed and which
-    ./gtools.exe    
-    rm ./gtools.exe
-    & "$($env:USERPROFILE)\tools\Gtools\pathed.exe" /append "$($env:USERPROFILE)\tools\Gtools\" /user
 
 ###### Java
     curl https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.zip -o jdk.zip
