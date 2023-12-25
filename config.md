@@ -1,6 +1,8 @@
 ###### CHOCOLATELY
     mkdir ~\tools
+    mkdir ~\portable
     mkdir C:\dev
+    mkdir C:\rev
 
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
     choco feature enable -n allowGlobalConfirmation
@@ -24,6 +26,7 @@
     mv ~\tools\kotlin\kotlinc ~\tools\kotlin\kotlinc-1.9.22
     setx KOTLIN_HOME "$($env:USERPROFILE)\tools\kotlin\kotlinc-1.9.22"
     rm kot.zip
+    # However Jetbrains Products will have kotlin bundled in by default somewhere else
 
 ###### Python
     curl https://www.python.org/ftp/python/3.12.1/python-3.12.1-amd64.exe -o py.exe
@@ -63,6 +66,7 @@
 
 ###### SSH Client + SSH keys
     Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
+    Get-Service -Name ssh-agent | Set-Service -StartupType Automatic
     Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
     ssh-keygen -t rsa -b 4096 -C "den.blackshov@gmail.com"  # Add to gitlab and github
 
@@ -140,6 +144,12 @@ Terminal Ubuntu zsh + oh my zsh
 1. Login via Jetbrains account
 2. E.g. IntelliJ -> File -> Manage IDE Settings -> Settings Sync
 
+##### Android Studio
+
+1. Install SDK at ~/tools/android/sdk
+
+    pathed /append $(dir "$($env:USERPROFILE)\tools\android\sdk\build-tools\*").FullName /user
+    pathed /append "$($env:USERPROFILE)\tools\android\sdk\platform-tools" /user
 
 
 ###### XODO PDF
