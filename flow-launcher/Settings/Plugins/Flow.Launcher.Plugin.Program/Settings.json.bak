@@ -1,6 +1,12 @@
 {
-  "LastIndexTime": "2023-12-25T13:23:42.469155+01:00",
+  "LastIndexTime": "2023-12-25T13:30:20.1906402+01:00",
   "ProgramSources": [
+    {
+      "Location": "C:\\Users\\denbl\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools",
+      "Name": "System Tools",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\users\\denbl\\appdata\\roaming\\microsoft\\windows\\start menu\\programs\\system tools"
+    },
     {
       "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs",
       "Name": "Programs",

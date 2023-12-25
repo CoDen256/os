@@ -12,6 +12,38 @@
     rm ./gtools.exe                                                                 
     & "$($env:USERPROFILE)\tools\Gtools\pathed.exe" /append "$($env:USERPROFILE)\tools\Gtools\" /user
 
+###### Java
+    curl https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.zip -o jdk.zip
+    Expand-Archive .\jdk.zip -DestinationPath ~\tools\java
+    setx JAVA_HOME "$($env:USERPROFILE)\tools\java\jdk-21.0.1"
+    rm jdk.zip
+
+###### Python
+    curl https://www.python.org/ftp/python/3.12.1/python-3.12.1-amd64.exe -o py.exe
+    ./py.exe            # install dir ~/tools/python 
+    rm ./py.exe
+
+###### Update Path and link tools
+    New-Item -Path "$($env:USERPROFILE)\tools\maven\" -ItemType SymbolicLink -Value C:\ProgramData\chocolatey\lib\maven\apache-maven*
+
+    New-Item -Path "$($env:USERPROFILE)\tools\gradle\" -ItemType SymbolicLink -Value C:\ProgramData\chocolatey\lib\gradle\tools\gradle-*
+    setx GRADLE_HOME $(dir C:\ProgramData\chocolatey\lib\gradle\tools\gradle-*).FullName
+
+    pathed /append "$($env:JAVA_HOME)\bin" /user
+    pathed /append "$($env:USERPROFILE)\tools\maven\bin" /user 
+    pathed /append "$($env:USERPROFILE)\tools\gradle\bin" /user 
+    pathed /append "$($env:USERPROFILE)\tools\python\python312" /user 
+    pathed /append "$($env:USERPROFILE)\tools\openssl\bin" /user
+    pathed /append "$($env:USERPROFILE)\tools\git\bin" /user
+    pathed /append "$($env:USERPROFILE)\tools\git\" /user 
+    pathed /append "$($env:USERPROFILE)\tools" /user
+
+    mvn -v
+    gradle -v
+    java -version
+    python --version
+    git --version
+
 ###### AutoHotKey    
     curl https://www.autohotkey.com/download/ahk-v2.zip -o ahk2.zip
     Expand-Archive .\ahk2.zip -DestinationPath ~\tools\ahk
@@ -21,7 +53,7 @@
     New-Item -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" -ItemType SymbolicLink -Value win_layout_aou.ahk
     rm ahk2.zip
 
-###### SSH Keys
+###### SSH Client + SSH keys
     Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
     Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
     ssh-keygen -t rsa -b 4096 -C "den.blackshov@gmail.com"  # Add to gitlab and github
@@ -78,7 +110,6 @@ Terminal Ubuntu zsh + oh my zsh
     wsl sh -c '$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)'
 
 
-
 [Terminal Ubuntu zsh Pure](https://turlucode.com/oh-my-zsh-installation-guide/)
 
     cd ~/.oh-my-zsh/custom
@@ -86,41 +117,6 @@ Terminal Ubuntu zsh + oh my zsh
     wsl ln -s ~/.oh-my-zsh/custom/pure/pure.zsh ~/.oh-my-zsh/custom
     wsl ln -s ~/.oh-my-zsh/custom/pure/async.zsh ~/.oh-my-zsh/custom
     wsl sed -i s/robbyrussel/refined/g ~/.zshrc                     # change ZSH_THEME to refined
-
-
-###### Java
-    curl https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.zip -o jdk.zip
-    Expand-Archive .\jdk.zip -DestinationPath ~\tools\java
-    setx JAVA_HOME "$($env:USERPROFILE)\tools\java\jdk-21.0.1"
-    rm jdk.zip
-
-    
-###### Update Path and link tools
-
-
-    New-Item -Path "$($env:USERPROFILE)\tools\maven\" -ItemType SymbolicLink -Value C:\ProgramData\chocolatey\lib\maven\apache-maven*
-
-    New-Item -Path "$($env:USERPROFILE)\tools\gradle\" -ItemType SymbolicLink -Value C:\ProgramData\chocolatey\lib\gradle\tools\gradle-*
-    setx GRADLE_HOME $(dir C:\ProgramData\chocolatey\lib\gradle\tools\gradle-*).FullName
-
-
-    pathed /append "$($env:JAVA_HOME)\bin" /user
-    pathed /append "$($env:USERPROFILE)\tools\maven\bin" /user 
-    pathed /append "$($env:USERPROFILE)\tools\gradle\bin" /user 
-    pathed /append "$($env:USERPROFILE)\tools\python\python312" /user 
-    pathed /append "$($env:USERPROFILE)\tools\openssl\bin" /user
-    pathed /append "$($env:USERPROFILE)\tools\git\bin" /user
-    pathed /append "$($env:USERPROFILE)\tools\git\" /user 
-    pathed /append "$($env:USERPROFILE)\tools" /user
-
-
-    mvn -v
-    gradle -v
-# JAVA_HOME = C:\Program Files...\Java\jdk-17
-# PATH = PATH + JAVA_HOME\bin
-# verify
-# java -verions
-# mvn -v
 
 ###### VS Code
 1. Login via Github
@@ -134,11 +130,16 @@ Terminal Ubuntu zsh + oh my zsh
 - Android Studio
 
 1. Login via Jetbrains account
-2. IntelliJ -> File -> Manage IDE Settings -> Settings Sync
+2. E.g. IntelliJ -> File -> Manage IDE Settings -> Settings Sync
 
 
 
 ###### XODO PDF
 [Install via Microsoft store](ms-windows-store://pdp?hl=en-us&gl=ps&productid=9WZDNCRDJXP4&mode=mini&pos=5%2C6%2C1920%2C902&referrer=storeforweb&source=https%3A%2F%2Fwww.google.com%2F)
+
+###### Bing Wallpapers
+    curl https://go.microsoft.com/fwlink/?linkid=2126594 -o ~\Downloads\bing.exe
+    ./bing.exe
+    rm bing.exe
 
 ###### Fix Autostart apps
