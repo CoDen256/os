@@ -222,6 +222,7 @@ Terminal Ubuntu zsh + oh my zsh
 ##### Default open VS Code
     cmd.exe /c 'assoc .="No_Extension"'
     cmd 'ftype "No_Extension"="C:\Program Files\Microsoft VS Code\Code.exe" "%1"'
+    # not working? -> try this https://www.itprotoday.com/windows-78/how-do-i-create-default-association-files-no-extension
 
 
 ##### MobaXTerm
