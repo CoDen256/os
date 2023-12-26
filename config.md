@@ -4,6 +4,7 @@
     mkdir ~\portable
     mkdir C:\dev
     mkdir C:\rev
+    mkdir C:\setup
 
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
     choco feature enable -n allowGlobalConfirmation
@@ -14,6 +15,23 @@
     ./gtools.exe                                                                    # specify installed dir as ~/tools/Gtools
     rm ./gtools.exe                                                                 
     & "$($env:USERPROFILE)\tools\Gtools\pathed.exe" /append "$($env:USERPROFILE)\tools\Gtools\" /user
+
+
+###### SSH Client + SSH keys
+    Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
+    Get-Service -Name ssh-agent | Set-Service -StartupType Automatic
+    Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
+    ssh-keygen -t rsa -b 4096 -C "den.blackshov@gmail.com"  # Add to gitlab and github
+
+###### GIT
+    ~\tools\git\bin\git.exe clone git@github.com:CoDen256/os-setup.git
+    ~\tools\git\bin\git.exe config core.autocrlf true               # for this project
+    cp git-configs/.gitconfig ~/.gitconfig
+    cp git-configs/.default.gitconfig ~/.default.gitconfig
+
+If needed:
+
+    cp .alpha.gitconfig ~/.alpha.gitconfig
 
 ###### Java
     curl https://download.oracle.com/java/21/latest/jdk-21_windows-x64_bin.zip -o jdk.zip
@@ -41,21 +59,6 @@
     cp win_layout_aou.ahk "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup"
     New-Item -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" -ItemType SymbolicLink -Value win_layout_aou.ahk
     rm ahk2.zip
-
-###### SSH Client + SSH keys
-    Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
-    Get-Service -Name ssh-agent | Set-Service -StartupType Automatic
-    Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
-    ssh-keygen -t rsa -b 4096 -C "den.blackshov@gmail.com"  # Add to gitlab and github
-
-###### GIT
-    git config core.autocrlf true               # for this project
-    cp git-configs/.gitconfig ~/.gitconfig
-    cp git-configs/.default.gitconfig ~/.default.gitconfig
-
-If needed:
-
-    cp .alpha.gitconfig ~/.alpha.gitconfig
 
 ###### Flow Launcher
     taskkill /f /im Flow*
@@ -216,6 +219,14 @@ Terminal Ubuntu zsh + oh my zsh
     adb --version
     jadx --version
 
+##### Default open VS Code
+    cmd.exe /c 'assoc .="No_Extension"'
+    cmd 'ftype "No_Extension"="C:\Program Files\Microsoft VS Code\Code.exe" "%1"'
+
+
+##### MobaXTerm
+    New-Item -Path "$($env:USERPROFILE)\OneDrive\Documents\MobaXTerm.ini" -ItemType HardLink -Value "$($env:APPDATA)\MobaXterm\MobaXTerm.ini" # to create backup from existing
+    New-Item -Path "$($env:APPDATA)\MobaXterm\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\OneDrive\Documents\MobaXTerm.ini" # to create new from backup
 
 ###### XODO PDF
 [Install via Microsoft store](ms-windows-store://pdp?hl=en-us&gl=ps&productid=9WZDNCRDJXP4&mode=mini&pos=5%2C6%2C1920%2C902&referrer=storeforweb&source=https%3A%2F%2Fwww.google.com%2F)

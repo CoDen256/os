@@ -1,82 +1,6 @@
 {
   "Items": [
     {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-23T00:00:43.6297593+01:00"
-    },
-    {
-      "Query": "tool",
-      "ExecutedDateTime": "2023-12-23T00:01:30.4112311+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-23T00:03:37.9055723+01:00"
-    },
-    {
-      "Query": "pm install JetBrainsIDEProjects",
-      "ExecutedDateTime": "2023-12-23T00:05:38.2026149+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-23T00:06:35.3535521+01:00"
-    },
-    {
-      "Query": "how to enable flow launcher",
-      "ExecutedDateTime": "2023-12-23T00:07:00.7109806+01:00"
-    },
-    {
-      "Query": "brave",
-      "ExecutedDateTime": "2023-12-23T00:09:45.1490996+01:00"
-    },
-    {
-      "Query": "stea",
-      "ExecutedDateTime": "2023-12-23T00:10:07.4421296+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-23T00:14:43.1472569+01:00"
-    },
-    {
-      "Query": "pm install Clipboard History",
-      "ExecutedDateTime": "2023-12-23T00:44:41.2463466+01:00"
-    },
-    {
-      "Query": "share",
-      "ExecutedDateTime": "2023-12-23T01:57:00.6335955+01:00"
-    },
-    {
-      "Query": "brave",
-      "ExecutedDateTime": "2023-12-23T01:57:22.051956+01:00"
-    },
-    {
-      "Query": "windows print screen",
-      "ExecutedDateTime": "2023-12-23T01:57:33.9634405+01:00"
-    },
-    {
-      "Query": "windows print screen hotkey",
-      "ExecutedDateTime": "2023-12-23T01:57:46.4265242+01:00"
-    },
-    {
-      "Query": "run",
-      "ExecutedDateTime": "2023-12-23T01:58:45.9822162+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-23T01:59:17.107275+01:00"
-    },
-    {
-      "Query": "choco check where is installed",
-      "ExecutedDateTime": "2023-12-23T01:59:50.0565931+01:00"
-    },
-    {
-      "Query": "run",
-      "ExecutedDateTime": "2023-12-23T02:03:35.2931819+01:00"
-    },
-    {
-      "Query": "visua",
-      "ExecutedDateTime": "2023-12-23T02:04:49.4077125+01:00"
-    },
-    {
       "Query": "settings",
       "ExecutedDateTime": "2023-12-23T02:07:07.9934576+01:00"
     },
@@ -1139,6 +1063,146 @@
     {
       "Query": "shut",
       "ExecutedDateTime": "2023-12-25T21:35:06.3070611+01:00"
+    },
+    {
+      "Query": "bra",
+      "ExecutedDateTime": "2023-12-26T14:40:31.101695+01:00"
+    },
+    {
+      "Query": "fluetn search linux",
+      "ExecutedDateTime": "2023-12-26T14:41:29.7654336+01:00"
+    },
+    {
+      "Query": "visua",
+      "ExecutedDateTime": "2023-12-26T14:42:15.0369877+01:00"
+    },
+    {
+      "Query": "ob",
+      "ExecutedDateTime": "2023-12-26T14:43:20.9194886+01:00"
+    },
+    {
+      "Query": "OneDr",
+      "ExecutedDateTime": "2023-12-26T14:43:39.998387+01:00"
+    },
+    {
+      "Query": "google drive",
+      "ExecutedDateTime": "2023-12-26T14:43:53.508981+01:00"
+    },
+    {
+      "Query": "obisidian create remote vault",
+      "ExecutedDateTime": "2023-12-26T14:48:33.8838141+01:00"
+    },
+    {
+      "Query": "obsi",
+      "ExecutedDateTime": "2023-12-26T14:52:55.609244+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-26T15:01:08.3398523+01:00"
+    },
+    {
+      "Query": "unzip windows command line",
+      "ExecutedDateTime": "2023-12-26T15:01:24.7024597+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-26T15:05:34.8964539+01:00"
+    },
+    {
+      "Query": "apkt ool download",
+      "ExecutedDateTime": "2023-12-26T15:09:42.2925184+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-26T15:13:59.1762026+01:00"
+    },
+    {
+      "Query": "smali bat",
+      "ExecutedDateTime": "2023-12-26T15:16:20.5207049+01:00"
+    },
+    {
+      "Query": "write bat that executes jar with options",
+      "ExecutedDateTime": "2023-12-26T15:16:57.2999923+01:00"
+    },
+    {
+      "Query": "markdown table",
+      "ExecutedDateTime": "2023-12-26T15:22:41.4188514+01:00"
+    },
+    {
+      "Query": "aapt android",
+      "ExecutedDateTime": "2023-12-26T15:26:02.9233203+01:00"
+    },
+    {
+      "Query": "apksigner",
+      "ExecutedDateTime": "2023-12-26T15:29:32.899245+01:00"
+    },
+    {
+      "Query": "zipalign",
+      "ExecutedDateTime": "2023-12-26T15:29:45.5278342+01:00"
+    },
+    {
+      "Query": "JD-GUI",
+      "ExecutedDateTime": "2023-12-26T15:31:40.0394221+01:00"
+    },
+    {
+      "Query": "dex2jar",
+      "ExecutedDateTime": "2023-12-26T15:32:18.5608478+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-26T15:41:39.8313324+01:00"
+    },
+    {
+      "Query": "jadx",
+      "ExecutedDateTime": "2023-12-26T15:47:19.6162424+01:00"
+    },
+    {
+      "Query": "JD-GUI vs fernflower",
+      "ExecutedDateTime": "2023-12-26T15:50:43.8925963+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-26T16:01:11.8484066+01:00"
+    },
+    {
+      "Query": "stea",
+      "ExecutedDateTime": "2023-12-26T16:04:39.2600304+01:00"
+    },
+    {
+      "Query": "noti",
+      "ExecutedDateTime": "2023-12-26T16:08:59.9972788+01:00"
+    },
+    {
+      "Query": "solar putty v4 download",
+      "ExecutedDateTime": "2023-12-26T16:15:12.7485096+01:00"
+    },
+    {
+      "Query": "reddit pretiest ftp client",
+      "ExecutedDateTime": "2023-12-26T16:16:28.8914279+01:00"
+    },
+    {
+      "Query": "CuteFTP",
+      "ExecutedDateTime": "2023-12-26T16:17:07.383508+01:00"
+    },
+    {
+      "Query": "mobaxterm",
+      "ExecutedDateTime": "2023-12-26T16:18:25.8500801+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-26T16:20:37.464983+01:00"
+    },
+    {
+      "Query": "pc microsd reader",
+      "ExecutedDateTime": "2023-12-26T16:22:21.6520225+01:00"
+    },
+    {
+      "Query": "pastebin",
+      "ExecutedDateTime": "2023-12-26T16:37:10.8310007+01:00"
+    },
+    {
+      "Query": "python shell with directiry",
+      "ExecutedDateTime": "2023-12-26T16:43:48.8782035+01:00"
     }
   ]
 }
