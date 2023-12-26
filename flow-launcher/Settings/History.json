@@ -655,6 +655,490 @@
     {
       "Query": "edit env",
       "ExecutedDateTime": "2023-12-24T20:01:32.3952696+01:00"
+    },
+    {
+      "Query": "processor types",
+      "ExecutedDateTime": "2023-12-25T12:12:25.1477348+01:00"
+    },
+    {
+      "Query": "processor types arm amd intel",
+      "ExecutedDateTime": "2023-12-25T12:13:20.1688439+01:00"
+    },
+    {
+      "Query": "rufus download",
+      "ExecutedDateTime": "2023-12-25T12:13:34.7629529+01:00"
+    },
+    {
+      "Query": "ahkv2 download",
+      "ExecutedDateTime": "2023-12-25T12:13:56.4218075+01:00"
+    },
+    {
+      "Query": "kali linux download",
+      "ExecutedDateTime": "2023-12-25T12:14:27.6802989+01:00"
+    },
+    {
+      "Query": "kali installer amd",
+      "ExecutedDateTime": "2023-12-25T12:14:56.6282369+01:00"
+    },
+    {
+      "Query": "j setup",
+      "ExecutedDateTime": "2023-12-25T12:15:46.9028188+01:00"
+    },
+    {
+      "Query": "visua",
+      "ExecutedDateTime": "2023-12-25T12:15:55.4644428+01:00"
+    },
+    {
+      "Query": "edit envi",
+      "ExecutedDateTime": "2023-12-25T12:16:07.6213183+01:00"
+    },
+    {
+      "Query": "term",
+      "ExecutedDateTime": "2023-12-25T12:16:08.8597961+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-25T12:16:28.0636778+01:00"
+    },
+    {
+      "Query": "arch of os",
+      "ExecutedDateTime": "2023-12-25T12:17:30.5795568+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T12:21:31.1548478+01:00"
+    },
+    {
+      "Query": "path change limit of 1024",
+      "ExecutedDateTime": "2023-12-25T12:22:14.9543734+01:00"
+    },
+    {
+      "Query": "redit",
+      "ExecutedDateTime": "2023-12-25T12:22:39.286384+01:00"
+    },
+    {
+      "Query": "python launches in microsoft stroe instead of the path",
+      "ExecutedDateTime": "2023-12-25T12:25:34.105983+01:00"
+    },
+    {
+      "Query": "settings",
+      "ExecutedDateTime": "2023-12-25T12:25:51.233725+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T12:27:03.1891691+01:00"
+    },
+    {
+      "Query": "edit envi",
+      "ExecutedDateTime": "2023-12-25T12:27:25.903435+01:00"
+    },
+    {
+      "Query": "windows remove unused path",
+      "ExecutedDateTime": "2023-12-25T12:28:01.1320806+01:00"
+    },
+    {
+      "Query": "system env vars reappear in windows",
+      "ExecutedDateTime": "2023-12-25T12:28:46.7898814+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-25T12:30:58.6383625+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T12:32:46.3392103+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-25T12:33:05.5402289+01:00"
+    },
+    {
+      "Query": "gtools choco",
+      "ExecutedDateTime": "2023-12-25T12:36:10.2579597+01:00"
+    },
+    {
+      "Query": "gt ools",
+      "ExecutedDateTime": "2023-12-25T12:36:18.5672989+01:00"
+    },
+    {
+      "Query": "pathed",
+      "ExecutedDateTime": "2023-12-25T12:36:33.4060778+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T12:42:17.6991803+01:00"
+    },
+    {
+      "Query": "windows print path variable",
+      "ExecutedDateTime": "2023-12-25T12:42:34.4804044+01:00"
+    },
+    {
+      "Query": "windows invoke exe",
+      "ExecutedDateTime": "2023-12-25T12:44:22.8095822+01:00"
+    },
+    {
+      "Query": "enable OpenSSH windows",
+      "ExecutedDateTime": "2023-12-25T12:46:47.609073+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-25T12:50:44.208518+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T12:50:53.9488782+01:00"
+    },
+    {
+      "Query": "edit en",
+      "ExecutedDateTime": "2023-12-25T12:53:34.4238772+01:00"
+    },
+    {
+      "Query": "pathed create environment gtools",
+      "ExecutedDateTime": "2023-12-25T12:54:33.8239662+01:00"
+    },
+    {
+      "Query": "te",
+      "ExecutedDateTime": "2023-12-25T12:56:28.2884938+01:00"
+    },
+    {
+      "Query": "edit en",
+      "ExecutedDateTime": "2023-12-25T12:57:51.5927825+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T12:58:19.9681605+01:00"
+    },
+    {
+      "Query": "kali gpt or mbr",
+      "ExecutedDateTime": "2023-12-25T12:58:40.0322095+01:00"
+    },
+    {
+      "Query": "kali fat32 or ntfs",
+      "ExecutedDateTime": "2023-12-25T12:59:03.5855138+01:00"
+    },
+    {
+      "Query": "edit",
+      "ExecutedDateTime": "2023-12-25T13:00:21.7127671+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T13:06:52.5130706+01:00"
+    },
+    {
+      "Query": "visua",
+      "ExecutedDateTime": "2023-12-25T13:08:05.5046367+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T13:08:21.0578811+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-25T13:09:47.2192984+01:00"
+    },
+    {
+      "Query": "edit envi",
+      "ExecutedDateTime": "2023-12-25T13:11:42.1235757+01:00"
+    },
+    {
+      "Query": "maven home",
+      "ExecutedDateTime": "2023-12-25T13:15:25.2385971+01:00"
+    },
+    {
+      "Query": "GRADLE_HOME",
+      "ExecutedDateTime": "2023-12-25T13:15:42.3619545+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T13:17:56.7565164+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-25T13:18:59.040767+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T13:19:24.0284632+01:00"
+    },
+    {
+      "Query": "visua",
+      "ExecutedDateTime": "2023-12-25T13:19:27.4626047+01:00"
+    },
+    {
+      "Query": "vi",
+      "ExecutedDateTime": "2023-12-25T13:19:47.1598309+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-25T13:20:12.7377771+01:00"
+    },
+    {
+      "Query": "visa",
+      "ExecutedDateTime": "2023-12-25T13:21:06.4666577+01:00"
+    },
+    {
+      "Query": "visu",
+      "ExecutedDateTime": "2023-12-25T13:21:50.4152103+01:00"
+    },
+    {
+      "Query": "un aut",
+      "ExecutedDateTime": "2023-12-25T13:23:38.7517583+01:00"
+    },
+    {
+      "Query": "ahk v2",
+      "ExecutedDateTime": "2023-12-25T13:24:42.5026035+01:00"
+    },
+    {
+      "Query": "autohotkey.ahk cannot be found",
+      "ExecutedDateTime": "2023-12-25T13:28:39.1908761+01:00"
+    },
+    {
+      "Query": "sett",
+      "ExecutedDateTime": "2023-12-25T13:29:21.052182+01:00"
+    },
+    {
+      "Query": "te",
+      "ExecutedDateTime": "2023-12-25T13:29:38.9811749+01:00"
+    },
+    {
+      "Query": "run",
+      "ExecutedDateTime": "2023-12-25T13:30:22.1851531+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T13:34:07.5774871+01:00"
+    },
+    {
+      "Query": "python ModuleNotFoundError: No module named \u0027encodings\u0027",
+      "ExecutedDateTime": "2023-12-25T13:34:21.6430246+01:00"
+    },
+    {
+      "Query": "python environment variables",
+      "ExecutedDateTime": "2023-12-25T13:34:53.8481436+01:00"
+    },
+    {
+      "Query": "PYTHON_PATH",
+      "ExecutedDateTime": "2023-12-25T13:35:42.2866319+01:00"
+    },
+    {
+      "Query": "PYTHONHOME",
+      "ExecutedDateTime": "2023-12-25T13:36:07.4759631+01:00"
+    },
+    {
+      "Query": "settin",
+      "ExecutedDateTime": "2023-12-25T13:38:43.7490389+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-25T13:38:54.7360072+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T13:39:03.0820131+01:00"
+    },
+    {
+      "Query": "python321 installdirectory",
+      "ExecutedDateTime": "2023-12-25T13:39:30.8625642+01:00"
+    },
+    {
+      "Query": "python312",
+      "ExecutedDateTime": "2023-12-25T13:40:15.3085098+01:00"
+    },
+    {
+      "Query": "autohotkey python no lib folder",
+      "ExecutedDateTime": "2023-12-25T13:40:48.1875997+01:00"
+    },
+    {
+      "Query": "bing wallpaper choco",
+      "ExecutedDateTime": "2023-12-25T13:46:03.6277903+01:00"
+    },
+    {
+      "Query": "bing wallpaper install",
+      "ExecutedDateTime": "2023-12-25T13:46:13.6152665+01:00"
+    },
+    {
+      "Query": "precompile standard library python",
+      "ExecutedDateTime": "2023-12-25T13:49:43.2370512+01:00"
+    },
+    {
+      "Query": "envi",
+      "ExecutedDateTime": "2023-12-25T13:51:05.0136954+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T13:51:37.3908928+01:00"
+    },
+    {
+      "Query": "sett",
+      "ExecutedDateTime": "2023-12-25T13:59:03.2504737+01:00"
+    },
+    {
+      "Query": "kotlin download latest",
+      "ExecutedDateTime": "2023-12-25T13:59:47.4820135+01:00"
+    },
+    {
+      "Query": "choco kotlin",
+      "ExecutedDateTime": "2023-12-25T14:01:04.395532+01:00"
+    },
+    {
+      "Query": "KOTLIN_HOME",
+      "ExecutedDateTime": "2023-12-25T14:02:23.498865+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T14:07:50.7907212+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-25T14:09:12.7409135+01:00"
+    },
+    {
+      "Query": "tool",
+      "ExecutedDateTime": "2023-12-25T14:09:35.1312914+01:00"
+    },
+    {
+      "Query": "andro",
+      "ExecutedDateTime": "2023-12-25T14:09:41.7636878+01:00"
+    },
+    {
+      "Query": "android emulator ram",
+      "ExecutedDateTime": "2023-12-25T14:12:23.1784517+01:00"
+    },
+    {
+      "Query": "haxm how much",
+      "ExecutedDateTime": "2023-12-25T14:12:43.9839476+01:00"
+    },
+    {
+      "Query": "rufus download",
+      "ExecutedDateTime": "2023-12-25T14:15:43.9292331+01:00"
+    },
+    {
+      "Query": "features",
+      "ExecutedDateTime": "2023-12-25T14:18:27.1255709+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T14:25:57.131391+01:00"
+    },
+    {
+      "Query": "j",
+      "ExecutedDateTime": "2023-12-25T14:28:36.7233167+01:00"
+    },
+    {
+      "Query": "intellij use ssh",
+      "ExecutedDateTime": "2023-12-25T14:30:58.7213853+01:00"
+    },
+    {
+      "Query": "intellij use ssh  git",
+      "ExecutedDateTime": "2023-12-25T14:31:02.243297+01:00"
+    },
+    {
+      "Query": "check if ssh-agent running",
+      "ExecutedDateTime": "2023-12-25T14:31:38.6165059+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T14:31:48.2544927+01:00"
+    },
+    {
+      "Query": "t",
+      "ExecutedDateTime": "2023-12-25T14:32:34.397832+01:00"
+    },
+    {
+      "Query": "edit",
+      "ExecutedDateTime": "2023-12-25T14:32:42.3803352+01:00"
+    },
+    {
+      "Query": "windows where ssh is located",
+      "ExecutedDateTime": "2023-12-25T14:32:50.5354023+01:00"
+    },
+    {
+      "Query": "edit env",
+      "ExecutedDateTime": "2023-12-25T14:33:20.3941999+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T14:33:34.8917552+01:00"
+    },
+    {
+      "Query": "windows start ssh agent",
+      "ExecutedDateTime": "2023-12-25T14:33:50.8172347+01:00"
+    },
+    {
+      "Query": "manage opti",
+      "ExecutedDateTime": "2023-12-25T14:34:10.7642163+01:00"
+    },
+    {
+      "Query": "services",
+      "ExecutedDateTime": "2023-12-25T14:34:33.801021+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T14:35:47.8424587+01:00"
+    },
+    {
+      "Query": "inte",
+      "ExecutedDateTime": "2023-12-25T14:35:58.1484923+01:00"
+    },
+    {
+      "Query": "OpenSSH Authentication Agent enable powershell",
+      "ExecutedDateTime": "2023-12-25T14:38:56.2310285+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T14:40:34.3928617+01:00"
+    },
+    {
+      "Query": "rpi imager choco",
+      "ExecutedDateTime": "2023-12-25T14:45:22.5587506+01:00"
+    },
+    {
+      "Query": "sett",
+      "ExecutedDateTime": "2023-12-25T14:47:12.3488323+01:00"
+    },
+    {
+      "Query": "set",
+      "ExecutedDateTime": "2023-12-25T14:49:04.3947183+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2023-12-25T14:50:51.5526619+01:00"
+    },
+    {
+      "Query": "bra",
+      "ExecutedDateTime": "2023-12-25T15:42:53.7982992+01:00"
+    },
+    {
+      "Query": "powertoys vs flow launcher",
+      "ExecutedDateTime": "2023-12-25T15:46:53.825181+01:00"
+    },
+    {
+      "Query": "Fluent Search",
+      "ExecutedDateTime": "2023-12-25T15:48:11.5132027+01:00"
+    },
+    {
+      "Query": "fluent",
+      "ExecutedDateTime": "2023-12-25T15:54:14.7621356+01:00"
+    },
+    {
+      "Query": "envir",
+      "ExecutedDateTime": "2023-12-25T18:04:25.3608335+01:00"
+    },
+    {
+      "Query": "google.com",
+      "ExecutedDateTime": "2023-12-25T18:04:31.6197724+01:00"
+    },
+    {
+      "Query": "set",
+      "ExecutedDateTime": "2023-12-25T18:05:26.4185232+01:00"
+    },
+    {
+      "Query": "inte",
+      "ExecutedDateTime": "2023-12-25T18:05:51.5317424+01:00"
+    },
+    {
+      "Query": "shut",
+      "ExecutedDateTime": "2023-12-25T21:35:06.3070611+01:00"
     }
   ]
 }

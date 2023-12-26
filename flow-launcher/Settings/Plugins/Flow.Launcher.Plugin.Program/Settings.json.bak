@@ -1,6 +1,12 @@
 {
-  "LastIndexTime": "2023-12-25T14:48:39.9279738+01:00",
+  "LastIndexTime": "2023-12-25T15:54:43.9128618+01:00",
   "ProgramSources": [
+    {
+      "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu",
+      "Name": "Start Menu",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\programdata\\microsoft\\windows\\start menu"
+    },
     {
       "Location": "C:\\Users\\denbl\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs",
       "Name": "Programs",

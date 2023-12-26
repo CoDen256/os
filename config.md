@@ -1,5 +1,6 @@
 ###### CHOCOLATELY
     mkdir ~\tools
+    mkdir ~\tools\android
     mkdir ~\portable
     mkdir C:\dev
     mkdir C:\rev
@@ -33,33 +34,10 @@
     ./py.exe            # install dir ~/tools/python 
     rm ./py.exe
 
-###### Update Path and link tools
-    New-Item -Path "$($env:USERPROFILE)\tools\maven\" -ItemType SymbolicLink -Value C:\ProgramData\chocolatey\lib\maven\apache-maven*
-
-    New-Item -Path "$($env:USERPROFILE)\tools\gradle\" -ItemType SymbolicLink -Value C:\ProgramData\chocolatey\lib\gradle\tools\gradle-*
-    setx GRADLE_HOME $(dir C:\ProgramData\chocolatey\lib\gradle\tools\gradle-*).FullName
-
-    pathed /append "$($env:JAVA_HOME)\bin" /user
-    pathed /append "$($env:KOTLIN_HOME)\bin" /user   
-    pathed /append "$($env:USERPROFILE)\tools\maven\bin" /user 
-    pathed /append "$($env:USERPROFILE)\tools\gradle\bin" /user
-    pathed /append "$($env:USERPROFILE)\tools\openssl\bin" /user
-    pathed /append "$($env:USERPROFILE)\tools\git\bin" /user
-    pathed /append "$($env:USERPROFILE)\tools\git\" /user 
-    pathed /append "$($env:USERPROFILE)\tools" /user
-
-    mvn -v
-    gradle -v
-    java -version
-    kotlinc -version
-    python --version
-    git --version
-
 ###### AutoHotKey    
     curl https://www.autohotkey.com/download/ahk-v2.zip -o ahk2.zip
     Expand-Archive .\ahk2.zip -DestinationPath ~\tools\ahk
-    pathed /append "$($env:USERPROFILE)\tools\ahk\" /user
-
+    
     cp win_layout_aou.ahk "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup"
     New-Item -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" -ItemType SymbolicLink -Value win_layout_aou.ahk
     rm ahk2.zip
@@ -97,7 +75,7 @@ If needed:
     Start-Process -FilePath "$($env:LOCALAPPDATA)\FlowLauncher\Flow.Launcher.exe"
 
 ###### WSL 2 Install
-    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart\
+    dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
     wsl --update
     wsl --set-default-version 2
     wsl --install -d Ubuntu-22.04
@@ -144,12 +122,99 @@ Terminal Ubuntu zsh + oh my zsh
 1. Login via Jetbrains account
 2. E.g. IntelliJ -> File -> Manage IDE Settings -> Settings Sync
 
-##### Android Studio
+##### Android Studio and toolchain
 
 1. Install SDK at ~/tools/android/sdk
+2. Install tools
 
-    pathed /append $(dir "$($env:USERPROFILE)\tools\android\sdk\build-tools\*").FullName /user
-    pathed /append "$($env:USERPROFILE)\tools\android\sdk\platform-tools" /user
+
+| Tool              | Description                                                              |
+|-------------------|--------------------------------------------------------------------------|
+| adb               | interacts with apps and emulators                                        |
+| aapt              | build tool, apk compilation                                              |
+| apktool           | (un)packs apk, smali/baksmali                                            |
+| smali/baksmali    | (.dex -> .smali(.class)) (disassembler)                                  |
+| keytool           | generate keystore with a key                                             |
+| jarsigner         | sign apk with the key                                                    |
+| tar/7z            | unpack apk                                                               |
+| apksigner         | sign apk                                                                 |
+| zipalign          | optimization                                                             |
+|                   |                                                                          |
+| dex2jar           | (.dex -> .class(.smali)) and back + dextools (disassembler)              |
+| jadx              | (.dex -> .class(.smali) -> .java) (CLI + UI) (decompiler + disassembler) |
+| FernFlower/JD-GUI | (.class -> .java) + GUI (decompiler)                                     |
+
+
+    # zipalign, appt, apksigner, dexdump under ~\tools\android\sdk\build-tools\<version>\
+    # adb under ~\tools\android\sdk\platform-tools
+    # 7z in Program Files/7-Zip + tar in PATH
+    # keytool, jarsigner is available in JAVA_HOME/bin
+
+
+    # apktool (choose latest)
+    wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/windows/apktool.bat -o ~/tools/android/apktool.bat
+    wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.1.jar -o ~/tools/android/apktool.jar
+
+
+    # smali, baksmali (choose latest)
+    wget https://bitbucket.org/JesusFreke/smali/downloads/baksmali-2.5.2.jar -o ~/tools/android/baksmali.jar
+    wget https://bitbucket.org/JesusFreke/smali/downloads/smali-2.5.2.jar -o ~/tools/android/smali.jar
+    cp ./android-tools/* ~/tools/android/
+
+
+    # dex2jar (smali, baksmali, dex2jar, jar2dex, dex-tools)
+    wget https://github.com/pxb1988/dex2jar/releases/download/v2.4/dex-tools-v2.4.zip -o dex.zip
+    Expand-Archive .\dex.zip -DestinationPath ~\tools\android\
+    mv ~\tools\android\dex-tools* ~\tools\android\dex-tools
+    rm .\dex.zip
+
+
+    # jadx 
+    wget https://github.com/skylot/jadx/releases/download/v1.4.7/jadx-1.4.7.zip -o jadx.zip
+    Expand-Archive .\jadx.zip -DestinationPath ~\tools\android\jadx
+    rm .\jadx.zip
+
+###### Update Path and link tools
+    New-Item -Path "$($env:USERPROFILE)\tools\maven\" -ItemType SymbolicLink -Value C:\ProgramData\chocolatey\lib\maven\apache-maven*
+
+    New-Item -Path "$($env:USERPROFILE)\tools\gradle\" -ItemType SymbolicLink -Value C:\ProgramData\chocolatey\lib\gradle\tools\gradle-*
+    setx GRADLE_HOME $(dir C:\ProgramData\chocolatey\lib\gradle\tools\gradle-*).FullName
+
+    pathed /append "$($env:JAVA_HOME)\bin" /user
+    pathed /append "$($env:KOTLIN_HOME)\bin" /user   
+    pathed /append "$($env:USERPROFILE)\tools\maven\bin" /user 
+    pathed /append "$($env:USERPROFILE)\tools\gradle\bin" /user
+    pathed /append "$($env:USERPROFILE)\tools\openssl\bin" /user
+    pathed /append "$($env:USERPROFILE)\tools\git\bin" /user
+    pathed /append "$($env:USERPROFILE)\tools\git\" /user 
+    pathed /append "$($env:USERPROFILE)\tools\ahk\" /user
+    pathed /append "$($env:USERPROFILE)\tools\android" /user
+    pathed /append "$($env:USERPROFILE)\tools\android\dex-tools" /user
+    pathed /append "$($env:USERPROFILE)\tools\android\dex-tools\bin" /user
+    pathed /append "$($env:USERPROFILE)\tools\android\jadx\bin" /user
+    pathed /append "$($env:USERPROFILE)\tools" /user
+
+    pathed /append $(dir "$($env:USERPROFILE)\tools\android\sdk\build-tools\*").FullName 
+    pathed /append "$($env:USERPROFILE)\tools\android\sdk\platform-tools" /user     
+    pathed /append "C:\Program Files\7-Zip" /user                                   
+
+    mvn -v
+    gradle -v
+    java -version
+    kotlinc -version
+    python --version
+    git --version
+    7z
+
+    dex-tools 
+    d2j-dex2jar
+    d2j-jar2dex
+    smali -v
+    baksmali -v
+    apktool -version
+    aapt version
+    adb --version
+    jadx --version
 
 
 ###### XODO PDF
