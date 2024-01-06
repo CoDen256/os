@@ -105,7 +105,7 @@
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 5,
-  "ActivateTimes": 510,
+  "ActivateTimes": 1014,
   "CustomPluginHotkeys": [],
   "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
@@ -208,7 +208,8 @@
         "Name": "Web Searches",
         "Version": "3.0.5",
         "ActionKeywords": [
-          "*"
+          "*",
+          "n"
         ],
         "Priority": 0,
         "Disabled": false
@@ -238,7 +239,7 @@
         "Name": "JetBrainsIDEProjects",
         "Version": "2.1.0",
         "ActionKeywords": [
-          "j"
+          "*"
         ],
         "Priority": 5,
         "Disabled": false
@@ -282,7 +283,9 @@
           "doc:",
           "*",
           "*",
-          "*"
+          "*",
+          "p",
+          "s"
         ],
         "Priority": 0,
         "Disabled": false
@@ -303,6 +306,16 @@
         "Version": "3.1.4",
         "ActionKeywords": [
           "b"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "84d9d550-80cb-4e5f-a090-e1ccf3237a40": {
+        "ID": "84d9d550-80cb-4e5f-a090-e1ccf3237a40",
+        "Name": "CurrencyPP",
+        "Version": "3.0.1",
+        "ActionKeywords": [
+          "*"
         ],
         "Priority": 0,
         "Disabled": false

@@ -7,9 +7,17 @@
       "CustomIcon": false,
       "Url": "https://www.google.com/search?q={q}",
       "Enabled": true
+    },
+    {
+      "Title": "Netflix",
+      "ActionKeyword": "n",
+      "Icon": "web_search.png",
+      "CustomIcon": false,
+      "Url": "https://www.netflix.com/",
+      "Enabled": true
     }
   ],
-  "EnableSuggestion": false,
+  "EnableSuggestion": true,
   "Suggestion": "Google",
   "BrowserPath": null,
   "OpenInNewBrowser": true

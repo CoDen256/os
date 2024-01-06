@@ -1,1208 +1,1204 @@
 {
   "Items": [
     {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-23T02:07:07.9934576+01:00"
+      "Query": "plot of valina x4 foundations",
+      "ExecutedDateTime": "2023-12-27T00:03:29.9191077+01:00"
     },
     {
-      "Query": "pm install Quick Uninstaller",
-      "ExecutedDateTime": "2023-12-23T02:08:18.430407+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-23T02:08:28.5606777+01:00"
-    },
-    {
-      "Query": "pm install Windows Startup",
-      "ExecutedDateTime": "2023-12-23T02:08:45.0316201+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-23T02:08:51.7907849+01:00"
-    },
-    {
-      "Query": "set",
-      "ExecutedDateTime": "2023-12-23T02:10:48.5262913+01:00"
-    },
-    {
-      "Query": "\u003E shell:startup",
-      "ExecutedDateTime": "2023-12-23T02:11:43.7268915+01:00"
-    },
-    {
-      "Query": "\u003E s",
-      "ExecutedDateTime": "2023-12-23T02:12:00.4246554+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-23T02:12:22.6524143+01:00"
-    },
-    {
-      "Query": "shut",
-      "ExecutedDateTime": "2023-12-23T02:15:36.4806793+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-23T14:52:42.7006938+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-23T14:53:00.4511127+01:00"
-    },
-    {
-      "Query": "pm install Explorer",
-      "ExecutedDateTime": "2023-12-23T14:53:15.4977653+01:00"
-    },
-    {
-      "Query": "set",
-      "ExecutedDateTime": "2023-12-23T14:53:26.5445866+01:00"
-    },
-    {
-      "Query": "pm install Window Services",
-      "ExecutedDateTime": "2023-12-23T14:53:57.8571938+01:00"
-    },
-    {
-      "Query": "settin",
-      "ExecutedDateTime": "2023-12-23T14:54:03.463972+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-23T14:54:34.6484735+01:00"
-    },
-    {
-      "Query": "settin",
-      "ExecutedDateTime": "2023-12-23T14:57:47.3061305+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-23T14:59:28.9521452+01:00"
-    },
-    {
-      "Query": "seti",
-      "ExecutedDateTime": "2023-12-23T15:00:02.3304522+01:00"
-    },
-    {
-      "Query": "term",
-      "ExecutedDateTime": "2023-12-23T15:00:28.7709472+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-23T15:03:36.4664458+01:00"
-    },
-    {
-      "Query": "setti",
-      "ExecutedDateTime": "2023-12-23T15:03:47.2012481+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-23T15:23:56.0828847+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-23T15:25:32.2824245+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-23T15:31:36.3092687+01:00"
-    },
-    {
-      "Query": "set",
-      "ExecutedDateTime": "2023-12-23T15:32:12.5255274+01:00"
-    },
-    {
-      "Query": "term",
-      "ExecutedDateTime": "2023-12-23T15:33:50.3982773+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-23T15:34:30.3874629+01:00"
-    },
-    {
-      "Query": "seti",
-      "ExecutedDateTime": "2023-12-23T15:35:50.7449557+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-24T03:24:45.8068426+01:00"
-    },
-    {
-      "Query": "setti",
-      "ExecutedDateTime": "2023-12-24T03:30:20.9378377+01:00"
-    },
-    {
-      "Query": "set",
-      "ExecutedDateTime": "2023-12-24T03:31:08.2117247+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-24T03:43:10.221797+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-24T03:52:55.05654+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-24T03:53:12.4997044+01:00"
-    },
-    {
-      "Query": "\u003E",
-      "ExecutedDateTime": "2023-12-24T04:06:02.1409086+01:00"
-    },
-    {
-      "Query": "run",
-      "ExecutedDateTime": "2023-12-24T04:12:08.3539629+01:00"
-    },
-    {
-      "Query": "SHUT",
-      "ExecutedDateTime": "2023-12-24T04:12:25.9573714+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-24T14:09:25.1237042+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-24T14:10:22.2906151+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-24T14:13:19.1485521+01:00"
-    },
-    {
-      "Query": "brave",
-      "ExecutedDateTime": "2023-12-24T14:14:07.6684706+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-24T14:14:54.3951511+01:00"
-    },
-    {
-      "Query": "Windows upd",
-      "ExecutedDateTime": "2023-12-24T14:21:11.1198671+01:00"
-    },
-    {
-      "Query": "t",
-      "ExecutedDateTime": "2023-12-24T14:36:02.8861361+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-24T14:40:03.5913367+01:00"
-    },
-    {
-      "Query": "setti",
-      "ExecutedDateTime": "2023-12-24T15:03:57.4683719+01:00"
-    },
-    {
-      "Query": "set",
-      "ExecutedDateTime": "2023-12-24T15:04:56.7789271+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-24T15:05:21.2643692+01:00"
-    },
-    {
-      "Query": "set",
-      "ExecutedDateTime": "2023-12-24T15:07:45.0789445+01:00"
-    },
-    {
-      "Query": "pm install Browser Bookmarks",
-      "ExecutedDateTime": "2023-12-24T15:07:57.6678032+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-24T15:19:34.7931258+01:00"
-    },
-    {
-      "Query": "wt u",
-      "ExecutedDateTime": "2023-12-24T15:21:55.086876+01:00"
-    },
-    {
-      "Query": "set",
-      "ExecutedDateTime": "2023-12-24T16:36:00.4824179+01:00"
-    },
-    {
-      "Query": "visua",
-      "ExecutedDateTime": "2023-12-24T16:36:17.2694597+01:00"
-    },
-    {
-      "Query": "inte",
-      "ExecutedDateTime": "2023-12-24T16:39:20.808159+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-24T16:40:07.2643415+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-24T16:41:47.0559627+01:00"
-    },
-    {
-      "Query": "sublim",
-      "ExecutedDateTime": "2023-12-24T16:42:51.3378929+01:00"
-    },
-    {
-      "Query": "flee",
-      "ExecutedDateTime": "2023-12-24T16:43:27.517767+01:00"
-    },
-    {
-      "Query": "term",
-      "ExecutedDateTime": "2023-12-24T16:47:57.1193763+01:00"
-    },
-    {
-      "Query": "brave override new tab action",
-      "ExecutedDateTime": "2023-12-24T16:48:12.1346201+01:00"
-    },
-    {
-      "Query": "bra",
-      "ExecutedDateTime": "2023-12-24T16:55:53.3041923+01:00"
-    },
-    {
-      "Query": "fleet plugins",
-      "ExecutedDateTime": "2023-12-24T16:56:48.9845814+01:00"
-    },
-    {
-      "Query": "intellij idea plugins",
-      "ExecutedDateTime": "2023-12-24T16:57:04.6734906+01:00"
-    },
-    {
-      "Query": "website that redirects constantly",
-      "ExecutedDateTime": "2023-12-24T16:57:28.7036575+01:00"
-    },
-    {
-      "Query": "intellij plugins",
-      "ExecutedDateTime": "2023-12-24T16:58:25.9918638+01:00"
-    },
-    {
-      "Query": "fleet plugins markplac",
-      "ExecutedDateTime": "2023-12-24T17:01:13.1435845+01:00"
-    },
-    {
-      "Query": "sublime git visual",
-      "ExecutedDateTime": "2023-12-24T17:04:33.3947358+01:00"
-    },
-    {
-      "Query": "git merge choco",
-      "ExecutedDateTime": "2023-12-24T17:05:22.0989283+01:00"
-    },
-    {
-      "Query": "website that redirects",
-      "ExecutedDateTime": "2023-12-24T17:05:58.3702937+01:00"
-    },
-    {
-      "Query": "xodo microsoft store",
-      "ExecutedDateTime": "2023-12-24T17:08:20.3346154+01:00"
-    },
-    {
-      "Query": "markdown syntax for links",
-      "ExecutedDateTime": "2023-12-24T17:09:58.9884258+01:00"
-    },
-    {
-      "Query": "merge",
-      "ExecutedDateTime": "2023-12-24T17:10:43.5418546+01:00"
-    },
-    {
-      "Query": "un sub",
-      "ExecutedDateTime": "2023-12-24T17:12:10.0508918+01:00"
-    },
-    {
-      "Query": "flee",
-      "ExecutedDateTime": "2023-12-24T17:15:22.7293184+01:00"
-    },
-    {
-      "Query": "vs code git better view",
-      "ExecutedDateTime": "2023-12-24T17:16:48.484215+01:00"
-    },
-    {
-      "Query": "vs code remove git panels",
-      "ExecutedDateTime": "2023-12-24T17:17:42.1547109+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-24T17:24:05.8104361+01:00"
-    },
-    {
-      "Query": "vs code theme",
-      "ExecutedDateTime": "2023-12-24T17:36:36.5697042+01:00"
-    },
-    {
-      "Query": "atom",
-      "ExecutedDateTime": "2023-12-24T17:38:14.2631309+01:00"
-    },
-    {
-      "Query": "vs code pertain file if not modified",
-      "ExecutedDateTime": "2023-12-24T17:43:09.9726474+01:00"
-    },
-    {
-      "Query": "vs code key mappings change",
-      "ExecutedDateTime": "2023-12-24T17:54:07.1007742+01:00"
-    },
-    {
-      "Query": "vs code squash commits",
-      "ExecutedDateTime": "2023-12-24T17:58:22.1216133+01:00"
-    },
-    {
-      "Query": "vs code replace you with name",
-      "ExecutedDateTime": "2023-12-24T17:59:42.0507735+01:00"
-    },
-    {
-      "Query": "tool",
-      "ExecutedDateTime": "2023-12-24T18:00:14.7444888+01:00"
-    },
-    {
-      "Query": "un sub",
-      "ExecutedDateTime": "2023-12-24T18:00:29.2622835+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-24T18:00:35.6569469+01:00"
-    },
-    {
-      "Query": "github.com",
-      "ExecutedDateTime": "2023-12-24T18:05:18.3532312+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-24T18:05:24.1829178+01:00"
-    },
-    {
-      "Query": "pm install URL",
-      "ExecutedDateTime": "2023-12-24T18:05:44.8825913+01:00"
-    },
-    {
-      "Query": "github.com",
-      "ExecutedDateTime": "2023-12-24T18:06:05.4215067+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-24T18:09:21.4487526+01:00"
-    },
-    {
-      "Query": "vis",
-      "ExecutedDateTime": "2023-12-24T18:13:36.6494783+01:00"
-    },
-    {
-      "Query": "data",
-      "ExecutedDateTime": "2023-12-24T18:15:09.8762038+01:00"
-    },
-    {
-      "Query": "pyc",
-      "ExecutedDateTime": "2023-12-24T18:16:24.3829652+01:00"
-    },
-    {
-      "Query": "java download windows",
-      "ExecutedDateTime": "2023-12-24T18:17:38.9903508+01:00"
-    },
-    {
-      "Query": "windows unzip",
-      "ExecutedDateTime": "2023-12-24T18:21:26.4374691+01:00"
-    },
-    {
-      "Query": "maven windows install",
-      "ExecutedDateTime": "2023-12-24T18:27:08.8086342+01:00"
-    },
-    {
-      "Query": "maven latest download",
-      "ExecutedDateTime": "2023-12-24T18:27:37.098402+01:00"
-    },
-    {
-      "Query": "maven github",
-      "ExecutedDateTime": "2023-12-24T18:29:45.9368314+01:00"
-    },
-    {
-      "Query": "choco specify install path",
-      "ExecutedDateTime": "2023-12-24T18:30:21.9685759+01:00"
-    },
-    {
-      "Query": "un gi",
-      "ExecutedDateTime": "2023-12-24T18:31:45.1122407+01:00"
-    },
-    {
-      "Query": "choco git install params",
-      "ExecutedDateTime": "2023-12-24T18:33:16.79913+01:00"
-    },
-    {
-      "Query": "git --install-arguments",
-      "ExecutedDateTime": "2023-12-24T18:34:48.4026144+01:00"
-    },
-    {
-      "Query": "choco packages config",
-      "ExecutedDateTime": "2023-12-24T18:36:04.9186042+01:00"
-    },
-    {
-      "Query": "choco installArguments",
-      "ExecutedDateTime": "2023-12-24T18:37:55.0637358+01:00"
-    },
-    {
-      "Query": "git latest version",
-      "ExecutedDateTime": "2023-12-24T18:40:31.2339848+01:00"
-    },
-    {
-      "Query": "choco python",
-      "ExecutedDateTime": "2023-12-24T18:41:35.9603505+01:00"
-    },
-    {
-      "Query": "git choco package parameters",
-      "ExecutedDateTime": "2023-12-24T18:43:28.8469135+01:00"
-    },
-    {
-      "Query": "choco install openssl",
-      "ExecutedDateTime": "2023-12-24T18:58:50.427689+01:00"
-    },
-    {
-      "Query": "choco Install dir option",
-      "ExecutedDateTime": "2023-12-24T19:02:33.1330824+01:00"
-    },
-    {
-      "Query": "choco jav",
-      "ExecutedDateTime": "2023-12-24T19:20:48.1643716+01:00"
-    },
-    {
-      "Query": "maven choco",
-      "ExecutedDateTime": "2023-12-24T19:23:42.7682432+01:00"
-    },
-    {
-      "Query": "choco install maven folder",
-      "ExecutedDateTime": "2023-12-24T19:28:39.6247293+01:00"
-    },
-    {
-      "Query": "maven silent install",
-      "ExecutedDateTime": "2023-12-24T19:30:10.9589232+01:00"
-    },
-    {
-      "Query": "install java windows and add to path",
-      "ExecutedDateTime": "2023-12-24T19:31:29.4840488+01:00"
-    },
-    {
-      "Query": "choco openssl",
-      "ExecutedDateTime": "2023-12-24T19:33:52.5580269+01:00"
-    },
-    {
-      "Query": "windows install openssl",
-      "ExecutedDateTime": "2023-12-24T19:35:29.0127129+01:00"
-    },
-    {
-      "Query": "windows install openssh",
-      "ExecutedDateTime": "2023-12-24T19:35:40.9236222+01:00"
-    },
-    {
-      "Query": "windows ssh keygen",
-      "ExecutedDateTime": "2023-12-24T19:36:47.2978163+01:00"
-    },
-    {
-      "Query": "windows java path update programmatically",
-      "ExecutedDateTime": "2023-12-24T19:38:50.7791376+01:00"
-    },
-    {
-      "Query": "windows ser JAVA_HOME programmatically",
-      "ExecutedDateTime": "2023-12-24T19:39:58.9573303+01:00"
-    },
-    {
-      "Query": "visua",
-      "ExecutedDateTime": "2023-12-24T19:40:03.6688659+01:00"
-    },
-    {
-      "Query": "envi",
-      "ExecutedDateTime": "2023-12-24T19:41:25.7965203+01:00"
-    },
-    {
-      "Query": "edit en",
-      "ExecutedDateTime": "2023-12-24T19:41:29.7169727+01:00"
-    },
-    {
-      "Query": "setx /M PATH for user",
-      "ExecutedDateTime": "2023-12-24T19:41:56.8010044+01:00"
-    },
-    {
-      "Query": "setx /M",
-      "ExecutedDateTime": "2023-12-24T19:42:09.7306879+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-24T19:43:34.592973+01:00"
-    },
-    {
-      "Query": "windows home directory env variable",
-      "ExecutedDateTime": "2023-12-24T19:44:02.7572576+01:00"
-    },
-    {
-      "Query": "envir",
-      "ExecutedDateTime": "2023-12-24T19:44:37.2348641+01:00"
-    },
-    {
-      "Query": "env",
-      "ExecutedDateTime": "2023-12-24T19:44:54.7081199+01:00"
-    },
-    {
-      "Query": "edit evn",
-      "ExecutedDateTime": "2023-12-24T19:46:25.5377475+01:00"
-    },
-    {
-      "Query": "java_home system or user",
-      "ExecutedDateTime": "2023-12-24T19:46:49.7729524+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-24T19:47:07.9238626+01:00"
-    },
-    {
-      "Query": "envir",
-      "ExecutedDateTime": "2023-12-24T19:47:17.4222444+01:00"
-    },
-    {
-      "Query": "powershell echo user environmental variable",
-      "ExecutedDateTime": "2023-12-24T19:47:44.5517993+01:00"
-    },
-    {
-      "Query": "symlink windowqs",
-      "ExecutedDateTime": "2023-12-24T19:49:17.0867838+01:00"
-    },
-    {
-      "Query": "New-Item -ItemType",
-      "ExecutedDateTime": "2023-12-24T19:49:39.2453313+01:00"
-    },
-    {
-      "Query": "windows update path setx",
-      "ExecutedDateTime": "2023-12-24T19:52:29.7710796+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-24T19:53:06.6452331+01:00"
-    },
-    {
-      "Query": "print PATH foor user powershell",
-      "ExecutedDateTime": "2023-12-24T19:53:32.3632432+01:00"
-    },
-    {
-      "Query": "envir",
-      "ExecutedDateTime": "2023-12-24T19:54:16.6347668+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-24T20:01:32.3952696+01:00"
-    },
-    {
-      "Query": "processor types",
-      "ExecutedDateTime": "2023-12-25T12:12:25.1477348+01:00"
-    },
-    {
-      "Query": "processor types arm amd intel",
-      "ExecutedDateTime": "2023-12-25T12:13:20.1688439+01:00"
-    },
-    {
-      "Query": "rufus download",
-      "ExecutedDateTime": "2023-12-25T12:13:34.7629529+01:00"
-    },
-    {
-      "Query": "ahkv2 download",
-      "ExecutedDateTime": "2023-12-25T12:13:56.4218075+01:00"
-    },
-    {
-      "Query": "kali linux download",
-      "ExecutedDateTime": "2023-12-25T12:14:27.6802989+01:00"
-    },
-    {
-      "Query": "kali installer amd",
-      "ExecutedDateTime": "2023-12-25T12:14:56.6282369+01:00"
-    },
-    {
-      "Query": "j setup",
-      "ExecutedDateTime": "2023-12-25T12:15:46.9028188+01:00"
-    },
-    {
-      "Query": "visua",
-      "ExecutedDateTime": "2023-12-25T12:15:55.4644428+01:00"
-    },
-    {
-      "Query": "edit envi",
-      "ExecutedDateTime": "2023-12-25T12:16:07.6213183+01:00"
-    },
-    {
-      "Query": "term",
-      "ExecutedDateTime": "2023-12-25T12:16:08.8597961+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-25T12:16:28.0636778+01:00"
-    },
-    {
-      "Query": "arch of os",
-      "ExecutedDateTime": "2023-12-25T12:17:30.5795568+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T12:21:31.1548478+01:00"
-    },
-    {
-      "Query": "path change limit of 1024",
-      "ExecutedDateTime": "2023-12-25T12:22:14.9543734+01:00"
-    },
-    {
-      "Query": "redit",
-      "ExecutedDateTime": "2023-12-25T12:22:39.286384+01:00"
-    },
-    {
-      "Query": "python launches in microsoft stroe instead of the path",
-      "ExecutedDateTime": "2023-12-25T12:25:34.105983+01:00"
-    },
-    {
-      "Query": "settings",
-      "ExecutedDateTime": "2023-12-25T12:25:51.233725+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T12:27:03.1891691+01:00"
-    },
-    {
-      "Query": "edit envi",
-      "ExecutedDateTime": "2023-12-25T12:27:25.903435+01:00"
-    },
-    {
-      "Query": "windows remove unused path",
-      "ExecutedDateTime": "2023-12-25T12:28:01.1320806+01:00"
-    },
-    {
-      "Query": "system env vars reappear in windows",
-      "ExecutedDateTime": "2023-12-25T12:28:46.7898814+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-25T12:30:58.6383625+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T12:32:46.3392103+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-25T12:33:05.5402289+01:00"
-    },
-    {
-      "Query": "gtools choco",
-      "ExecutedDateTime": "2023-12-25T12:36:10.2579597+01:00"
-    },
-    {
-      "Query": "gt ools",
-      "ExecutedDateTime": "2023-12-25T12:36:18.5672989+01:00"
-    },
-    {
-      "Query": "pathed",
-      "ExecutedDateTime": "2023-12-25T12:36:33.4060778+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T12:42:17.6991803+01:00"
-    },
-    {
-      "Query": "windows print path variable",
-      "ExecutedDateTime": "2023-12-25T12:42:34.4804044+01:00"
-    },
-    {
-      "Query": "windows invoke exe",
-      "ExecutedDateTime": "2023-12-25T12:44:22.8095822+01:00"
-    },
-    {
-      "Query": "enable OpenSSH windows",
-      "ExecutedDateTime": "2023-12-25T12:46:47.609073+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-25T12:50:44.208518+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T12:50:53.9488782+01:00"
-    },
-    {
-      "Query": "edit en",
-      "ExecutedDateTime": "2023-12-25T12:53:34.4238772+01:00"
-    },
-    {
-      "Query": "pathed create environment gtools",
-      "ExecutedDateTime": "2023-12-25T12:54:33.8239662+01:00"
-    },
-    {
-      "Query": "te",
-      "ExecutedDateTime": "2023-12-25T12:56:28.2884938+01:00"
-    },
-    {
-      "Query": "edit en",
-      "ExecutedDateTime": "2023-12-25T12:57:51.5927825+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T12:58:19.9681605+01:00"
-    },
-    {
-      "Query": "kali gpt or mbr",
-      "ExecutedDateTime": "2023-12-25T12:58:40.0322095+01:00"
-    },
-    {
-      "Query": "kali fat32 or ntfs",
-      "ExecutedDateTime": "2023-12-25T12:59:03.5855138+01:00"
-    },
-    {
-      "Query": "edit",
-      "ExecutedDateTime": "2023-12-25T13:00:21.7127671+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T13:06:52.5130706+01:00"
-    },
-    {
-      "Query": "visua",
-      "ExecutedDateTime": "2023-12-25T13:08:05.5046367+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T13:08:21.0578811+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-25T13:09:47.2192984+01:00"
-    },
-    {
-      "Query": "edit envi",
-      "ExecutedDateTime": "2023-12-25T13:11:42.1235757+01:00"
-    },
-    {
-      "Query": "maven home",
-      "ExecutedDateTime": "2023-12-25T13:15:25.2385971+01:00"
-    },
-    {
-      "Query": "GRADLE_HOME",
-      "ExecutedDateTime": "2023-12-25T13:15:42.3619545+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T13:17:56.7565164+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-25T13:18:59.040767+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T13:19:24.0284632+01:00"
-    },
-    {
-      "Query": "visua",
-      "ExecutedDateTime": "2023-12-25T13:19:27.4626047+01:00"
-    },
-    {
-      "Query": "vi",
-      "ExecutedDateTime": "2023-12-25T13:19:47.1598309+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-25T13:20:12.7377771+01:00"
-    },
-    {
-      "Query": "visa",
-      "ExecutedDateTime": "2023-12-25T13:21:06.4666577+01:00"
-    },
-    {
-      "Query": "visu",
-      "ExecutedDateTime": "2023-12-25T13:21:50.4152103+01:00"
-    },
-    {
-      "Query": "un aut",
-      "ExecutedDateTime": "2023-12-25T13:23:38.7517583+01:00"
-    },
-    {
-      "Query": "ahk v2",
-      "ExecutedDateTime": "2023-12-25T13:24:42.5026035+01:00"
-    },
-    {
-      "Query": "autohotkey.ahk cannot be found",
-      "ExecutedDateTime": "2023-12-25T13:28:39.1908761+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-25T13:29:21.052182+01:00"
-    },
-    {
-      "Query": "te",
-      "ExecutedDateTime": "2023-12-25T13:29:38.9811749+01:00"
-    },
-    {
-      "Query": "run",
-      "ExecutedDateTime": "2023-12-25T13:30:22.1851531+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T13:34:07.5774871+01:00"
-    },
-    {
-      "Query": "python ModuleNotFoundError: No module named \u0027encodings\u0027",
-      "ExecutedDateTime": "2023-12-25T13:34:21.6430246+01:00"
-    },
-    {
-      "Query": "python environment variables",
-      "ExecutedDateTime": "2023-12-25T13:34:53.8481436+01:00"
-    },
-    {
-      "Query": "PYTHON_PATH",
-      "ExecutedDateTime": "2023-12-25T13:35:42.2866319+01:00"
-    },
-    {
-      "Query": "PYTHONHOME",
-      "ExecutedDateTime": "2023-12-25T13:36:07.4759631+01:00"
-    },
-    {
-      "Query": "settin",
-      "ExecutedDateTime": "2023-12-25T13:38:43.7490389+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-25T13:38:54.7360072+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T13:39:03.0820131+01:00"
-    },
-    {
-      "Query": "python321 installdirectory",
-      "ExecutedDateTime": "2023-12-25T13:39:30.8625642+01:00"
-    },
-    {
-      "Query": "python312",
-      "ExecutedDateTime": "2023-12-25T13:40:15.3085098+01:00"
-    },
-    {
-      "Query": "autohotkey python no lib folder",
-      "ExecutedDateTime": "2023-12-25T13:40:48.1875997+01:00"
-    },
-    {
-      "Query": "bing wallpaper choco",
-      "ExecutedDateTime": "2023-12-25T13:46:03.6277903+01:00"
-    },
-    {
-      "Query": "bing wallpaper install",
-      "ExecutedDateTime": "2023-12-25T13:46:13.6152665+01:00"
-    },
-    {
-      "Query": "precompile standard library python",
-      "ExecutedDateTime": "2023-12-25T13:49:43.2370512+01:00"
-    },
-    {
-      "Query": "envi",
-      "ExecutedDateTime": "2023-12-25T13:51:05.0136954+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T13:51:37.3908928+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-25T13:59:03.2504737+01:00"
-    },
-    {
-      "Query": "kotlin download latest",
-      "ExecutedDateTime": "2023-12-25T13:59:47.4820135+01:00"
-    },
-    {
-      "Query": "choco kotlin",
-      "ExecutedDateTime": "2023-12-25T14:01:04.395532+01:00"
-    },
-    {
-      "Query": "KOTLIN_HOME",
-      "ExecutedDateTime": "2023-12-25T14:02:23.498865+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T14:07:50.7907212+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-25T14:09:12.7409135+01:00"
-    },
-    {
-      "Query": "tool",
-      "ExecutedDateTime": "2023-12-25T14:09:35.1312914+01:00"
-    },
-    {
-      "Query": "andro",
-      "ExecutedDateTime": "2023-12-25T14:09:41.7636878+01:00"
-    },
-    {
-      "Query": "android emulator ram",
-      "ExecutedDateTime": "2023-12-25T14:12:23.1784517+01:00"
-    },
-    {
-      "Query": "haxm how much",
-      "ExecutedDateTime": "2023-12-25T14:12:43.9839476+01:00"
-    },
-    {
-      "Query": "rufus download",
-      "ExecutedDateTime": "2023-12-25T14:15:43.9292331+01:00"
-    },
-    {
-      "Query": "features",
-      "ExecutedDateTime": "2023-12-25T14:18:27.1255709+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T14:25:57.131391+01:00"
-    },
-    {
-      "Query": "j",
-      "ExecutedDateTime": "2023-12-25T14:28:36.7233167+01:00"
-    },
-    {
-      "Query": "intellij use ssh",
-      "ExecutedDateTime": "2023-12-25T14:30:58.7213853+01:00"
-    },
-    {
-      "Query": "intellij use ssh  git",
-      "ExecutedDateTime": "2023-12-25T14:31:02.243297+01:00"
-    },
-    {
-      "Query": "check if ssh-agent running",
-      "ExecutedDateTime": "2023-12-25T14:31:38.6165059+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T14:31:48.2544927+01:00"
-    },
-    {
-      "Query": "t",
-      "ExecutedDateTime": "2023-12-25T14:32:34.397832+01:00"
-    },
-    {
-      "Query": "edit",
-      "ExecutedDateTime": "2023-12-25T14:32:42.3803352+01:00"
-    },
-    {
-      "Query": "windows where ssh is located",
-      "ExecutedDateTime": "2023-12-25T14:32:50.5354023+01:00"
-    },
-    {
-      "Query": "edit env",
-      "ExecutedDateTime": "2023-12-25T14:33:20.3941999+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T14:33:34.8917552+01:00"
-    },
-    {
-      "Query": "windows start ssh agent",
-      "ExecutedDateTime": "2023-12-25T14:33:50.8172347+01:00"
-    },
-    {
-      "Query": "manage opti",
-      "ExecutedDateTime": "2023-12-25T14:34:10.7642163+01:00"
-    },
-    {
-      "Query": "services",
-      "ExecutedDateTime": "2023-12-25T14:34:33.801021+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T14:35:47.8424587+01:00"
-    },
-    {
-      "Query": "inte",
-      "ExecutedDateTime": "2023-12-25T14:35:58.1484923+01:00"
-    },
-    {
-      "Query": "OpenSSH Authentication Agent enable powershell",
-      "ExecutedDateTime": "2023-12-25T14:38:56.2310285+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T14:40:34.3928617+01:00"
-    },
-    {
-      "Query": "rpi imager choco",
-      "ExecutedDateTime": "2023-12-25T14:45:22.5587506+01:00"
-    },
-    {
-      "Query": "sett",
-      "ExecutedDateTime": "2023-12-25T14:47:12.3488323+01:00"
-    },
-    {
-      "Query": "set",
-      "ExecutedDateTime": "2023-12-25T14:49:04.3947183+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-25T14:50:51.5526619+01:00"
-    },
-    {
-      "Query": "bra",
-      "ExecutedDateTime": "2023-12-25T15:42:53.7982992+01:00"
-    },
-    {
-      "Query": "powertoys vs flow launcher",
-      "ExecutedDateTime": "2023-12-25T15:46:53.825181+01:00"
-    },
-    {
-      "Query": "Fluent Search",
-      "ExecutedDateTime": "2023-12-25T15:48:11.5132027+01:00"
-    },
-    {
-      "Query": "fluent",
-      "ExecutedDateTime": "2023-12-25T15:54:14.7621356+01:00"
-    },
-    {
-      "Query": "envir",
-      "ExecutedDateTime": "2023-12-25T18:04:25.3608335+01:00"
-    },
-    {
-      "Query": "google.com",
-      "ExecutedDateTime": "2023-12-25T18:04:31.6197724+01:00"
-    },
-    {
-      "Query": "set",
-      "ExecutedDateTime": "2023-12-25T18:05:26.4185232+01:00"
-    },
-    {
-      "Query": "inte",
-      "ExecutedDateTime": "2023-12-25T18:05:51.5317424+01:00"
-    },
-    {
-      "Query": "shut",
-      "ExecutedDateTime": "2023-12-25T21:35:06.3070611+01:00"
-    },
-    {
-      "Query": "bra",
-      "ExecutedDateTime": "2023-12-26T14:40:31.101695+01:00"
-    },
-    {
-      "Query": "fluetn search linux",
-      "ExecutedDateTime": "2023-12-26T14:41:29.7654336+01:00"
-    },
-    {
-      "Query": "visua",
-      "ExecutedDateTime": "2023-12-26T14:42:15.0369877+01:00"
-    },
-    {
-      "Query": "ob",
-      "ExecutedDateTime": "2023-12-26T14:43:20.9194886+01:00"
-    },
-    {
-      "Query": "OneDr",
-      "ExecutedDateTime": "2023-12-26T14:43:39.998387+01:00"
-    },
-    {
-      "Query": "google drive",
-      "ExecutedDateTime": "2023-12-26T14:43:53.508981+01:00"
-    },
-    {
-      "Query": "obisidian create remote vault",
-      "ExecutedDateTime": "2023-12-26T14:48:33.8838141+01:00"
-    },
-    {
-      "Query": "obsi",
-      "ExecutedDateTime": "2023-12-26T14:52:55.609244+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-26T15:01:08.3398523+01:00"
-    },
-    {
-      "Query": "unzip windows command line",
-      "ExecutedDateTime": "2023-12-26T15:01:24.7024597+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-26T15:05:34.8964539+01:00"
-    },
-    {
-      "Query": "apkt ool download",
-      "ExecutedDateTime": "2023-12-26T15:09:42.2925184+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-26T15:13:59.1762026+01:00"
-    },
-    {
-      "Query": "smali bat",
-      "ExecutedDateTime": "2023-12-26T15:16:20.5207049+01:00"
-    },
-    {
-      "Query": "write bat that executes jar with options",
-      "ExecutedDateTime": "2023-12-26T15:16:57.2999923+01:00"
-    },
-    {
-      "Query": "markdown table",
-      "ExecutedDateTime": "2023-12-26T15:22:41.4188514+01:00"
-    },
-    {
-      "Query": "aapt android",
-      "ExecutedDateTime": "2023-12-26T15:26:02.9233203+01:00"
-    },
-    {
-      "Query": "apksigner",
-      "ExecutedDateTime": "2023-12-26T15:29:32.899245+01:00"
-    },
-    {
-      "Query": "zipalign",
-      "ExecutedDateTime": "2023-12-26T15:29:45.5278342+01:00"
-    },
-    {
-      "Query": "JD-GUI",
-      "ExecutedDateTime": "2023-12-26T15:31:40.0394221+01:00"
-    },
-    {
-      "Query": "dex2jar",
-      "ExecutedDateTime": "2023-12-26T15:32:18.5608478+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-26T15:41:39.8313324+01:00"
-    },
-    {
-      "Query": "jadx",
-      "ExecutedDateTime": "2023-12-26T15:47:19.6162424+01:00"
-    },
-    {
-      "Query": "JD-GUI vs fernflower",
-      "ExecutedDateTime": "2023-12-26T15:50:43.8925963+01:00"
-    },
-    {
-      "Query": "ter",
-      "ExecutedDateTime": "2023-12-26T16:01:11.8484066+01:00"
+      "Query": "steam when can i refund the game",
+      "ExecutedDateTime": "2023-12-27T00:07:46.3232937+01:00"
     },
     {
       "Query": "stea",
-      "ExecutedDateTime": "2023-12-26T16:04:39.2600304+01:00"
+      "ExecutedDateTime": "2023-12-27T17:31:33.5076834+01:00"
     },
     {
-      "Query": "noti",
-      "ExecutedDateTime": "2023-12-26T16:08:59.9972788+01:00"
+      "Query": "brave",
+      "ExecutedDateTime": "2023-12-27T17:33:46.6805553+01:00"
     },
     {
-      "Query": "solar putty v4 download",
-      "ExecutedDateTime": "2023-12-26T16:15:12.7485096+01:00"
+      "Query": "stea",
+      "ExecutedDateTime": "2023-12-27T18:07:34.6481295+01:00"
     },
     {
-      "Query": "reddit pretiest ftp client",
-      "ExecutedDateTime": "2023-12-26T16:16:28.8914279+01:00"
+      "Query": "resta",
+      "ExecutedDateTime": "2023-12-27T18:15:16.579568+01:00"
     },
     {
-      "Query": "CuteFTP",
-      "ExecutedDateTime": "2023-12-26T16:17:07.383508+01:00"
+      "Query": "br",
+      "ExecutedDateTime": "2023-12-27T18:16:45.5106514+01:00"
     },
     {
-      "Query": "mobaxterm",
-      "ExecutedDateTime": "2023-12-26T16:18:25.8500801+01:00"
+      "Query": "measure router traffic",
+      "ExecutedDateTime": "2023-12-27T18:17:55.4397269+01:00"
+    },
+    {
+      "Query": "stea",
+      "ExecutedDateTime": "2023-12-27T18:20:30.7838171+01:00"
+    },
+    {
+      "Query": "moba",
+      "ExecutedDateTime": "2023-12-27T18:59:26.1910478+01:00"
+    },
+    {
+      "Query": "inte",
+      "ExecutedDateTime": "2023-12-27T18:59:35.7610871+01:00"
+    },
+    {
+      "Query": "bra",
+      "ExecutedDateTime": "2023-12-27T19:49:10.697859+01:00"
+    },
+    {
+      "Query": "stea",
+      "ExecutedDateTime": "2023-12-27T19:50:30.8737758+01:00"
+    },
+    {
+      "Query": "term",
+      "ExecutedDateTime": "2023-12-28T00:34:41.7681083+01:00"
+    },
+    {
+      "Query": "task ma",
+      "ExecutedDateTime": "2023-12-29T13:17:57.8058003+01:00"
+    },
+    {
+      "Query": "shu",
+      "ExecutedDateTime": "2023-12-29T13:18:51.4992703+01:00"
+    },
+    {
+      "Query": "rpi",
+      "ExecutedDateTime": "2023-12-29T15:06:46.0351329+01:00"
+    },
+    {
+      "Query": "un ras",
+      "ExecutedDateTime": "2023-12-29T15:07:05.2611433+01:00"
     },
     {
       "Query": "ter",
-      "ExecutedDateTime": "2023-12-26T16:20:37.464983+01:00"
+      "ExecutedDateTime": "2023-12-29T15:07:09.1778742+01:00"
     },
     {
-      "Query": "pc microsd reader",
-      "ExecutedDateTime": "2023-12-26T16:22:21.6520225+01:00"
+      "Query": "bra",
+      "ExecutedDateTime": "2023-12-29T15:07:12.61276+01:00"
     },
     {
-      "Query": "pastebin",
-      "ExecutedDateTime": "2023-12-26T16:37:10.8310007+01:00"
+      "Query": "stea",
+      "ExecutedDateTime": "2023-12-29T15:07:23.3256475+01:00"
     },
     {
-      "Query": "python shell with directiry",
-      "ExecutedDateTime": "2023-12-26T16:43:48.8782035+01:00"
+      "Query": "rpi imager",
+      "ExecutedDateTime": "2023-12-29T15:08:19.6990555+01:00"
+    },
+    {
+      "Query": "test sound and micro",
+      "ExecutedDateTime": "2023-12-29T15:11:18.0025517+01:00"
+    },
+    {
+      "Query": "sound",
+      "ExecutedDateTime": "2023-12-29T15:11:24.8688243+01:00"
+    },
+    {
+      "Query": "amazon",
+      "ExecutedDateTime": "2023-12-29T15:12:02.9855224+01:00"
+    },
+    {
+      "Query": "speedtest.net",
+      "ExecutedDateTime": "2023-12-29T15:14:44.1956511+01:00"
+    },
+    {
+      "Query": "ASUS Prime B760M-A D4 manual",
+      "ExecutedDateTime": "2023-12-29T15:24:25.2537918+01:00"
+    },
+    {
+      "Query": "ASUS Prime H610M-K D4 manual",
+      "ExecutedDateTime": "2023-12-29T15:27:31.0379666+01:00"
+    },
+    {
+      "Query": "ste",
+      "ExecutedDateTime": "2023-12-29T18:01:42.4402471+01:00"
+    },
+    {
+      "Query": "brave",
+      "ExecutedDateTime": "2023-12-30T21:42:34.5231951+01:00"
+    },
+    {
+      "Query": "youtube.com",
+      "ExecutedDateTime": "2023-12-30T21:42:41.8212075+01:00"
+    },
+    {
+      "Query": "vattenfall.de/treuevorteil",
+      "ExecutedDateTime": "2023-12-30T21:50:17.2639554+01:00"
+    },
+    {
+      "Query": "vorteilscode reddit",
+      "ExecutedDateTime": "2023-12-30T21:51:34.6195569+01:00"
+    },
+    {
+      "Query": "vattenfall.de",
+      "ExecutedDateTime": "2023-12-30T21:52:41.6722759+01:00"
+    },
+    {
+      "Query": "34.07/100",
+      "ExecutedDateTime": "2023-12-30T21:59:43.307399+01:00"
+    },
+    {
+      "Query": "wertbau immobilienmanagement",
+      "ExecutedDateTime": "2023-12-30T22:13:38.8170917+01:00"
+    },
+    {
+      "Query": "amazon.de",
+      "ExecutedDateTime": "2023-12-30T22:21:05.9446953+01:00"
+    },
+    {
+      "Query": "bra",
+      "ExecutedDateTime": "2023-12-31T00:05:39.3754786+01:00"
+    },
+    {
+      "Query": "netflix",
+      "ExecutedDateTime": "2023-12-31T00:06:29.1490262+01:00"
+    },
+    {
+      "Query": "brave",
+      "ExecutedDateTime": "2024-01-01T12:58:55.5134511+01:00"
+    },
+    {
+      "Query": "youtube.com",
+      "ExecutedDateTime": "2024-01-01T13:02:44.8235578+01:00"
+    },
+    {
+      "Query": "clickup.com",
+      "ExecutedDateTime": "2024-01-01T13:07:13.3406429+01:00"
+    },
+    {
+      "Query": "thermostat ersetzen heizk\u00F6rper",
+      "ExecutedDateTime": "2024-01-01T13:23:50.0197421+01:00"
+    },
+    {
+      "Query": "youtube.com",
+      "ExecutedDateTime": "2024-01-01T13:44:24.7729379+01:00"
+    },
+    {
+      "Query": "wie ich heizungsverbrauch berechne",
+      "ExecutedDateTime": "2024-01-01T13:55:58.7582794+01:00"
+    },
+    {
+      "Query": "z\u00E4hlerstand heizk\u00F6rper",
+      "ExecutedDateTime": "2024-01-01T13:57:23.0900707+01:00"
+    },
+    {
+      "Query": "was werte auf dem heizk\u00F6rper bedeuten einheiten",
+      "ExecutedDateTime": "2024-01-01T14:06:46.7279173+01:00"
+    },
+    {
+      "Query": "stea",
+      "ExecutedDateTime": "2024-01-01T14:09:19.4760801+01:00"
+    },
+    {
+      "Query": "bra",
+      "ExecutedDateTime": "2024-01-01T14:14:00.209388+01:00"
+    },
+    {
+      "Query": "steam",
+      "ExecutedDateTime": "2024-01-01T14:16:38.1168488+01:00"
+    },
+    {
+      "Query": "bro",
+      "ExecutedDateTime": "2024-01-01T14:17:47.8283388+01:00"
+    },
+    {
+      "Query": "xte",
+      "ExecutedDateTime": "2024-01-01T14:21:05.2863404+01:00"
+    },
+    {
+      "Query": "cups list printer drivers",
+      "ExecutedDateTime": "2024-01-01T14:24:21.0837702+01:00"
+    },
+    {
+      "Query": "check ports for listening",
+      "ExecutedDateTime": "2024-01-01T14:30:44.4759091+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2024-01-01T14:33:36.5608909+01:00"
+    },
+    {
+      "Query": "netflix.com",
+      "ExecutedDateTime": "2024-01-01T14:36:17.304916+01:00"
+    },
+    {
+      "Query": "ping request time out",
+      "ExecutedDateTime": "2024-01-01T14:43:26.6705459+01:00"
+    },
+    {
+      "Query": "ports linux listening",
+      "ExecutedDateTime": "2024-01-01T14:51:27.5102671+01:00"
+    },
+    {
+      "Query": "cupsctl -h 0.0.0.0:631 bad request",
+      "ExecutedDateTime": "2024-01-01T14:52:40.7818352+01:00"
+    },
+    {
+      "Query": "systemctl freezes",
+      "ExecutedDateTime": "2024-01-01T14:54:31.0661876+01:00"
+    },
+    {
+      "Query": "systemctl restart cups freezes",
+      "ExecutedDateTime": "2024-01-01T14:54:40.2021789+01:00"
+    },
+    {
+      "Query": "system service log",
+      "ExecutedDateTime": "2024-01-01T14:55:13.4116816+01:00"
+    },
+    {
+      "Query": "Upgrade Required cups",
+      "ExecutedDateTime": "2024-01-01T14:57:52.2191631+01:00"
+    },
+    {
+      "Query": "cups forbidden",
+      "ExecutedDateTime": "2024-01-01T15:00:57.8817061+01:00"
+    },
+    {
+      "Query": "cups group",
+      "ExecutedDateTime": "2024-01-01T15:03:57.6140621+01:00"
+    },
+    {
+      "Query": "cups forbidden",
+      "ExecutedDateTime": "2024-01-01T15:04:20.9097964+01:00"
+    },
+    {
+      "Query": "cups adding printer indefinetely",
+      "ExecutedDateTime": "2024-01-01T15:22:16.8714708+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2024-01-01T15:27:54.4235155+01:00"
+    },
+    {
+      "Query": "thermostat ersetzen",
+      "ExecutedDateTime": "2024-01-01T15:48:15.6576724+01:00"
+    },
+    {
+      "Query": "youtube.com",
+      "ExecutedDateTime": "2024-01-01T16:35:26.819627+01:00"
+    },
+    {
+      "Query": "netflix.com",
+      "ExecutedDateTime": "2024-01-01T16:35:38.4763478+01:00"
+    },
+    {
+      "Query": "list members of a group linux",
+      "ExecutedDateTime": "2024-01-01T17:00:17.7843462+01:00"
+    },
+    {
+      "Query": "cups print a doc",
+      "ExecutedDateTime": "2024-01-01T17:07:22.9261739+01:00"
+    },
+    {
+      "Query": "cups add printer",
+      "ExecutedDateTime": "2024-01-01T17:10:07.1341639+01:00"
+    },
+    {
+      "Query": "cups modify existing printer",
+      "ExecutedDateTime": "2024-01-01T17:12:07.868639+01:00"
+    },
+    {
+      "Query": "set default destination cups",
+      "ExecutedDateTime": "2024-01-01T17:16:29.7186889+01:00"
+    },
+    {
+      "Query": "shutd",
+      "ExecutedDateTime": "2024-01-01T17:26:09.2372679+01:00"
+    },
+    {
+      "Query": "check cpu load",
+      "ExecutedDateTime": "2024-01-01T18:48:15.1278695+01:00"
+    },
+    {
+      "Query": "inebench",
+      "ExecutedDateTime": "2024-01-01T18:50:11.3309254+01:00"
+    },
+    {
+      "Query": "rpi",
+      "ExecutedDateTime": "2024-01-01T19:29:50.5997172+01:00"
+    },
+    {
+      "Query": "brave",
+      "ExecutedDateTime": "2024-01-01T19:29:53.4467708+01:00"
+    },
+    {
+      "Query": "moba",
+      "ExecutedDateTime": "2024-01-01T19:35:29.9819882+01:00"
+    },
+    {
+      "Query": "j",
+      "ExecutedDateTime": "2024-01-01T19:35:51.866646+01:00"
+    },
+    {
+      "Query": "rpi-beta.local",
+      "ExecutedDateTime": "2024-01-01T19:37:35.3518221+01:00"
+    },
+    {
+      "Query": "cups add printer",
+      "ExecutedDateTime": "2024-01-01T19:38:01.6439154+01:00"
+    },
+    {
+      "Query": "cups rest api",
+      "ExecutedDateTime": "2024-01-01T19:53:22.7547493+01:00"
+    },
+    {
+      "Query": "pom.xml for spring",
+      "ExecutedDateTime": "2024-01-01T19:54:32.7158252+01:00"
+    },
+    {
+      "Query": "spring build reactive rest api",
+      "ExecutedDateTime": "2024-01-01T20:00:57.5533088+01:00"
+    },
+    {
+      "Query": "post",
+      "ExecutedDateTime": "2024-01-01T20:24:16.887667+01:00"
+    },
+    {
+      "Query": "spring conditional on property",
+      "ExecutedDateTime": "2024-01-01T20:28:21.1149447+01:00"
+    },
+    {
+      "Query": "spring import configuration from another pacakg",
+      "ExecutedDateTime": "2024-01-01T20:36:16.6564458+01:00"
+    },
+    {
+      "Query": "spring having value conditional on property",
+      "ExecutedDateTime": "2024-01-01T20:39:40.3137484+01:00"
+    },
+    {
+      "Query": "spring conditional if property exists",
+      "ExecutedDateTime": "2024-01-01T20:42:00.2391605+01:00"
+    },
+    {
+      "Query": "conditional on property does not work",
+      "ExecutedDateTime": "2024-01-01T20:44:04.529244+01:00"
+    },
+    {
+      "Query": "debug spring to print environment",
+      "ExecutedDateTime": "2024-01-01T20:46:30.7822864+01:00"
+    },
+    {
+      "Query": "docker on raspberry pi zero w",
+      "ExecutedDateTime": "2024-01-01T20:50:11.2653816+01:00"
+    },
+    {
+      "Query": "tomcat listen on 0.0.0.0",
+      "ExecutedDateTime": "2024-01-01T20:51:08.9381781+01:00"
+    },
+    {
+      "Query": "install docker on linux",
+      "ExecutedDateTime": "2024-01-01T20:52:40.1105945+01:00"
+    },
+    {
+      "Query": "raspbian install docker",
+      "ExecutedDateTime": "2024-01-01T20:53:34.5732623+01:00"
+    },
+    {
+      "Query": "spring to docker",
+      "ExecutedDateTime": "2024-01-01T20:59:00.0836993+01:00"
+    },
+    {
+      "Query": "mvn build imag",
+      "ExecutedDateTime": "2024-01-01T21:01:48.6697085+01:00"
+    },
+    {
+      "Query": "Docker",
+      "ExecutedDateTime": "2024-01-01T21:08:03.1144514+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2024-01-01T21:08:11.0336853+01:00"
+    },
+    {
+      "Query": "docker engine start indefinetely",
+      "ExecutedDateTime": "2024-01-01T21:08:29.6333299+01:00"
+    },
+    {
+      "Query": "github workflow to build spring boot app",
+      "ExecutedDateTime": "2024-01-01T21:10:00.6998813+01:00"
+    },
+    {
+      "Query": "docker",
+      "ExecutedDateTime": "2024-01-01T21:10:37.0311173+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2024-01-01T21:12:29.4147825+01:00"
+    },
+    {
+      "Query": "optional",
+      "ExecutedDateTime": "2024-01-01T21:13:10.32263+01:00"
+    },
+    {
+      "Query": "restar",
+      "ExecutedDateTime": "2024-01-01T21:13:41.1731892+01:00"
+    },
+    {
+      "Query": "bing set up for lockscreen wallpapaer",
+      "ExecutedDateTime": "2024-01-01T21:20:23.5623419+01:00"
+    },
+    {
+      "Query": "inte",
+      "ExecutedDateTime": "2024-01-01T21:20:24.9827141+01:00"
+    },
+    {
+      "Query": "docker",
+      "ExecutedDateTime": "2024-01-01T21:20:26.0477335+01:00"
+    },
+    {
+      "Query": "build docker verbose output",
+      "ExecutedDateTime": "2024-01-01T21:23:22.824675+01:00"
+    },
+    {
+      "Query": "run mvnw clean package exit code 1",
+      "ExecutedDateTime": "2024-01-01T21:24:02.4697891+01:00"
+    },
+    {
+      "Query": "docker",
+      "ExecutedDateTime": "2024-01-01T21:25:14.6834768+01:00"
+    },
+    {
+      "Query": "docker run with interactive shell",
+      "ExecutedDateTime": "2024-01-01T21:26:49.3930287+01:00"
+    },
+    {
+      "Query": "post",
+      "ExecutedDateTime": "2024-01-01T21:29:45.1991057+01:00"
+    },
+    {
+      "Query": "send requerst to docker container",
+      "ExecutedDateTime": "2024-01-01T21:30:42.6062637+01:00"
+    },
+    {
+      "Query": "docker push to private registry",
+      "ExecutedDateTime": "2024-01-01T21:33:09.9678325+01:00"
+    },
+    {
+      "Query": "docker hub",
+      "ExecutedDateTime": "2024-01-01T21:33:32.8265412+01:00"
+    },
+    {
+      "Query": "moba",
+      "ExecutedDateTime": "2024-01-01T21:37:36.9443754+01:00"
+    },
+    {
+      "Query": "how to automatically pull newest docker image linux",
+      "ExecutedDateTime": "2024-01-01T21:41:33.2764953+01:00"
+    },
+    {
+      "Query": "The requested image\u0027s platform (linux/amd64) does not match the detected host platform (linux/arm/v6) and no specific platform was requested",
+      "ExecutedDateTime": "2024-01-01T21:44:22.6548205+01:00"
+    },
+    {
+      "Query": "exec /bin/sh: exec format error",
+      "ExecutedDateTime": "2024-01-01T21:45:04.3579966+01:00"
+    },
+    {
+      "Query": "rpi run docker containers",
+      "ExecutedDateTime": "2024-01-01T21:45:09.6384553+01:00"
+    },
+    {
+      "Query": "docker build arm",
+      "ExecutedDateTime": "2024-01-01T21:45:53.1388938+01:00"
+    },
+    {
+      "Query": "docker build --platform",
+      "ExecutedDateTime": "2024-01-01T21:46:39.0387219+01:00"
+    },
+    {
+      "Query": "docker build for raspberry pi",
+      "ExecutedDateTime": "2024-01-01T21:49:01.4561515+01:00"
+    },
+    {
+      "Query": "multi-platform build is not supported for the docker driver",
+      "ExecutedDateTime": "2024-01-01T21:50:32.1293476+01:00"
+    },
+    {
+      "Query": "failed to solve eclipse tmurin:21-jre-jammy no match for platform in manifest",
+      "ExecutedDateTime": "2024-01-01T21:53:20.9117445+01:00"
+    },
+    {
+      "Query": "armv6 eclipse temurin",
+      "ExecutedDateTime": "2024-01-01T21:54:53.9711505+01:00"
+    },
+    {
+      "Query": "linux install java21",
+      "ExecutedDateTime": "2024-01-01T21:56:08.2248228+01:00"
+    },
+    {
+      "Query": "jdk 21 for rpi",
+      "ExecutedDateTime": "2024-01-01T22:06:48.6673983+01:00"
+    },
+    {
+      "Query": "stea",
+      "ExecutedDateTime": "2024-01-01T23:53:15.2628877+01:00"
+    },
+    {
+      "Query": "BRA",
+      "ExecutedDateTime": "2024-01-02T00:38:06.1083621+01:00"
+    },
+    {
+      "Query": "youtube.com",
+      "ExecutedDateTime": "2024-01-02T00:38:23.9896728+01:00"
+    },
+    {
+      "Query": "bra",
+      "ExecutedDateTime": "2024-01-02T12:03:43.591082+01:00"
+    },
+    {
+      "Query": "amazon.de",
+      "ExecutedDateTime": "2024-01-02T12:04:13.8876386+01:00"
+    },
+    {
+      "Query": "nous socket blueberry",
+      "ExecutedDateTime": "2024-01-02T12:08:15.7088207+01:00"
+    },
+    {
+      "Query": "berrybase",
+      "ExecutedDateTime": "2024-01-02T12:15:13.6874528+01:00"
+    },
+    {
+      "Query": "k\u00FChlschrank maximale leistung",
+      "ExecutedDateTime": "2024-01-02T12:20:32.1157004+01:00"
+    },
+    {
+      "Query": "waschmaschine maximale leistung",
+      "ExecutedDateTime": "2024-01-02T12:20:38.6386605+01:00"
+    },
+    {
+      "Query": "multikochermaximale leistung",
+      "ExecutedDateTime": "2024-01-02T12:20:44.5803278+01:00"
+    },
+    {
+      "Query": "blender maximale leistnug",
+      "ExecutedDateTime": "2024-01-02T12:20:50.0694308+01:00"
+    },
+    {
+      "Query": "power larger as in specification mixer",
+      "ExecutedDateTime": "2024-01-02T12:26:08.6793319+01:00"
+    },
+    {
+      "Query": "sett",
+      "ExecutedDateTime": "2024-01-02T12:52:40.7883196+01:00"
+    },
+    {
+      "Query": "pm install Browser History",
+      "ExecutedDateTime": "2024-01-02T12:52:51.1706561+01:00"
+    },
+    {
+      "Query": "bra",
+      "ExecutedDateTime": "2024-01-02T15:43:02.1888225+01:00"
+    },
+    {
+      "Query": "noti",
+      "ExecutedDateTime": "2024-01-02T15:44:19.6944292+01:00"
+    },
+    {
+      "Query": "bra",
+      "ExecutedDateTime": "2024-01-02T15:57:35.7007498+01:00"
+    },
+    {
+      "Query": "amd",
+      "ExecutedDateTime": "2024-01-02T16:59:16.7613491+01:00"
+    },
+    {
+      "Query": "ste",
+      "ExecutedDateTime": "2024-01-02T18:29:37.9460197+01:00"
+    },
+    {
+      "Query": "no",
+      "ExecutedDateTime": "2024-01-02T18:56:07.5723355+01:00"
+    },
+    {
+      "Query": "bra",
+      "ExecutedDateTime": "2024-01-02T18:56:09.7766765+01:00"
+    },
+    {
+      "Query": "nous a3",
+      "ExecutedDateTime": "2024-01-02T18:58:14.629496+01:00"
+    },
+    {
+      "Query": "Nous W3 Smarte WLAN youtube",
+      "ExecutedDateTime": "2024-01-02T19:01:51.0194715+01:00"
+    },
+    {
+      "Query": "energy messer",
+      "ExecutedDateTime": "2024-01-02T19:07:24.085728+01:00"
+    },
+    {
+      "Query": "a1 vs a7 vs a8",
+      "ExecutedDateTime": "2024-01-02T19:12:59.9295852+01:00"
+    },
+    {
+      "Query": "stea",
+      "ExecutedDateTime": "2024-01-02T19:44:25.119092+01:00"
+    },
+    {
+      "Query": "brave",
+      "ExecutedDateTime": "2024-01-02T19:47:45.0191499+01:00"
+    },
+    {
+      "Query": "youtube.com",
+      "ExecutedDateTime": "2024-01-02T19:47:49.3464069+01:00"
+    },
+    {
+      "Query": "sett",
+      "ExecutedDateTime": "2024-01-02T19:48:00.3769379+01:00"
+    },
+    {
+      "Query": "n",
+      "ExecutedDateTime": "2024-01-02T19:48:52.6838673+01:00"
+    },
+    {
+      "Query": "na",
+      "ExecutedDateTime": "2024-01-02T19:48:54.2460401+01:00"
+    },
+    {
+      "Query": "n s",
+      "ExecutedDateTime": "2024-01-02T19:49:08.8703048+01:00"
+    },
+    {
+      "Query": "n",
+      "ExecutedDateTime": "2024-01-02T19:49:13.2948041+01:00"
+    },
+    {
+      "Query": "x4 foundations as x3 reddit",
+      "ExecutedDateTime": "2024-01-02T19:49:38.3715307+01:00"
+    },
+    {
+      "Query": "n",
+      "ExecutedDateTime": "2024-01-02T22:13:17.1569892+01:00"
+    },
+    {
+      "Query": "n f",
+      "ExecutedDateTime": "2024-01-02T22:13:18.5366453+01:00"
+    },
+    {
+      "Query": "x3 ap with mods",
+      "ExecutedDateTime": "2024-01-02T22:25:52.136485+01:00"
+    },
+    {
+      "Query": "stalker mods",
+      "ExecutedDateTime": "2024-01-02T22:54:19.7648453+01:00"
+    },
+    {
+      "Query": "the most popular stalker mods",
+      "ExecutedDateTime": "2024-01-02T22:54:51.6503053+01:00"
+    },
+    {
+      "Query": "stalker anomaly",
+      "ExecutedDateTime": "2024-01-02T22:56:25.2944845+01:00"
+    },
+    {
+      "Query": "fall",
+      "ExecutedDateTime": "2024-01-02T23:21:35.2173861+01:00"
+    },
+    {
+      "Query": "shu",
+      "ExecutedDateTime": "2024-01-03T01:07:11.2449568+01:00"
+    },
+    {
+      "Query": "brave",
+      "ExecutedDateTime": "2024-01-03T13:34:45.7688512+01:00"
+    },
+    {
+      "Query": "steam",
+      "ExecutedDateTime": "2024-01-03T13:36:23.2999573+01:00"
+    },
+    {
+      "Query": "shutd",
+      "ExecutedDateTime": "2024-01-03T17:05:47.1055603+01:00"
+    },
+    {
+      "Query": "bra",
+      "ExecutedDateTime": "2024-01-04T13:40:32.4147371+01:00"
+    },
+    {
+      "Query": "cloud gaming",
+      "ExecutedDateTime": "2024-01-04T13:40:48.9488995+01:00"
+    },
+    {
+      "Query": "vattenfal",
+      "ExecutedDateTime": "2024-01-04T13:44:40.8905583+01:00"
+    },
+    {
+      "Query": "24.5 / 250",
+      "ExecutedDateTime": "2024-01-04T13:50:53.8686563+01:00"
+    },
+    {
+      "Query": "0.3407*0.3",
+      "ExecutedDateTime": "2024-01-04T13:52:20.0463281+01:00"
+    },
+    {
+      "Query": "0.3407*0.32",
+      "ExecutedDateTime": "2024-01-04T13:52:50.4060568+01:00"
+    },
+    {
+      "Query": "18/240",
+      "ExecutedDateTime": "2024-01-04T13:54:48.5574688+01:00"
+    },
+    {
+      "Query": "18/120",
+      "ExecutedDateTime": "2024-01-04T13:55:01.9098106+01:00"
+    },
+    {
+      "Query": "9/240",
+      "ExecutedDateTime": "2024-01-04T13:55:22.3491953+01:00"
+    },
+    {
+      "Query": "9/120",
+      "ExecutedDateTime": "2024-01-04T13:55:39.8770019+01:00"
+    },
+    {
+      "Query": "9/120*2",
+      "ExecutedDateTime": "2024-01-04T13:55:52.5647347+01:00"
+    },
+    {
+      "Query": "my size 57",
+      "ExecutedDateTime": "2024-01-04T14:12:19.0793279+01:00"
+    },
+    {
+      "Query": "berrybas",
+      "ExecutedDateTime": "2024-01-04T14:19:30.9508075+01:00"
+    },
+    {
+      "Query": "Nous A8 idealo",
+      "ExecutedDateTime": "2024-01-04T14:19:56.5410057+01:00"
+    },
+    {
+      "Query": "berrybase was mit den berrys",
+      "ExecutedDateTime": "2024-01-04T14:22:20.0948902+01:00"
+    },
+    {
+      "Query": "webmail merseburg",
+      "ExecutedDateTime": "2024-01-04T14:28:31.6224232+01:00"
+    },
+    {
+      "Query": "thomas meier merseburg",
+      "ExecutedDateTime": "2024-01-04T14:29:36.0190806+01:00"
+    },
+    {
+      "Query": "fall",
+      "ExecutedDateTime": "2024-01-04T14:40:03.7056256+01:00"
+    },
+    {
+      "Query": "brave",
+      "ExecutedDateTime": "2024-01-05T12:42:34.7304682+01:00"
+    },
+    {
+      "Query": "meclee",
+      "ExecutedDateTime": "2024-01-05T12:43:05.7610801+01:00"
+    },
+    {
+      "Query": "t1p.de/ABH-Termin",
+      "ExecutedDateTime": "2024-01-05T12:44:07.8262194+01:00"
+    },
+    {
+      "Query": "1400*4",
+      "ExecutedDateTime": "2024-01-05T12:49:07.0795959+01:00"
+    },
+    {
+      "Query": "setti",
+      "ExecutedDateTime": "2024-01-05T12:49:15.3868678+01:00"
+    },
+    {
+      "Query": "pm install CurrencyPP",
+      "ExecutedDateTime": "2024-01-05T12:50:03.3438129+01:00"
+    },
+    {
+      "Query": "sett",
+      "ExecutedDateTime": "2024-01-05T12:50:10.5481863+01:00"
+    },
+    {
+      "Query": "1400*4",
+      "ExecutedDateTime": "2024-01-05T12:50:59.6635434+01:00"
+    },
+    {
+      "Query": "sett",
+      "ExecutedDateTime": "2024-01-05T12:51:58.3054013+01:00"
+    },
+    {
+      "Query": "vodafone.de",
+      "ExecutedDateTime": "2024-01-05T12:55:08.1790529+01:00"
+    },
+    {
+      "Query": "uni leipzig semseter beitrag",
+      "ExecutedDateTime": "2024-01-05T12:56:46.735689+01:00"
+    },
+    {
+      "Query": "youtube.com",
+      "ExecutedDateTime": "2024-01-05T14:55:12.8225933+01:00"
+    },
+    {
+      "Query": "netflix.com",
+      "ExecutedDateTime": "2024-01-05T14:55:54.419266+01:00"
+    },
+    {
+      "Query": "docker container for arm",
+      "ExecutedDateTime": "2024-01-05T15:15:25.1267164+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2024-01-05T15:15:26.4823498+01:00"
+    },
+    {
+      "Query": "moba",
+      "ExecutedDateTime": "2024-01-05T15:15:31.2849828+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2024-01-05T16:04:18.1493913+01:00"
+    },
+    {
+      "Query": "inte",
+      "ExecutedDateTime": "2024-01-05T16:04:35.7305713+01:00"
+    },
+    {
+      "Query": "running java in container in raspberry pi",
+      "ExecutedDateTime": "2024-01-05T16:04:49.4572702+01:00"
+    },
+    {
+      "Query": "jet",
+      "ExecutedDateTime": "2024-01-05T16:07:10.5490963+01:00"
+    },
+    {
+      "Query": "docker",
+      "ExecutedDateTime": "2024-01-05T16:08:22.1728259+01:00"
+    },
+    {
+      "Query": "arm32v7/adoptopenjdk: no match for platform in manifest",
+      "ExecutedDateTime": "2024-01-05T16:09:09.3019069+01:00"
+    },
+    {
+      "Query": "rpi check architecture version",
+      "ExecutedDateTime": "2024-01-05T16:10:13.3054719+01:00"
+    },
+    {
+      "Query": "alternatives remove jdk",
+      "ExecutedDateTime": "2024-01-05T16:13:10.6092889+01:00"
+    },
+    {
+      "Query": "armv6 jdk",
+      "ExecutedDateTime": "2024-01-05T16:14:33.5869408+01:00"
+    },
+    {
+      "Query": "armv6 docker image",
+      "ExecutedDateTime": "2024-01-05T16:16:03.3092255+01:00"
+    },
+    {
+      "Query": "The requested image\u0027s platform (linux/arm/v6) does not match the host platform",
+      "ExecutedDateTime": "2024-01-05T16:19:37.4300068+01:00"
+    },
+    {
+      "Query": "run armv6 docker image on amd64",
+      "ExecutedDateTime": "2024-01-05T16:20:27.5970185+01:00"
+    },
+    {
+      "Query": "zulu embedded",
+      "ExecutedDateTime": "2024-01-05T16:22:13.1327436+01:00"
+    },
+    {
+      "Query": "arm hf vs sf",
+      "ExecutedDateTime": "2024-01-05T16:23:07.5239742+01:00"
+    },
+    {
+      "Query": "armv6 docker image",
+      "ExecutedDateTime": "2024-01-05T16:24:36.1557846+01:00"
+    },
+    {
+      "Query": "spring boot 3.2.1",
+      "ExecutedDateTime": "2024-01-05T16:26:50.681333+01:00"
+    },
+    {
+      "Query": "spring boot 3.0",
+      "ExecutedDateTime": "2024-01-05T16:28:36.1914051+01:00"
+    },
+    {
+      "Query": "java 17 armv6",
+      "ExecutedDateTime": "2024-01-05T16:29:22.8856789+01:00"
+    },
+    {
+      "Query": "BellSoft\u0027s Java 17  armv6",
+      "ExecutedDateTime": "2024-01-05T16:30:42.4428831+01:00"
+    },
+    {
+      "Query": "best language for rpi zero w",
+      "ExecutedDateTime": "2024-01-05T16:32:04.7694459+01:00"
+    },
+    {
+      "Query": "java on pi zero reddit",
+      "ExecutedDateTime": "2024-01-05T16:33:18.4364736+01:00"
+    },
+    {
+      "Query": "python or java on raspberry pi zero reddit",
+      "ExecutedDateTime": "2024-01-05T16:35:06.3397022+01:00"
+    },
+    {
+      "Query": "java or python better for embeded",
+      "ExecutedDateTime": "2024-01-05T16:37:54.4161602+01:00"
+    },
+    {
+      "Query": "post",
+      "ExecutedDateTime": "2024-01-05T16:41:17.6606248+01:00"
+    },
+    {
+      "Query": "run jar java",
+      "ExecutedDateTime": "2024-01-05T16:43:05.2061334+01:00"
+    },
+    {
+      "Query": "java raspberry pi armv6",
+      "ExecutedDateTime": "2024-01-05T16:44:08.3467523+01:00"
+    },
+    {
+      "Query": "python cups library",
+      "ExecutedDateTime": "2024-01-05T16:50:40.3794957+01:00"
+    },
+    {
+      "Query": "pych",
+      "ExecutedDateTime": "2024-01-05T16:54:09.9958995+01:00"
+    },
+    {
+      "Query": "raspberry pi lightweight http server",
+      "ExecutedDateTime": "2024-01-05T16:54:47.9425913+01:00"
+    },
+    {
+      "Query": "java lightweight http server",
+      "ExecutedDateTime": "2024-01-05T16:55:09.6920133+01:00"
+    },
+    {
+      "Query": "performace of python vs java http server",
+      "ExecutedDateTime": "2024-01-05T16:56:20.5417485+01:00"
+    },
+    {
+      "Query": "py",
+      "ExecutedDateTime": "2024-01-05T17:00:16.0201296+01:00"
+    },
+    {
+      "Query": "fastapi vs flask",
+      "ExecutedDateTime": "2024-01-05T17:00:29.7864999+01:00"
+    },
+    {
+      "Query": "simple flask",
+      "ExecutedDateTime": "2024-01-05T17:02:31.601897+01:00"
+    },
+    {
+      "Query": "python no module",
+      "ExecutedDateTime": "2024-01-05T17:06:24.817268+01:00"
+    },
+    {
+      "Query": "flask run on 0.0.0.0",
+      "ExecutedDateTime": "2024-01-05T17:18:34.8678883+01:00"
+    },
+    {
+      "Query": "python cups",
+      "ExecutedDateTime": "2024-01-05T17:20:09.2969048+01:00"
+    },
+    {
+      "Query": "pycups documentation",
+      "ExecutedDateTime": "2024-01-05T17:22:22.5718133+01:00"
+    },
+    {
+      "Query": "error: Microsoft Visual C\u002B\u002B 14.0 or greater is required. Get it with \u0022Microsoft C\u002B\u002B Build Tools\u0022",
+      "ExecutedDateTime": "2024-01-05T17:24:17.2366258+01:00"
+    },
+    {
+      "Query": "brave",
+      "ExecutedDateTime": "2024-01-05T17:47:13.0034722+01:00"
+    },
+    {
+      "Query": "HostX86\\\\x64\\\\cl.exe",
+      "ExecutedDateTime": "2024-01-05T17:47:16.9289262+01:00"
+    },
+    {
+      "Query": "HostX86\\\\x64\\\\cl.exe failed with",
+      "ExecutedDateTime": "2024-01-05T18:28:16.397161+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2024-01-05T18:29:30.3580659+01:00"
+    },
+    {
+      "Query": "py",
+      "ExecutedDateTime": "2024-01-05T18:30:00.7335047+01:00"
+    },
+    {
+      "Query": "cups install windows",
+      "ExecutedDateTime": "2024-01-05T18:30:50.2778067+01:00"
+    },
+    {
+      "Query": "wsl",
+      "ExecutedDateTime": "2024-01-05T18:33:40.8780459+01:00"
+    },
+    {
+      "Query": "ter",
+      "ExecutedDateTime": "2024-01-05T18:33:48.7833774+01:00"
+    },
+    {
+      "Query": "cups/http.h: No such file or directory",
+      "ExecutedDateTime": "2024-01-05T18:37:38.5179167+01:00"
+    },
+    {
+      "Query": "pycharm use wsl python interp",
+      "ExecutedDateTime": "2024-01-05T18:38:23.302151+01:00"
+    },
+    {
+      "Query": "pycups documentation",
+      "ExecutedDateTime": "2024-01-05T18:40:34.7787478+01:00"
+    },
+    {
+      "Query": "python object as dict",
+      "ExecutedDateTime": "2024-01-05T18:44:15.1356523+01:00"
+    },
+    {
+      "Query": "post",
+      "ExecutedDateTime": "2024-01-05T18:45:56.4959888+01:00"
+    },
+    {
+      "Query": "moba",
+      "ExecutedDateTime": "2024-01-05T18:46:20.1654246+01:00"
+    },
+    {
+      "Query": "netflix.com",
+      "ExecutedDateTime": "2024-01-05T18:48:19.7043852+01:00"
+    },
+    {
+      "Query": "java lightwei",
+      "ExecutedDateTime": "2024-01-05T19:01:56.2471156+01:00"
+    },
+    {
+      "Query": "Caused by: java.lang.ClassNotFoundException: coden.App",
+      "ExecutedDateTime": "2024-01-05T19:03:20.2898919+01:00"
+    },
+    {
+      "Query": "mvn specify main class",
+      "ExecutedDateTime": "2024-01-05T19:03:53.722893+01:00"
+    },
+    {
+      "Query": "java leightweight  with router",
+      "ExecutedDateTime": "2024-01-05T19:10:29.4764033+01:00"
+    },
+    {
+      "Query": "kotlin leightweight http server",
+      "ExecutedDateTime": "2024-01-05T19:14:08.5176959+01:00"
+    },
+    {
+      "Query": "Javalin: It looks like you don\u0027t have a logger in your project.",
+      "ExecutedDateTime": "2024-01-05T19:17:27.0770217+01:00"
+    },
+    {
+      "Query": "javalin does not see slf4j",
+      "ExecutedDateTime": "2024-01-05T19:20:20.2998511+01:00"
+    },
+    {
+      "Query": "Failed to load class \u0022org.slf4j.impl.StaticLoggerBinder\u0022.",
+      "ExecutedDateTime": "2024-01-05T19:22:37.0567104+01:00"
+    },
+    {
+      "Query": "mvn no manifest attribute",
+      "ExecutedDateTime": "2024-01-05T19:29:12.3811032+01:00"
+    },
+    {
+      "Query": "fat maven",
+      "ExecutedDateTime": "2024-01-05T19:30:51.2281267+01:00"
+    },
+    {
+      "Query": "java is so slow raspberry pi",
+      "ExecutedDateTime": "2024-01-05T19:35:15.9664092+01:00"
+    },
+    {
+      "Query": "java is very slow on raspberry pi zero",
+      "ExecutedDateTime": "2024-01-05T19:39:39.0301435+01:00"
+    },
+    {
+      "Query": "netflix.com",
+      "ExecutedDateTime": "2024-01-05T19:41:05.0393914+01:00"
+    },
+    {
+      "Query": "java -jar specify cp",
+      "ExecutedDateTime": "2024-01-05T19:53:12.51538+01:00"
+    },
+    {
+      "Query": "cp java jar",
+      "ExecutedDateTime": "2024-01-05T19:54:30.9518667+01:00"
+    },
+    {
+      "Query": "fat jar is",
+      "ExecutedDateTime": "2024-01-05T19:55:08.7820552+01:00"
+    },
+    {
+      "Query": "maven add to jar external dependencies",
+      "ExecutedDateTime": "2024-01-05T19:57:31.6755127+01:00"
+    },
+    {
+      "Query": "maven shade",
+      "ExecutedDateTime": "2024-01-05T20:02:05.7759477+01:00"
+    },
+    {
+      "Query": "mvn shade plugin no",
+      "ExecutedDateTime": "2024-01-05T20:03:24.0759111+01:00"
+    },
+    {
+      "Query": "Invalid signature file digest for Manifest main attributes shaded",
+      "ExecutedDateTime": "2024-01-05T20:04:35.5644318+01:00"
+    },
+    {
+      "Query": "cups-pdf",
+      "ExecutedDateTime": "2024-01-05T20:18:03.5611989+01:00"
+    },
+    {
+      "Query": "kotlin fat jar",
+      "ExecutedDateTime": "2024-01-05T20:33:31.4071835+01:00"
+    },
+    {
+      "Query": "kotlin lightweight http server",
+      "ExecutedDateTime": "2024-01-05T20:37:10.8146551+01:00"
+    },
+    {
+      "Query": "http4k maven",
+      "ExecutedDateTime": "2024-01-05T20:42:22.881831+01:00"
+    },
+    {
+      "Query": "http4k examples",
+      "ExecutedDateTime": "2024-01-05T20:50:07.8791239+01:00"
+    },
+    {
+      "Query": "http4k json examples",
+      "ExecutedDateTime": "2024-01-05T20:52:09.6332364+01:00"
+    },
+    {
+      "Query": "stea",
+      "ExecutedDateTime": "2024-01-05T21:23:36.7740125+01:00"
+    },
+    {
+      "Query": "xrm mod x3",
+      "ExecutedDateTime": "2024-01-05T21:24:45.9322766+01:00"
+    },
+    {
+      "Query": "apps",
+      "ExecutedDateTime": "2024-01-05T21:25:45.0739743+01:00"
+    },
+    {
+      "Query": "anomaly stalker steam",
+      "ExecutedDateTime": "2024-01-05T21:45:43.3987543+01:00"
+    },
+    {
+      "Query": "stea",
+      "ExecutedDateTime": "2024-01-05T22:09:25.6132411+01:00"
+    },
+    {
+      "Query": "bra",
+      "ExecutedDateTime": "2024-01-06T12:31:08.151367+01:00"
+    },
+    {
+      "Query": "youtube.com",
+      "ExecutedDateTime": "2024-01-06T12:31:24.7113437+01:00"
+    },
+    {
+      "Query": "sett",
+      "ExecutedDateTime": "2024-01-06T12:36:20.5977819+01:00"
     }
   ]
 }
