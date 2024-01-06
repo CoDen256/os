@@ -105,7 +105,7 @@
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 5,
-  "ActivateTimes": 1014,
+  "ActivateTimes": 1034,
   "CustomPluginHotkeys": [],
   "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
@@ -305,7 +305,7 @@
         "Name": "Browser Bookmarks",
         "Version": "3.1.4",
         "ActionKeywords": [
-          "b"
+          "*"
         ],
         "Priority": 0,
         "Disabled": false
@@ -316,6 +316,16 @@
         "Version": "3.0.1",
         "ActionKeywords": [
           "*"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "14b986ef-45ec-44c1-be66-cab460a771f7": {
+        "ID": "14b986ef-45ec-44c1-be66-cab460a771f7",
+        "Name": "DevToys Launcher",
+        "Version": "1.3.0",
+        "ActionKeywords": [
+          "dtoys"
         ],
         "Priority": 0,
         "Disabled": false
