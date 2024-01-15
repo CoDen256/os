@@ -1,9 +1,9 @@
 {
   "OpenInNewBrowserWindow": true,
   "BrowserPath": null,
-  "LoadChromeBookmark": false,
-  "LoadFirefoxBookmark": false,
-  "LoadEdgeBookmark": false,
+  "LoadChromeBookmark": true,
+  "LoadFirefoxBookmark": true,
+  "LoadEdgeBookmark": true,
   "CustomChromiumBrowsers": [
     {
       "Name": "Brave",
