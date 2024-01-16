@@ -13,3 +13,6 @@ git config user.email den.blackshov@gmail.com               # for this project
 git config user.name Denys Chernyshov                       # for this project
 
 ### Run ./install/system.ps1
+### Run ./install/shared-scoop.ps1
+### Run ./install/shared.ps1
+### Run ./install/{type}/{type}.ps1

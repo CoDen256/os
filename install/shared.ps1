@@ -6,7 +6,6 @@ cp git-configs/.default.gitconfig ~/.default.gitconfig
 ##  cp .alpha.gitconfig ~/.alpha.gitconfig
 ##  edit ~/.gitconfig ~/.default.gitconfig ~/.alpha.gitconfig
 
-
 # FLOW LAUNCHER #
 taskkill /f /im Flow*
 
@@ -20,6 +19,8 @@ New-Item -Path "$FLOW_PATH\UserData\Settings" -ItemType Junction -Value $PWD\flo
 New-Item -Path "$FLOW_PATH\UserData\Themes" -ItemType Junction -Value $PWD\flow-launcher\Themes
 New-Item -Path "$FLOW_PATH\UserData\Plugins" -ItemType Junction -Value $PWD\flow-launcher\Plugins
 Start-Process -FilePath "$($env:USERPROFILE)\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
+ 
+# AUTOHOTKEY 2 #
 
 # WSL 2 #
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
