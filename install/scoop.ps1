@@ -1,4 +1,3 @@
-scoop install git
 scoop bucket add extras
 scoop bucket add java
 scoop bucket add versions
@@ -13,6 +12,7 @@ scoop install kotlin
 scoop install maven
 scoop install gradle
 scoop install mvndaemon
+scoop install python312
 scoop install extras/vcredist2022
 
 scoop install powertoys

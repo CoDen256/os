@@ -6,6 +6,11 @@ cp git-configs/.default.gitconfig ~/.default.gitconfig
 ##  cp .alpha.gitconfig ~/.alpha.gitconfig
 ##  edit ~/.gitconfig ~/.default.gitconfig ~/.alpha.gitconfig
 
+# AUTOHOTKEY 2 #
+cp win_layout_aou.ahk "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup"
+New-Item -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" -ItemType SymbolicLink -Value win_layout_aou.ahk
+
+
 # FLOW LAUNCHER #
 taskkill /f /im Flow*
 
@@ -20,7 +25,7 @@ New-Item -Path "$FLOW_PATH\UserData\Themes" -ItemType Junction -Value $PWD\flow-
 New-Item -Path "$FLOW_PATH\UserData\Plugins" -ItemType Junction -Value $PWD\flow-launcher\Plugins
 Start-Process -FilePath "$($env:USERPROFILE)\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
  
-# AUTOHOTKEY 2 #
+
 
 # WSL 2 #
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart

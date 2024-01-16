@@ -26,9 +26,6 @@
 ###### AutoHotKey    
     curl https://www.autohotkey.com/download/ahk-v2.zip -o ahk2.zip
     Expand-Archive .\ahk2.zip -DestinationPath ~\tools\ahk
-    
-    cp win_layout_aou.ahk "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup"
-    New-Item -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" -ItemType SymbolicLink -Value win_layout_aou.ahk
     rm ahk2.zip
 
 ##### Default open VS Code
