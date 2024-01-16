@@ -1,12 +1,6 @@
-###### CHOCOLATELY
-    mkdir ~\tools
-    mkdir ~\tools\android
-    mkdir ~\portable
-
-
 ##### Android Studio and toolchain
 
-1. Install SDK at ~/tools/android/sdk
+1. Install SDK at ~/android/sdk
 2. Install tools
 
 
@@ -32,12 +26,6 @@
     # 7z in Program Files/7-Zip + tar in PATH
     # keytool, jarsigner is available in JAVA_HOME/bin
 
-
-    # apktool (choose latest)
-    wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/windows/apktool.bat -o ~/tools/android/apktool.bat
-    wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.1.jar -o ~/tools/android/apktool.jar
-
-
     # smali, baksmali (choose latest)
     wget https://bitbucket.org/JesusFreke/smali/downloads/baksmali-2.5.2.jar -o ~/tools/android/baksmali.jar
     wget https://bitbucket.org/JesusFreke/smali/downloads/smali-2.5.2.jar -o ~/tools/android/smali.jar
@@ -49,9 +37,3 @@
     Expand-Archive .\dex.zip -DestinationPath ~\tools\android\
     mv ~\tools\android\dex-tools* ~\tools\android\dex-tools
     rm .\dex.zip
-
-
-    # jadx 
-    wget https://github.com/skylot/jadx/releases/download/v1.4.7/jadx-1.4.7.zip -o jadx.zip
-    Expand-Archive .\jadx.zip -DestinationPath ~\tools\android\jadx
-    rm .\jadx.zip

@@ -34,3 +34,14 @@
     # cmd 'ftype "No_Extension"="C:\Program Files\Microsoft VS Code\Code.exe" "%1"'
     # not working? -> try this https://www.itprotoday.com/windows-78/how-do-i-create-default-association-files-no-extension
 
+
+
+    # apktool (choose latest)
+    wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/windows/apktool.bat -o ~/tools/android/apktool.bat
+    wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.9.1.jar -o ~/tools/android/apktool.jar
+
+
+    # jadx 
+    wget https://github.com/skylot/jadx/releases/download/v1.4.7/jadx-1.4.7.zip -o jadx.zip
+    Expand-Archive .\jadx.zip -DestinationPath ~\tools\android\jadx
+    rm .\jadx.zip
