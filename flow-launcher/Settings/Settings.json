@@ -101,11 +101,11 @@
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": true,
   "WindowLeft": 463.20000000000005,
-  "WindowTop": 193.60000000000002,
+  "WindowTop": 194.4,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 5,
-  "ActivateTimes": 1227,
+  "ActivateTimes": 1231,
   "CustomPluginHotkeys": [],
   "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
@@ -224,16 +224,6 @@
         "Priority": 0,
         "Disabled": false
       },
-      "a56ae6ac-7b3b-47b9-857f-05ff25d29510": {
-        "ID": "a56ae6ac-7b3b-47b9-857f-05ff25d29510",
-        "Name": "Windows Terminal profiles",
-        "Version": "0.0.8",
-        "ActionKeywords": [
-          "wt"
-        ],
-        "Priority": 0,
-        "Disabled": true
-      },
       "E1E3DB9C-632D-4187-A5B4-EED6E09CACA7": {
         "ID": "E1E3DB9C-632D-4187-A5B4-EED6E09CACA7",
         "Name": "JetBrainsIDEProjects",
@@ -309,16 +299,6 @@
         ],
         "Priority": 0,
         "Disabled": false
-      },
-      "84d9d550-80cb-4e5f-a090-e1ccf3237a40": {
-        "ID": "84d9d550-80cb-4e5f-a090-e1ccf3237a40",
-        "Name": "CurrencyPP",
-        "Version": "3.0.1",
-        "ActionKeywords": [
-          "*"
-        ],
-        "Priority": 0,
-        "Disabled": true
       },
       "14b986ef-45ec-44c1-be66-cab460a771f7": {
         "ID": "14b986ef-45ec-44c1-be66-cab460a771f7",
