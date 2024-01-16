@@ -8,7 +8,8 @@ ssh-keygen -t rsa -b 4096 -C "den.blackshov@gmail.com"
 ### Setup 
 git clone git@github.com:CoDen256/os-setup.git C:\setup
 cd C:\setup
-git config core.autocrlf true               # for this project
-
+git config core.autocrlf true                               # for this project
+git config user.email den.blackshov@gmail.com               # for this project
+git config user.name Denys Chernyshov                       # for this project
 
 ### Run ./install/system.ps1

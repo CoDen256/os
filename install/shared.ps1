@@ -81,3 +81,8 @@ Start-Process "ms-windows-store://pdp?hl=en-us&gl=ps&productid=9WZDNCRDJXP4&mode
 curl https://go.microsoft.com/fwlink/?linkid=2126594 -o ~\Downloads\bing.exe
 ~\Downloads\bing.exe
 rm ~\Downloads\bing.exe
+
+
+######
+New-Item -Path "$($env:USERPROFILE)\OneDrive\Documents\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\scoop\apps\MobaXterm\current\MobaXTerm.ini" # to create backup from existing
+New-Item -Path "$($env:USERPROFILE)\scoop\apps\MobaXterm\current\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\OneDrive\Documents\MobaXTerm.ini" # to create new from backup

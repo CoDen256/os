@@ -54,3 +54,4 @@ scoop install wireshark
 
 scoop bucket add games
 scoop install steam
+scoop install discord

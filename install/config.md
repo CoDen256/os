@@ -42,10 +42,4 @@
     jadx --version
 
 
-##### MobaXTerm
-    New-Item -Path "$($env:USERPROFILE)\OneDrive\Documents\MobaXTerm.ini" -ItemType HardLink -Value "$($env:APPDATA)\MobaXterm\MobaXTerm.ini" # to create backup from existing
-    New-Item -Path "$($env:APPDATA)\MobaXterm\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\OneDrive\Documents\MobaXTerm.ini" # to create new from backup
 
-
-
-###### Fix Autostart apps
