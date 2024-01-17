@@ -1,13 +1,12 @@
 # GIT #
-cp git-configs/.gitconfig ~/.gitconfig
-cp git-configs/.default.gitconfig ~/.default.gitconfig
+cp git-config/.gitconfig ~/.gitconfig
+cp git-config/.default.gitconfig ~/.default.gitconfig
 
 ##  if needed
 ##  cp .alpha.gitconfig ~/.alpha.gitconfig
 ##  edit ~/.gitconfig ~/.default.gitconfig ~/.alpha.gitconfig
 
 # AUTOHOTKEY 2 #
-cp win_layout_aou.ahk "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup"
 New-Item -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" -ItemType SymbolicLink -Value win_layout_aou.ahk
 
 
@@ -89,6 +88,6 @@ curl https://go.microsoft.com/fwlink/?linkid=2126594 -o ~\Downloads\bing.exe
 rm ~\Downloads\bing.exe
 
 
-######
-New-Item -Path "$($env:USERPROFILE)\OneDrive\Documents\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\scoop\apps\MobaXterm\current\MobaXTerm.ini" # to create backup from existing
-New-Item -Path "$($env:USERPROFILE)\scoop\apps\MobaXterm\current\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\OneDrive\Documents\MobaXTerm.ini" # to create new from backup
+###### MobaXTerm
+New-Item -Path "$($env:USERPROFILE)\OneDrive\docs\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\scoop\apps\MobaXterm\current\MobaXTerm.ini" # to create backup from existing local
+New-Item -Path "$($env:USERPROFILE)\scoop\apps\mobaxterm\current\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\OneDrive\docs\MobaXTerm.ini" # to create new from backup

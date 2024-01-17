@@ -37,3 +37,5 @@
     Expand-Archive .\dex.zip -DestinationPath ~\tools\android\
     mv ~\tools\android\dex-tools* ~\tools\android\dex-tools
     rm .\dex.zip
+
+    # android ctl

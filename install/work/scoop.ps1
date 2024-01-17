@@ -10,5 +10,6 @@ scoop install krew
 scoop install aws
 scoop install aws-iam-authenticator
 scoop install eksctl
+scoop install openlens
 
 scoop install slack
