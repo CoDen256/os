@@ -130,7 +130,7 @@
   "AnimationSpeed": "Medium",
   "CustomAnimationLength": 360,
   "PluginSettings": {
-    "PythonExecutablePath": "C:\\Users\\denbl\\scoop\\apps\\flow-launcher\\current\\app-1.16.2\\UserData\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
+    "PythonExecutablePath": "C:\\ProgramData\\scoop\\apps\\flow-launcher\\current\\app-1.16.2\\UserData\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
     "NodeExecutablePath": "",
     "Plugins": {
       "CEA0FDFC6D3B4085823D60DC76F28855": {

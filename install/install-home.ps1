@@ -1,8 +1,6 @@
-scoop bucket add extras
-scoop bucket add games
+mkdir ~\games
 
-scoop install autohotkey
-scoop install flow-launcher
+scoop bucket add games
 
 scoop install notion
 scoop install obsidian

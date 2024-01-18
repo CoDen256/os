@@ -100,8 +100,8 @@
   "AlwaysStartEn": true,
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": true,
-  "WindowLeft": 443.20000000000005,
-  "WindowTop": 194.4,
+  "WindowLeft": 443,
+  "WindowTop": 193.6,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 5,
@@ -130,7 +130,7 @@
   "AnimationSpeed": "Medium",
   "CustomAnimationLength": 360,
   "PluginSettings": {
-    "PythonExecutablePath": "C:\\Users\\denbl\\scoop\\apps\\flow-launcher\\current\\app-1.16.2\\UserData\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
+    "PythonExecutablePath": "C:\\ProgramData\\scoop\\apps\\flow-launcher\\current\\app-1.16.2\\UserData\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
     "NodeExecutablePath": "",
     "Plugins": {
       "CEA0FDFC6D3B4085823D60DC76F28855": {
