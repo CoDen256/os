@@ -1,12 +1,14 @@
 mkdir C:\rev
+mkdir C:\dev
 mkdir ~\android
-
 
 scoop bucket add extras
 scoop bucket add java
 scoop bucket add versions
 
 scoop install flow-launcher
+scoop install powertoys
+scoop install autohotkey
 
 scoop install jetbrains-toolbox
 scoop install vscode
@@ -17,33 +19,27 @@ scoop install maven
 scoop install gradle
 scoop install mvndaemon
 scoop install python312
+
 scoop install extras/vcredist2022
 scoop install gtools
 
-scoop install powertoys
-
-scoop install autohotkey
 scoop install openssl
 scoop install curl
 scoop install keystore-explorer
-scoop install gtools
 scoop install 7zip
 
 scoop install postman
 scoop install mobaxterm
+scoop install raspberry-pi-imager
+scoop install wireshark
 
 scoop install notion
 scoop install obsidian
 scoop install vlc
 scoop install sharex
 scoop install treesize-free
-
 scoop install brave
 
-scoop install powertoys
-
-scoop install raspberry-pi-imager
-scoop install wireshark
 
 scoop install apktool
 scoop install android-clt # instead of sdk platforms tools

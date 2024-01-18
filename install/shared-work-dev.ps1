@@ -6,24 +6,10 @@ cp git-config/.default.gitconfig ~/.default.gitconfig
 ##  cp .alpha.gitconfig ~/.alpha.gitconfig
 ##  edit ~/.gitconfig ~/.default.gitconfig ~/.alpha.gitconfig
 
-# AUTOHOTKEY 2 #
-New-Item -Path "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" -ItemType SymbolicLink -Value win_layout_aou.ahk
 
-
-# FLOW LAUNCHER #
-taskkill /f /im Flow*
-
-Set-Variable -Name "FLOW_PATH" (Get-ChildItem -Dir -Path "$($env:USERPROFILE)\scoop\apps\flow-launcher\current\" -Filter 'app*').FullName
-
-Remove-Item -Force -Recurse -Path "$FLOW_PATH\UserData\Plugins" 
-Remove-Item -Force -Recurse -Path "$FLOW_PATH\UserData\Themes"
-Remove-Item -Force -Recurse -Path "$FLOW_PATH\UserData\Settings"
-
-New-Item -Path "$FLOW_PATH\UserData\Settings" -ItemType Junction -Value $PWD\flow-launcher\Settings
-New-Item -Path "$FLOW_PATH\UserData\Themes" -ItemType Junction -Value $PWD\flow-launcher\Themes
-New-Item -Path "$FLOW_PATH\UserData\Plugins" -ItemType Junction -Value $PWD\flow-launcher\Plugins
-Start-Process -FilePath "$($env:USERPROFILE)\scoop\apps\flow-launcher\current\Flow.Launcher.exe"
- 
+# SSH #
+# Add SSH keys to gitlab and github 
+ssh-keygen -t rsa -b 4096 -C # "email@gmail.com"
 
 
 # WSL 2 #
@@ -81,11 +67,6 @@ jetbrains-toolbox.exe
 ###### XODO PDF
 # [Install via Microsoft store](
 Start-Process "ms-windows-store://pdp?hl=en-us&gl=ps&productid=9WZDNCRDJXP4&mode=mini&pos=5%2C6%2C1920%2C902&referrer=storeforweb&source=https%3A%2F%2Fwww.google.com%2F"
-
-###### Bing Wallpapers
-curl https://go.microsoft.com/fwlink/?linkid=2126594 -o ~\Downloads\bing.exe
-~\Downloads\bing.exe
-rm ~\Downloads\bing.exe
 
 
 ###### MobaXTerm
