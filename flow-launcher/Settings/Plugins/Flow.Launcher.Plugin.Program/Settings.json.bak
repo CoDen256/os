@@ -1,6 +1,12 @@
 {
-  "LastIndexTime": "2024-01-16T19:17:33.3591872+01:00",
+  "LastIndexTime": "2024-01-17T18:52:34.7118048+01:00",
   "ProgramSources": [
+    {
+      "Location": "C:\\Users\\denys\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps",
+      "Name": "Scoop Apps",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\users\\denys\\appdata\\roaming\\microsoft\\windows\\start menu\\programs\\scoop apps"
+    },
     {
       "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu",
       "Name": "Start Menu",

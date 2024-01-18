@@ -14,6 +14,7 @@ scoop install gradle
 scoop install mvndaemon
 scoop install python312
 scoop install extras/vcredist2022
+scoop install gtools
 
 scoop install powertoys
 
@@ -32,3 +33,19 @@ scoop install obsidian
 scoop install vlc
 scoop install sharex
 scoop install treesize-free
+
+scoop install googlechrome
+
+scoop install nvm
+nvm install --lts # npm + node 
+nvm use 20.11.0
+
+scoop install kubectl
+scoop install helm
+scoop install krew
+scoop install aws
+scoop install aws-iam-authenticator
+scoop install eksctl
+scoop install openlens
+
+scoop install slack

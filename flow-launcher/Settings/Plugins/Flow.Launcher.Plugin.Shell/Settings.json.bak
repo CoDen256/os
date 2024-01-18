@@ -5,5 +5,8 @@
   "RunAsAdministrator": true,
   "ShowOnlyMostUsedCMDs": false,
   "ShowOnlyMostUsedCMDsNumber": 0,
-  "CommandHistory": {}
+  "CommandHistory": {
+    "scoop install googlechrome": 1,
+    "scoop install discord": 1
+  }
 }

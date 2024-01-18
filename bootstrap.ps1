@@ -24,6 +24,12 @@ choco feature enable -n allowGlobalConfirmation
 choco install packages.config
 
 ### For each user:
-### ./install/scoop.ps1
+### ./home-full.ps1
+### OR
+### ./install/shared-scoop.ps1
 ### ./install/shared.ps1
-### ./install/{type}/{type}.ps1
+### ./install/dev-scoop.ps1
+### OR
+### ./install/shared-scoop.ps1
+### ./install/shared.ps1
+### ./install/work-scoop.ps1

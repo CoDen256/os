@@ -91,3 +91,14 @@ rm ~\Downloads\bing.exe
 ###### MobaXTerm
 New-Item -Path "$($env:USERPROFILE)\OneDrive\docs\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\scoop\apps\MobaXterm\current\MobaXTerm.ini" # to create backup from existing local
 New-Item -Path "$($env:USERPROFILE)\scoop\apps\mobaxterm\current\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\OneDrive\docs\MobaXTerm.ini" # to create new from backup
+
+
+#####  Verify
+mvn -v
+gradle -v
+java -version
+kotlinc -version
+python --version
+git --version
+7z
+python --version
