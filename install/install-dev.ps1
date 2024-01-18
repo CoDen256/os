@@ -6,9 +6,6 @@ scoop bucket add extras
 scoop bucket add java
 scoop bucket add versions
 
-scoop install jetbrains-toolbox
-scoop install vscode
-
 scoop install openjdk21
 scoop install kotlin
 scoop install maven
@@ -39,7 +36,7 @@ scoop install ./manifests\smali.json
 scoop install ./manifests\baksmali.json
 
 # Run Android Studio before and install an sdk
-scoop install android-clt # instead of sdk platforms tools
+scoop install android-clt
 
 pathed /append $(dir "$($env:USERPROFILE)\tools\android\sdk\build-tools\*").FullName 
 pathed /append "$($env:USERPROFILE)\tools\android\sdk\platform-tools" /user     

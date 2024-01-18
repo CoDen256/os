@@ -53,6 +53,8 @@ scoop install obsidian -g
 scoop install vlc -g
 scoop install sharex -g
 scoop install treesize-free -g
+scoop install jetbrains-toolbox -g
+scoop install vscode -g
 
 ### Install choco & choco packages system wide
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))

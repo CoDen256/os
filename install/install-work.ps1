@@ -3,9 +3,6 @@ mkdir C:\ome
 scoop bucket add java
 scoop bucket add versions
 
-scoop install jetbrains-toolbox
-scoop install vscode
-
 scoop install openjdk21
 scoop install kotlin
 scoop install maven
