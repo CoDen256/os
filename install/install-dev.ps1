@@ -15,6 +15,8 @@ scoop install maven
 scoop install mvndaemon extras/vcredist2022
 scoop install gradle
 scoop install python312
+scoop install nvm
+nvm install lts
 
 scoop install gtools
 scoop install openssl
@@ -37,6 +39,19 @@ scoop install brave
 scoop install apktool
 scoop install android-clt # instead of sdk platforms tools
 scoop install jadx
+
+
+scoop install ./manifests\dex-tools.json
+scoop install ./manifests\smali.json
+scoop install ./manifests\baksmali.json
+
+pathed /append $(dir "$($env:USERPROFILE)\tools\android\sdk\build-tools\*").FullName 
+pathed /append "$($env:USERPROFILE)\tools\android\sdk\platform-tools" /user     
+
+pathed /append "$($env:USERPROFILE)\tools\android" /user
+pathed /append "$($env:USERPROFILE)\tools\android\dex-tools" /user
+pathed /append "$($env:USERPROFILE)\tools\android\dex-tools\bin" /user
+pathed /append "$($env:USERPROFILE)\tools\android\jadx\bin" /user
 
 
 dex-tools 

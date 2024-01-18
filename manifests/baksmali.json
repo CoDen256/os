@@ -1,7 +1,7 @@
 {
     "version":  "2.4",
-    "url":  "wget https://bitbucket.org/JesusFreke/smali/downloads/smali-2.5.2.jar",
+    "url":  "https://bitbucket.org/JesusFreke/smali/downloads/baksmali-2.5.2.jar",
     "bin": [
-        "smali-2.5.2.jar", "smali", "java -jar %~dp0smali.jar %*"
+        ["baksmali-2.5.2.jar", "baksmali"]
     ]
 }
