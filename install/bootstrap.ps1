@@ -6,15 +6,15 @@ Get-Service -Name ssh-agent | Set-Service -StartupType Automatic
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 
 
-### Scoop
+### Scoop and must-have apps
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 scoop install git -g
 scoop bucket add extras
+
 scoop install autohotkey -g
 scoop install flow-launcher -g
-scoop install powertoys -g
 
 ### Setup folder
 git clone git@github.com:CoDen256/os-setup.git C:\setup
@@ -22,12 +22,6 @@ cd C:\setup
 git config core.autocrlf true                               # for this setup project only
 git config user.email den.blackshov@gmail.com               # for this setup project only
 git config user.name Denys Chernyshov                       # for this setup project only
-
-
-### Install choco & choco packages system wide
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-choco feature enable -n allowGlobalConfirmation
-choco install packages.config
 
 
 # AUTOHOTKEY 2 #
@@ -48,6 +42,22 @@ New-Item -Path "$FLOW_PATH\UserData\Settings" -ItemType Junction -Value $PWD\flo
 New-Item -Path "$FLOW_PATH\UserData\Themes" -ItemType Junction -Value $PWD\flow-launcher\Themes
 New-Item -Path "$FLOW_PATH\UserData\Plugins" -ItemType Junction -Value $PWD\flow-launcher\Plugins
 Start-Process -FilePath "C:\ProgramData\scoop\apps\flow-launcher\current\Flow.Launcher.exe" 
+
+
+
+# Global Apps #
+scoop install powertoys -g
+scoop install 7zip -g
+scoop install notion -g
+scoop install obsidian -g
+scoop install vlc -g
+scoop install sharex -g
+scoop install treesize-free -g
+
+### Install choco & choco packages system wide
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+choco feature enable -n allowGlobalConfirmation
+choco install packages.config
 
 ### For each user:
 ### ./shared-all.ps1

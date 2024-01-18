@@ -19,17 +19,10 @@ scoop install gtools
 scoop install openssl
 scoop install curl
 scoop install keystore-explorer
-scoop install gtools
-scoop install 7zip
 
 scoop install postman
 scoop install mobaxterm
 
-scoop install notion
-scoop install obsidian
-scoop install vlc
-scoop install sharex
-scoop install treesize-free
 scoop install slack
 scoop install googlechrome
 

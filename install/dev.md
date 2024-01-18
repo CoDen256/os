@@ -23,8 +23,9 @@
 
     # zipalign, appt, apksigner, dexdump under ~\tools\android\sdk\build-tools\<version>\
     # adb under ~\tools\android\sdk\platform-tools
-    
+    # android ctl
+
     # 7z in Program Files/7-Zip + tar in PATH
     # keytool, jarsigner is available in JAVA_HOME/bin
 
-    # android ctl
+    

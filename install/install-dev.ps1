@@ -22,22 +22,15 @@ scoop install gtools
 scoop install openssl
 scoop install curl
 scoop install keystore-explorer
-scoop install 7zip
 
 scoop install postman
 scoop install mobaxterm
 scoop install raspberry-pi-imager
 scoop install wireshark
 
-scoop install notion
-scoop install obsidian
-scoop install vlc
-scoop install sharex
-scoop install treesize-free
 scoop install brave
 
 scoop install apktool
-scoop install android-clt # instead of sdk platforms tools
 scoop install jadx
 
 
@@ -45,13 +38,11 @@ scoop install ./manifests\dex-tools.json
 scoop install ./manifests\smali.json
 scoop install ./manifests\baksmali.json
 
+# Run Android Studio before and install an sdk
+scoop install android-clt # instead of sdk platforms tools
+
 pathed /append $(dir "$($env:USERPROFILE)\tools\android\sdk\build-tools\*").FullName 
 pathed /append "$($env:USERPROFILE)\tools\android\sdk\platform-tools" /user     
-
-pathed /append "$($env:USERPROFILE)\tools\android" /user
-pathed /append "$($env:USERPROFILE)\tools\android\dex-tools" /user
-pathed /append "$($env:USERPROFILE)\tools\android\dex-tools\bin" /user
-pathed /append "$($env:USERPROFILE)\tools\android\jadx\bin" /user
 
 
 dex-tools 
@@ -60,6 +51,7 @@ d2j-jar2dex
 smali -v
 baksmali -v
 apktool -version
+jadx --version
+
 aapt version
 adb --version
-jadx --version
