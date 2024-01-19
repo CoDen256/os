@@ -9,6 +9,6 @@
     "scoop install googlechrome": 1,
     "scoop install discord": 1,
     "shell:startup": 3,
-    "scoop list": 2
+    "scoop list": 4
   }
 }

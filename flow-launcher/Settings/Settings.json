@@ -20,14 +20,14 @@
   "UseAnimation": true,
   "UseSound": true,
   "UseClock": true,
-  "UseDate": false,
-  "TimeFormat": "hh:mm tt",
-  "DateFormat": "dddd MM\u0027/\u0027dd",
+  "UseDate": true,
+  "TimeFormat": "hh:mm:ss tt",
+  "DateFormat": "ddd dd\u0027/\u0027MM",
   "FirstLaunch": false,
   "SettingWindowWidth": 1000,
   "SettingWindowHeight": 700,
-  "SettingWindowTop": 51.2,
-  "SettingWindowLeft": 305.6,
+  "SettingWindowTop": 56,
+  "SettingWindowLeft": 308.8,
   "SettingWindowState": 0,
   "CustomExplorerIndex": 0,
   "CustomExplorerList": [
@@ -100,12 +100,12 @@
   "AlwaysStartEn": true,
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": true,
-  "WindowLeft": 443.20000000000005,
-  "WindowTop": 193.60000000000002,
+  "WindowLeft": 443,
+  "WindowTop": 193.6,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 5,
-  "ActivateTimes": 1641,
+  "ActivateTimes": 1757,
   "CustomPluginHotkeys": [
     {
       "Hotkey": "Ctrl \u002B NumPad1",
@@ -113,7 +113,7 @@
     },
     {
       "Hotkey": "Ctrl \u002B NumPad2",
-      "ActionKeyword": "\u003E "
+      "ActionKeyword": "\u0060 "
     },
     {
       "Hotkey": "Ctrl \u002B NumPad4",
@@ -125,11 +125,11 @@
     },
     {
       "Hotkey": "Ctrl \u002B NumPad6",
-      "ActionKeyword": "a"
+      "ActionKeyword": "! "
     },
     {
       "Hotkey": "Ctrl \u002B NumPad7",
-      "ActionKeyword": "p C:\\"
+      "ActionKeyword": "s C:\\"
     },
     {
       "Hotkey": "Ctrl \u002B NumPad0",
@@ -137,11 +137,27 @@
     },
     {
       "Hotkey": "Ctrl \u002B NumPad8",
-      "ActionKeyword": "d"
+      "ActionKeyword": "s %USERPROFILE%"
     },
     {
       "Hotkey": "Ctrl \u002B NumPad9",
-      "ActionKeyword": "f"
+      "ActionKeyword": "f "
+    },
+    {
+      "Hotkey": "Ctrl \u002B Return",
+      "ActionKeyword": "flow"
+    },
+    {
+      "Hotkey": "Ctrl \u002B Decimal",
+      "ActionKeyword": "\u0060 scoop install "
+    },
+    {
+      "Hotkey": "Win \u002B OemOpenBrackets",
+      "ActionKeyword": "{clipboard}"
+    },
+    {
+      "Hotkey": "Win \u002B Oem6",
+      "ActionKeyword": "s {clipboard}"
     }
   ],
   "CustomShortcuts": [],
@@ -225,7 +241,7 @@
         "Name": "Shell",
         "Version": "3.1.1",
         "ActionKeywords": [
-          "\u003E"
+          "\u0060"
         ],
         "Priority": 0,
         "Disabled": false
@@ -245,8 +261,9 @@
         "Name": "Web Searches",
         "Version": "3.0.5",
         "ActionKeywords": [
-          "*",
-          "n"
+          "n",
+          "g",
+          "net"
         ],
         "Priority": -1,
         "Disabled": false
@@ -271,16 +288,6 @@
         "Priority": 5,
         "Disabled": false
       },
-      "8025ce8b-b1ce-49cd-af48-b343a0df8606": {
-        "ID": "8025ce8b-b1ce-49cd-af48-b343a0df8606",
-        "Name": "Clipboard History",
-        "Version": "1.1.1",
-        "ActionKeywords": [
-          "!"
-        ],
-        "Priority": 0,
-        "Disabled": false
-      },
       "095A6AE3A255532EAAD78F05A71D4981": {
         "ID": "095A6AE3A255532EAAD78F05A71D4981",
         "Name": "Quick Uninstaller",
@@ -296,7 +303,7 @@
         "Name": "Windows Startup",
         "Version": "1.0.2",
         "ActionKeywords": [
-          "wst"
+          "start"
         ],
         "Priority": 0,
         "Disabled": false
@@ -311,7 +318,6 @@
           "*",
           "*",
           "*",
-          "p",
           "s"
         ],
         "Priority": 0,
@@ -324,7 +330,7 @@
         "ActionKeywords": [
           "*"
         ],
-        "Priority": 0,
+        "Priority": 1,
         "Disabled": false
       },
       "0ECADE17459B49F587BF81DC3A125110": {
@@ -342,7 +348,7 @@
         "Name": "DevToys Launcher",
         "Version": "1.3.0",
         "ActionKeywords": [
-          "*"
+          "toys"
         ],
         "Priority": 0,
         "Disabled": false
@@ -352,10 +358,10 @@
         "Name": "Favorites",
         "Version": "1.5.0",
         "ActionKeywords": [
-          "*"
+          "fav"
         ],
         "Priority": 0,
-        "Disabled": false
+        "Disabled": true
       },
       "525995402BEF4A8CA860D92F6D108092": {
         "ID": "525995402BEF4A8CA860D92F6D108092",
@@ -392,7 +398,7 @@
         "Name": "ClipboardR",
         "Version": "0.3.1",
         "ActionKeywords": [
-          "clipboardr"
+          "!"
         ],
         "Priority": 0,
         "Disabled": false
