@@ -395,3 +395,4 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 flow-launcher/Settings/History.json
 flow-launcher/Settings/History.json.bak
+*[.db]

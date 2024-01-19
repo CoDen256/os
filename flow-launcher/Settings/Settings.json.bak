@@ -105,7 +105,7 @@
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 6,
-  "ActivateTimes": 1876,
+  "ActivateTimes": 1895,
   "CustomPluginHotkeys": [
     {
       "Hotkey": "Ctrl \u002B NumPad1",
@@ -318,7 +318,8 @@
           "*",
           "*",
           "*",
-          "s"
+          "s",
+          "f"
         ],
         "Priority": 0,
         "Disabled": false
@@ -383,16 +384,6 @@
         "Priority": 0,
         "Disabled": true
       },
-      "ac0201cb-6610-48dd-9c60-e292d5e3a3da": {
-        "ID": "ac0201cb-6610-48dd-9c60-e292d5e3a3da",
-        "Name": "ClipboardR",
-        "Version": "0.3.1",
-        "ActionKeywords": [
-          "!"
-        ],
-        "Priority": 0,
-        "Disabled": false
-      },
       "2f4e384e-76ce-45c3-aea2-b16f5e5c328f": {
         "ID": "2f4e384e-76ce-45c3-aea2-b16f5e5c328f",
         "Name": "Hello World Python",
@@ -419,6 +410,16 @@
         "Version": "9.0.1",
         "ActionKeywords": [
           "st"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "ac0201cb-6610-48dd-9c60-e292d5e3a3da": {
+        "ID": "ac0201cb-6610-48dd-9c60-e292d5e3a3da",
+        "Name": "ClipboardR",
+        "Version": "0.3.1",
+        "ActionKeywords": [
+          "clipboardr"
         ],
         "Priority": 0,
         "Disabled": false

@@ -95,7 +95,7 @@
   "ShowWindowsContextMenu": true,
   "DefaultOpenFolderInFileManager": true,
   "SearchActionKeyword": "f",
-  "SearchActionKeywordEnabled": false,
+  "SearchActionKeywordEnabled": true,
   "FileContentSearchActionKeyword": "doc:",
   "FileContentSearchKeywordEnabled": false,
   "PathSearchActionKeyword": "s",
