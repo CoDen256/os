@@ -36,10 +36,8 @@ scoop install ./manifests\smali.json
 scoop install ./manifests\baksmali.json
 
 # Run Android Studio before and install an sdk
-scoop install android-clt
-
-pathed /append $(dir "$($env:USERPROFILE)\tools\android\sdk\build-tools\*").FullName 
-pathed /append "$($env:USERPROFILE)\tools\android\sdk\platform-tools" /user     
+pathed /append $(dir "$($env:USERPROFILE)\android\sdk\build-tools\*").FullName /user
+pathed /append "$($env:USERPROFILE)\android\sdk\platform-tools" /user     
 
 
 dex-tools 
@@ -50,5 +48,10 @@ baksmali -v
 apktool -version
 jadx --version
 
-aapt version
+# platform tools
 adb --version
+# build tools
+aapt version
+apksigner
+zipalign
+dexdump

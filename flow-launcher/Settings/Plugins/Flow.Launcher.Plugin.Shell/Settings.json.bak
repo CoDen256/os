@@ -1,8 +1,8 @@
 {
-  "Shell": 1,
+  "Shell": 3,
   "ReplaceWinR": false,
   "LeaveShellOpen": true,
-  "RunAsAdministrator": false,
+  "RunAsAdministrator": true,
   "ShowOnlyMostUsedCMDs": true,
   "ShowOnlyMostUsedCMDsNumber": 5,
   "CommandHistory": {
@@ -14,6 +14,10 @@
     "scoop which git": 1,
     "scoop install steam": 1,
     "scoop uninstall  steam": 1,
-    "scoop which ahk": 1
+    "scoop which ahk": 1,
+    "scoop uninstall  android-clt": 1,
+    "pathed /append $(dir \u0022$($env:USERPROFILE)\\tools\\android\\sdk\\build-tools\\*\u0022).FullName /user": 1,
+    "pathed /append $(dir \u0022$($env:USERPROFILE)\\android\\sdk\\build-tools\\*\u0022).FullName /user": 1,
+    "nvm list": 1
   }
 }
