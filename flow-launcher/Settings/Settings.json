@@ -1,6 +1,6 @@
 {
-  "Hotkey": "Ctrl \u002B Tab",
-  "OpenResultModifiers": "Alt",
+  "Hotkey": "Ctrl \u002B NumPad3",
+  "OpenResultModifiers": "Ctrl",
   "ColorScheme": "Dark",
   "ShowOpenResultHotkey": true,
   "WindowSize": 650,
@@ -26,8 +26,8 @@
   "FirstLaunch": false,
   "SettingWindowWidth": 1000,
   "SettingWindowHeight": 700,
-  "SettingWindowTop": 16,
-  "SettingWindowLeft": 339.20000000000005,
+  "SettingWindowTop": 51.2,
+  "SettingWindowLeft": 305.6,
   "SettingWindowState": 0,
   "CustomExplorerIndex": 0,
   "CustomExplorerList": [
@@ -105,8 +105,45 @@
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 5,
-  "ActivateTimes": 1302,
-  "CustomPluginHotkeys": [],
+  "ActivateTimes": 1641,
+  "CustomPluginHotkeys": [
+    {
+      "Hotkey": "Ctrl \u002B NumPad1",
+      "ActionKeyword": "esc"
+    },
+    {
+      "Hotkey": "Ctrl \u002B NumPad2",
+      "ActionKeyword": "\u003E "
+    },
+    {
+      "Hotkey": "Ctrl \u002B NumPad4",
+      "ActionKeyword": "q"
+    },
+    {
+      "Hotkey": "Ctrl \u002B NumPad5",
+      "ActionKeyword": "w"
+    },
+    {
+      "Hotkey": "Ctrl \u002B NumPad6",
+      "ActionKeyword": "a"
+    },
+    {
+      "Hotkey": "Ctrl \u002B NumPad7",
+      "ActionKeyword": "p C:\\"
+    },
+    {
+      "Hotkey": "Ctrl \u002B NumPad0",
+      "ActionKeyword": "spacess"
+    },
+    {
+      "Hotkey": "Ctrl \u002B NumPad8",
+      "ActionKeyword": "d"
+    },
+    {
+      "Hotkey": "Ctrl \u002B NumPad9",
+      "ActionKeyword": "f"
+    }
+  ],
   "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
   "EnableUpdateLog": false,
@@ -211,7 +248,7 @@
           "*",
           "n"
         ],
-        "Priority": 0,
+        "Priority": -1,
         "Disabled": false
       },
       "5043CETYU6A748679OPA02D27D99677A": {
@@ -229,7 +266,7 @@
         "Name": "JetBrainsIDEProjects",
         "Version": "2.1.0",
         "ActionKeywords": [
-          "*"
+          "jb"
         ],
         "Priority": 5,
         "Disabled": false
@@ -239,7 +276,7 @@
         "Name": "Clipboard History",
         "Version": "1.1.1",
         "ActionKeywords": [
-          "c"
+          "!"
         ],
         "Priority": 0,
         "Disabled": false
@@ -305,7 +342,77 @@
         "Name": "DevToys Launcher",
         "Version": "1.3.0",
         "ActionKeywords": [
-          "dtoys"
+          "*"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "D0DB38F5-0199-4DFC-8A8D-1B22F68C157C": {
+        "ID": "D0DB38F5-0199-4DFC-8A8D-1B22F68C157C",
+        "Name": "Favorites",
+        "Version": "1.5.0",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "525995402BEF4A8CA860D92F6D108092": {
+        "ID": "525995402BEF4A8CA860D92F6D108092",
+        "Name": "VS Code Workspaces",
+        "Version": "1.3.0",
+        "ActionKeywords": [
+          "{"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "2d5036e2-eccc-4254-b88e-de78580e2195": {
+        "ID": "2d5036e2-eccc-4254-b88e-de78580e2195",
+        "Name": "Bulk URL Opener",
+        "Version": "1.1.0",
+        "ActionKeywords": [
+          "bu"
+        ],
+        "Priority": 0,
+        "Disabled": true
+      },
+      "4D5DF575E4964C6AAADCF86134F09CC0": {
+        "ID": "4D5DF575E4964C6AAADCF86134F09CC0",
+        "Name": "Steam Search",
+        "Version": "9.0.1",
+        "ActionKeywords": [
+          "steam"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "ac0201cb-6610-48dd-9c60-e292d5e3a3da": {
+        "ID": "ac0201cb-6610-48dd-9c60-e292d5e3a3da",
+        "Name": "ClipboardR",
+        "Version": "0.3.1",
+        "ActionKeywords": [
+          "clipboardr"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "2f4e384e-76ce-45c3-aea2-b16f5e5c328f": {
+        "ID": "2f4e384e-76ce-45c3-aea2-b16f5e5c328f",
+        "Name": "Hello World Python",
+        "Version": "1.0.0",
+        "ActionKeywords": [
+          "hp"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "661D020D-4E0B-414B-B12B-58F795A20D79": {
+        "ID": "661D020D-4E0B-414B-B12B-58F795A20D79",
+        "Name": "Shortcuts",
+        "Version": "1.1.1",
+        "ActionKeywords": [
+          "q"
         ],
         "Priority": 0,
         "Disabled": false

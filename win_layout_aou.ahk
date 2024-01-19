@@ -26,6 +26,8 @@ $F4:: {
 #w::Send("^{Numpad5}")   
 #a::Send("^{Numpad6}")   
 #s::Send("^{Numpad7}")    
+#d::Send("^{Numpad8}")    
+#f::Send("^{Numpad9}")     
 #Space::Send("^{Numpad0}")
  
 ; Map the letter to its similar-language variation with rotation (a -> ä -> a)

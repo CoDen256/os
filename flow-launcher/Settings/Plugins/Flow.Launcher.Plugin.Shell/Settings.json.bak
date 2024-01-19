@@ -1,12 +1,14 @@
 {
-  "Shell": 0,
+  "Shell": 1,
   "ReplaceWinR": false,
-  "LeaveShellOpen": false,
-  "RunAsAdministrator": true,
-  "ShowOnlyMostUsedCMDs": false,
-  "ShowOnlyMostUsedCMDsNumber": 0,
+  "LeaveShellOpen": true,
+  "RunAsAdministrator": false,
+  "ShowOnlyMostUsedCMDs": true,
+  "ShowOnlyMostUsedCMDsNumber": 5,
   "CommandHistory": {
     "scoop install googlechrome": 1,
-    "scoop install discord": 1
+    "scoop install discord": 1,
+    "shell:startup": 3,
+    "scoop list": 2
   }
 }

@@ -1,0 +1,15 @@
+{
+  "CacheImages": false,
+  "KeepText": false,
+  "KeepTextHours": 0,
+  "KeepImage": false,
+  "KeepImageHours": 0,
+  "KeepFile": false,
+  "KeepFileHours": 0,
+  "MaxDataCount": 10000,
+  "DbPath": "ClipboardR.db",
+  "OrderBy": 0,
+  "ClearKeyword": "clear",
+  "ImageFormat": "yyyy-MM-dd-hhmmss-{app}",
+  "IconColor": "#3b82f6"
+}

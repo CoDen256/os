@@ -1,0 +1,14 @@
+{
+  "ID": "661D020D-4E0B-414B-B12B-58F795A20D79",
+  "Name": "Shortcuts",
+  "Description": "Open user defined shortcut quickly from Flow Launcher",
+  "Author": "Mantelis",
+  "Version": "1.1.1",
+  "Language": "csharp",
+  "ActionKeyword": "q",
+  "Website": "https://github.com/mantasjasikenas/flow-launcher-shortcuts-plugin",
+  "UrlDownload":"https://github.com/mantasjasikenas/flow-launcher-shortcuts-plugin/releases/download/v1.1.0/Flow.Launcher.Plugin.ShortcutPlugin.zip",
+  "UrlSourceCode": "https://github.com/mantasjasikenas/flow-launcher-shortcuts-plugin/tree/master",
+  "IcoPath": "images\\icon.png",
+  "ExecuteFileName": "Flow.Launcher.Plugin.ShortcutPlugin.dll"
+}

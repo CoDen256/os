@@ -1,0 +1,36 @@
+16:23:18 ERROR (launcher.py): [WinError 5] Access is denied: 'C:\\Users\\black\\games\\steamapps'
+Traceback (most recent call last):
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\flox\launcher.py", line 44, in run
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\flox\__init__.py", line 132, in _query
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\plugin\main.py", line 20, in query
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\plugin\steam.py", line 90, in all_games
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\plugin\library.py", line 27, in games
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 1034, in glob
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 405, in select_from
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 1305, in is_dir
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 1097, in stat
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\black\\games\\steamapps'
+16:23:23 ERROR (launcher.py): [WinError 5] Access is denied: 'C:\\Users\\black\\games\\steamapps'
+Traceback (most recent call last):
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\flox\launcher.py", line 44, in run
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\flox\__init__.py", line 132, in _query
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\plugin\main.py", line 20, in query
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\plugin\steam.py", line 90, in all_games
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\plugin\library.py", line 27, in games
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 1034, in glob
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 405, in select_from
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 1305, in is_dir
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 1097, in stat
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\black\\games\\steamapps'
+16:25:20 ERROR (launcher.py): [WinError 5] Access is denied: 'C:\\Users\\black\\games\\steamapps'
+Traceback (most recent call last):
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\flox\launcher.py", line 44, in run
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\flox\__init__.py", line 132, in _query
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\plugin\main.py", line 20, in query
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\plugin\steam.py", line 90, in all_games
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\plugin\library.py", line 27, in games
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 1034, in glob
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 405, in select_from
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 1305, in is_dir
+  File "C:\PROGRA~3\scoop\apps\FLOW-L~1\current\APP-11~1.2\UserData\Plugins\STEAMS~1.1\pathlib.py", line 1097, in stat
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\black\\games\\steamapps'
