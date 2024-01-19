@@ -2,7 +2,7 @@
   "SearchSources": [
     {
       "Title": "Google",
-      "ActionKeyword": "g",
+      "ActionKeyword": "*",
       "Icon": "google.png",
       "CustomIcon": false,
       "Url": "https://www.google.com/search?q={q}",

@@ -100,12 +100,12 @@
   "AlwaysStartEn": true,
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": true,
-  "WindowLeft": 443,
-  "WindowTop": 193.6,
+  "WindowLeft": 443.20000000000005,
+  "WindowTop": 193.60000000000002,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
-  "MaxResultsToShow": 5,
-  "ActivateTimes": 1757,
+  "MaxResultsToShow": 6,
+  "ActivateTimes": 1876,
   "CustomPluginHotkeys": [
     {
       "Hotkey": "Ctrl \u002B NumPad1",
@@ -144,11 +144,11 @@
       "ActionKeyword": "f "
     },
     {
-      "Hotkey": "Ctrl \u002B Return",
+      "Hotkey": "Win \u002B Multiply",
       "ActionKeyword": "flow"
     },
     {
-      "Hotkey": "Ctrl \u002B Decimal",
+      "Hotkey": "Win \u002B Decimal",
       "ActionKeyword": "\u0060 scoop install "
     },
     {
@@ -262,8 +262,8 @@
         "Version": "3.0.5",
         "ActionKeywords": [
           "n",
-          "g",
-          "net"
+          "net",
+          "*"
         ],
         "Priority": -1,
         "Disabled": false
@@ -283,7 +283,7 @@
         "Name": "JetBrainsIDEProjects",
         "Version": "2.1.0",
         "ActionKeywords": [
-          "jb"
+          "}"
         ],
         "Priority": 5,
         "Disabled": false
@@ -383,16 +383,6 @@
         "Priority": 0,
         "Disabled": true
       },
-      "4D5DF575E4964C6AAADCF86134F09CC0": {
-        "ID": "4D5DF575E4964C6AAADCF86134F09CC0",
-        "Name": "Steam Search",
-        "Version": "9.0.1",
-        "ActionKeywords": [
-          "steam"
-        ],
-        "Priority": 0,
-        "Disabled": false
-      },
       "ac0201cb-6610-48dd-9c60-e292d5e3a3da": {
         "ID": "ac0201cb-6610-48dd-9c60-e292d5e3a3da",
         "Name": "ClipboardR",
@@ -411,14 +401,24 @@
           "hp"
         ],
         "Priority": 0,
-        "Disabled": false
+        "Disabled": true
       },
       "661D020D-4E0B-414B-B12B-58F795A20D79": {
         "ID": "661D020D-4E0B-414B-B12B-58F795A20D79",
         "Name": "Shortcuts",
         "Version": "1.1.1",
         "ActionKeywords": [
-          "q"
+          "*"
+        ],
+        "Priority": 1,
+        "Disabled": true
+      },
+      "4D5DF575E4964C6AAADCF86134F09CC0": {
+        "ID": "4D5DF575E4964C6AAADCF86134F09CC0",
+        "Name": "Steam Search",
+        "Version": "9.0.1",
+        "ActionKeywords": [
+          "st"
         ],
         "Priority": 0,
         "Disabled": false

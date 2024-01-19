@@ -25,8 +25,9 @@ git config user.name Denys Chernyshov                       # for this setup pro
 
 
 # AUTOHOTKEY 2 #
-New-Item -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" -ItemType SymbolicLink -Value win_layout_aou.ahk
-
+# Also allow to run as admin for all users in the properties of AutoHotkeyUX.exe
+New-Item -Path "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.vbs" -ItemType SymbolicLink -Value "win_layout_aou.vbs"
+# .vbs is needed to run the ahk script as admin on startup, because some of the shortcuts are ignore inside the terminal
 
 # FLOW LAUNCHER #
 # (System wide with embedded python)

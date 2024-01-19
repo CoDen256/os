@@ -9,6 +9,11 @@
     "scoop install googlechrome": 1,
     "scoop install discord": 1,
     "shell:startup": 3,
-    "scoop list": 4
+    "scoop list": 5,
+    "git": 1,
+    "scoop which git": 1,
+    "scoop install steam": 1,
+    "scoop uninstall  steam": 1,
+    "scoop which ahk": 1
   }
 }
