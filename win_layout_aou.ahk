@@ -16,6 +16,18 @@ $F4:: {
     SetInputLang(0x0409) ; english-ÜS
 }
 
+
+; Flowlauncher key remappings
+; Disable some windows shortcuts instead
+#Esc::Send("^{Numpad1}")  
+#`::Send("^{Numpad2}")    
+#Tab::Send("^{Numpad3}")
+#q::Send("^{Numpad4}")   
+#w::Send("^{Numpad5}")   
+#a::Send("^{Numpad6}")   
+#s::Send("^{Numpad7}")    
+#Space::Send("^{Numpad0}")
+ 
 ; Map the letter to its similar-language variation with rotation (a -> ä -> a)
 $`:: {
 
@@ -47,7 +59,7 @@ $`:: {
     return
 }
 
- CapsLock::{
+CapsLock::{
      Send("``")
  }
 
