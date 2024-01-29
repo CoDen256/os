@@ -101,11 +101,11 @@
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": true,
   "WindowLeft": 443.20000000000005,
-  "WindowTop": 194.4,
+  "WindowTop": 193.60000000000002,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 6,
-  "ActivateTimes": 1989,
+  "ActivateTimes": 2010,
   "CustomPluginHotkeys": [
     {
       "Hotkey": "Ctrl \u002B NumPad1",

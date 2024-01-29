@@ -20,6 +20,25 @@ git config core.autocrlf true                               # for this setup pro
 git config user.email den.blackshov@gmail.com               # for this setup project only
 git config user.name Denys Chernyshov                       # for this setup project only
 
+
+# FLOW LAUNCHER #
+# (System wide with embedded python)
+scoop install flow-launcher -g
+
+taskkill /f /im Flow*
+
+Set-Variable -Name "FLOW_PATH" (Get-ChildItem -Dir -Path "C:\ProgramData\scoop\apps\flow-launcher\current" -Filter 'app*').FullName
+
+Remove-Item -Force -Recurse -Path "$FLOW_PATH\UserData\Plugins" 
+Remove-Item -Force -Recurse -Path "$FLOW_PATH\UserData\Themes"
+Remove-Item -Force -Recurse -Path "$FLOW_PATH\UserData\Settings"
+
+New-Item -Path "$FLOW_PATH\UserData\Settings" -ItemType Junction -Value $PWD\flow-launcher\Settings
+New-Item -Path "$FLOW_PATH\UserData\Themes" -ItemType Junction -Value $PWD\flow-launcher\Themes
+New-Item -Path "$FLOW_PATH\UserData\Plugins" -ItemType Junction -Value $PWD\flow-launcher\Plugins
+Start-Process -FilePath "C:\ProgramData\scoop\apps\flow-launcher\current\Flow.Launcher.exe" 
+
+
 # System wide Apps (for saving space) #
 scoop install jetbrains-toolbox -g
 scoop install vscode -g 
@@ -29,14 +48,19 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 choco feature enable -n allowGlobalConfirmation
 choco install packages.config
 
+# Move Shortrcuts on Startup 
+# C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+# Flow Launcher
+# Docker Desktop
+
 ### For each user:
 ### ./shared-all.ps1
-### ./home.ps1
+### ./install-home.ps1
 ### OR
 ### ./shared-all.ps1
 ### ./shared-work-dev.ps1
-### ./install/dev-scoop.ps1
+### ./install-dev.ps1
 ### OR
 ### ./shared-all.ps1
 ### ./shared-work-dev.ps1
-### ./install/work-scoop.ps1
+### ./install-work.ps1
