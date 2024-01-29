@@ -63,3 +63,10 @@ aapt version
 apksigner
 zipalign
 dexdump
+
+
+# Move Shortcuts to Start Menu:
+# %APPDATA%\Roaming\Microsoft\Windows\Start Menu\Programs
+# Jetbrains
+# Docker Desktop
+# Brave

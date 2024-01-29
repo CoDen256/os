@@ -45,3 +45,4 @@ scoop install openlens
 # Slack
 # Chrome
 # Jetbrains
+# Docker Desktop

@@ -51,7 +51,6 @@ choco install packages.config
 # Move Shortrcuts on Startup 
 # C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
 # Flow Launcher
-# Docker Desktop
 
 ### For each user:
 ### ./shared-all.ps1
