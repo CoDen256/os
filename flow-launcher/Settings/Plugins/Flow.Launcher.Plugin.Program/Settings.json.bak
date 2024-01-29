@@ -1,6 +1,12 @@
 {
-  "LastIndexTime": "2024-01-19T18:04:20.658147+01:00",
+  "LastIndexTime": "2024-01-29T09:02:44.3722658+01:00",
   "ProgramSources": [
+    {
+      "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps",
+      "Name": "Scoop Apps",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\programdata\\microsoft\\windows\\start menu\\programs\\scoop apps"
+    },
     {
       "Location": "C:\\Users\\denys\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps",
       "Name": "Scoop Apps",
@@ -62,6 +68,18 @@
       "Name": "brave",
       "Enabled": false,
       "UniqueIdentifier": "c:\\users\\denbl\\appdata\\local\\bravesoftware\\brave-browser\\application\\brave.exe"
+    },
+    {
+      "Location": "C:\\Users\\denys\\scoop\\apps\\googlechrome\\current",
+      "Name": "chrome",
+      "Enabled": false,
+      "UniqueIdentifier": "c:\\users\\denys\\scoop\\apps\\googlechrome\\current\\chrome.exe"
+    },
+    {
+      "Location": "C:\\Users\\denys\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\JetBrains Toolbox",
+      "Name": "JetBrains Toolbox",
+      "Enabled": false,
+      "UniqueIdentifier": "c:\\users\\denys\\appdata\\roaming\\microsoft\\windows\\start menu\\programs\\jetbrains toolbox\\jetbrains toolbox.lnk"
     }
   ],
   "CustomSuffixes": [],

@@ -396,3 +396,8 @@ fabric.properties
 flow-launcher/Settings/History.json
 flow-launcher/Settings/History.json.bak
 *[.db]
+flow-launcher/Settings/UserSelectedRecord.json
+flow-launcher/Settings/UserSelectedRecord.json.bak
+flow-launcher/Settings/Settings.json.bak
+flow-launcher/Settings/Plugins/Flow.Launcher.Plugin.Shell/Settings.json.bak
+flow-launcher/Settings/Plugins/Flow.Launcher.Plugin.Program/Settings.json.bak
