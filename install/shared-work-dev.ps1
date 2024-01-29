@@ -14,6 +14,9 @@ ssh-keygen -t rsa -b 4096 -C # "email@gmail.com"
 
 # WSL 2 #
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+dism.exe /online /enable-feature /featurename:Microsoft-Hyper-V /all
+bcdedit /set hypervisorlaunchtype Auto
+
 wsl --update
 wsl --set-default-version 2
 wsl --install -d Ubuntu-22.04
