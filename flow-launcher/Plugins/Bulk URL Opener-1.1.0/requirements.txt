@@ -1,3 +1,0 @@
-flowlauncher
-pyyaml
-pathlib

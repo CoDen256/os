@@ -393,8 +393,8 @@ fabric.properties
 
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
-flow-launcher/Settings/History.json
-flow-launcher/Settings/History.json.bak
+flow-launcher/*/Settings/History.json
+flow-launcher/*/Settings/History.json.bak
 *[.db]
 flow-launcher/*/Settings/UserSelectedRecord.json
 flow-launcher/*/Settings/UserSelectedRecord.json.bak
