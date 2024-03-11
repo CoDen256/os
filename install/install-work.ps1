@@ -1,4 +1,4 @@
-# AUTOHOTKEY 2 #
+######################################### AUTOHOTKEY 2 #
 
 scoop install autohotkey
 
@@ -11,8 +11,8 @@ scoop install autohotkey
 cp "win_layout_aou.ahk" "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\Startup\win_layout_aou.ahk" 
 
 
-#####
-# FLOW LAUNCHER #
+
+######################################### FLOW LAUNCHER #
 scoop install flow-launcher
 
 taskkill /f /im Flow*
@@ -28,7 +28,7 @@ New-Item -Path "$FLOW_PATH\UserData\Themes" -ItemType Junction -Value $PWD\flow-
 New-Item -Path "$FLOW_PATH\UserData\Plugins" -ItemType Junction -Value $PWD\flow-launcher\work\Plugins
 Start-Process -FilePath "~\scoop\apps\flow-launcher\current\Flow.Launcher.exe" 
 
-#####
+########################################## SCOOP APPS #
 
 mkdir C:\ome
 
@@ -74,6 +74,7 @@ scoop install aws-iam-authenticator
 scoop install eksctl
 scoop install lens
 
+################################################## SHORTCUTS
 # Copy Shortcuts to Start Menu:
 Set-Variable -Name "PROG" "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\"
 
@@ -85,8 +86,8 @@ cp "$PROG\Jetbrains Toolbox\IntelliJ IDEA Ultimate.lnk" "$PROG\Startup\"
 cp "C:\ProgramData\Microsoft\Windows\Start Menu\Docker Desktop.lnk" "$PROG\Startup\"
 
 
-### EXTRA 
-# GIT #
+
+################################################### GIT #
 cp git-config/.gitconfig ~/.gitconfig
 cp git-config/.default.gitconfig ~/.default.gitconfig
 
@@ -100,7 +101,7 @@ cp git-config/.default.gitconfig ~/.default.gitconfig
 ssh-keygen -t rsa -b 4096 -C # "email@gmail.com"
 
 
-# WSL 2 #
+##################################################### WSL 2 #
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 dism.exe /online /enable-feature /featurename:Microsoft-Hyper-V /all
 bcdedit /set hypervisorlaunchtype Auto
@@ -109,7 +110,7 @@ wsl --update
 wsl --set-default-version 2
 wsl --install -d Ubuntu-22.04
 
-###### Terminal
+################################################### Terminal
 # [Install fonts for windows if you are using zsh agnoster](https://slmeng.medium.com/how-to-install-powerline-fonts-in-windows-b2eedecace58):
 
 git clone https://github.com/powerline/fonts
@@ -120,7 +121,7 @@ Remove-Item -Force -Recurse -Path "fonts"
 
 # Use `settings.json` in Windows terminal
 
-New-Item -Path "$($env:LOCALAPPDATA)\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Value .\win-terminal\settings.json -Force
+New-Item -Path "C:\Users\denys\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Value .\win-terminal\settings-work.json -Force
 
 # Terminal Ubuntu zsh + oh my zsh
 
@@ -136,6 +137,8 @@ wsl ln -s ~/.oh-my-zsh/custom/pure/pure.zsh ~/.oh-my-zsh/custom
 wsl ln -s ~/.oh-my-zsh/custom/pure/async.zsh ~/.oh-my-zsh/custom
 wsl sed -i s/robbyrussel/refined/g ~/.zshrc                     # change ZSH_THEME to refined
 
+
+################################################################# IDE SETUP
 ###### VS Code
 code.exe
 
@@ -155,17 +158,17 @@ jetbrains-toolbox.exe
 # 2. E.g. IntelliJ -> File -> Manage IDE Settings -> Settings Sync
 
 
-###### XODO PDF
+######################################################## XODO PDF
 # [Install via Microsoft store](
 Start-Process "ms-windows-store://pdp?hl=en-us&gl=ps&productid=9WZDNCRDJXP4&mode=mini&pos=5%2C6%2C1920%2C902&referrer=storeforweb&source=https%3A%2F%2Fwww.google.com%2F"
 
 
-###### MobaXTerm
+######################################################## MobaXTerm
 New-Item -Path "$($env:USERPROFILE)\OneDrive\docs\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\scoop\apps\MobaXterm\current\MobaXTerm.ini" # to create backup from existing local
 New-Item -Path "$($env:USERPROFILE)\scoop\apps\mobaxterm\current\MobaXTerm.ini" -ItemType HardLink -Value "$($env:USERPROFILE)\OneDrive\docs\MobaXTerm.ini" # to create new from backup
 
 
-#####  Verify
+############################################################  Verify
 mvn -v
 gradle -v
 java -version
@@ -176,7 +179,7 @@ git --version
 python --version
 
 
-#####
+############################################################## EXTRA
 
 # Bing Wallpapers #
 curl https://go.microsoft.com/fwlink/?linkid=2126594 -o ~\Downloads\bing.exe
