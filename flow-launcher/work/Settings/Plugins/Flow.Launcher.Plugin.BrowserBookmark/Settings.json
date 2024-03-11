@@ -2,13 +2,7 @@
   "OpenInNewBrowserWindow": true,
   "BrowserPath": null,
   "LoadChromeBookmark": true,
-  "LoadFirefoxBookmark": true,
-  "LoadEdgeBookmark": true,
-  "CustomChromiumBrowsers": [
-    {
-      "Name": "Brave",
-      "DataDirectoryPath": "C:\\Users\\denbl\\AppData\\Local\\BraveSoftware\\Brave-Browser\\User Data",
-      "BrowserType": 0
-    }
-  ]
+  "LoadFirefoxBookmark": false,
+  "LoadEdgeBookmark": false,
+  "CustomChromiumBrowsers": []
 }
