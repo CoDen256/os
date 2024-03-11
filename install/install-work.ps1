@@ -1,5 +1,8 @@
 mkdir C:\ome
 
+scoop install jetbrains-toolbox 
+scoop install vscode 
+
 scoop install powertoys
 scoop install 7zip
 scoop install notion
@@ -37,12 +40,14 @@ scoop install krew
 scoop install aws
 scoop install aws-iam-authenticator
 scoop install eksctl
-scoop install openlens
+scoop install lens
 
-# Move Shortcuts to Start Menu:
-# %APPDATA%\Roaming\Microsoft\Windows\Start Menu\Programs
-# Intellij
-# Slack
-# Chrome
-# Jetbrains
-# Docker Desktop
+# Copy Shortcuts to Start Menu:
+Set-Variable -Name "PROG" "$($env:APPDATA)\Microsoft\Windows\Start Menu\Programs\"
+
+cp "$PROG\Scoop Apps\ShareX.lnk" "$PROG\Startup\"
+cp "$PROG\Scoop Apps\Slack.lnk" "$PROG\Startup\"
+cp "$PROG\Scoop Apps\Google Chrome.lnk" "$PROG\Startup\"
+cp "$PROG\Jetbrains Toolbox\Jetbrains Toolbox.lnk" "$PROG\Startup\"
+cp "$PROG\Jetbrains Toolbox\IntelliJ IDEA Ultimate.lnk" "$PROG\Startup\"
+cp "C:\ProgramData\Microsoft\Windows\Start Menu\Docker Desktop.lnk" "$PROG\Startup\"
