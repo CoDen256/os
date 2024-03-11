@@ -155,7 +155,7 @@ Remove-Item -Force -Recurse -Path "fonts"
 
 # Use `settings.json` in Windows terminal
 
-New-Item -Path "C:\Users\denbl\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Value .\win-terminal\settings-dev.json -Force
+New-Item -Path "~\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Value .\win-terminal\settings-dev.json -Force
 
 # Terminal Ubuntu zsh + oh my zsh
 

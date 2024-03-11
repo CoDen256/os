@@ -76,30 +76,6 @@
                 "guid": "{f77b0973-05c9-443c-8acb-1696e458674b}",
                 "hidden": false,
                 "name": "Git Bash"
-            },
-            {
-                "antialiasingMode": "grayscale",
-                "closeOnExit": "never",
-                "colorScheme": "Sublette",
-                "commandline": "C:\\Windows\\system32\\wsl.exe",
-                "elevate": false,
-                "guid": "{56e50aa8-073e-486a-a083-e1afbfb3377b}",
-                "hidden": false,
-                "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-                "name": "Ubuntu",
-                "startingDirectory": "/mnt/c/Users/denbl"
-            },
-            {
-                "guid": "{de26da16-4ed3-57e3-83b4-fb4404b56bc4}",
-                "hidden": false,
-                "name": "Developer Command Prompt for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
-            },
-            {
-                "guid": "{1a246f98-88c1-58e4-8a16-760797ba4c33}",
-                "hidden": false,
-                "name": "Developer PowerShell for VS 2022",
-                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
