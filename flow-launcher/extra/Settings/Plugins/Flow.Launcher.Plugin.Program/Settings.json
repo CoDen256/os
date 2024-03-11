@@ -1,0 +1,45 @@
+{
+  "LastIndexTime": "2024-03-11T14:06:50.1982451+01:00",
+  "ProgramSources": [
+    {
+      "Location": "C:\\Users\\black\\scoop\\apps\\epic-games-launcher\\15.17.1\\Launcher\\Portal\\Binaries\\Win64",
+      "Name": "Win64",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\users\\black\\scoop\\apps\\epic-games-launcher\\15.17.1\\launcher\\portal\\binaries\\win64"
+    },
+    {
+      "Location": "C:\\Program Files\\Electronic Arts\\EA Desktop\\EA Desktop",
+      "Name": "EA",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\program files\\electronic arts\\ea desktop\\ea desktop"
+    }
+  ],
+  "DisabledProgramSources": [
+    {
+      "Location": "C:\\Users\\denys\\scoop\\apps\\googlechrome\\current",
+      "Name": "chrome",
+      "Enabled": false,
+      "UniqueIdentifier": "c:\\users\\denys\\scoop\\apps\\googlechrome\\current\\chrome.exe"
+    }
+  ],
+  "CustomSuffixes": [],
+  "CustomProtocols": [],
+  "BuiltinSuffixesStatus": {
+    "exe": true,
+    "appref-ms": true,
+    "lnk": true
+  },
+  "BuiltinProtocolsStatus": {
+    "steam": true,
+    "epic": true,
+    "http": false
+  },
+  "UseCustomSuffixes": false,
+  "UseCustomProtocols": false,
+  "EnableStartMenuSource": true,
+  "EnableDescription": false,
+  "HideAppsPath": false,
+  "EnableRegistrySource": true,
+  "EnablePathSource": false,
+  "EnableUWP": true
+}
