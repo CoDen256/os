@@ -1,5 +1,7 @@
 mkdir ~\games
 
+scoop install vscode 
+
 scoop install powertoys
 scoop install 7zip
 scoop install notion
@@ -13,6 +15,3 @@ scoop bucket add games
 scoop install steam
 scoop install discord
 scoop install telegram
-
-scoop install brave
-

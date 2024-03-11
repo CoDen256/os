@@ -2,6 +2,9 @@ mkdir C:\rev
 mkdir C:\dev
 mkdir ~\android
 
+scoop install jetbrains-toolbox 
+scoop install vscode 
+
 scoop install powertoys
 scoop install 7zip
 scoop install notion
@@ -64,6 +67,8 @@ apksigner
 zipalign
 dexdump
 
+# Generate base keystore
+keytool -genkey -v -keystore release.keystore -alias main -keyalg RSA -keysize 2048 -validity 10000
 
 # Move Shortcuts to Start Menu:
 # %APPDATA%\Roaming\Microsoft\Windows\Start Menu\Programs
