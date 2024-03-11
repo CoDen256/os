@@ -1,0 +1,105 @@
+{
+  "LastIndexTime": "2024-03-11T13:23:19.5659741+01:00",
+  "ProgramSources": [
+    {
+      "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps",
+      "Name": "Scoop Apps",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\programdata\\microsoft\\windows\\start menu\\programs\\scoop apps"
+    },
+    {
+      "Location": "C:\\Users\\denys\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Scoop Apps",
+      "Name": "Scoop Apps",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\users\\denys\\appdata\\roaming\\microsoft\\windows\\start menu\\programs\\scoop apps"
+    },
+    {
+      "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu",
+      "Name": "Start Menu",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\programdata\\microsoft\\windows\\start menu"
+    },
+    {
+      "Location": "C:\\Users\\denbl\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs",
+      "Name": "Programs",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\users\\denbl\\appdata\\roaming\\microsoft\\windows\\start menu\\programs"
+    },
+    {
+      "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Steam",
+      "Name": "Steam",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\programdata\\microsoft\\windows\\start menu\\programs\\steam"
+    },
+    {
+      "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\TreeSize",
+      "Name": "TreeSize",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\programdata\\microsoft\\windows\\start menu\\programs\\treesize"
+    },
+    {
+      "Location": "C:\\Users\\denbl\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\System Tools",
+      "Name": "System Tools",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\users\\denbl\\appdata\\roaming\\microsoft\\windows\\start menu\\programs\\system tools"
+    },
+    {
+      "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs",
+      "Name": "Programs",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\programdata\\microsoft\\windows\\start menu\\programs"
+    },
+    {
+      "Location": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Visual Studio Code",
+      "Name": "Visual Studio Code",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\programdata\\microsoft\\windows\\start menu\\programs\\visual studio code"
+    },
+    {
+      "Location": "C:\\Users\\denbl\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\JetBrains Toolbox",
+      "Name": "JetBrains Toolbox",
+      "Enabled": true,
+      "UniqueIdentifier": "c:\\users\\denbl\\appdata\\roaming\\microsoft\\windows\\start menu\\programs\\jetbrains toolbox"
+    }
+  ],
+  "DisabledProgramSources": [
+    {
+      "Location": "C:\\Users\\denbl\\AppData\\Local\\BraveSoftware\\Brave-Browser\\Application",
+      "Name": "brave",
+      "Enabled": false,
+      "UniqueIdentifier": "c:\\users\\denbl\\appdata\\local\\bravesoftware\\brave-browser\\application\\brave.exe"
+    },
+    {
+      "Location": "C:\\Users\\denys\\scoop\\apps\\googlechrome\\current",
+      "Name": "chrome",
+      "Enabled": false,
+      "UniqueIdentifier": "c:\\users\\denys\\scoop\\apps\\googlechrome\\current\\chrome.exe"
+    },
+    {
+      "Location": "C:\\Users\\denys\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\JetBrains Toolbox",
+      "Name": "JetBrains Toolbox",
+      "Enabled": false,
+      "UniqueIdentifier": "c:\\users\\denys\\appdata\\roaming\\microsoft\\windows\\start menu\\programs\\jetbrains toolbox\\jetbrains toolbox.lnk"
+    }
+  ],
+  "CustomSuffixes": [],
+  "CustomProtocols": [],
+  "BuiltinSuffixesStatus": {
+    "exe": true,
+    "appref-ms": true,
+    "lnk": true
+  },
+  "BuiltinProtocolsStatus": {
+    "steam": true,
+    "epic": true,
+    "http": false
+  },
+  "UseCustomSuffixes": false,
+  "UseCustomProtocols": false,
+  "EnableStartMenuSource": true,
+  "EnableDescription": false,
+  "HideAppsPath": false,
+  "EnableRegistrySource": true,
+  "EnablePathSource": false,
+  "EnableUWP": true
+}

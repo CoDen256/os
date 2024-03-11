@@ -1,0 +1,116 @@
+{
+  "MaxResult": 100,
+  "QuickAccessLinks": [
+    {
+      "Path": "C:\\setup",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\dev",
+      "Type": 1
+    }
+  ],
+  "IndexSearchExcludedSubdirectoryPaths": [
+    {
+      "Path": "C:\\Users\\denbl\\.vscode",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Program Files",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Program Files (x86)",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Users\\Public",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Windows",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Users\\denbl\\AppData\\Local",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Users\\denbl\\AppData\\Roaming",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Users\\denbl\\AppData\\LocalLow",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Users\\denbl\\.m2\\repository",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\setup\\Flow Launcher",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\setup\\Windows Terminal",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Users\\denbl\\OneDrive\\Documents\\ShareX",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Users\\denbl\\OneDrive\\Documents\\Scanned Documents",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Users\\denbl\\OneDrive\\Documents\\My Games",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Users\\denbl\\OneDrive\\Documents\\images",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Users\\Default",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\ProgramData",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\Users\\denbl\\Documents",
+      "Type": 1
+    },
+    {
+      "Path": "C:\\$Recycle.Bin",
+      "Type": 1
+    }
+  ],
+  "EditorPath": "",
+  "FolderEditorPath": "",
+  "ShellPath": "cmd",
+  "UseLocationAsWorkingDir": false,
+  "ShowWindowsContextMenu": true,
+  "DefaultOpenFolderInFileManager": true,
+  "SearchActionKeyword": "f",
+  "SearchActionKeywordEnabled": true,
+  "FileContentSearchActionKeyword": "doc:",
+  "FileContentSearchKeywordEnabled": false,
+  "PathSearchActionKeyword": "s",
+  "PathSearchKeywordEnabled": true,
+  "IndexSearchActionKeyword": "*",
+  "IndexSearchKeywordEnabled": false,
+  "QuickAccessActionKeyword": "*",
+  "QuickAccessKeywordEnabled": false,
+  "WarnWindowsSearchServiceOff": true,
+  "IndexSearchEngine": 0,
+  "PathEnumerationEngine": 0,
+  "ContentSearchEngine": 0,
+  "EverythingInstalledPath": "C:\\Program Files\\Everything\\Everything.exe",
+  "SortOption": 1,
+  "EnableEverythingContentSearch": false,
+  "EverythingEnabled": false,
+  "EverythingSearchFullPath": false
+}
