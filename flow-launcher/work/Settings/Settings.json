@@ -6,12 +6,12 @@
   "WindowSize": 650,
   "PreviewHotkey": "F1",
   "Language": "en",
-  "Theme": "Ayu",
+  "Theme": "OnsetGlaze",
   "UseDropShadowEffect": false,
-  "QueryBoxFont": "Microsoft Sans Serif",
-  "QueryBoxFontStyle": null,
-  "QueryBoxFontWeight": null,
-  "QueryBoxFontStretch": null,
+  "QueryBoxFont": "JetBrains Mono",
+  "QueryBoxFontStyle": "Normal",
+  "QueryBoxFontWeight": "Bold",
+  "QueryBoxFontStretch": "Normal",
   "ResultFont": "Microsoft Sans Serif",
   "ResultFontStyle": null,
   "ResultFontWeight": null,
@@ -99,13 +99,13 @@
   "AlwaysPreview": false,
   "AlwaysStartEn": true,
   "QuerySearchPrecision": "Regular",
-  "AutoUpdates": true,
+  "AutoUpdates": false,
   "WindowLeft": 443.20000000000005,
-  "WindowTop": 193.60000000000002,
+  "WindowTop": 196.8,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 6,
-  "ActivateTimes": 2307,
+  "ActivateTimes": 2317,
   "CustomPluginHotkeys": [
     {
       "Hotkey": "Ctrl \u002B NumPad1",
@@ -180,10 +180,10 @@
     "Password": null
   },
   "LastQueryMode": "Selected",
-  "AnimationSpeed": "Medium",
+  "AnimationSpeed": "Fast",
   "CustomAnimationLength": 360,
   "PluginSettings": {
-    "PythonExecutablePath": "C:\\Users\\denys\\scoop\\apps\\flow-launcher\\current\\app-1.17.2\\UserData\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
+    "PythonExecutablePath": "C:\\Users\\dchernyshov\\scoop\\apps\\flow-launcher\\current\\app-1.17.2\\UserData\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
     "NodeExecutablePath": "C:\\Users\\denys\\scoop\\persist\\nvm\\nodejs\\v20.11.0\\node.exe",
     "Plugins": {
       "CEA0FDFC6D3B4085823D60DC76F28855": {
