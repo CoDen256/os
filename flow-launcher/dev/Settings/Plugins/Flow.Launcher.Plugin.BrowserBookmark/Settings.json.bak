@@ -3,6 +3,6 @@
   "BrowserPath": null,
   "LoadChromeBookmark": true,
   "LoadFirefoxBookmark": false,
-  "LoadEdgeBookmark": false,
+  "LoadEdgeBookmark": true,
   "CustomChromiumBrowsers": []
 }

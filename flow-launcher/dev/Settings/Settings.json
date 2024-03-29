@@ -3,19 +3,19 @@
   "OpenResultModifiers": "Ctrl",
   "ColorScheme": "Dark",
   "ShowOpenResultHotkey": true,
-  "WindowSize": 650,
-  "PreviewHotkey": "F1",
+  "WindowSize": 700,
+  "PreviewHotkey": "PageUp",
   "Language": "en",
   "Theme": "Ayu",
   "UseDropShadowEffect": false,
   "QueryBoxFont": "Microsoft Sans Serif",
-  "QueryBoxFontStyle": null,
-  "QueryBoxFontWeight": null,
-  "QueryBoxFontStretch": null,
+  "QueryBoxFontStyle": "Normal",
+  "QueryBoxFontWeight": "Normal",
+  "QueryBoxFontStretch": "Normal",
   "ResultFont": "Microsoft Sans Serif",
-  "ResultFontStyle": null,
-  "ResultFontWeight": null,
-  "ResultFontStretch": null,
+  "ResultFontStyle": "Normal",
+  "ResultFontWeight": "Normal",
+  "ResultFontStretch": "Normal",
   "UseGlyphIcons": true,
   "UseAnimation": true,
   "UseSound": true,
@@ -100,12 +100,12 @@
   "AlwaysStartEn": true,
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": true,
-  "WindowLeft": 443.20000000000005,
+  "WindowLeft": 418.40000000000003,
   "WindowTop": 193.60000000000002,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 6,
-  "ActivateTimes": 2323,
+  "ActivateTimes": 2917,
   "CustomPluginHotkeys": [
     {
       "Hotkey": "Ctrl \u002B NumPad1",
@@ -168,7 +168,7 @@
   "HideNotifyIcon": false,
   "LeaveCmdOpen": false,
   "HideWhenDeactivated": true,
-  "SearchWindowScreen": "Cursor",
+  "SearchWindowScreen": "Focus",
   "SearchWindowAlign": "Center",
   "CustomScreenNumber": 1,
   "IgnoreHotkeysOnFullscreen": true,
@@ -311,7 +311,7 @@
           "s",
           "f"
         ],
-        "Priority": 0,
+        "Priority": -1,
         "Disabled": false
       },
       "0308FD86DE0A4DEE8D62B9B535370992": {
@@ -360,6 +360,66 @@
         "Version": "1.0.0",
         "ActionKeywords": [
           "b"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "c152e4e3-92f3-4464-ae5b-99c8fb151c99": {
+        "ID": "c152e4e3-92f3-4464-ae5b-99c8fb151c99",
+        "Name": "DWDS-Flow",
+        "Version": "1.0.0",
+        "ActionKeywords": [
+          "dw"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "F6B8C1BC8441496798D2CE2BADB0E95E": {
+        "ID": "F6B8C1BC8441496798D2CE2BADB0E95E",
+        "Name": "Browser History",
+        "Version": "0.4.0",
+        "ActionKeywords": [
+          "bh"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "F737A9223560B3C6833B5FFB8CDF78E5": {
+        "ID": "F737A9223560B3C6833B5FFB8CDF78E5",
+        "Name": "Window Walker",
+        "Version": "3.0.1",
+        "ActionKeywords": [
+          "*"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "2f4e384e-76ce-45c3-aea2-b16f5e5c228s": {
+        "ID": "2f4e384e-76ce-45c3-aea2-b16f5e5c228s",
+        "Name": "Reverso-Flow",
+        "Version": "2.0.0",
+        "ActionKeywords": [
+          "re"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "1b7c732781f94b748ed08351f8200894": {
+        "ID": "1b7c732781f94b748ed08351f8200894",
+        "Name": "Flow.Launcher.Plugin.DirectTranslate",
+        "Version": "2.1.0",
+        "ActionKeywords": [
+          "tr"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "963cdb07-9143-41e6-b77b-14391e8344d8": {
+        "ID": "963cdb07-9143-41e6-b77b-14391e8344d8",
+        "Name": "DeepFlow",
+        "Version": "1.0.1",
+        "ActionKeywords": [
+          "dp"
         ],
         "Priority": 0,
         "Disabled": false

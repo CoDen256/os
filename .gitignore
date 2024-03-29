@@ -409,4 +409,5 @@ flow-launcher/*/Settings/TopMostRecord.json.bak
 flow-launcher/*/Settings/UserSelectedRecord.json
 flow-launcher/*/Settings/UserSelectedRecord.json.bak
 flow-launcher/*/Settings/TopMostRecord.json
+flow-launcher/*/Settings/*.json.bak
 
