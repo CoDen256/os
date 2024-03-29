@@ -21,7 +21,7 @@ $F4:: {
 ; Disable some windows shortcuts instead
 #Esc::Send("^{Numpad1}")  
 #`::Send("^{Numpad2}")    
-#Tab::Send("^{Tab}")
+#Tab::Send("!{Space}")
 #q::Send("^{Numpad4}")   
 #w::Send("^{Numpad5}")   
 #a::Send("^{Numpad6}")   

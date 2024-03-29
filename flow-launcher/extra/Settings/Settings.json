@@ -1,5 +1,5 @@
 {
-  "Hotkey": "Ctrl \u002B Tab",
+  "Hotkey": "Alt \u002B Space",
   "OpenResultModifiers": "Ctrl",
   "ColorScheme": "Dark",
   "ShowOpenResultHotkey": true,
@@ -100,12 +100,12 @@
   "AlwaysStartEn": true,
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": true,
-  "WindowLeft": 443.20000000000005,
-  "WindowTop": 193.60000000000002,
+  "WindowLeft": 443,
+  "WindowTop": 193.6,
   "CustomWindowLeft": 0,
   "CustomWindowTop": 0,
   "MaxResultsToShow": 6,
-  "ActivateTimes": 2319,
+  "ActivateTimes": 2441,
   "CustomPluginHotkeys": [
     {
       "Hotkey": "Ctrl \u002B NumPad1",
@@ -265,7 +265,7 @@
           "net",
           "*"
         ],
-        "Priority": -1,
+        "Priority": 0,
         "Disabled": false
       },
       "5043CETYU6A748679OPA02D27D99677A": {
@@ -350,6 +350,26 @@
         "Version": "2.0.0",
         "ActionKeywords": [
           "eg"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "c152e4e3-92f3-4464-ae5b-99c8fb151c99": {
+        "ID": "c152e4e3-92f3-4464-ae5b-99c8fb151c99",
+        "Name": "DWDS-Flow",
+        "Version": "2.1.0",
+        "ActionKeywords": [
+          "dwd"
+        ],
+        "Priority": 0,
+        "Disabled": false
+      },
+      "2f4e384e-76ce-45c3-aea2-b16f5e5c228s": {
+        "ID": "2f4e384e-76ce-45c3-aea2-b16f5e5c228s",
+        "Name": "Reverso-Flow",
+        "Version": "3.1.1",
+        "ActionKeywords": [
+          "re"
         ],
         "Priority": 0,
         "Disabled": false
