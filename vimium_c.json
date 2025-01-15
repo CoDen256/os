@@ -1,0 +1,88 @@
+{
+	"name": "Vimium C",
+	"@time": "8/6/2024, 4:26:53 PM",
+	"time": 1722954413657,
+	"environment": {
+		"extension": "1.99.994",
+		"platform": "win",
+		"chromium": 127
+	},
+	"exclusionRules": [
+		{
+			"passKeys": "",
+			"pattern": ":https://mail.google.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://en.key-test.ru/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://en.key-test.ru/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://nickcoutsos.github.io/"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"# unmapAll",
+		"",
+		"mapKey I h",
+		"mapKey N l",
+		"mapKey A k",
+		"mapKey O j",
+		"",
+		"map n nextTab",
+		"map i previousTab",
+		"",
+		"map h goBack",
+		"map c goForward",
+		"",
+		"map a LinkHints.activate",
+		"map <a-a> LinkHints.activateOpenInNewTab",
+		"",
+		"map N scrollRight",
+		"map I scrollLeft",
+		"map <c-u> scrollUp",
+		"map u scrollPageUp",
+		"map <c-p>  scrollDown",
+		"map p scrollPageDown",
+		"",
+		"map q showHelp",
+		"",
+		"map r performFind",
+		"map t performBackwardsFind",
+		"map s enterFindMode",
+		"",
+		"map l reload",
+		"",
+		"map f LinkHints.click",
+		"map g visitPreviousTab",
+		"",
+		"map , openCopiedUrlInNewTab",
+		"",
+		"map B Vomnibar.activateInNewTab",
+		"map b Vomnibar.activate",
+		"map e Vomnibar.activateTabs",
+		"",
+		"map v enterVisualMode",
+		"",
+		"map x removeTab ",
+		"map X restoreTab",
+		"map <c-x> closeTabsOnLeft",
+		"map <c-s-x> closeTabsOnRight",
+		"shortcut userCustomized1 command=\"removeTab\"",
+		"shortcut userCustomized2 command=\"restoreTab\"",
+		"",
+		"map m firstTab",
+		"map d lastTab",
+		"",
+		"map <c-l> Vomnibar.activateEditUrl",
+		""
+	],
+	"linkHintCharacters": "oainfupghc",
+	"vimSync": true
+}
