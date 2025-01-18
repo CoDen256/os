@@ -16,10 +16,6 @@
 		{
 			"passKeys": "",
 			"pattern": ":https://en.key-test.ru/"
-		},
-		{
-			"passKeys": "",
-			"pattern": ":https://en.key-test.ru/"
 		}
 	],
 	"keyLayout": 2,
