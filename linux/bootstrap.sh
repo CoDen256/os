@@ -3,7 +3,7 @@
 sudo apt update && sudo apt upgrade
 
 # wifi drivers Alpha AWUS https://github.com/morrownr/8814au
-sudo apt install -y linux-headers-$(uname -r) build-essential bc dkms git libelf-dev rfkill iw
+sudo apt install -y linux-headers-$(uname -r) build-essential git bc dkms libelf-dev rfkill iw
 git clone https://github.com/morrownr/8814au.git
 cd 8814au
 sudo ./install-driver.sh
@@ -21,7 +21,7 @@ pipx install 'xonsh[full]' pygments prompt-toolkit setproctitle
 which xonsh | sudo tee -a /etc/shells
 chsh -s $(which xonsh) coden
 
-# xontribs
+xonsh
 xpip install -U xontrib-pipeliner
 
 # mise

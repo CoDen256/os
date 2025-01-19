@@ -25,6 +25,7 @@
 |                        | Obsidian                                      | Obsidian             |
 |                        | Notion                                        | Notion               |
 | Symlink manager        | stow                                          |                      |
+| AppImage manager       | go-appimage/appimaged                         |                      |
 
 
 

@@ -8,6 +8,9 @@ $COMPLETION_MODE = 'menu-complete'
 
 # MISE HOOK
 from os               import environ
+from os               import path
+import pathlib
+import re
 import subprocess
 from xonsh.built_ins  import XSH
 
@@ -31,11 +34,48 @@ XSH.aliases['mise'] = _mise
 # MISE HOOK END
 
 # FUNCTIONS
+# use with p""
+def resolvepath(p):
+    pth = str(pathlib.Path(p).resolve())
+    dir = path.dirname(pth)
+    basename = path.basename(pth)
+    filename, ext = path.splitext(basename)
+    return (pth,dir,basename,filename,ext)
+
 def aptrep(*repos):
     for repo in repos:
         print(f"Installing {repo}")
         sudo add-apt-repository @(repo) -y
     sudo apt-get update
+
+def extract(file,out=None):
+    is_downloadable=re.match(r'^https?://', file)
+
+    if out: out = resolvepath(out)[0]
+    if is_downloadable:
+        _, _, basename, _, _ = resolvepath(file)
+        file, url = f"/tmp/{basename}",file
+
+        print(f"Downloading {url} to {file}")
+        curl -sSL @(url) -o @(file)
+
+        _, _, _, filename, _ = resolvepath(file)
+        if not out: out = $HOME + "/" + filename
+    else:
+      _, dir, _, filename, _ = resolvepath(file)
+      if not out: out = dir + "/" + filename
+
+    print(f"Extracting {file} to {out}")
+    if not !(which atool):
+        print("No atool. Installing")
+        sudo apt-get install -y atool
+
+    atool -X @(out) @(file)
+
+    if (is_downloadable):
+      print(f"Removing {file}")
+      rm @(file)
+        
 
 
 # ALIASES
