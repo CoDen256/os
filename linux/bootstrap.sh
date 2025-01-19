@@ -32,4 +32,5 @@ xonsh ~/os/cfg/init.xsh
 
 xonsh ~/.xonshrc
 # actual setup
-xonsh setup.xsh
+xonsh setup.app.xsh
+xonsh setup.dev.xsh

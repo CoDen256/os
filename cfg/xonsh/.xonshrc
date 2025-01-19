@@ -76,12 +76,23 @@ def extract(file,out=None):
       print(f"Removing {file}")
       rm @(file)
         
+def _debi(args):
+    arg = args[0]
+    print(f"Downloading deb packge {arg}")
+    _, _, basename, _, _ = resolvepath(arg)
+    wget -O /tmp/@(basename) @(arg)
 
+    sudo apt-get install -y /tmp/@(basename)
+    rm /tmp/@(basename)
+    return 0
 
 # ALIASES
 XSH.aliases['apti'] = 'sudo apt-get install -y @($args)'
 XSH.aliases['aptr'] = 'sudo apt-get remove -y @($args)'
+XSH.aliases['aptar'] = 'sudo apt-get autoremove -y'
 XSH.aliases['aptp'] = 'sudo apt-get purge @($args)'
 XSH.aliases['aptu'] = 'sudo apt-get update'
 XSH.aliases['aptl'] = 'apt list | grep @($args)'
 XSH.aliases['aptli'] = 'apt list --installed | grep @($args)'
+XSH.aliases['debi'] = _debi
+XSH.aliases['wgetd'] = 'wget -P $PWD @($args)'

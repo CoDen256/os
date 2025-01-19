@@ -1,0 +1,8 @@
+[tools]
+gradle = "latest"
+java = "latest"
+jq = "latest"
+kotlin = "latest"
+maven = "latest"
+node = "latest"
+python = "latest"
