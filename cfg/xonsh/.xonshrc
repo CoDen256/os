@@ -1,0 +1,31 @@
+# XONSH WIZARD START
+xontrib load coreutils
+xontrib load pipeliner
+
+$ALIAS_COMPLETIONS_OPTIONS_BY_DEFAULT = '1'
+$COMPLETION_MODE = 'menu-complete'
+# XONSH WIZARD END
+
+# MISE HOOK
+from os               import environ
+import subprocess
+from xonsh.built_ins  import XSH
+
+def listen_prompt(): # Hook Events
+  execx($(/home/coden/.local/bin/mise hook-env -s xonsh))
+
+envx = XSH.env
+envx[   'MISE_SHELL'] = 'xonsh'
+environ['MISE_SHELL'] = envx.get_detyped('MISE_SHELL')
+XSH.builtins.events.on_pre_prompt(listen_prompt) # Activate hook: before showing the prompt
+
+def _mise(args):
+  # changed ['command', 'mise', *args] to ['/home/coden/.local/bin/mise', *args], since there is 
+  # no 'command' command in xonsh
+  if args and args[0] in ('deactivate', 'shell', 'sh'):
+    execx(subprocess.run(['/home/coden/.local/bin/mise', *args], stdout=subprocess.PIPE).stdout.decode())
+  else:
+    subprocess.run(['/home/coden/.local/bin/mise', *args])
+
+XSH.aliases['mise'] = _mise
+# MISE HOOK END
