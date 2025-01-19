@@ -21,11 +21,15 @@ pipx install 'xonsh[full]' pygments prompt-toolkit setproctitle
 which xonsh | sudo tee -a /etc/shells
 chsh -s $(which xonsh) coden
 
+# xontribs
+xpip install -U xontrib-pipeliner
+
 # mise
 curl https://mise.run | sh
 
 # config files
 xonsh ~/os/cfg/init.xsh
 
+xonsh ~/.xonshrc
 # actual setup
 xonsh setup.xsh

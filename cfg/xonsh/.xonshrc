@@ -29,3 +29,19 @@ def _mise(args):
 
 XSH.aliases['mise'] = _mise
 # MISE HOOK END
+
+# FUNCTIONS
+def aptrep(*repos):
+    for repo in repos:
+        print(f"Installing {repo}")
+        sudo add-apt-repository @(repo) -y
+    sudo apt-get update
+
+
+# ALIASES
+XSH.aliases['apti'] = 'sudo apt-get install -y @($args)'
+XSH.aliases['aptr'] = 'sudo apt-get remove -y @($args)'
+XSH.aliases['aptp'] = 'sudo apt-get purge @($args)'
+XSH.aliases['aptu'] = 'sudo apt-get update'
+XSH.aliases['aptl'] = 'apt list | grep @($args)'
+XSH.aliases['aptli'] = 'apt list --installed | grep @($args)'
