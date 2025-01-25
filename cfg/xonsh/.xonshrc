@@ -96,3 +96,4 @@ XSH.aliases['aptl'] = 'apt list | grep @($args)'
 XSH.aliases['aptli'] = 'apt list --installed | grep @($args)'
 XSH.aliases['debi'] = _debi
 XSH.aliases['wgetd'] = 'wget -P $PWD @($args)'
+XSH.aliases['sudo'] = 'sudo env "PATH=$PATH" @($args)'

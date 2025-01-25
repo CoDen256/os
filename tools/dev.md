@@ -17,14 +17,14 @@
 
 Apps
 
-| app               |     |
-| ----------------- | --- |
-| postman           |     |
-| vs code           |     |
-| sublime           |     |
-| jetbrains toolbox |     |
-| idea              |     |
-| pycharm           |     |
-| datagrip          |     |
-| raspi-imager      |     |
-| android studio    |     |
+| app               | src     |
+| ----------------- | ------- |
+| postman           | nix zip |
+| vs code           | nix apt |
+| sublime           | nix apt |
+| jetbrains toolbox | nix zip |
+| idea              | jtb     |
+| pycharm           | jtb     |
+| datagrip          | jtb     |
+| raspi-imager      | nix apt |
+| android studio    | jtb     |
