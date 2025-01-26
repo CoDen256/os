@@ -13,3 +13,12 @@ node = "latest"
 python = "latest"
 smali = "latest"
 uber-apk-signer = "latest"
+
+
+[plugins]
+uber-apk-signer = 'https://github.com/CoDen256/asdf-uber-apk-signer.git'
+smali = 'https://github.com/CoDen256/asdf-smali.git'
+apktool = 'https://github.com/CoDen256/asdf-apktool.git'
+dex2jar = 'https://github.com/CoDen256/asdf-dex2jar.git'
+apk-editor = 'https://github.com/CoDen256/asdf-apk-editor.git'
+jadx = 'https://github.com/CoDen256/asdf-jadx.git'
