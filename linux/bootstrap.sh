@@ -27,8 +27,9 @@ xpip install -U xontrib-pipeliner
 # mise
 curl https://mise.run | sh
 
+sudo apt-get install -y stow
 # config files
-xonsh ~/os/cfg/init.xsh
+~/os/cfg/init.sh
 
 xonsh ~/.xonshrc
 # actual setup
