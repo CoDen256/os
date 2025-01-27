@@ -2,6 +2,8 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 # https://github.com/nix-gui/nix-gui
+# https://github.com/wochap/nix-config
+# https://github.com/vasujain275/rudra
 
 { config, pkgs, ... }:
 
@@ -80,6 +82,8 @@
   # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.enable = true;
   services.xserver.displayManager.autoLogin.user = "coden";
+  programs.hyprland.enable = true; # enable Hyprland
+
 
   # Workaround for GNOME autologin: https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
   systemd.services."getty@tty1".enable = false;
