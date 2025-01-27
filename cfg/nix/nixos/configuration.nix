@@ -1,6 +1,7 @@
 # Edit this configuration file to define what should be installed on
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
+# https://github.com/nix-gui/nix-gui
 
 { config, pkgs, ... }:
 
@@ -110,6 +111,7 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
+  environment.variables.EDITOR = "code";
   environment.systemPackages = with pkgs; [
     git
     stow
@@ -147,7 +149,7 @@
     google-chrome 
 
     postman
-    vscode
+    
 
     rpi-imager
 
@@ -164,6 +166,7 @@
     android-studio
     jetbrains.idea-ultimate
     jetbrains.pycharm-community
+    vscode
   ];
 
   programs.adb.enable = true;
