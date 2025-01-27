@@ -8,6 +8,6 @@ nix-shell -p stow
 sudo mv /etc/nixos /etc/nixos.backup
 
 git clone git@github.com:CoDen256/os.git ~/os
-bash ~/os/cfg/init.sh
+bash ~/os/nixos/init.sh
 
 sudo nixos-rebuild switch

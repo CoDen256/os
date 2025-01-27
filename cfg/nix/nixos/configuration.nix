@@ -79,7 +79,7 @@
   users.users.coden = {
     isNormalUser = true;
     description = "Denys Chernyshov";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "adbusers"  "docker"  ];
     packages = with pkgs; [
 
     ];
@@ -96,6 +96,18 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [
+      (_: prev: {
+        ulauncher = prev.ulauncher.overrideAttrs (old: {
+          propagatedBuildInputs = with prev.python3Packages;
+            old.propagatedBuildInputs
+            ++ [
+              pint
+              pytz
+            ];
+        });
+      })
+    ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -106,9 +118,16 @@
     curl
     busybox
     libgcc
-    pipx
 
-    mise
+    pipx
+    (python310.withPackages(ps: with ps; [
+      pytz
+      ]))
+    zulu23
+    zulu21
+    asdf-vm
+    python312Packages.pip
+    nodejs_23
 
     ulauncher 
     rofi
@@ -130,7 +149,7 @@
 
     postman
     vscode
-    jetbrains-toolbox # + idea + pycharm + studio + datagrip
+
     rpi-imager
 
     mitmproxy
@@ -143,34 +162,19 @@
     openssl
     nmap
     openssh
+    android-studio
+    jetbrains.idea-ultimate
+    jetbrains.pycharm-community
   ];
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
-  #programs.xonsh.enable = true;
+  programs.adb.enable = true;
 
-  # List services that you want to enable:
+  virtualisation.docker.enable = true;
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
 
-  # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
-
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
-  # Or disable the firewall altogether.
-  # networking.firewall.enable = false;
-
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.11"; # Did you read the comment?
 
 }
