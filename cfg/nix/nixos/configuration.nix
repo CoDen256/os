@@ -102,8 +102,7 @@
           propagatedBuildInputs = with prev.python3Packages;
             old.propagatedBuildInputs
             ++ [
-              pint
-              pytz
+              pint simpleeval parsedatetime pytz
             ];
         });
       })
