@@ -10,10 +10,20 @@ DIRS=(
     just 
 
     bash
+    zsh
     #xonsh
 
     hypr
     dunst
     waybar
+    de
 )
-stow --dir=$HOME/os/cfg --target=$HOME/ "${DIRS[@]}"
+stow --dir=$HOME/os/cfg --target=$HOME/ -R "${DIRS[@]}"
+
+
+
+TOOLS=(
+    rofi
+    wallpaper
+)
+stow --dir=$HOME/os/tools --target=$HOME/.local/bin -R "${TOOLS[@]}"
