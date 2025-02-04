@@ -2,7 +2,7 @@
 DIRS=(
     git 
 
-    yazi 
+    yazi
     kitty 
     ghostty 
 
@@ -10,6 +10,10 @@ DIRS=(
     just 
 
     bash
-    xonsh
+    #xonsh
+
+    hypr
+    dunst
+    waybar
 )
 stow --dir=$HOME/os/cfg --target=$HOME/ "${DIRS[@]}"
