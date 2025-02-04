@@ -1,0 +1,19 @@
+xkb_symbols "de-simple"
+{
+  include "us(basic)"            // includes the base US keys
+
+  // left side
+  key <AE03> { [ 3, adiaeresis  ] };               // num 3, G2 #
+  key <TLDE> { [ Adiaeresis, asciitilde  ] };      // upper G2 `, K6 ~
+
+  key <AE07>  {[   7,  odiaeresis  ]};           // num 7, Q0 &
+  key <AE06>  {[   6,  Odiaeresis  ]};           // num 6, upper Q0 ^
+
+
+  // right side
+  key <AB08>  {[  comma,  ssharp  ]};          // M5 ,, B9 <
+
+
+  key <BKSL>  {[ backslash,     udiaeresis ]};       // K3 \, Z9 |
+  key <AE04>  {[   4,           Udiaeresis  ]};      // num 4, upper Z9 $
+};
