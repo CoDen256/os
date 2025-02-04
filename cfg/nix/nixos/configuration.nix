@@ -113,6 +113,7 @@
     curl
     busybox
     libgcc
+  apktool
 
     pipx
     (python310.withPackages(ps: with ps; [
@@ -171,6 +172,5 @@
     setSocketVariable = true;
   };
 
-  system.stateVersion = "24.11"; # Did you read the comment?
-
+  system.stateVersion = "24.11";
 }

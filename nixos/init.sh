@@ -1,5 +1,15 @@
 #!/usr/bin/env bash 
+DIRS=(
+    git 
 
-stow --dir=$HOME/os/cfg --target=$HOME/ git yazi kitty xonsh ulauncher ghostty bash
+    yazi 
+    kitty 
+    ghostty 
 
-sudo stow --dir=$HOME/os/cfg --target=/etc/ nix
+    ulauncher 
+    just 
+
+    bash
+    xonsh
+)
+stow --dir=$HOME/os/cfg --target=$HOME/ "${DIRS[@]}"
