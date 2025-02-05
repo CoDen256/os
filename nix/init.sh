@@ -17,6 +17,7 @@ DIRS=(
     dunst
     waybar
     de
+    jetbrains
 )
 stow --dir=$HOME/os/cfg --target=$HOME/ -R "${DIRS[@]}"
 

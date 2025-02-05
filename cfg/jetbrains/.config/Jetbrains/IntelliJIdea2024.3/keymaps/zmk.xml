@@ -1,4 +1,4 @@
-<keymap version="1" name="new" parent="Mnemonic Keymap">
+<keymap version="1" name="zmk" parent="$default">
   <action id="$Paste">
     <keyboard-shortcut first-keystroke="ctrl v" />
   </action>

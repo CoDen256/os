@@ -1,5 +1,5 @@
 rest:
-  ~/os/nixos/init.sh
+  ~/os/nix/init.sh
 
 restsec:
   ~/sec/init.sh
