@@ -263,6 +263,9 @@
   <action id="EditorCodeBlockStartWithSelection">
     <keyboard-shortcut first-keystroke="shift alt home" />
   </action>
+  <action id="EditorCreateRectangularSelectionOnMouseDrag">
+    <mouse-shortcut keystroke="alt button1" />
+  </action>
   <action id="EditorDeleteLine" />
   <action id="EditorDuplicate">
     <keyboard-shortcut first-keystroke="ctrl g" />
@@ -282,6 +285,7 @@
   <action id="EditorMatchBrace">
     <keyboard-shortcut first-keystroke="ctrl j" />
   </action>
+  <action id="EditorPasteFromX11" />
   <action id="EditorPasteSimple" />
   <action id="EditorReverseLines" />
   <action id="EditorScrollLeft">
@@ -439,7 +443,7 @@
     <keyboard-shortcut first-keystroke="alt v" />
   </action>
   <action id="GoToProject">
-    <keyboard-shortcut first-keystroke="shift meta alt w" />
+    <keyboard-shortcut first-keystroke="shift meta alt 5" />
   </action>
   <action id="GotoAction">
     <keyboard-shortcut first-keystroke="alt e" />
@@ -648,7 +652,7 @@
     <mouse-shortcut keystroke="alt button1 doubleClick" />
   </action>
   <action id="OpenKeymapPanel">
-    <keyboard-shortcut first-keystroke="shift meta alt k" />
+    <keyboard-shortcut first-keystroke="shift meta alt w" />
   </action>
   <action id="OpenKeymapSettings" />
   <action id="OpenModuleSettings" />
@@ -798,7 +802,7 @@
     <keyboard-shortcut first-keystroke="shift alt v" />
   </action>
   <action id="SelectInProjectView">
-    <keyboard-shortcut first-keystroke="shift meta e" />
+    <keyboard-shortcut first-keystroke="shift ctrl meta alt e" />
   </action>
   <action id="SelectNextOccurrence">
     <keyboard-shortcut first-keystroke="shift ctrl q" />

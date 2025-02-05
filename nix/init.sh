@@ -16,11 +16,10 @@ DIRS=(
     hypr
     dunst
     waybar
-    de
     jetbrains
+    input
 )
 stow --dir=$HOME/os/cfg --target=$HOME/ -R "${DIRS[@]}"
-
 
 
 TOOLS=(
