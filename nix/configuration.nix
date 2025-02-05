@@ -5,14 +5,38 @@
 # https://github.com/wochap/nix-config
 # https://github.com/vasujain275/rudra
 
-{ config, pkgs, ... }:
-
 {
+  config,
+  lib,
+  pkgs,
+  inputs,
+  options,
+  ...
+}: let
+  username = "coden";
+  userDescription = "Denys Chernyshov";
+  homeDirectory = "/home/${username}";
+  hostName = "deimos";
+  timeZone = "Europe/Berlin";
+in {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+      ./modules/hardware-configuration.nix
+      inputs.home-manager.nixosModules.default
     ];
 
+    
+
+
+  home-manager = {
+    extraSpecialArgs = {inherit inputs;};
+    users.${username} = import ./home.nix;
+    useGlobalPkgs = true;
+    useUserPackages = true;
+    backupFileExtension = "backup";
+  };
+
+  
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -20,7 +44,7 @@
     config.boot.kernelPackages.rtl8814au
   ];
 
-  networking.hostName = "nix"; # Define your hostname.
+  networking.hostName = "deimos"; # Define your hostname.
 
   # Enable networking
   networking.networkmanager.enable = true;

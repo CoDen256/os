@@ -11,5 +11,5 @@ git clone git@github.com:CoDen256/os.git ~/os
 ~/os/init.sh
 
 cd nixos
-NIX_CONFIG="experimental-features = nix-command flakes"
+export NIX_CONFIG="experimental-features = nix-command flakes"
 just reb

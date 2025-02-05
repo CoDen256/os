@@ -1,6 +1,9 @@
 rest:
   ~/os/nixos/init.sh
 
+restsec:
+  ~/sec/init.sh
+
 unstow PACKAGE:
   stow --dir=$HOME/os/cfg --target=$HOME/ -D {{PACKAGE}}
 

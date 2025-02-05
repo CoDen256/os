@@ -8,6 +8,3 @@
 [user]
     name = Denys Chernyshov
     email = den.blackshov@gmail.com
-
-[core]
-    sshCommand = "ssh -i ~/.ssh/id_rsa"
