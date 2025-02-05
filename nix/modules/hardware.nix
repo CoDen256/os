@@ -6,6 +6,7 @@
 }:
 
 {
+  security.rtkit.enable = true;
   hardware = {
     sane = {
       enable = true;

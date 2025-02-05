@@ -24,5 +24,7 @@ in
       shell = pkgs.zsh;
     };
   };
+  #users.defaultUserShell = pkgs.python311Packages.xonsh;
+
   programs.zsh.enable = true;
 }

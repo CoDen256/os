@@ -1,7 +1,10 @@
 { config, lib, pkgs, modulesPath, ... }:
 
 {
+
+    # Bootloader.
   boot = {
+    boot.loader.
     kernelPackages = pkgs.linuxPackages_zen;
     kernelModules = ["v4l2loopback"];
     
@@ -15,7 +18,7 @@
     };
 
     loader = {
-
+      #systemd-boot.enable = true;        ??
       efi = {
         canTouchEfiVariables = true;
         efiSysMountPoint = "/boot";

@@ -19,18 +19,13 @@
     where-is-my-sddm-theme
     swaynotificationcenter
 
-        # Networking
+    # Networking
     networkmanagerapplet
 
-        # Miscellaneous
-    greetd.tuigreet
+    # Keyboard mappings
     xorg.xev
     xorg.xmodmap
   ];
-  programs.hyprland = {  
-    enable = true;
-    xwayland.enable = true;
-  };
 
   xdg.portal = {
     enable = true;
@@ -55,9 +50,14 @@
     material-icons
   ];
 
-services.displayManager.autoLogin.enable = true;
-services.displayManager.autoLogin.user = "coden";
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+  };
+
   services = {
+    displayManager.autoLogin.enable = true;
+    displayManager.autoLogin.user = "coden";
     xserver = {
       enable = true;
       xkb = {
@@ -67,13 +67,13 @@ services.displayManager.autoLogin.user = "coden";
 
           description = "Russian phonetic mirror keyboard of the us";
           languages = [ "rus" ];
-          symbolsFile = pkgs.copyPathToStore ../../symbols/ru-phonetic; # commit before building
+          symbolsFile = pkgs.copyPathToStore ../../input/symbols/ru-phonetic;
         };
         extraLayouts.de-simple = {
 
           description = "German simple us keyboard, with some tweaks for umlauts";
           languages = [ "ger" ];
-          symbolsFile = pkgs.copyPathToStore ../../symbols/de-simple; # commit before building
+          symbolsFile = pkgs.copyPathToStore ../../input/symbols/de-simple;
         };
       };
     };
