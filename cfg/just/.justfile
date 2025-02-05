@@ -4,6 +4,10 @@ rest:
 restsec:
   ~/sec/init.sh
 
+readb:
+  adb kill-server
+  adb start-server
+
 unstow PACKAGE:
   stow --dir=$HOME/os/cfg --target=$HOME/ -D {{PACKAGE}}
 
