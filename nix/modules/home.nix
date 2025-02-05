@@ -10,19 +10,27 @@ in {
   home = {
     username = userName;
     homeDirectory = homeDirectory;
-    stateVersion = stateVersion; 
+    stateVersion = stateVersion; # Please read the comment before changing.
 
-    file = {};
+    file = {
+      # wlogout icons
+      ".config/wlogout/icons".source = ../assets/wlogout;
+    };
 
 
     sessionPath = [
       "$HOME/.local/bin"
     ];
 
-    packages = [];
+    packages = [
+      (import ../scripts/rofi-launcher.nix {inherit pkgs;})
+    ];
   };
 
-  imports = [];
+  imports = [
+    ./desktop/rofi/rofi.nix
+    ./desktop/wlogout.nix
+  ];
 
   # Styling
   stylix.targets.waybar.enable = false;

@@ -20,21 +20,20 @@
   timeZone = "Europe/Berlin";
 in {
   imports =
-    [ # Include the results of the hardware scan.
-      ./modules/hardware-configuration.nix
-      inputs.home-manager.nixosModules.default
+    [ 
+    ./modules/amd-drivers.nix
+    inputs.home-manager.nixosModules.default
+
+    ./modules/boot.nix
+    ./modules/networking.nix
+    ./modules/locale.nix
+    ./modules/stylix.nix
+    ./modules/user.nix
+    ./modules/hardware.nix
+    ./modules/packages.nix
+    ./modules/desktop.nix
+    ./modules/system.nix
     ];
-
-    
-
-
-  home-manager = {
-    extraSpecialArgs = {inherit inputs;};
-    users.${username} = import ./home.nix;
-    useGlobalPkgs = true;
-    useUserPackages = true;
-    backupFileExtension = "backup";
-  };
 
   
   # Bootloader.
