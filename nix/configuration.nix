@@ -15,11 +15,11 @@
 }: {
   imports =
     [ 
-    inputs.home-manager.nixosModules.default
 
     ./modules/hardware-configuration.nix
     ./modules/amd-drivers.nix
    
+   inputs.home-manager.nixosModules.default
     ./modules/boot.nix
     ./modules/networking.nix
     ./modules/locale.nix
@@ -29,6 +29,7 @@
     ./modules/packages.nix
     ./modules/desktop.nix
     ./modules/system.nix
+    
     ];
-  system.stateVersion = "24.11";
+  system.stateVersion = "24.05";
 }

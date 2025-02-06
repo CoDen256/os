@@ -7,16 +7,16 @@
     # input can be flake, git repo or local path
     # NixOS official package source, using the nixos-24.11 branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    stylix.url = "github:danth/stylix";
     home-manager = {
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    stylix.url = "github:danth/stylix";
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {
     nixosConfigurations.deimos = nixpkgs.lib.nixosSystem {
-      system = "x86_64-linux";
+      specialArgs = {inherit inputs;};
       modules = [
         ./configuration.nix
         inputs.stylix.nixosModules.stylix

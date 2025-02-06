@@ -4,7 +4,6 @@
 
     # Bootloader.
   boot = {
-    boot.loader.
     kernelPackages = pkgs.linuxPackages_zen;
     kernelModules = ["v4l2loopback"];
     

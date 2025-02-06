@@ -7,6 +7,22 @@
 }:
 
 {
+  nixpkgs.overlays = [
+    (_: prev: {
+      ulauncher = prev.ulauncher.overrideAttrs (old: {
+        propagatedBuildInputs =
+          with prev.python3Packages;
+          old.propagatedBuildInputs
+          ++ [
+            pint
+            simpleeval
+            parsedatetime
+            pytz
+          ];
+      });
+    })
+  ];
+
   systemd.services = {
     flatpak-repo = {
       path = [ pkgs.flatpak ];
@@ -17,9 +33,13 @@
   virtualisation = {
     docker = {
       enable = true;
+      rootless = {
+        enable = true;
+        setSocketVariable = true;
+      };
     };
   };
-  nixpkgs.config.allowUnfree = true;
+  
   programs = {
     nix-ld = {
       enable = true;
@@ -42,8 +62,32 @@
     adb.enable = true;
   };
 
+  nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-        android-studio
+
+
+    ulauncher
+    rofi
+
+    yazi
+    kitty
+    ghostty
+    warp-terminal
+    zoxide
+    fzf
+    termius
+
+    onedrive
+    gparted
+
+    slack
+    obsidian
+    google-chrome
+
+    postman
+
+
+    
     just
     slack
     neofetch
@@ -51,31 +95,41 @@
     vscode
     jetbrains.idea-ultimate
     jetbrains.pycharm-community
+    android-studio
 
     # Programming languages and tools
-    go
-    lua
     python3
     python3Packages.pip
-    uv
-    clang
-    zig
-    rustup
     nodePackages_latest.pnpm
     nodePackages_latest.yarn
+    nodePackages_latest.live-server
     nodePackages_latest.nodejs
     bun
     jdk
     maven
     gcc
+
+    # tools
     openssl
-    nodePackages_latest.live-server
-# network
+    nmap
+    openssh
+    nixfmt-rfc-style
+
+    
+    # network
     networkmanager-l2tp
 
     # Version control and development tools
     git
-    postman
+    apktool
+    git
+    stow
+    wget
+    curl
+    busybox
+    libgcc
+    apktool
+    
 
     # Shell and terminal utilities
     stow
@@ -91,9 +145,8 @@
     tree
     exfatprogs
 
-    inputs.ghostty.packages.${pkgs.system}.default
-
     apktool
+    postman
     # File management and archives
     yazi
     p7zip
@@ -177,12 +230,20 @@
     # Downloaders
     yt-dlp
 
-
     # Clipboard managers
     cliphist
 
     # Education
     # ciscoPacketTracer8
     wireshark
+    
+    mitmproxy
+    httptoolkit
+    zap
+    burpsuite
+    keystore-explorer
+
+rpi-imager
+
   ];
 }
