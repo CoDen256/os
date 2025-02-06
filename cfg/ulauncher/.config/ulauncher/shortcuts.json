@@ -1,1 +1,12 @@
-{}
+{
+    "2b3c93c6-c7a1-42d1-9eac-9c6775fe94b7": {
+        "id": "2b3c93c6-c7a1-42d1-9eac-9c6775fe94b7",
+        "name": "Google Search",
+        "keyword": "g",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/nix/store/psz3xcdi0ps15azs866cbz01lhv2jj99-ulauncher-5.15.7/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1738874813.5719507
+    }
+}

@@ -1,12 +1,18 @@
-{ pkgs, config, lib, ... }:
+{
+  pkgs,
+  config,
+  lib,
+  ...
+}:
 
 {
   programs = {
     rofi = {
       enable = true;
       package = pkgs.rofi-wayland;
+      plugins = [ pkgs.rofi-calc ];
       extraConfig = {
-        modi = "drun,filebrowser,run,window";
+        modi = "drun,filebrowser,run,calc";
         show-icons = true;
         icon-theme = "Papirus";
         location = 0;
@@ -14,7 +20,7 @@
         drun-display-format = "{icon} {name}";
         display-drun = " Apps";
         display-run = " Run";
-        display-filebrowsero = " File";
+        display-filebrowser = " File";
       };
       theme =
         let

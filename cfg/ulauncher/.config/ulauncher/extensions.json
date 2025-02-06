@@ -6,18 +6,25 @@
         "last_commit": "037965a44e6f6f496e7ad71ec1651b9edfcde32d",
         "last_commit_time": "2024-05-29T21:57:26"
     },
-    "com.github.brpaz.ulauncher-vscode-projects": {
-        "id": "com.github.brpaz.ulauncher-vscode-projects",
-        "url": "https://github.com/brpaz/ulauncher-vscode-projects",
-        "updated_at": "2025-02-05T16:26:05.292502",
-        "last_commit": "6ba448b240af19568a3750dc5b7e550cdb1e954d",
-        "last_commit_time": "2022-06-15T14:19:48"
-    },
     "com.github.iboyperson.ulauncher-system": {
         "id": "com.github.iboyperson.ulauncher-system",
         "url": "https://github.com/iboyperson/ulauncher-system",
         "updated_at": "2025-02-05T16:26:15.538796",
         "last_commit": "7dedd992709fa2297735cddf852404144d4da47c",
         "last_commit_time": "2023-11-14T16:53:20"
+    },
+    "com.github.devkleber.ulauncher-open-link": {
+        "id": "com.github.devkleber.ulauncher-open-link",
+        "url": "https://github.com/DevKleber/ulauncher-open-link",
+        "updated_at": "2025-02-06T21:57:36.072127",
+        "last_commit": "de9b7e6144d974c06a7f218596a2db80b667fd5b",
+        "last_commit_time": "2023-12-29T17:33:50"
+    },
+    "com.github.mikebarkmin.ulauncher-obsidian": {
+        "id": "com.github.mikebarkmin.ulauncher-obsidian",
+        "url": "https://github.com/mikebarkmin/ulauncher-obsidian",
+        "updated_at": "2025-02-06T21:59:24.559873",
+        "last_commit": "a419cdc5e73453e4b284bb4905448ca60e4a3864",
+        "last_commit_time": "2023-09-12T10:42:25"
     }
 }

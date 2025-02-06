@@ -13,3 +13,6 @@ git clone git@github.com:CoDen256/os.git ~/os
 cd nixos
 export NIX_CONFIG="experimental-features = nix-command flakes"
 just reb
+
+git clone git@github.com:CoDen256/sec.git ~/sec
+git clone git@github.com:CoDen256/obsidian.git ~/docs/obsidian
