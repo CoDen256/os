@@ -85,6 +85,7 @@
     google-chrome
 
     postman
+    inputs.anyrun.packages.${pkgs.system}.anyrun
 
 
     

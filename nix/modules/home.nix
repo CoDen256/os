@@ -1,12 +1,15 @@
 {
   config,
   pkgs,
+  inputs,
   ...
-}: let
+}:
+let
   userName = "coden";
   homeDirectory = "/home/${userName}";
   stateVersion = "24.05";
-in {
+in
+{
   home = {
     username = userName;
     homeDirectory = homeDirectory;
@@ -17,19 +20,20 @@ in {
       ".config/wlogout/icons".source = ../assets/wlogout;
     };
 
-
     sessionPath = [
       "$HOME/.local/bin"
     ];
 
     packages = [
-      (import ../scripts/rofi-launcher.nix {inherit pkgs;})
+      (import ../scripts/rofi-launcher.nix { inherit pkgs; })
     ];
+
   };
 
   imports = [
     ./desktop/rofi/rofi.nix
     ./desktop/wlogout.nix
+    ./desktop/anyrun.nix
   ];
 
   # Styling
