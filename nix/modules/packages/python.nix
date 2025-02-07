@@ -3,13 +3,14 @@
 
 {
   pkgs,
+  python3Packages,
   fetchurl,
   fetchgit,
   fetchhg,
 }:
 
-self: super: {
-  "memoization" = super.buildPythonPackage rec {
+{
+  memoization = python3Packages.buildPythonPackage rec {
     pname = "memoization";
     version = "0.4.0";
     src = fetchurl {

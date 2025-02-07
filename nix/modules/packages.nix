@@ -6,24 +6,23 @@
   ...
 }:
 let
-  packageOverrides = pkgs.callPackage ./packages/python.nix { };
-  python = pkgs.python3.override { inherit packageOverrides; };
-  pythonWithPackages = python.withPackages (ps: [
-    ps.memoization
-  ]);
+  packageOverrides = pkgs.callPackage ./packages/python.nix { }; # build derivation (set of keys, each key is a package)
 in
 {
   nixpkgs.overlays = [
     (_: prev: {
       ulauncher = prev.ulauncher.overrideAttrs (old: {
         propagatedBuildInputs =
-          with prev.python3Packages;
+          with prev.python3Packages // {
+            memoization = packageOverrides.memoization; # Ensure memoization is included
+          };
           old.propagatedBuildInputs
           ++ [
             pint
             simpleeval
             parsedatetime
             pytz
+            memoization
           ];
       });
     })
@@ -103,7 +102,7 @@ in
     android-studio
 
     # Programming languages and tools
-    pythonWithPackages
+    python3
     python3Packages.pip
     jdk
     maven
