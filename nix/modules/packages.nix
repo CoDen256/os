@@ -5,7 +5,13 @@
   inputs,
   ...
 }:
-
+let
+  packageOverrides = pkgs.callPackage ./packages/python.nix { };
+  python = pkgs.python3.override { inherit packageOverrides; };
+  pythonWithPackages = python.withPackages (ps: [
+    ps.memoization
+  ]);
+in
 {
   nixpkgs.overlays = [
     (_: prev: {
@@ -39,7 +45,7 @@
       };
     };
   };
-  
+
   programs = {
     nix-ld = {
       enable = true;
@@ -65,7 +71,6 @@
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
 
-
     ulauncher
     rofi
     walker
@@ -88,8 +93,6 @@
     postman
     inputs.anyrun.packages.${pkgs.system}.anyrun
 
-
-    
     just
     slack
     neofetch
@@ -100,16 +103,10 @@
     android-studio
 
     # Programming languages and tools
-    python3
+    pythonWithPackages
     python3Packages.pip
-    nodePackages_latest.pnpm
-    nodePackages_latest.yarn
-    nodePackages_latest.live-server
-    nodePackages_latest.nodejs
-    bun
     jdk
     maven
-    gcc
 
     # tools
     openssl
@@ -117,25 +114,19 @@
     openssh
     nixfmt-rfc-style
 
-    
     # network
     networkmanager-l2tp
 
     # Version control and development tools
     git
-    apktool
-    git
     stow
     wget
     curl
     busybox
-    libgcc
+
     apktool
-    
 
     # Shell and terminal utilities
-    stow
-    wget
     killall
     eza
     starship
@@ -147,15 +138,15 @@
     tree
     exfatprogs
 
-    apktool
     postman
+
     # File management and archives
     yazi
     p7zip
     unzip
     unrar
     file-roller
-    ulauncher
+
     libinput
     wev
     ncdu
@@ -208,7 +199,7 @@
     ydotool
     pciutils
     socat
-    cowsay
+
     ripgrep
     lshw
     bat
@@ -238,14 +229,14 @@
     # Education
     # ciscoPacketTracer8
     wireshark
-    
+
     mitmproxy
     httptoolkit
     zap
     burpsuite
     keystore-explorer
 
-rpi-imager
+    rpi-imager
 
   ];
 }
