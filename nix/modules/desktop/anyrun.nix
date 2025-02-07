@@ -11,16 +11,12 @@
     config = {
       plugins = with inputs.anyrun.packages.${pkgs.system}; [
         applications
-        dictionary
-        kidex
-        rink
-        symbols
-        translate
+        websearch
       ];
       hideIcons = false;
       ignoreExclusiveZones = false;
       layer = "overlay";
-      hidePluginInfo = false;
+      hidePluginInfo = true;
       closeOnClick = true;
       showResultsImmediately = true;
       maxEntries = 50;
@@ -87,25 +83,16 @@
       "applications.ron".text = ''
         Config(
             desktop_actions: true,
-            terminal: Some("foot"),
+            terminal: Some(Terminal(
+                        command: "kitty",
+                      )),
             max_entries: 30,
         )
       '';
-      "dictionary.ron".text = ''
+      "websearch.ron".text = ''
         Config(
-            prefix: ":d",
-        )
-      '';
-      "symbols.ron".text = ''
-        Config(
-            prefix: ":s",
-            max_entries: 30,
-        )
-      '';
-      "translate.ron".text = ''
-        Config(
-            prefix: ":",
-            language_delimiter: ">",
+          prefix: "",
+          engines: [Google] 
         )
       '';
     };

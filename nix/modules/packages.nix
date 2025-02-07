@@ -68,6 +68,7 @@
 
     ulauncher
     rofi
+    walker
 
     yazi
     kitty
