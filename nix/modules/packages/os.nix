@@ -54,6 +54,7 @@ in
     ncdu # disk usage analyzer
     duf # Disk Usage/Free Utility
     imv # image viewer
+    vlc 
 
     # terminals
     kitty
@@ -61,41 +62,15 @@ in
     warp-terminal
     termius
     starship
+    
 
-    # Shell and terminal utilities
-    killall
-  
     # System monitoring and management
     htop
     btop
-    inxi
-  
-    anydesk
-    udiskie
-
+    killall
+    
     # Audio and video
     pulseaudio
-    pavucontrol
-    ffmpeg
-    mpv
-    deadbeef-with-plugins
-    
-
-    # Downloaders
-    yt-dlp # audio and video downloader
-
-    # Image and graphics
-
-
-    # System utilities
-    lshw
-    
-    
-
-    ansible
-
-    # File systems
-    ntfs3g
-    os-prober
+    pavucontrol    
   ];
 }

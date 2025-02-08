@@ -83,6 +83,8 @@
   };
 
   environment.systemPackages = with pkgs; [
+    udiskie # automounting
+    
     libinput
     appimage-run
 

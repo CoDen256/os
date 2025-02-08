@@ -32,5 +32,14 @@
     p7zip # 7z
     unzip
     unrar
+
+    # system info
+    lshw
+    inxi
+    neofetch
+
+
+    # extra tools
+    yt-dlp # audio and video downloader
   ];
 }
