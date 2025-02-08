@@ -222,8 +222,6 @@ in
     # Downloaders
     yt-dlp
 
-    # Clipboard managers
-    cliphist
 
     # Education
     # ciscoPacketTracer8

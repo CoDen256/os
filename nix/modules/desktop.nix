@@ -9,22 +9,30 @@
 
   environment.systemPackages = with pkgs; [
     # Wayland specific
-    hyprshot
-    hypridle
-    grim
-    slurp
-    waybar
-    dunst
-    wl-clipboard
-    where-is-my-sddm-theme
-    swaynotificationcenter
+    hyprshot # screenshot utility
+    grim # screenshot with slurp
+    slurp  # select a region on screen and print the coordinates and resolution to output
 
-    # Networking
+    hypridle # idle daemon, like when to turn off the screen and suspend
+
+
+    waybar # the waybar above
+    
+
+     # Clipboard managers
+    wl-clipboard 
+    cliphist
+    
+    where-is-my-sddm-theme # login manager theme
+
+    dunst # notification manager
+
+    # Networking applet in the waybar
     networkmanagerapplet
 
     # Keyboard mappings
-    xorg.xev
-    xorg.xmodmap
+    xorg.xev     # for tracking keyboard events
+    xorg.xmodmap # for modifying keyboard events
   ];
 
   xdg.portal = {
