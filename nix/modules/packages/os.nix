@@ -42,27 +42,15 @@ in
   };
 
   environment.systemPackages = with pkgs; [
-    # app launchers
-    ulauncher
-    rofi
-    walker
-    inputs.anyrun.packages.${pkgs.system}.anyrun
 
     # system utilities
     gparted
     file-roller # File Roller is an archive manager for the GNOME environment., just a frontend 
-    ncdu # disk usage analyzer
+    ncdu # cli disk usage analyzer
+    baobab # gui disk usage analyser
     duf # Disk Usage/Free Utility
     imv # image viewer
     vlc 
-
-    # terminals
-    kitty
-    ghostty
-    warp-terminal
-    termius
-    starship
-    
 
     # System monitoring and management
     htop

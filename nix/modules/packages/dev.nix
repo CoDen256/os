@@ -22,21 +22,28 @@ in
 
   environment.systemPackages = with pkgs; [
 
+    # editors
     vscode
     jetbrains.idea-ultimate
     jetbrains.pycharm-community
+    jetbrains.datagrip
     android-studio
+
+    # utils
     postman
+    rpi-imager
+
 
     # Programming languages and tools
     python3
-    python3Packages.pip
-    jdk
-    maven
 
-    rpi-imager
+    # jdk23 # use jetbrains runtime
+    # gradle # use wrapper
+    # maven # use  bundled jetbrains builtin / wrapper
+    # kotlin # use jetbrains kotlin
 
-    
+    # tools
+    jq
+
   ];
-
 }
