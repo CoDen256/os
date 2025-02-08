@@ -23,7 +23,7 @@
   };
 
   services = {
-    asusd = {
+    asusd = { # control aspects for asus laptos
       enable = true;
       enableUserService = true;
     };
@@ -36,12 +36,12 @@
     openssh.enable = true;
     udisks2.enable = true; # automounting of the usb devices (helpful for zmk keyboard auto mount)
     flatpak.enable = true;
+
     printing = {
       enable = true;
       drivers = [ pkgs.hplipWithPlugin ];
     };
-    auto-cpufreq.enable = true;
+
     gnome.gnome-keyring.enable = true;
-    ipp-usb.enable = true;
   };
 }
