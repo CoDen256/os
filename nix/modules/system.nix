@@ -22,10 +22,20 @@
     };
   };
 
+  nixpkgs.config.allowUnfree = true; # allow unfree packages
+
   programs.nix-ld = {
     # Run unpatched dynamic binaries on NixOS. # Run games or proprietary software that attempts to verify its integrity.
     enable = true;
     package = pkgs.nix-ld-rs;
+  };
+  programs = {
+    fuse.userAllowOther = true; # run filesystem in user space, but who uses it?
+    gnupg.agent = {
+      # Gpg-agent is a program that runs in the background (a daemon) and stores GPG secret keys in memory.
+      enable = true;
+      enableSSHSupport = true;
+    };
   };
   systemd.services = {
     flatpak-repo = {
