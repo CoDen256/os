@@ -6,16 +6,21 @@
   ...
 }:
 let
+
 in
 {
+  # https://nixos.wiki/wiki/Android
+  # https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/android.section.md
+  # https://github.com/tadfisher/android-nixpkgs
 
   programs.adb.enable = true; # includes android-tools -> adb + fastboot
-
-  environment.systemPackages = with pkgs; [  
+  nixpkgs.config.android_sdk.accept_license = true;
+  environment.systemPackages = with pkgs; [
+    androidenv.androidPkgs.androidsdk
 
     apktool
     jdk21 # keytool, jarsigner
-    
+
     dex2jar
     jadx # jadx jadx-gui
 
@@ -27,14 +32,13 @@ in
     zap
     burpsuite
 
-    
     openssl
     openssh # sshkeygen
     nmap
 
     # aapt
     # apksigner
-    # ~/Android/Sdk/build-tools/35.0.1/ -> aapt zipalign split-select aidl apksigner dexdump
+    # ~/Android/Sdk/build-tools/35.0.1/ -> aapt apksigner # zipalign split-select aidl apksigner dexdump
   ];
 }
 # | apk.sh          |                                                                     |                                                                                                                          |     |

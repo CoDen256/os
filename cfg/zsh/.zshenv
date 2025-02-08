@@ -10,7 +10,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_SCREENSHOTS_DIR="$HOME/Pictures/screenshots"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH=$PATH:$HOME/go/bin
-export PATH=$PATH:$HOME/Android/Sdk/build-tools/35.0.1/
+# export PATH=$PATH:$HOME/Android/Sdk/build-tools/35.0.1/
 
 export _JAVA_AWT_WM_NOREPARENTING=1
 export XDG_SESSION_TYPE=wayland

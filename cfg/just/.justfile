@@ -17,4 +17,4 @@ unstow PACKAGE:
 
 reb:
   nh os switch ~/os/nix
-  #sudo nixos-rebuild switch --flake ~/os/nix#deimos
+  @#sudo nixos-rebuild switch --flake ~/os/nix#deimos
