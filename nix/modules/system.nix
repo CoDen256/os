@@ -23,25 +23,18 @@
   };
 
   services = {
-    cloudflare-warp.enable = true;
-    supergfxd.enable = true;
     asusd = {
       enable = true;
       enableUserService = true;
     };
-    tailscale = {
-      enable = true;
-      useRoutingFeatures = "client";
-    };
     cron = {
       enable = true;
     };
-    libinput.enable = true;
-    fstrim.enable = true;
-    gvfs.enable = true;
+    libinput.enable = true; # handles input devices, input device processing and stuff
+    fstrim.enable = true; # to discard (or "trim") blocks which are not in use by the filesystem
+    gvfs.enable = true; # virtual filesystem, maby needed for connecting via ssh vo other servers
     openssh.enable = true;
-    devmon.enable = true;
-    udisks2.enable = true;
+    udisks2.enable = true; # automounting of the usb devices (helpful for zmk keyboard auto mount)
     flatpak.enable = true;
     printing = {
       enable = true;
@@ -49,11 +42,6 @@
     };
     auto-cpufreq.enable = true;
     gnome.gnome-keyring.enable = true;
-    avahi = {
-      enable = true;
-      nssmdns4 = true;
-      openFirewall = true;
-    };
     ipp-usb.enable = true;
   };
 }
