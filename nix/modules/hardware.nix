@@ -11,10 +11,6 @@
       enable = true;
       enableGraphical = true;
     };
-    bluetooth = {
-      enable = true;
-      powerOnBoot = true;
-    };
   };
 
   security.rtkit.enable = true; # used by PulseAudio and PipeWire use this to acquire realtime priority.

@@ -8,30 +8,21 @@
 }:
 
 {
-  services.blueman.enable = true;
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+  services.blueman.enable = true; # gtk bluetooth manager
+
   networking = {
     hostName = "deimos";
     networkmanager.enable = true;
-    networkmanager.enableStrongSwan = true;
+    networkmanager.enableStrongSwan = true; # for vpn
     timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
-    firewall = {
-      allowedTCPPortRanges = [
-        {
-          from = 8060;
-          to = 8090;
-        }
-      ];
-      allowedUDPPortRanges = [
-        {
-          from = 8060;
-          to = 8090;
-        }
-      ];
-    };
   };
 
-  services.xl2tpd.enable = true;
-  services.strongswan = {
+  services.xl2tpd.enable = true; # for l2tp vpn
+  services.strongswan = { # for vpn
     enable = true;
     secrets = [
       "ipsec.d/ipsec.nm-l2tp.secrets"
