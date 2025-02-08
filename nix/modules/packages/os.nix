@@ -48,50 +48,28 @@ in
     walker
     inputs.anyrun.packages.${pkgs.system}.anyrun
 
-
     # system utilities
     gparted
-
-
-    # terminal navigation
-    yazi
-    zoxide
-    fzf
+    file-roller # File Roller is an archive manager for the GNOME environment., just a frontend 
+    ncdu # disk usage analyzer
+    duf # Disk Usage/Free Utility
+    imv # image viewer
 
     # terminals
     kitty
     ghostty
     warp-terminal
     termius
-
-        # Shell and terminal utilities
-    killall
-    eza
     starship
 
-    progress
-    tree
-    exfatprogs
-    
-
-    # File management and archives
-    p7zip
-    unzip
-    unrar
-    file-roller
-
-    libinput
-    wev
-    ncdu
-    duf
-
+    # Shell and terminal utilities
+    killall
+  
     # System monitoring and management
     htop
     btop
-    lm_sensors
     inxi
-    auto-cpufreq
-    nvtopPackages.nvidia
+  
     anydesk
     udiskie
 
@@ -102,62 +80,19 @@ in
     mpv
     deadbeef-with-plugins
     
-    
-    neofetch
-    # Text editors and IDEs
-   
-    # tools
-
-    nixfmt-rfc-style
-
-    # network
-
-
-    # Version control and development tools
-    git
-    stow
-    wget
-    curl
-    busybox
 
     # Downloaders
-    yt-dlp
-
+    yt-dlp # audio and video downloader
 
     # Image and graphics
-    imagemagick
-    gimp
-    hyprpicker
-    swww
-    hyprlock
-    waypaper
-    imv
+
 
     # System utilities
-    libgcc
-    bc
-    lxqt.lxqt-policykit
-    libnotify
-    v4l-utils
-    ydotool
-    pciutils
-    socat
-
-    ripgrep
     lshw
-    bat
-    pkg-config
-    brightnessctl
-    virt-viewer
-    swappy
-    appimage-run
-    yad
-    playerctl
-    nh
-    ansible
+    
+    
 
-    # Virtualization
-    libvirt
+    ansible
 
     # File systems
     ntfs3g

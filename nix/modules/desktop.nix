@@ -8,12 +8,21 @@
 {
 
   environment.systemPackages = with pkgs; [
+    
     # Wayland specific
     hyprshot # screenshot utility
     grim # screenshot with slurp
     slurp  # select a region on screen and print the coordinates and resolution to output
+    swappy # screenshot editor # grim -g "$(slurp)" - | swappy -f - # select a region then take screenshot, then edit with swappy
 
+
+    swww # wallpaper backend
+    waypaper # wallpapaer frontend
+
+    
     hypridle # idle daemon, like when to turn off the screen and suspend
+    hyprlock # screen lock
+
 
 
     waybar # the waybar above
@@ -31,6 +40,7 @@
     networkmanagerapplet
 
     # Keyboard mappings
+    wev # tracking keyboard events
     xorg.xev     # for tracking keyboard events
     xorg.xmodmap # for modifying keyboard events
   ];

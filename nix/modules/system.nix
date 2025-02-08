@@ -81,4 +81,12 @@
 
     gnome.gnome-keyring.enable = true;
   };
+
+  environment.systemPackages = with pkgs; [
+    libinput
+    appimage-run
+
+    nh # nix os helper
+    nixfmt-rfc-style # nix formatter
+  ];
 }
