@@ -27,14 +27,18 @@
       enable = true;
       enableUserService = true;
     };
+    
     cron = {
       enable = true;
     };
+
     libinput.enable = true; # handles input devices, input device processing and stuff
     fstrim.enable = true; # to discard (or "trim") blocks which are not in use by the filesystem
-    gvfs.enable = true; # virtual filesystem, maby needed for connecting via ssh vo other servers
-    openssh.enable = true;
+    gvfs.enable = true; # virtual filesystem, maybe needed for connecting via ssh to other servers
     udisks2.enable = true; # automounting of the usb devices (helpful for zmk keyboard auto mount)
+
+    openssh.enable = true;
+    
     flatpak.enable = true;
 
     printing = {

@@ -81,21 +81,22 @@
 
   xdg.mime.defaultApplications = {
     # Web and HTML
-    "x-scheme-handler/http" = "zen.desktop";
-    "x-scheme-handler/https" = "zen.desktop";
-    "x-scheme-handler/chrome" = "zen.desktop";
-    "text/html" = "zen.desktop";
-    "application/x-extension-htm" = "zen.desktop";
-    "application/x-extension-html" = "zen.desktop";
-    "application/x-extension-shtml" = "zen.desktop";
-    "application/x-extension-xhtml" = "zen.desktop";
-    "application/xhtml+xml" = "zen.desktop";
+    "x-scheme-handler/http" = "google-chrome.desktop";
+    "x-scheme-handler/https" = "google-chrome.desktop";
+    "x-scheme-handler/chrome" = "google-chrome.desktop";
+    "text/html" = "google-chrome.desktop";
+    "application/x-extension-htm" = "google-chrome.desktop";
+    "application/x-extension-html" = "google-chrome.desktop";
+    "application/x-extension-shtml" = "google-chrome.desktop";
+    "application/x-extension-xhtml" = "google-chrome.desktop";
+    "application/xhtml+xml" = "google-chrome.desktop";
 
     # File management
-    "inode/directory" = "org.kde.dolphin.desktop";
+    "inode/directory" = "thunar.desktop";    #org.kde.dolphin.desktop alternatively
+
 
     # Text editor
-    "text/plain" = "nvim.desktop";
+    "text/plain" = "code.desktop";
 
     # Terminal
     "x-scheme-handler/terminal" = "kitty.desktop";
@@ -114,11 +115,11 @@
       "libreoffice-impress.desktop";
 
     # PDF
-    "application/pdf" = "zen.desktop";
+    "application/pdf" = "google-chrome.desktop";
 
     # Other handlers
-    "x-scheme-handler/about" = "zen.desktop";
-    "x-scheme-handler/unknown" = "zen.desktop";
+    "x-scheme-handler/about" = "google-chrome.desktop";
+    "x-scheme-handler/unknown" = "google-chrome.desktop";
     "x-scheme-handler/postman" = "Postman.desktop";
     "x-scheme-handler/tonsite" = "org.telegram.desktop.desktop";
   };
