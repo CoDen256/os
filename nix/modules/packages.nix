@@ -5,53 +5,14 @@
   inputs,
   ...
 }:
-let
-  packageOverrides = pkgs.callPackage ./packages/python.nix { }; # build derivation (set of keys, each key is a package)
-in
 {
-  nixpkgs.overlays = [
-    (_: prev: {
-      ulauncher = prev.ulauncher.overrideAttrs (old: {
-        propagatedBuildInputs =
-          with prev.python3Packages // {
-            memoization = packageOverrides.memoization; # Ensure memoization is included
-          };
-          old.propagatedBuildInputs
-          ++ [
-            pint
-            simpleeval
-            parsedatetime
-            pytz
-            memoization
-          ];
-      });
-    })
+  imports = [
+    ./packages/dev.nix
+    ./packages/rev.nix
+    ./packages/ome.nix
+    ./packages/os.nix
   ];
-
-  systemd.services = {
-    flatpak-repo = {
-      path = [ pkgs.flatpak ];
-      script = "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo";
-    };
-  };
-
-  virtualisation = {
-    docker = {
-      enable = true;
-      rootless = {
-        enable = true;
-        setSocketVariable = true;
-      };
-    };
-  };
-
   programs = {
-    nix-ld = {
-      enable = true;
-      package = pkgs.nix-ld-rs;
-    };
-    firefox.enable = false;
-    dconf.enable = true;
     fuse.userAllowOther = true;
     gnupg.agent = {
       enable = true;
@@ -221,7 +182,6 @@ in
 
     # Downloaders
     yt-dlp
-
 
     # Education
     # ciscoPacketTracer8

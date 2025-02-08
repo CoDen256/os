@@ -22,6 +22,17 @@
     };
   };
 
+  programs.nix-ld = {
+    # Run unpatched dynamic binaries on NixOS. # Run games or proprietary software that attempts to verify its integrity.
+    enable = true;
+    package = pkgs.nix-ld-rs;
+  };
+  systemd.services = {
+    flatpak-repo = {
+      path = [ pkgs.flatpak ];
+      script = "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo";
+    };
+  };
   boot = {
     binfmt.registrations.appimage = {
       wrapInterpreterInShell = false;
