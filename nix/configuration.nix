@@ -4,6 +4,7 @@
 # https://github.com/nix-gui/nix-gui
 # https://github.com/wochap/nix-config
 # https://github.com/vasujain275/rudra
+# https://ryantm.github.io/nixpkgs/languages-frameworks/java/
 
 {
   config,

@@ -16,10 +16,10 @@ in
   programs.adb.enable = true; # includes android-tools -> adb + fastboot
   nixpkgs.config.android_sdk.accept_license = true;
   environment.systemPackages = with pkgs; [
-    androidenv.androidPkgs.androidsdk
+    #androidenv.androidPkgs.platform-tools
 
     apktool
-    jdk21 # keytool, jarsigner
+    #jdk21 # keytool, jarsigner
 
     dex2jar
     jadx # jadx jadx-gui
