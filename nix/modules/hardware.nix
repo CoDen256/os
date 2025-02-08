@@ -6,14 +6,8 @@
 }:
 
 {
-  security.rtkit.enable = true;
   hardware = {
-    sane = {
-      enable = true;
-      extraBackends = [ pkgs.sane-airscan ];
-      disabledDefaultBackends = [ "escl" ];
-    };
-    logitech.wireless = {
+    logitech.wireless = { # logitech wireless devices
       enable = true;
       enableGraphical = true;
     };
@@ -21,10 +15,10 @@
       enable = true;
       powerOnBoot = true;
     };
-    pulseaudio.enable = false;
-    graphics.enable = true;
   };
 
+  security.rtkit.enable = true; # used by PulseAudio and PipeWire use this to acquire realtime priority.
+  services.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
     alsa = {

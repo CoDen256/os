@@ -22,12 +22,24 @@
     };
   };
 
+  boot = {
+    binfmt.registrations.appimage = {
+      wrapInterpreterInShell = false;
+      interpreter = "${pkgs.appimage-run}/bin/appimage-run";
+      recognitionType = "magic";
+      offset = 0;
+      mask = ''\xff\xff\xff\xff\x00\x00\x00\x00\xff\xff\xff'';
+      magicOrExtension = ''\x7fELF....AI\x02'';
+    };
+  };
+
   services = {
-    asusd = { # control aspects for asus laptos
+    asusd = {
+      # control aspects for asus laptos
       enable = true;
       enableUserService = true;
     };
-    
+
     cron = {
       enable = true;
     };
@@ -38,7 +50,7 @@
     udisks2.enable = true; # automounting of the usb devices (helpful for zmk keyboard auto mount)
 
     openssh.enable = true;
-    
+
     flatpak.enable = true;
 
     printing = {

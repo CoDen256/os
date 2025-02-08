@@ -30,7 +30,8 @@ zinit cdreplay -q
 bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
-bindkey '^[w' kill-region
+bindkey '^H' backward-kill-word
+bindkey '5~' kill-word
 bindkey ';5D' backward-word
 bindkey ';5C' forward-word
 
