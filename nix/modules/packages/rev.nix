@@ -17,6 +17,10 @@ in
     (self: super: {
       apk-editor = super.callPackage ../../custom/apk-editor/default.nix { };
     })
+
+    (self: super: {
+      uber-apk-signer = super.callPackage ../../custom/uber-apk-signer/default.nix { };
+    })
   ];
 
   programs.adb.enable = true; # includes android-tools -> adb + fastboot
@@ -26,6 +30,7 @@ in
 
     apktool
     apk-editor
+    uber-apk-signer
     jdk21 # keytool, jarsigner
 
     dex2jar
@@ -49,9 +54,7 @@ in
   ];
 }
 # | apk.sh          |                                                                     |                                                                                                                          |     |
-# | uber-apk-signer | zipalign, (re)signing and verifying, multiple signatures            | https://github.com/CoDen256/asdf-uber-apk-signer                                                                         |     |
 # | smali/baksmali  | (.dex -> .smali(.class)) (disassembler)                             | https://github.com/CoDen256/asdf-smali                                                                                   |     |
-# | apk-editor      | merges apk and does stuff                                           | https://github.com/CoDen256/asdf-apk-editor<br>or nix                                                                    |     |
 # | apk-mitm        | applies mitm patch                                                  | https://github.com/niklashigi/apk-mitm + npm                                                                             |     |
 
 # | Fiddler                     | mitm                                                            | AppImage                                        |     |     |

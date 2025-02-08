@@ -1,35 +1,23 @@
 {
   pkgs ? import <nixpkgs> { },
 }:
-
 let
-  maven = pkgs.maven.override {
-    mavenVersion = "3.8.7";
-  };
 in
-pkgs.stdenv.mkDerivation {
+pkgs.stdenv.mkDerivation rec {
   pname = "uber-apk-signer";
-  version = "1.4.2";
-  src = pkgs.fetchFromGitHub {
-    owner = "patrickfav";
-    repo = "uber-apk-signer";
-    rev = "a74efe039537e0e64ab0cbe284c4050b96d13018"; # e.g., "v1.0.0" or "a1b2c3d"
-    sha256 = pkgs.lib.fakeHash;
+  version = "1.3.0";
+  src = pkgs.fetchurl {
+    url = "https://github.com/patrickfav/uber-apk-signer/releases/download/v${version}/uber-apk-signer-${version}.jar";
+    sha256 = "sha256-4Smf1vz02lJ91Tc1tWEn6OqSKjIRKBI7nDLWGbuh2DU=";
   };
 
-  buildInputs = [
-    maven
-    pkgs.jdk8
-  ];
-
-  buildPhase = ''
-    # Run Maven build
-    mvn clean install
-  '';
-
+  nativeBuildInputs = with pkgs; [ makeWrapper ];
+  unpackPhase = "true";
   installPhase = ''
-    # Copy the built artifact to the output directory
-    mkdir -p $out
-    cp target/*.jar $out/
+    mkdir -p $out/bin $out/share/java
+    cp $src $out/share/java/${pname}.jar
+
+    makeWrapper ${pkgs.jre8}/bin/java $out/bin/${pname} \
+      --add-flags "-jar $out/share/java/${pname}.jar"
   '';
 }
