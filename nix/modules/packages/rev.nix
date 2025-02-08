@@ -16,10 +16,8 @@ in
   nixpkgs.overlays = [
     (self: super: {
       apk-editor = super.callPackage ../../custom/apk-editor/default.nix { };
-    })
-
-    (self: super: {
       uber-apk-signer = super.callPackage ../../custom/uber-apk-signer/default.nix { };
+      smali = super.callPackage ../../custom/smali/default.nix { };
     })
   ];
 
@@ -29,8 +27,11 @@ in
     #androidenv.androidPkgs.platform-tools
 
     apktool
+
     apk-editor
     uber-apk-signer
+    smali
+
     jdk21 # keytool, jarsigner
 
     dex2jar
@@ -54,7 +55,6 @@ in
   ];
 }
 # | apk.sh          |                                                                     |                                                                                                                          |     |
-# | smali/baksmali  | (.dex -> .smali(.class)) (disassembler)                             | https://github.com/CoDen256/asdf-smali                                                                                   |     |
 # | apk-mitm        | applies mitm patch                                                  | https://github.com/niklashigi/apk-mitm + npm                                                                             |     |
 
 # | Fiddler                     | mitm                                                            | AppImage                                        |     |     |
