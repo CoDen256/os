@@ -15,25 +15,13 @@ in
     homeDirectory = homeDirectory;
     stateVersion = stateVersion; # Please read the comment before changing.
 
-    file = {
-      # wlogout icons
-      ".config/wlogout/icons".source = ../assets/wlogout;
-    };
-
-    sessionPath = [
-      "$HOME/.local/bin"
-    ];
-
     packages = [
       (import ../scripts/rofi-launcher.nix { inherit pkgs; })
     ];
-
   };
 
   imports = [
     ./desktop/rofi/rofi.nix
-    ./desktop/wlogout.nix
-    ./desktop/anyrun.nix
   ];
 
   # Styling
