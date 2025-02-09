@@ -2,12 +2,20 @@
 xontrib load coreutils
 #xontrib load pipeliner
 
+# completion -> tab
+# suggestion when writing
+
 $ALIAS_COMPLETIONS_OPTIONS_BY_DEFAULT = '1'
 $COMPLETION_MODE = 'menu-complete'
 $XONSH_AUTOPAIR = '1'
 $XONSH_CTRL_BKSP_DELETION = '1'
 $XONSH_SHOW_TRACEBACK = '1'
-$UPDATE_COMPLETIONS_ON_KEYPRESS = '1'
+$UPDATE_COMPLETIONS_ON_KEYPRESS = '1' # now the up key searches history in any position on the line
+$COMPLETIONS_DISPLAY = 'readline'
+$AUTO_SUGGEST = True
+$AUTO_SUGGEST_IN_COMPLETIONS = True
+$CASE_SENSITIVE_COMPLETIONS = False
+$COMPLETIONS_CONFIRM = False
 source-zsh "echo loading xonsh foreign shell"
 # XONSH WIZARD END
 
