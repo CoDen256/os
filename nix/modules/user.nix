@@ -21,10 +21,8 @@ in
       description = userDescription;
       extraGroups = ["networkmanager" "wheel" "docker" "adbusers" "wireshark" ];
       packages = with pkgs; [];
-      shell = pkgs.zsh;
+      shell =  pkgs.xonsh;
     };
   };
-  #users.defaultUserShell = pkgs.python311Packages.xonsh;
-
-  programs.zsh.enable = true;
+  programs.xonsh.enable = true;
 }

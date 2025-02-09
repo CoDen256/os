@@ -15,7 +15,7 @@ clipboard-paste-protection = false
 confirm-close-surface = false
 
 copy-on-select = true
-shell-integration = zsh
+shell-integration = xonsh
 keybind = alt+k=reload_config
 keybind = ctrl+shift+c=copy_to_clipboard
 keybind = performable:ctrl+c=copy_to_clipboard

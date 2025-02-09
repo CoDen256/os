@@ -44,5 +44,9 @@ in
     # tools
     jq
 
+
+    # extra
+    python311Packages.python-lsp-server
+
   ];
 }

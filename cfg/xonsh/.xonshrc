@@ -1,12 +1,12 @@
 # XONSH WIZARD START
 xontrib load coreutils
-xontrib load pipeliner
+#xontrib load pipeliner
 
 $ALIAS_COMPLETIONS_OPTIONS_BY_DEFAULT = '1'
 $COMPLETION_MODE = 'menu-complete'
+source-zsh "echo loading xonsh foreign shell"
 # XONSH WIZARD END
 
-# MISE HOOK
 from os               import environ
 from os               import path
 import pathlib
@@ -14,24 +14,6 @@ import re
 import subprocess
 from xonsh.built_ins  import XSH
 
-def listen_prompt(): # Hook Events
-  execx($(/home/coden/.local/bin/mise hook-env -s xonsh))
-
-envx = XSH.env
-envx[   'MISE_SHELL'] = 'xonsh'
-environ['MISE_SHELL'] = envx.get_detyped('MISE_SHELL')
-XSH.builtins.events.on_pre_prompt(listen_prompt) # Activate hook: before showing the prompt
-
-def _mise(args):
-  # changed ['command', 'mise', *args] to ['/home/coden/.local/bin/mise', *args], since there is 
-  # no 'command' command in xonsh
-  if args and args[0] in ('deactivate', 'shell', 'sh'):
-    execx(subprocess.run(['/home/coden/.local/bin/mise', *args], stdout=subprocess.PIPE).stdout.decode())
-  else:
-    subprocess.run(['/home/coden/.local/bin/mise', *args])
-
-XSH.aliases['mise'] = _mise
-# MISE HOOK END
 
 # FUNCTIONS
 # use with p""
@@ -42,58 +24,28 @@ def resolvepath(p):
     filename, ext = path.splitext(basename)
     return (pth,dir,basename,filename,ext)
 
-def aptrep(*repos):
-    for repo in repos:
-        print(f"Installing {repo}")
-        sudo add-apt-repository @(repo) -y
-    sudo apt-get update
-
-def extract(file,out=None):
-    is_downloadable=re.match(r'^https?://', file)
-
-    if out: out = resolvepath(out)[0]
-    if is_downloadable:
-        _, _, basename, _, _ = resolvepath(file)
-        file, url = f"/tmp/{basename}",file
-
-        print(f"Downloading {url} to {file}")
-        curl -sSL @(url) -o @(file)
-
-        _, _, _, filename, _ = resolvepath(file)
-        if not out: out = $HOME + "/" + filename
-    else:
-      _, dir, _, filename, _ = resolvepath(file)
-      if not out: out = dir + "/" + filename
-
-    print(f"Extracting {file} to {out}")
-    if not !(which atool):
-        print("No atool. Installing")
-        sudo apt-get install -y atool
-
-    atool -X @(out) @(file)
-
-    if (is_downloadable):
-      print(f"Removing {file}")
-      rm @(file)
-        
-def _debi(args):
-    arg = args[0]
-    print(f"Downloading deb packge {arg}")
-    _, _, basename, _, _ = resolvepath(arg)
-    wget -O /tmp/@(basename) @(arg)
-
-    sudo apt-get install -y /tmp/@(basename)
-    rm /tmp/@(basename)
-    return 0
+ 
 
 # ALIASES
-XSH.aliases['apti'] = 'sudo apt-get install -y @($args)'
-XSH.aliases['aptr'] = 'sudo apt-get remove -y @($args)'
-XSH.aliases['aptar'] = 'sudo apt-get autoremove -y'
-XSH.aliases['aptp'] = 'sudo apt-get purge @($args)'
-XSH.aliases['aptu'] = 'sudo apt-get update'
-XSH.aliases['aptl'] = 'apt list | grep @($args)'
-XSH.aliases['aptli'] = 'apt list --installed | grep @($args)'
-XSH.aliases['debi'] = _debi
-XSH.aliases['wgetd'] = 'wget -P $PWD @($args)'
-XSH.aliases['sudo'] = 'sudo env "PATH=$PATH" @($args)'
+aliases[".."]='cd ..'
+aliases["..."]='cd ../..'
+aliases[".3"]='cd ../../..'
+aliases[".4"]='cd ../../../..'
+aliases[".5"]='cd ../../../../..'
+aliases["l"]='eza -lh  --icons=auto'
+aliases["ls"]='eza -1   --icons=auto' # short list
+aliases["ll"]='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
+aliases["ld"]='eza -lhD --icons=auto' # long list dirs
+aliases["tree"]='tree -a -I .git'
+aliases["cat"]='bat'
+aliases["c"]='clear' # clear terminal
+aliases["e"]='exit'
+aliases["mkdir"]='mkdir -p'
+aliases["grep"]='rg --color=auto'
+aliases["y"]='yazi'
+
+
+# evals
+# no fzf eval
+execx($(starship init xonsh))
+execx($(zoxide init xonsh), 'exec', __xonsh__.ctx, filename='zoxide')

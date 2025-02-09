@@ -58,7 +58,7 @@ in
     btop
     killall
   
-    
+    zsh
     # Audio and video
     pulseaudio
     pavucontrol    

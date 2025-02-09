@@ -11,7 +11,7 @@ DIRS=(
 
     bash
     zsh
-    #xonsh
+    xonsh
 
     hypr
     dunst
