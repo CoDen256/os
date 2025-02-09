@@ -52,7 +52,8 @@ aliases["e"]='exit'
 aliases["mkdir"]='mkdir -p'
 aliases["grep"]='rg --color=auto'
 aliases["y"]='yazi'
-aliases["reload"]='xonsh'
+aliases["reload"]='xonsh --rc ~/.xonshrc'
+aliases["ppath"]='echo @("\\n".join($PATH))'
 
 # evals
 # no fzf eval

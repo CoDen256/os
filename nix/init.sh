@@ -10,7 +10,7 @@ DIRS=(
     just 
 
     bash
-    zsh
+    #zsh
     xonsh
 
     hypr
