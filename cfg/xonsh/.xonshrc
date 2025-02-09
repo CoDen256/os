@@ -4,6 +4,10 @@ xontrib load coreutils
 
 $ALIAS_COMPLETIONS_OPTIONS_BY_DEFAULT = '1'
 $COMPLETION_MODE = 'menu-complete'
+$XONSH_AUTOPAIR = '1'
+$XONSH_CTRL_BKSP_DELETION = '1'
+$XONSH_SHOW_TRACEBACK = '1'
+$UPDATE_COMPLETIONS_ON_KEYPRESS = '1'
 source-zsh "echo loading xonsh foreign shell"
 # XONSH WIZARD END
 
@@ -14,7 +18,6 @@ import re
 import subprocess
 from xonsh.built_ins  import XSH
 
-
 # FUNCTIONS
 # use with p""
 def resolvepath(p):
@@ -23,8 +26,6 @@ def resolvepath(p):
     basename = path.basename(pth)
     filename, ext = path.splitext(basename)
     return (pth,dir,basename,filename,ext)
-
- 
 
 # ALIASES
 aliases[".."]='cd ..'
@@ -43,9 +44,13 @@ aliases["e"]='exit'
 aliases["mkdir"]='mkdir -p'
 aliases["grep"]='rg --color=auto'
 aliases["y"]='yazi'
-
+aliases["reload"]='xonsh'
 
 # evals
 # no fzf eval
 execx($(starship init xonsh))
 execx($(zoxide init xonsh), 'exec', __xonsh__.ctx, filename='zoxide')
+
+# XONSH WEBCONFIG START
+
+# XONSH WEBCONFIG END
