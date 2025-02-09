@@ -18,3 +18,8 @@ unstow PACKAGE:
 reb:
   nh os switch ~/os/nix
   @#sudo nixos-rebuild switch --flake ~/os/nix#deimos
+
+ul QUERY:
+  ulauncher-toggle || true
+  sleep 0.01
+  ydotool type '{{QUERY}} '

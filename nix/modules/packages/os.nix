@@ -50,12 +50,14 @@ in
     baobab # gui disk usage analyser
     duf # Disk Usage/Free Utility
     imv # image viewer
-    vlc 
+    vlc
+    ydotool # automation
 
     # System monitoring and management
     htop
     btop
     killall
+  
     
     # Audio and video
     pulseaudio
