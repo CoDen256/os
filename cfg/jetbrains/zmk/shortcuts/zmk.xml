@@ -263,12 +263,18 @@
   <action id="EditorCreateRectangularSelectionOnMouseDrag">
     <mouse-shortcut keystroke="button2" />
   </action>
+  <action id="EditorDecreaseFontSizeGlobal">
+    <keyboard-shortcut first-keystroke="shift meta alt minus" />
+  </action>
   <action id="EditorDeleteLine" />
   <action id="EditorDuplicate">
     <keyboard-shortcut first-keystroke="ctrl g" />
   </action>
   <action id="EditorDuplicateLines">
     <keyboard-shortcut first-keystroke="shift ctrl g" />
+  </action>
+  <action id="EditorIncreaseFontSizeGlobal">
+    <keyboard-shortcut first-keystroke="shift meta alt equals" />
   </action>
   <action id="EditorIndentLineOrSelection">
     <keyboard-shortcut first-keystroke="ctrl tab" />
@@ -672,9 +678,7 @@
   <action id="PreviousDiff">
     <keyboard-shortcut first-keystroke="shift f3" />
   </action>
-  <action id="PreviousTab">
-    <keyboard-shortcut first-keystroke="shift meta alt i" />
-  </action>
+  <action id="PreviousTab" />
   <action id="PyExecuteCellAction" />
   <action id="PyRunFileInConsole">
     <keyboard-shortcut first-keystroke="shift alt r" />
