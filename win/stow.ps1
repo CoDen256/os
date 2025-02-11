@@ -1,0 +1,1 @@
+New-Item -ItemType SymbolicLink -Force -Path "C:\Users\dchernyshov\AppData\Roaming\JetBrains\IntelliJIdea2024.3\keymaps\zmk.xml" -Target "C:\Users\dchernyshov/ome/os/cfg/jetbrains/zmk.xml"
