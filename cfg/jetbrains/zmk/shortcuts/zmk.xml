@@ -40,7 +40,9 @@
     <keyboard-shortcut first-keystroke="shift meta alt r" />
   </action>
   <action id="ActivateServicesToolWindow" />
-  <action id="ActivateStructureToolWindow" />
+  <action id="ActivateStructureToolWindow">
+    <keyboard-shortcut first-keystroke="shift meta alt v" />
+  </action>
   <action id="ActivateTODOToolWindow" />
   <action id="ActivateTerminalToolWindow">
     <keyboard-shortcut first-keystroke="shift meta alt l" />
@@ -236,6 +238,7 @@
   <action id="EditSource">
     <keyboard-shortcut first-keystroke="alt c" />
   </action>
+  <action id="EditSourceInNewWindow" />
   <action id="Editor Redo">
     <keyboard-shortcut first-keystroke="ctrl y" />
   </action>
