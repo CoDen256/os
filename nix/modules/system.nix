@@ -4,6 +4,11 @@
   pkgs,
   ...
 }:
+
+# TODO docker has not enough priviledges for idea
+# TODO when closing intellij or postman, they are closing in some incorrect state that i have to kill background process via ps aux after closing the window
+# TODO ulauncher search in web crashes and freezes everything if chome wasn't run before
+
 {
   nix = {
     settings = {

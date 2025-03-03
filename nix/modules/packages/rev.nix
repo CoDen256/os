@@ -13,6 +13,8 @@ in
   # https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/android.section.md
   # https://github.com/tadfisher/android-nixpkgs
 
+# android studio keeps reconnecting the device, cant run app on the device 
+# switch in Settings -> Debugger -> adb server to native
   nixpkgs.overlays = [
     (self: super: {
       apk-editor = super.callPackage ../../custom/apk-editor/default.nix { };

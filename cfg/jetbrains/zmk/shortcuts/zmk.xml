@@ -1010,7 +1010,7 @@
   <action id="WD.UploadCurrentRemoteFileAction" />
   <action id="WebOpenInAction" />
   <action id="WelcomeScreen.Plugins">
-    <keyboard-shortcut first-keystroke="shift meta alt g" />
+    <keyboard-shortcut first-keystroke="shift meta alt comma" />
   </action>
   <action id="XDebugger.AttachToProcess">
     <keyboard-shortcut first-keystroke="shift alt d" second-keystroke="a" />

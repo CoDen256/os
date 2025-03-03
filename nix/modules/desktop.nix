@@ -8,30 +8,25 @@
 {
 
   environment.systemPackages = with pkgs; [
-    
+
     # Wayland specific
     hyprshot # screenshot utility
     grim # screenshot with slurp
-    slurp  # select a region on screen and print the coordinates and resolution to output
+    slurp # select a region on screen and print the coordinates and resolution to output
     swappy # screenshot editor # grim -g "$(slurp)" - | swappy -f - # select a region then take screenshot, then edit with swappy
-
 
     swww # wallpaper backend
     waypaper # wallpapaer frontend
 
-    
     hypridle # idle daemon, like when to turn off the screen and suspend
     hyprlock # screen lock
 
-
-
     waybar # the waybar above
-    
 
-     # Clipboard managers
-    wl-clipboard 
+    # Clipboard managers
+    wl-clipboard
     cliphist
-    
+
     where-is-my-sddm-theme # login manager theme
 
     dunst # notification manager
@@ -41,7 +36,7 @@
 
     # Keyboard mappings
     wev # tracking keyboard events
-    xorg.xev     # for tracking keyboard events
+    xorg.xev # for tracking keyboard events
     xorg.xmodmap # for modifying keyboard events
   ];
 
@@ -114,8 +109,7 @@
     "application/xhtml+xml" = "google-chrome.desktop";
 
     # File management
-    "inode/directory" = "thunar.desktop";    #org.kde.dolphin.desktop alternatively
-
+    "inode/directory" = "thunar.desktop"; # org.kde.dolphin.desktop alternatively
 
     # Text editor
     "text/plain" = "code.desktop";
@@ -144,5 +138,6 @@
     "x-scheme-handler/unknown" = "google-chrome.desktop";
     "x-scheme-handler/postman" = "Postman.desktop";
     "x-scheme-handler/tonsite" = "org.telegram.desktop.desktop";
+    "x-scheme-handler/termius" = "termius-app.desktop";
   };
 }
