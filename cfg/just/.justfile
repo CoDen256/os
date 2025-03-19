@@ -28,3 +28,24 @@ ul QUERY:
   ulauncher-toggle || true
   sleep 0.01
   ydotool type '{{QUERY}} '
+
+
+dobuild PROJECT TAG="latest":
+    docker build {{PROJECT}} -t coden256/{{PROJECT}}:{{TAG}}
+
+dorun PROJECT TAG="latest":
+    docker run -d coden256/{{PROJECT}}:{{TAG}}
+
+dopush PROJECT TAG="latest":
+    docker push coden256/{{PROJECT}}:{{TAG}}
+
+doundeploy TARGET PROJECT TAG="latest":
+    #!/usr/bin/env bash
+    set -euxo pipefail
+    target=`ssh root@{{TARGET}} "docker ps -a -q --filter ancestor=coden256/{{PROJECT}} --format='{{{{.ID}}'"`
+    echo Removing $target
+    ssh root@{{TARGET}} "docker stop $target || true"
+    ssh root@{{TARGET}} "docker rm $target || true"
+
+dodeploy TARGET PROJECT TAG="latest": (undeploy TARGET PROJECT TAG)
+    ssh root@{{TARGET}} "docker pull coden256/{{PROJECT}}:{{TAG}} && docker run -d coden256/{{PROJECT}}:{{TAG}}"

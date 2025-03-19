@@ -44,6 +44,7 @@ in
 
     # tools
     jq
+    lazydocker
 
 
     # extra

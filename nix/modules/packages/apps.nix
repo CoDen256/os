@@ -37,6 +37,7 @@
     telegram-desktop
     google-chrome
     onedrive
+    discord
 
     steam
 
