@@ -29,6 +29,9 @@ ul QUERY:
   sleep 0.01
   ydotool type '{{QUERY}} '
 
+dotest PROJECT TAG="latest":
+    docker pull coden256/{{PROJECT}}:{{TAG}} || true
+    docker run -it --entrypoint=/bin/bash coden256/{{PROJECT}}:{{TAG}} || docker run -it --entrypoint=/bin/sh coden256/{{PROJECT}}:{{TAG}}
 
 dobuild PROJECT TAG="latest":
     docker build {{PROJECT}} -t coden256/{{PROJECT}}:{{TAG}}
@@ -47,5 +50,5 @@ doundeploy TARGET PROJECT TAG="latest":
     ssh root@{{TARGET}} "docker stop $target || true"
     ssh root@{{TARGET}} "docker rm $target || true"
 
-dodeploy TARGET PROJECT TAG="latest": (undeploy TARGET PROJECT TAG)
+dodeploy TARGET PROJECT TAG="latest": (doundeploy TARGET PROJECT TAG)
     ssh root@{{TARGET}} "docker pull coden256/{{PROJECT}}:{{TAG}} && docker run -d coden256/{{PROJECT}}:{{TAG}}"
