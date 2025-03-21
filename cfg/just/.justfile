@@ -10,11 +10,11 @@ restsec:
 unstowsec PACKAGE:
   stow --dir $HOME/sec/home --target=$HOME/ -D {{PACKAGE}}
 
-maven-home:
-  stow --dir $HOME/sec/home --target=$HOME/ -D maven-ome
+mvnhome:
+  ~/sec/mvn.sh home
   
-maven-ome:
-  ~/sec/init.sh
+mvnome:
+  ~/sec/mvn.sh ome
 
 readb:
   adb kill-server
