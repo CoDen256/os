@@ -404,7 +404,6 @@
     <keyboard-shortcut first-keystroke="alt c" />
     <mouse-shortcut keystroke="button5" />
   </action>
-  <action id="GBrowserBookmarkAddAction" />
   <action id="GBrowserFindAction" />
   <action id="Generate">
     <keyboard-shortcut first-keystroke="alt y" />
@@ -827,7 +826,6 @@
   <action id="ShowFilePath">
     <keyboard-shortcut first-keystroke="ctrl alt v" />
   </action>
-  <action id="ShowFilterPopup" />
   <action id="ShowNavBar">
     <keyboard-shortcut first-keystroke="shift ctrl v" />
   </action>
