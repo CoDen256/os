@@ -49,7 +49,6 @@
     ];
     configPackages = [
       pkgs.xdg-desktop-portal-gtk
-      pkgs.xdg-desktop-portal-hyprland
       pkgs.xdg-desktop-portal
     ];
   };
@@ -63,20 +62,26 @@
     material-icons
   ];
 
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
   programs = {
     # settings database for gnome
     dconf.enable = true; # dconf is a low-level configuration system. Its main purpose is to provide a backend to GSettings on platforms that don't already have configuration storage systems.
   };
 
+  #services.displayManager.sddm.enable = true;
+  #services.displayManager.sddm.wayland.enable = true;
+
   services = {
-    displayManager.autoLogin.enable = true;
-    displayManager.autoLogin.user = "coden";
+    #displayManager.autoLogin.enable = true;
+    #displayManager.autoLogin.user = "coden";
+    #desktopManager.plasma6.enable = true;
+    #displayManager.defaultSession = "plasmax11";
+
     xserver = {
       enable = true;
+
+      displayManager.lightdm.enable = true;
+      desktopManager.gnome.enable = true;
+      displayManager.defaultSession = "gnome";
       xkb = {
         layout = "us";
         variant = "";
