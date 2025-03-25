@@ -88,7 +88,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/wm/keybindings" = {
       "close" = [ "<Super><Shift><Alt>Escape" ];
-      "minimize" = [ "<Super><Shift><Alt>Return" ];
+      "minimize" = [ "<Super><Shift><Alt>3" ];
       "move-to-workspace-1" = [ "<Super><Shift>1" ];
       "move-to-workspace-10" = [ "<Super><Shift>0" ];
       "move-to-workspace-2" = [ "<Super><Shift>2" ];
@@ -108,9 +108,9 @@ with lib.hm.gvariant;
       "switch-to-workspace-5" = [ "<Super>5" ];
       "switch-to-workspace-6" = [ "<Super>6" ];
       "switch-to-workspace-7" = [ "<Super>7" ];
-      "switch-to-workspace-8" = [ "<Super>8" ];
+      "switch-to-workspace-8" = [ "<Super>8" ]; # use also switch left and right shortcuts
       "switch-to-workspace-9" = [ "<Super>9" ];
-      "toggle-fullscreen" = [ "<Super><Shift><Alt>3" ];
+      "toggle-fullscreen" = [ "<Super><Shift><Alt>Return" ];
     };
 
       "org/gnome/desktop/wm/preferences" = {
@@ -160,7 +160,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       "binding" = "<Super><Shift><Alt>h";
-      "command" = "ulauncher ";
+      "command" = "ulauncher-toggle";
       "name" = "Ulauncher";
     };
 

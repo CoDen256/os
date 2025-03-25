@@ -47,22 +47,26 @@
       path = [ pkgs.flatpak ];
       script = "flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo";
     };
+
   };
-  systemd.user.services.ulauncher = {
 
-    unitConfig = {
-      Description = "ulauncher application launcher service";
-      Documentation = "https://ulauncher.io";
-      PartOf = [ "graphical-session.target" ];
+  systemd.user.services = {
+    ulauncher = {
+
+      unitConfig = {
+        Description = "ulauncher application launcher service";
+        Documentation = "https://ulauncher.io";
+        After = [ "graphical-session.target" ];
+      };
+
+      serviceConfig = {
+        Type = "simple";
+        ExecStart = "${pkgs.bash}/bin/bash -lc '${pkgs.ulauncher}/bin/ulauncher --hide-window'";
+        Restart = "always";
+      };
+
+      wantedBy = [ "graphical-session.target" ];
     };
-
-    serviceConfig = {
-      Type = "simple";
-      ExecStart = "${pkgs.bash}/bin/bash -lc '${pkgs.ulauncher}/bin/ulauncher --hide-window'";
-      Restart = "always";
-    };
-
-    wantedBy = [ "graphical-session.target" ];
   };
 
   systemd.user.services.ulauncher.enable = true;
