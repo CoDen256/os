@@ -113,13 +113,14 @@ with lib.hm.gvariant;
       "toggle-fullscreen" = [ "<Super><Shift><Alt>3" ];
     };
 
-    #   "org/gnome/desktop/wm/preferences" = {
-    #     "button-layout" = lib.mkForce "";
-    #     "focus-mode" = "sloppy";
-    #     "num-workspaces" = 5;
-    #     "titlebar-font" = "Roboto Bold 11";
-    #     "workspace-names" = [ "1" ];
-    #   };
+      "org/gnome/desktop/wm/preferences" = {
+        "button-layout" = lib.mkForce "";
+        "focus-mode" = "sloppy";
+        "focus-new-windows" = "smart";
+        "num-workspaces" = 5;
+        "titlebar-font" = "Roboto Bold 11";
+        "workspace-names" = [ "1" ];
+      };
 
     #   "org/gnome/mutter" = {
     #     "center-new-windows" = true;
@@ -169,10 +170,6 @@ with lib.hm.gvariant;
       "name" = "Kitty";
     };
 
-    #   "org/gnome/settings-daemon/plugins/power" = {
-    #     "sleep-inactive-ac-type" = "nothing";
-    #     "sleep-inactive-battery-type" = "nothing";
-    #   };
 
     "org/gnome/shell/extensions/blur-my-shell" = {
       "settings-version" = 2;
