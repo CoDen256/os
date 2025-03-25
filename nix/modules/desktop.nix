@@ -10,7 +10,7 @@
   environment.systemPackages = with pkgs; [
 
     # Wayland specific
-    hyprshot # screenshot utility
+    # screenshot utility
     grim # screenshot with slurp
     slurp # select a region on screen and print the coordinates and resolution to output
     swappy # screenshot editor # grim -g "$(slurp)" - | swappy -f - # select a region then take screenshot, then edit with swappy
@@ -18,16 +18,14 @@
     swww # wallpaper backend
     waypaper # wallpapaer frontend
 
-    hypridle # idle daemon, like when to turn off the screen and suspend
-    hyprlock # screen lock
+    # idle daemon, like when to turn off the screen and suspend
+    # screen lock
 
     waybar # the waybar above
 
     # Clipboard managers
     wl-clipboard
     cliphist
-
-    where-is-my-sddm-theme # login manager theme
 
     dunst # notification manager
 
@@ -38,6 +36,44 @@
     wev # tracking keyboard events
     xorg.xev # for tracking keyboard events
     xorg.xmodmap # for modifying keyboard events
+  ];
+
+  environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+    QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
+  };
+
+  environment.gnome.excludePackages = with pkgs; [
+    gedit
+    gnome-connections
+    gnome-console
+    gnome-photos
+    gnome-tour
+    snapshot
+    atomix # puzzle game
+    baobab # disk usage analyzer
+    cheese # webcam tool
+    epiphany # web browser
+    evince # document viewer
+    geary # email reader
+    gnome-calendar
+    gnome-characters
+    gnome-clocks
+    gnome-contacts
+    gnome-disk-utility
+    gnome-font-viewer
+    gnome-logs
+    gnome-maps
+    gnome-music
+    gnome-shell-extensions
+    gnome-system-monitor
+    gnome-terminal
+    gnome-weather
+    hitori # sudoku game
+    iagno # go game
+    simple-scan
+    tali # poker game
+    yelp # help viewer
   ];
 
   xdg.portal = {
@@ -53,28 +89,14 @@
     ];
   };
 
-  fonts.packages = with pkgs; [
-    noto-fonts-emoji
-    fira-sans
-    roboto
-    noto-fonts-cjk-sans
-    font-awesome
-    material-icons
-  ];
-
   programs = {
     # settings database for gnome
     dconf.enable = true; # dconf is a low-level configuration system. Its main purpose is to provide a backend to GSettings on platforms that don't already have configuration storage systems.
   };
 
-  #services.displayManager.sddm.enable = true;
-  #services.displayManager.sddm.wayland.enable = true;
-
   services = {
-    #displayManager.autoLogin.enable = true;
-    #displayManager.autoLogin.user = "coden";
-    #desktopManager.plasma6.enable = true;
-    #displayManager.defaultSession = "plasmax11";
+    displayManager.autoLogin.enable = true;
+    displayManager.autoLogin.user = "coden";
 
     xserver = {
       enable = true;
@@ -100,6 +122,15 @@
       };
     };
   };
+
+  fonts.packages = with pkgs; [
+    noto-fonts-emoji
+    fira-sans
+    roboto
+    noto-fonts-cjk-sans
+    font-awesome
+    material-icons
+  ];
 
   xdg.mime.defaultApplications = {
     # Web and HTML
