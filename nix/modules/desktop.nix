@@ -21,8 +21,6 @@
     # idle daemon, like when to turn off the screen and suspend
     # screen lock
 
-    waybar # the waybar above
-
     # Clipboard managers
     wl-clipboard
     cliphist
@@ -36,6 +34,7 @@
     wev # tracking keyboard events
     xorg.xev # for tracking keyboard events
     xorg.xmodmap # for modifying keyboard events
+    xkb-switch
   ];
 
   environment.sessionVariables = {

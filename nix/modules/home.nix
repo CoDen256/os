@@ -22,6 +22,40 @@ with lib.hm.gvariant;
   };
 
   dconf.settings = {
+
+    "org/gnome/desktop/input-sources" = {
+      "current" = mkUint32 0;
+      "mru-sources" = [
+        (mkTuple [
+          "xkb"
+          "us"
+        ])
+        (mkTuple [
+          "xkb"
+          "ru-phonetic"
+        ])
+        (mkTuple [
+          "xkb"
+          "de-simple"
+        ])
+      ];
+      "show-all-sources" = false;
+      "sources" = [
+        (mkTuple [
+          "xkb"
+          "us"
+        ])
+        (mkTuple [
+          "xkb"
+          "ru-phonetic"
+        ])
+        (mkTuple [
+          "xkb"
+          "de-simple"
+        ])
+      ];
+    };
+
     "org/gnome/shell" = {
       "disable-user-extensions" = false;
       "enabled-extensions" = [
@@ -85,11 +119,30 @@ with lib.hm.gvariant;
       "name" = "Ulauncher";
     };
 
-    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
       "binding" = "<Super><Shift><Alt>Backspace";
       "command" = "kitty";
       "name" = "Kitty";
     };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
+      "binding" = "<Super>F10";
+      "command" = "setxkbmap us";
+      "name" = "us";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+      "binding" = "<Super>F11";
+      "command" = "setxkbmap ru-phonetic";
+      "name" = "ru";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
+      "binding" = "<Super>F12";
+      "command" = "setxkbmap de-simple";
+      "name" = "de";
+    };
+    
 
     "org/gnome/shell/extensions/blur-my-shell" = {
       "settings-version" = 2;
