@@ -18,6 +18,8 @@ DIRS=(
     waybar
     jetbrains
     input
+
+    x
 )
 stow --dir=$HOME/os/cfg --target=$HOME/ -R "${DIRS[@]}"
 

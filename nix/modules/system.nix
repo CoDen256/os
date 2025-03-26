@@ -68,9 +68,31 @@
       "https://github.com/Ulauncher/Ulauncher/blob/f0905b9a9cabb342f9c29d0e9efd3ba4d0fa456e/contrib/systemd/ulauncher.service"
     ];
     wantedBy = [
-      "graphical-session.target" 
+      "graphical-session.target"
     ];
-    after = [ "graphical-session.target" "xdg-desktop-autostart.target"];
+    after = [
+      "graphical-session.target"
+      "xdg-desktop-autostart.target"
+    ];
+  };
+
+  systemd.user.services.autostart = {
+    enable = true;
+    script = ''
+      echo "starting..." >> ~/tmp/autostart.log
+    '';
+    wantedBy = [ "graphical-session.target" ];
+    partOf = [ "graphical-session.target" ];
+    after = [
+      "graphical-session.target"
+      "xdg-desktop-autostart.target"
+    ];
+  };
+
+  services.cron = {
+    systemCronJobs = [
+      "@reboot  xmodmap /home/coden/.Xmodmap >> /tmp/cron.log"
+    ];
   };
 
   services.dbus.enable = true;
