@@ -19,6 +19,10 @@ global immGetDefaultIMEWnd := DllCall("GetProcAddress", "Ptr",imm, "AStr","ImmGe
     Send("{Alt Down}{Shift Down}{Tab}")
 }
 
+#+!Escape::{
+    Send("{Alt Down}{F4}{Alt Up}")
+}
+
 ; add us english-us keyboard
 ; add russian keyboard
 ; add german-us keyboard
@@ -39,48 +43,4 @@ SetInputLang(Lang)
 {
     hWnd := WinActive("A")
     PostMessage(0x50, 0, Lang, hWnd)
-}
-
-^!v:: {
-	ClipSaved := A_Clipboard ; store temporärily original clipboard
-	Length := StrLen(ClipSaved)
-
-	Send("^v") ; Copy selected left character to the clipSleep 1000Sleep 1000Sleep 1000Sleep 1000Sleep 1000
-	Sleep 50
-	Send("{LShift down}")
-	Loop Length{
-		Send("{Left}")
-	}
-	
-	Send("{LShift up}")
-
-}
-
-GetInputLocaleID() {
-	foregroundWindow := DllCall("GetForegroundWindow") ; docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getforegroundwindow
-
-	isConsole := WinActive("ahk_class ConsoleWindowClass") ; CMD, Powershell
-	isVGUI := WinActive("ahk_class vguiPopupWindow") ; Popups
-	isUWP := WinActive("ahk_class ApplicationFrameWindow") ; Steam, UWP apps: autohotkey.com/boards/viewtopic.php?f=76&t=69414
-
-	if isConsole {
-		IMEWnd := DllCall(immGetDefaultIMEWnd, "Ptr",foregroundWindow) ; DllCall("Imm32.dll\ImmGetDefaultIMEWnd", "Ptr",fgWin)
-		if (IMEWnd == 0) {
-			return
-		} else {
-			foregroundWindow := IMEWnd
-		}
-	} else if isVGUI or isUWP { 
-		Focused	:= ControlGetFocus("A")
-		if (Focused == 0) {
-			return
-		} else {
-			ctrlID := ControlGetHwnd(Focused, "A")
-			foregroundWindow := ctrlID
-		}
-	}
-	threadId := DllCall("GetWindowThreadProcessId", "Ptr",foregroundWindow , "Ptr",0) ; docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getwindowthreadprocessid
-	inputLocaleId := DllCall("GetKeyboardLayout", "UInt",threadId) ; precise '0xfffffffff0c00409' value
-
-	return inputLocaleId
 }
