@@ -64,6 +64,7 @@ with lib.hm.gvariant;
     };
 
     "org/gnome/desktop/wm/keybindings" = {
+      # https://github.com/GNOME/gsettings-desktop-schemas/blob/master/schemas/org.gnome.desktop.wm.keybindings.gschema.xml.in
       "close" = [ "<Super><Shift><Alt>Escape" ];
       "minimize" = [ "<Super><Shift><Alt>3" ];
       "move-to-workspace-1" = [ "<Super><Shift>1" ];
@@ -76,8 +77,8 @@ with lib.hm.gvariant;
       "move-to-workspace-7" = [ "<Super><Shift>7" ];
       "move-to-workspace-8" = [ "<Super><Shift>8" ];
       "move-to-workspace-9" = [ "<Super><Shift>9" ];
-      "switch-applications" = [ "<Super><Shift><Alt>c" ];
-      "switch-applications-backward" = [ "<Super><Shift><Alt>g" ];
+      "switch-windows" = [ "<Super><Shift><Alt>c" ];
+      "switch-windows-backward" = [ "<Super><Shift><Alt>g" ];
       "switch-to-workspace-1" = [ "<Super>1" ];
       "switch-to-workspace-2" = [ "<Super>2" ];
       "switch-to-workspace-3" = [ "<Super>3" ];
