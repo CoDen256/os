@@ -18,35 +18,36 @@ param (
 
     [string]$base = "C:\os"
 )
-
-$KeymapSource = "$base\cfg\jetbrains\zmk\shortcuts\zmk.xml"
-$LayoutSource = "$base\win\ahk\layout.ahk"
-$TargetAutorun = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
-
 # Function to get user's APPDATA path
 function Get-UserAppDataPath {
     param (
         [string]$username
     )
 
-        $appDataPath = "C:\Users\$username\AppData\Roaming"
-        if (Test-Path -Path $appDataPath)
-        {
-            return $appDataPath
-        }
-        Write-Error "Failed to get APPDATA path for user '$username': $appDataPath does not exist"
-        exit 1
+    $appDataPath = "C:\Users\$username\AppData\Roaming"
+    if (Test-Path -Path $appDataPath)
+    {
+        return $appDataPath
+    }
+    Write-Error "Failed to get APPDATA path for user '$username': $appDataPath does not exist"
+    exit 1
 }
+
+$appDataPath = Get-UserAppDataPath -username $user
+$KeymapSource = "$base\cfg\jetbrains\zmk\shortcuts\zmk.xml"
+$LayoutSource = "$base\cfg\ahk\layout.ahk"
+$TerminalSource = "$base\cfg\win-terminal\settings-work.json" # TODO work -> dev or smhth
+$YaziSource = "$base\cfg\yazi\.config\yazi" # TODO work -> dev or smhth
+$TargetAutorun = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
+$TerminalPath = "C:\Users\$user\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState"
+$jetBrainsPath = Join-Path $appDataPath "JetBrains"
+$YaziPath = "C:\Users\$user\.yazi"
 
 # Verify the source keymap file exists
 if (-not (Test-Path $KeymapSource)) {
     Write-Error "Keymap source file does not exist: $KeymapSource"
     exit 1
 }
-
-# Get the target user's APPDATA path
-$appDataPath = Get-UserAppDataPath -username $user
-$jetBrainsPath = Join-Path $appDataPath "JetBrains"
 
 if (-not (Test-Path $jetBrainsPath)) {
     Write-Error "JetBrains folder not found in $jetBrainsPath"
@@ -110,5 +111,33 @@ try
 catch
 {
     Write-Error "Failed to create symlink at $AutorunPath -> $LayoutSource : $_"
+    exit 1
+}
+
+
+$TerminalPathSettings = "$TerminalPath\settings.json"
+try
+{
+    $null = New-Item -ItemType SymbolicLink -Force -Path $TerminalPathSettings -Target $TerminalSource
+    Write-Host "Created symlink: $TerminalPathSettings -> $TerminalSource"
+}
+catch
+{
+    Write-Error "Failed to create symlink at $TerminalPathSettings -> $TerminalSource : $_"
+    exit 1
+}
+
+try
+{
+    if (Test-Path $YaziPath) {
+        Remove-Item $YaziPath -Force -Recurse
+        Write-Host "Removed $YaziPath"
+    }
+    $null = New-Item -ItemType Junction -Force -Path $YaziPath -Target $YaziSource
+    Write-Host "Created hardlink: $YaziPath -> $YaziSource"
+}
+catch
+{
+    Write-Error "Failed to create hardlink at $YaziPath -> $YaziSource : $_"
     exit 1
 }

@@ -23,6 +23,10 @@ global immGetDefaultIMEWnd := DllCall("GetProcAddress", "Ptr",imm, "AStr","ImmGe
     Send("{Alt Down}{F4}{Alt Up}")
 }
 
+#+!Backspace::{
+    Run "wt.exe"
+}
+
 ; add us english-us keyboard
 ; add russian keyboard
 ; add german-us keyboard
