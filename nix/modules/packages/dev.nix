@@ -32,14 +32,14 @@ in
     # utils
     postman
     rpi-imager
+    scrcpy
 
 
     # Programming languages and tools
     python3
-
     # jdk23 # use jetbrains runtime
-    # gradle # use wrapper
-    # maven # use  bundled jetbrains builtin / wrapper
+    gradle # use wrapper
+    maven # use  bundled jetbrains builtin / wrapper
     # kotlin # use jetbrains kotlin
 
     # tools
