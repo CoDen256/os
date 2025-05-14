@@ -407,6 +407,7 @@
     <keyboard-shortcut first-keystroke="alt c" />
     <mouse-shortcut keystroke="button5" />
   </action>
+  <action id="GBrowserAddTabAction" />
   <action id="GBrowserBookmarkAddAction" />
   <action id="GBrowserFindAction" />
   <action id="Generate">
