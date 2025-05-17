@@ -49,52 +49,6 @@
     };
   };
 
-  systemd.user.services.ulauncher = {
-    enable = true;
-    description = "Start Ulauncher";
-
-    serviceConfig = {
-      Type = "simple";
-      Restart = "always";
-      RestartSec = 1;
-      ExecStart = pkgs.writeShellScript "ulauncher-env-wrapper.sh" ''
-        export PATH="''${XDG_BIN_HOME}:$HOME/.nix-profile/bin:/etc/profiles/per-user/$USER/bin:/nix/var/nix/profiles/default/bin:/run/current-system/sw/bin"
-        export GDK_BACKEND=x11
-        exec ${pkgs.ulauncher}/bin/ulauncher --hide-window
-      '';
-    };
-
-    documentation = [
-      "https://github.com/Ulauncher/Ulauncher/blob/f0905b9a9cabb342f9c29d0e9efd3ba4d0fa456e/contrib/systemd/ulauncher.service"
-    ];
-    wantedBy = [
-      "graphical-session.target"
-    ];
-    after = [
-      "graphical-session.target"
-      "xdg-desktop-autostart.target"
-    ];
-  };
-
-  systemd.user.services.autostart = {
-    enable = true;
-    script = ''
-      echo "starting..." >> ~/tmp/autostart.log
-    '';
-    wantedBy = [ "graphical-session.target" ];
-    partOf = [ "graphical-session.target" ];
-    after = [
-      "graphical-session.target"
-      "xdg-desktop-autostart.target"
-    ];
-  };
-
-  services.cron = {
-    systemCronJobs = [
-      "@reboot  xmodmap /home/coden/.Xmodmap >> /tmp/cron.log"
-    ];
-  };
-
   services.dbus.enable = true;
   services.gnome.core-utilities.enable = true;
 

@@ -1,0 +1,4 @@
+[Desktop Entry]
+Type=Application
+Exec=/nix/store/ff08hk15g28sg1nvlq8482n5sdia06ly-ulauncher-5.15.7/bin/ulauncher
+Name=Ulauncher Autostart

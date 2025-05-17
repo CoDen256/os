@@ -116,7 +116,7 @@ with lib.hm.gvariant;
 
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       "binding" = "<Super><Shift><Alt>h";
-      "command" = "ulauncher-toggle";
+      "command" = "/nix/store/ff08hk15g28sg1nvlq8482n5sdia06ly-ulauncher-5.15.7/bin/ulauncher-toggle";
       "name" = "Ulauncher";
     };
 
