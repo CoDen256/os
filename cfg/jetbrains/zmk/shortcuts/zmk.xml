@@ -410,6 +410,7 @@
   <action id="GBrowserAddTabAction" />
   <action id="GBrowserBookmarkAddAction" />
   <action id="GBrowserFindAction" />
+  <action id="GBrowserRefreshAction" />
   <action id="Generate">
     <keyboard-shortcut first-keystroke="alt y" />
   </action>
@@ -1038,6 +1039,8 @@
   <action id="android.deploy.CodeSwap">
     <keyboard-shortcut first-keystroke="ctrl alt f10" />
   </action>
+  <action id="android.device.rotate.right" />
+  <action id="android.emulator.xr.recenter" />
   <action id="build" />
   <action id="com.github.jk1.ytplugin.commands.OpenCommandWindowAction" />
   <action id="com.github.jk1.ytplugin.issues.actions.EditorCreateIssueAction" />
