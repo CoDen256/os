@@ -112,7 +112,7 @@
     #XDG_BIN_HOME = "$HOME/.local/bin";
     PATH = [
       #"${XDG_BIN_HOME}"
-      "$HOME/rev-tools"
+      "$HOME/rev/tools"
       "$HOME/Android/Sdk/build-tools/35.0.1/"
     ];
 
@@ -128,5 +128,6 @@
     # default apps
     TERMINAL = "kitty";
     BROWSER = "google-chrome-stable";
+    ANDROID_DEBUG_KEYSTORE_PASS="android";
   };
 }
