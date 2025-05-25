@@ -33,6 +33,7 @@ dotest PROJECT TAG="latest":
     docker pull coden256/{{PROJECT}}:{{TAG}} || true
     docker run -it --entrypoint=/bin/bash coden256/{{PROJECT}}:{{TAG}} || docker run -it --entrypoint=/bin/sh coden256/{{PROJECT}}:{{TAG}}
 
+[no-cd]
 dobuild PROJECT TAG="latest":
     docker build {{PROJECT}} -t coden256/{{PROJECT}}:{{TAG}}
 
