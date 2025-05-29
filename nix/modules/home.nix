@@ -16,6 +16,7 @@ with lib.hm.gvariant;
       gnome-tweaks
       gnomeExtensions.blur-my-shell
       gnomeExtensions.user-themes
+      gnomeExtensions.alttab-scroll-workaround
       maim
       xclip
     ];
@@ -60,6 +61,7 @@ with lib.hm.gvariant;
       "disable-user-extensions" = false;
       "enabled-extensions" = [
         "blur-my-shell@aunetx"
+        "alttab-scroll-workaround"
       ];
     };
 

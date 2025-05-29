@@ -37,11 +37,6 @@
     xkb-switch
   ];
 
-  environment.sessionVariables = {
-    NIXOS_OZONE_WL = "1";
-    QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
-  };
-
   environment.gnome.excludePackages = with pkgs; [
     gedit
     gnome-connections
@@ -96,13 +91,15 @@
   services = {
     displayManager.autoLogin.enable = true;
     displayManager.autoLogin.user = "coden";
+    displayManager.defaultSession = "gnome";
+
 
     xserver = {
       enable = true;
 
       displayManager.lightdm.enable = true;
       desktopManager.gnome.enable = true;
-      displayManager.defaultSession = "gnome";
+      
       xkb = {
         layout = "us";
         variant = "";
