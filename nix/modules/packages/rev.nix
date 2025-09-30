@@ -51,6 +51,10 @@ in
     openssh # sshkeygen
     nmap
 
+    toybox # readelf
+    radare2
+    ghidra
+
     # aapt
     # apksigner
     # ~/Android/Sdk/build-tools/35.0.1/ -> aapt apksigner # zipalign split-select aidl apksigner dexdump
