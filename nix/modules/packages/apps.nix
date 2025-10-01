@@ -8,12 +8,6 @@
 
 {
 
-  nixpkgs.overlays = [
-    (self: super: {
-      key-combiner = super.callPackage ../../custom/key-combiner/default.nix { };
-    })
-  ];
-
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
@@ -29,7 +23,6 @@
     starship
 
     # app launchers
-    ulauncher
     rofi
 
     # General use
@@ -43,8 +36,6 @@
 
     slack
 
-    key-combiner
-    # key combiner AppImage
-    # notion (web)
+    mediawriter
   ];
 }

@@ -27,53 +27,16 @@
 
   nixpkgs.config.allowUnfree = true; # allow unfree packages
 
-  programs.nix-ld = {
-    # Run unpatched dynamic binaries on NixOS. # Run games or proprietary software that attempts to verify its integrity.
-    enable = true;
-    package = pkgs.nix-ld-rs;
-  };
-  programs = {
-    fuse.userAllowOther = true; # run filesystem in user space, but who uses it?
-    gnupg.agent = {
-      # Gpg-agent is a program that runs in the background (a daemon) and stores GPG secret keys in memory.
-      enable = true;
-      enableSSHSupport = true;
-    };
-  };
-
-  services.dbus.enable = true;
-  services.gnome.core-utilities.enable = true;
-
-  boot = {
-    binfmt.registrations.appimage = {
-      wrapInterpreterInShell = false;
-      interpreter = "${pkgs.appimage-run}/bin/appimage-run";
-      recognitionType = "magic";
-      offset = 0;
-      mask = ''\xff\xff\xff\xff\x00\x00\x00\x00\xff\xff\xff'';
-      magicOrExtension = ''\x7fELF....AI\x02'';
-    };
-  };
-
   services = {
     cron = {
       enable = true;
     };
-
-    libinput.enable = true; # handles input devices, input device processing and stuff
-    fstrim.enable = true; # to discard (or "trim") blocks which are not in use by the filesystem
-    gvfs.enable = true; # virtual filesystem, maybe needed for connecting via ssh to other servers
+    
     udisks2.enable = true; # automounting of the usb devices (helpful for zmk keyboard auto mount)
-    openssh.enable = true;
-
-    gnome.gnome-keyring.enable = true;
   };
 
   environment.systemPackages = with pkgs; [
     udiskie # automounting
-
-    libinput
-    appimage-run
 
     nh # nix os helper
     nixfmt-rfc-style # nix formatter

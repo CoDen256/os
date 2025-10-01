@@ -30,28 +30,18 @@ in
     })
   ];
 
-  programs = {
-    thunar = {
-      # file manager
-      enable = true;
-      plugins = with pkgs.xfce; [
-        thunar-archive-plugin
-        thunar-volman
-      ];
-    };
-  };
 
   environment.systemPackages = with pkgs; [
 
     # system utilities
     gparted
-    file-roller # File Roller is an archive manager for the GNOME environment., just a frontend 
     ncdu # cli disk usage analyzer
     baobab # gui disk usage analyser
     duf # Disk Usage/Free Utility
     imv # image viewer
     vlc
     ydotool # automation
+    bootiso
 
     # System monitoring and management
     htop

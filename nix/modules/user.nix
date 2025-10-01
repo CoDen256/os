@@ -20,7 +20,9 @@ in
       isNormalUser = true;
       description = userDescription;
       extraGroups = ["networkmanager" "wheel" "docker" "adbusers" "wireshark" ];
-      packages = with pkgs; [];
+      packages = with pkgs; [
+        kdePackages.kate
+      ];
       shell =  pkgs.xonsh;
     };
   };
