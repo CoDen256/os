@@ -22,9 +22,6 @@
     termius # ssh + sftp
     starship
 
-    # app launchers
-    rofi
-
     # General use
     obsidian
     telegram-desktop

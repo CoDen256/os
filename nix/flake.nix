@@ -7,7 +7,6 @@
     # input can be flake, git repo or local path
     # NixOS official package source, using the nixos-24.11 branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    stylix.url = "github:danth/stylix";
     home-manager = {
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -19,7 +18,6 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./configuration.nix
-        inputs.stylix.nixosModules.stylix
         inputs.home-manager.nixosModules.default
       ];
     };
