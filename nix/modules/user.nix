@@ -8,7 +8,14 @@ in
 
   home-manager = {
     extraSpecialArgs = {inherit inputs;};
-    users.${username} = import ./home.nix;
+    users.${username} = {
+      home = {
+        username = "coden";
+        homeDirectory = "/home/coden";
+        stateVersion = "24.05"; 
+      };
+      programs.home-manager.enable = true;
+    };
     useGlobalPkgs = true;
     useUserPackages = true;
     backupFileExtension = "backup";
@@ -21,7 +28,6 @@ in
       description = userDescription;
       extraGroups = ["networkmanager" "wheel" "docker" "adbusers" "wireshark" ];
       packages = with pkgs; [
-        kdePackages.kate
       ];
       shell =  pkgs.xonsh;
     };

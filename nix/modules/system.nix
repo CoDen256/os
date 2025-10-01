@@ -7,7 +7,6 @@
 
 # TODO docker has not enough priviledges for idea
 # TODO when closing intellij or postman, they are closing in some incorrect state that i have to kill background process via ps aux after closing the window
-# TODO ulauncher search in web crashes and freezes everything if chome wasn't run before
 
 {
   nix = {
@@ -33,6 +32,25 @@
     };
     
     udisks2.enable = true; # automounting of the usb devices (helpful for zmk keyboard auto mount)
+
+    xserver = {
+      enable = true;
+      xkb = {
+        layout = "us";
+        variant = "";
+        extraLayouts.ru-phonetic = {
+
+          description = "Russian phonetic mirror keyboard of the us";
+          languages = [ "rus" ];
+          symbolsFile = pkgs.copyPathToStore ../../input/symbols/ru-phonetic;
+        };
+        extraLayouts.de-simple = {
+          description = "German simple us keyboard, with some tweaks for umlauts";
+          languages = [ "ger" ];
+          symbolsFile = pkgs.copyPathToStore ../../input/symbols/de-simple;
+        };
+      };
+    };
   };
 
   environment.systemPackages = with pkgs; [

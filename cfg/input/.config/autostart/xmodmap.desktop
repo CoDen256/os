@@ -1,4 +1,4 @@
 [Desktop Entry]
 Type=Application
 Exec=/nix/store/ic7kaxns2bclsjg57hnf11215s9msvcy-xmodmap-1.0.11/bin/xmodmap /home/coden/.Xmodmap
-Name=Ulauncher Autostart
+Name=Xmodmap
