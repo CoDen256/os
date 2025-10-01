@@ -2,8 +2,6 @@
 
 {
   boot = {
-    kernelPackages = pkgs.linuxPackages_zen; 
-
     extraModulePackages = [
       config.boot.kernelPackages.rtl8814au # Alpha AWUS wifi drivers 
     ];
