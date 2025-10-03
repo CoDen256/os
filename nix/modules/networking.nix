@@ -17,8 +17,8 @@
   networking = {
     hostName = "deimos";
     networkmanager.enable = true;
-    networkmanager.enableStrongSwan = true; # for vpn
     timeServers = options.networking.timeServers.default ++ [ "pool.ntp.org" ];
+    networkmanager.plugins = [pkgs.networkmanager-strongswan];
   };
 
   services.xl2tpd.enable = true; # for l2tp vpn
