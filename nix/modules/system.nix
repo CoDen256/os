@@ -9,6 +9,7 @@
 # TODO when closing intellij or postman, they are closing in some incorrect state that i have to kill background process via ps aux after closing the window
 
 {
+  nixpkgs.config.allowUnfree = true; # allow unfree packages
   nix = {
     settings = {
       auto-optimise-store = true;
@@ -24,15 +25,26 @@
     };
   };
 
-  nixpkgs.config.allowUnfree = true; # allow unfree packages
+  boot.loader = {
+    # DO NOT REMOVE
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot";
+    };
+
+    grub = {
+      enable = true;
+      device = "nodev";
+      efiSupport = true;
+      useOSProber = true;
+    };
+  };
 
   services = {
-    cron = {
-      enable = true;
-    };
-    
+    cron.enable = true;
     udisks2.enable = true; # automounting of the usb devices (helpful for zmk keyboard auto mount)
 
+    # custom phonetic russian and german layout
     xserver = {
       enable = true;
       xkb = {
@@ -72,7 +84,7 @@
     # default apps
     TERMINAL = "kitty";
     BROWSER = "google-chrome-stable";
-    ANDROID_DEBUG_KEYSTORE_PASS="android";
+    ANDROID_DEBUG_KEYSTORE_PASS = "android";
   };
 
   system.stateVersion = "25.05";

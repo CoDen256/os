@@ -22,7 +22,6 @@
     ./modules/system.nix
     ./modules/user.nix
     ./modules/hardware.nix
-    ./modules/networking.nix
     ./modules/locale.nix
     ./modules/desktop.nix
 
