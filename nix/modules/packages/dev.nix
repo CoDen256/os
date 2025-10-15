@@ -45,5 +45,8 @@ in
     # tools
     jq
     lazydocker
+
+    # extra (xonsh vs code)
+    python311Packages.python-lsp-server
   ];
 }
