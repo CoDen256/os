@@ -19,20 +19,17 @@
 
     ./modules/hardware-configuration.nix
    
-   inputs.home-manager.nixosModules.default
-    ./modules/networking.nix
-    ./modules/locale.nix
+    ./modules/system.nix
     ./modules/user.nix
     ./modules/hardware.nix
+    ./modules/networking.nix
+    ./modules/locale.nix
     ./modules/desktop.nix
-    ./modules/system.nix
 
     ./modules/packages/dev.nix
     ./modules/packages/rev.nix
     ./modules/packages/apps.nix
     ./modules/packages/os.nix
     ./modules/packages/cli.nix
-
     ];
-  system.stateVersion = "24.05";
 }

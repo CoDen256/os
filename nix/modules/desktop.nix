@@ -19,5 +19,6 @@
     desktopManager.plasma6.enable = true;
   };
 
+  fonts.fontconfig.enable = lib.mkForce false;
   fonts.packages = with pkgs; [ nerd-fonts.jetbrains-mono ];
 }

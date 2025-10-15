@@ -74,4 +74,6 @@
     BROWSER = "google-chrome-stable";
     ANDROID_DEBUG_KEYSTORE_PASS="android";
   };
+
+  system.stateVersion = "25.05";
 }

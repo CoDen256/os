@@ -6,15 +6,7 @@
 }:
 
 {
-  hardware = {
-    logitech.wireless = { # logitech wireless devices
-      enable = true;
-      enableGraphical = true;
-    };
-  };
-
   security.rtkit.enable = true; # used by PulseAudio and PipeWire use this to acquire realtime priority.
-  services.pulseaudio.enable = false;
   services.pipewire = {
     enable = true;
     alsa = {
@@ -26,22 +18,28 @@
     wireplumber.enable = true;
   };
   hardware = {
+    logitech.wireless = {
+      # logitech wireless devices
+      enable = true;
+      enableGraphical = true;
+    };
     graphics = {
-        enable = true;
-        enable32Bit = true;
+      enable = true;
+      enable32Bit = true;
     };
 
     amdgpu.amdvlk = {
-        enable = true;
-        support32Bit.enable = true;
+      enable = true;
+      support32Bit.enable = true;
     };
-};
+  };
   boot = {
     extraModulePackages = [
-      config.boot.kernelPackages.rtl8814au # Alpha AWUS wifi drivers 
+      config.boot.kernelPackages.rtl8814au # Alpha AWUS wifi drivers
     ];
 
-    loader = { # DO NOT REMOVE
+    loader = {
+      # DO NOT REMOVE
       efi = {
         canTouchEfiVariables = true;
         efiSysMountPoint = "/boot";

@@ -45,10 +45,5 @@ in
     # tools
     jq
     lazydocker
-
-
-    # extra
-    python311Packages.python-lsp-server
-
   ];
 }
