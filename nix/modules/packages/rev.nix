@@ -60,8 +60,3 @@ in
     # ~/Android/Sdk/build-tools/35.0.1/ -> aapt apksigner # zipalign split-select aidl apksigner dexdump
   ];
 }
-# | apk.sh          |                                                                     |                                                                                                                          |     |
-# | apk-mitm        | applies mitm patch                                                  | https://github.com/niklashigi/apk-mitm + npm                                                                             |     |
-
-# | Fiddler                     | mitm                                                            | AppImage                                        |     |     |
-# | Apk Editor Studiohc |                                                                         | AppImage                             |     |     |

@@ -26,7 +26,6 @@
   
     zsh
     # Audio and video
-    pulseaudio
-    pavucontrol    
+    pulseaudio 
   ];
 }

@@ -18,17 +18,16 @@
 
     eza # ls
     bat # cat 
-    ripgrep # grep recursive
+    ripgrep # faster grep
 
 
     # terminal navigation
     yazi
-    zoxide
-    fzf
+    zoxide # cd
+    fzf # fuzzy finder
     tree
 
     # file management utils
-    progress # progress of mv and cp commands
     p7zip # 7z
     unzip
     unrar
