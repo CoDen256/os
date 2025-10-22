@@ -41,8 +41,8 @@ aliases["..."]='cd ../..'
 aliases[".3"]='cd ../../..'
 aliases[".4"]='cd ../../../..'
 aliases[".5"]='cd ../../../../..'
-aliases["l"]='eza -lh  --icons=auto'
-aliases["ls"]='eza -1   --icons=auto' # short list
+aliases["l"]='eza -lh  --icons=auto --sort=name --group-directories-first'
+aliases["ls"]='eza -1   --icons=auto --sort=name --group-directories-first' # short list
 aliases["ll"]='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
 aliases["ld"]='eza -lhD --icons=auto' # long list dirs
 aliases["tree"]='tree -a -I .git'
@@ -50,7 +50,7 @@ aliases["cat"]='bat'
 aliases["c"]='clear' # clear terminal
 aliases["e"]='exit'
 aliases["mkdir"]='mkdir -p'
-#aliases["grep"]='rg --color=auto'
+aliases["grep"]='rg --color=auto'
 aliases["y"]='yazi'
 aliases["reload"]='xonsh --rc ~/.xonshrc'
 aliases["ppath"]='echo @("\\n".join($PATH))'
