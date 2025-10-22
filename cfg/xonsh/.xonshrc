@@ -51,7 +51,7 @@ aliases["catraw"]='bat --plain --paging=never --decorations=never --color=never'
 aliases["c"]='clear' # clear terminal
 aliases["e"]='exit'
 aliases["mkdir"]='mkdir -p'
-aliases["grep"]='rg --color=auto'
+aliases["rg"]='rg -iL. --color=auto'
 aliases["y"]='yazi'
 aliases["reload"]='xonsh --rc ~/.xonshrc'
 aliases["ppath"]='echo @("\\n".join($PATH))'
