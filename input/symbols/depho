@@ -1,6 +1,8 @@
-xkb_symbols "de-simple"
+xkb_symbols "depho"
 {
   include "us(basic)"            // includes the base US keys
+
+  name[Group1]= "German(ENG-Phonetic)";
 
   // left side
   key <AE03> { [ 3, adiaeresis  ] };               // num 3, G2 #

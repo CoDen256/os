@@ -1,7 +1,8 @@
-xkb_symbols "ru-phonetic"
+xkb_symbols "rupho"
 {
   include "us(basic)"            // includes the base US keys
 
+  name[Group1]= "Russian(ENG-Phonetic)";
 
   // left side
   key <AE03> { [ 3, Cyrillic_ya  ] };               // num 3, G2 #

@@ -48,18 +48,17 @@
     xserver = {
       enable = true;
       xkb = {
-        layout = "us";
+        layout = "us,rupho,depho";
         variant = "";
-        extraLayouts.ru-phonetic = {
-
-          description = "Russian phonetic mirror keyboard of the us";
+        extraLayouts.rupho = {
+          description = "Russian Phonetic Mirror of US";
           languages = [ "rus" ];
-          symbolsFile = pkgs.copyPathToStore ../../input/symbols/ru-phonetic;
+          symbolsFile = pkgs.copyPathToStore ../../input/symbols/rupho;
         };
-        extraLayouts.de-simple = {
-          description = "German simple us keyboard, with some tweaks for umlauts";
+        extraLayouts.depho = {
+          description = "German Phonetic Mirror of US";
           languages = [ "ger" ];
-          symbolsFile = pkgs.copyPathToStore ../../input/symbols/de-simple;
+          symbolsFile = pkgs.copyPathToStore ../../input/symbols/depho;
         };
       };
     };
@@ -74,7 +73,6 @@
 
   environment.sessionVariables = rec {
     PATH = [
-      #"${XDG_BIN_HOME}"
       "$HOME/rev/tools"
       "$HOME/Android/Sdk/build-tools/35.0.1/"
     ];

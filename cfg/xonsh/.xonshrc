@@ -47,6 +47,7 @@ aliases["ll"]='eza -lha --icons=auto --sort=name --group-directories-first' # lo
 aliases["ld"]='eza -lhD --icons=auto' # long list dirs
 aliases["tree"]='tree -a -I .git'
 aliases["cat"]='bat'
+aliases["catraw"]='bat --plain --paging=never --decorations=never --color=never'
 aliases["c"]='clear' # clear terminal
 aliases["e"]='exit'
 aliases["mkdir"]='mkdir -p'

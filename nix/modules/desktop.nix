@@ -12,6 +12,8 @@
     elisa
 ];
 
+  # plasma-manager home manager for Plasma
+
   services = {
     displayManager.autoLogin.enable = false;
     displayManager.autoLogin.user = "coden";
