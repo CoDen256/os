@@ -50,6 +50,7 @@
       xkb = {
         layout = "us,rupho,depho";
         variant = "";
+
         extraLayouts.rupho = {
           description = "Russian Phonetic Mirror of US";
           languages = [ "rus" ];
@@ -65,6 +66,10 @@
   };
 
   environment.systemPackages = with pkgs; [
+    xorg.xmodmap # remaps fn keys
+    xorg.xev # checks key presses 
+    wev # checks key presses on wayland
+
     udiskie # automounting
 
     nh # nix os helper

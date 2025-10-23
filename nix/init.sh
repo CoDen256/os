@@ -7,7 +7,7 @@ DIRS=(
 
     just 
 
-    bash
+    #bash
     #zsh
     xonsh
 

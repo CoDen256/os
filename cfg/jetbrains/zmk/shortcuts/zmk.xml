@@ -97,6 +97,8 @@
   <action id="ChangesView.RevertFiles">
     <keyboard-shortcut first-keystroke="shift ctrl alt o" />
   </action>
+  <action id="ChangesView.ShelveSilently" />
+  <action id="ChangesView.UnshelveSilently" />
   <action id="CheckinProject">
     <keyboard-shortcut first-keystroke="alt m" />
   </action>
@@ -245,9 +247,6 @@
   <action id="EditorAddCaretPerSelectedLine">
     <keyboard-shortcut first-keystroke="shift f11" />
   </action>
-  <action id="EditorBackSpace">
-    <keyboard-shortcut first-keystroke="back_space" />
-  </action>
   <action id="EditorCloneCaretAbove">
     <keyboard-shortcut first-keystroke="shift f12" />
   </action>
@@ -329,7 +328,7 @@
   <action id="EmmetNextEditPoint" />
   <action id="EmmetPreviousEditPoint" />
   <action id="EvaluateExpression">
-    <keyboard-shortcut first-keystroke="f6" />
+    <keyboard-shortcut first-keystroke="f4" />
   </action>
   <action id="ExecuteInPyConsoleAction" />
   <action id="ExpandAll">
@@ -407,7 +406,6 @@
     <keyboard-shortcut first-keystroke="alt c" />
     <mouse-shortcut keystroke="button5" />
   </action>
-  <action id="GBrowserAddTabAction" />
   <action id="GBrowserBookmarkAddAction" />
   <action id="GBrowserFindAction" />
   <action id="GBrowserRefreshAction" />
@@ -450,7 +448,7 @@
     <keyboard-shortcut first-keystroke="alt v" />
   </action>
   <action id="GoToProject">
-    <keyboard-shortcut first-keystroke="shift meta alt 5" />
+    <keyboard-shortcut first-keystroke="shift meta alt t" />
   </action>
   <action id="GotoAction">
     <keyboard-shortcut first-keystroke="alt e" />
@@ -818,6 +816,7 @@
   <action id="ServiceView.AddService" />
   <action id="ServiceView.GroupByContributor" />
   <action id="ServiceView.ShowServices" />
+  <action id="ShelveChanges.UnshelveWithDialog" />
   <action id="ShelvedChanges.Rename">
     <keyboard-shortcut first-keystroke="shift f6" />
   </action>
@@ -832,7 +831,6 @@
   <action id="ShowFilePath">
     <keyboard-shortcut first-keystroke="ctrl alt v" />
   </action>
-  <action id="ShowFilterPopup" />
   <action id="ShowNavBar">
     <keyboard-shortcut first-keystroke="shift ctrl v" />
   </action>
@@ -901,6 +899,8 @@
   <action id="SwitcherForward">
     <keyboard-shortcut first-keystroke="alt back_quote" />
   </action>
+  <action id="SwitcherIterateItems" />
+  <action id="SwitcherRecentEditedChangedToggleCheckBox" />
   <action id="Synchronize">
     <keyboard-shortcut first-keystroke="alt back_slash" />
   </action>
@@ -1040,7 +1040,8 @@
     <keyboard-shortcut first-keystroke="ctrl alt f10" />
   </action>
   <action id="android.device.rotate.right" />
-  <action id="android.emulator.xr.recenter" />
+  <action id="android.streaming.xr.recenter" />
+  <action id="android.streaming.xr.view.direction" />
   <action id="build" />
   <action id="com.github.jk1.ytplugin.commands.OpenCommandWindowAction" />
   <action id="com.github.jk1.ytplugin.issues.actions.EditorCreateIssueAction" />
