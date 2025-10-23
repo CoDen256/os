@@ -24,7 +24,6 @@
     # General use
     obsidian
     telegram-desktop
-    onedrive
     discord
 
     steam
