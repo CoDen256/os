@@ -28,7 +28,7 @@
     ./modules/packages/dev.nix
     ./modules/packages/rev.nix
     ./modules/packages/apps.nix
-    ./modules/packages/os.nix
+    ./modules/packages/util.nix
     ./modules/packages/cli.nix
     ];
 }

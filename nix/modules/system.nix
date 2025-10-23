@@ -9,6 +9,7 @@
 # TODO when closing intellij or postman, they are closing in some incorrect state that i have to kill background process via ps aux after closing the window
 
 {
+  system.stateVersion = "25.05";
   nixpkgs.config.allowUnfree = true; # allow unfree packages
   nix = {
     settings = {
@@ -43,38 +44,7 @@
   services = {
     cron.enable = true;
     udisks2.enable = true; # automounting of the usb devices (helpful for zmk keyboard auto mount)
-
-    # custom phonetic russian and german layout
-    xserver = {
-      enable = true;
-      xkb = {
-        layout = "us,rupho,depho";
-        variant = "";
-
-        extraLayouts.rupho = {
-          description = "Russian Phonetic Mirror of US";
-          languages = [ "rus" ];
-          symbolsFile = pkgs.copyPathToStore ../../input/symbols/rupho;
-        };
-        extraLayouts.depho = {
-          description = "German Phonetic Mirror of US";
-          languages = [ "ger" ];
-          symbolsFile = pkgs.copyPathToStore ../../input/symbols/depho;
-        };
-      };
-    };
   };
-
-  environment.systemPackages = with pkgs; [
-    xorg.xmodmap # remaps fn keys
-    xorg.xev # checks key presses 
-    wev # checks key presses on wayland
-
-    udiskie # automounting
-
-    nh # nix os helper
-    nixfmt-rfc-style # nix formatter
-  ];
 
   environment.sessionVariables = rec {
     PATH = [
@@ -90,5 +60,28 @@
     ANDROID_DEBUG_KEYSTORE_PASS = "android";
   };
 
-  system.stateVersion = "25.05";
+  ### SYSTEM PACKAGES ###
+  programs = {
+    # file manager
+    thunar.enable = true;
+    xfconf.enable = true;
+    xonsh.enable = true;
+  };
+
+  environment.systemPackages = with pkgs; [
+    xorg.xmodmap # remaps fn keys
+    xorg.xev # checks key presses on x server
+    wev # checks key presses on wayland
+
+    udiskie # front-end for udisks2
+
+    nh # nix os helper
+    nixfmt-rfc-style # nix formatter
+
+    pulseaudio # audio
+
+    # general apps
+    kitty
+    google-chrome
+  ];
 }

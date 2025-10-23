@@ -10,6 +10,7 @@
     kate
     konsole
     elisa
+    dolphin
 ];
 
   # plasma-manager home manager for Plasma

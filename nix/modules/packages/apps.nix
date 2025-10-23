@@ -18,14 +18,12 @@
   environment.systemPackages = with pkgs; [
 
     # terminals and utilities
-    kitty
     termius # ssh + sftp
     starship
 
     # General use
     obsidian
     telegram-desktop
-    google-chrome
     onedrive
     discord
 

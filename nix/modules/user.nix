@@ -32,5 +32,4 @@ in
       shell =  pkgs.xonsh;
     };
   };
-  programs.xonsh.enable = true;
 }

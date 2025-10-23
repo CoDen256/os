@@ -1,6 +1,32 @@
-{ config, lib, pkgs, modulesPath, options, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  modulesPath,
+  options,
+  ...
+}:
 {
 
+  # custom phonetic russian and german layout
+  services.xserver = {
+    enable = true;
+    xkb = {
+      layout = "us,rupho,depho";
+      variant = "";
+
+      extraLayouts.rupho = {
+        description = "Russian Phonetic Mirror of US";
+        languages = [ "rus" ];
+        symbolsFile = pkgs.copyPathToStore ../../input/symbols/rupho;
+      };
+      extraLayouts.depho = {
+        description = "German Phonetic Mirror of US";
+        languages = [ "ger" ];
+        symbolsFile = pkgs.copyPathToStore ../../input/symbols/depho;
+      };
+    };
+  };
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
