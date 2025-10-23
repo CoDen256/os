@@ -76,7 +76,6 @@
     udiskie # front-end for udisks2
 
     nh # nix os helper
-    nixfmt-rfc-style # nix formatter
 
     pulseaudio # audio
 

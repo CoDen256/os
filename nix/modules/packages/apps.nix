@@ -31,7 +31,5 @@
     prismlauncher
 
     slack
-
-    mediawriter
   ];
 }
