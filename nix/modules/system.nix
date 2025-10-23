@@ -4,6 +4,10 @@
   pkgs,
   ...
 }:
+# checks dependency of xterm (e.g)
+# nix why-depends /run/current-system (which xterm) 
+# or 
+# nix-locate -w xterm
 
 # TODO docker has not enough priviledges for idea
 # TODO when closing intellij or postman, they are closing in some incorrect state that i have to kill background process via ps aux after closing the window
@@ -76,6 +80,7 @@
     udiskie # front-end for udisks2
 
     nh # nix os helper
+    nix-index # files database for nix os
 
     pulseaudio # audio
 
@@ -83,4 +88,6 @@
     kitty
     google-chrome
   ];
+
+  services.xserver.excludePackages = [ pkgs.xterm ];
 }

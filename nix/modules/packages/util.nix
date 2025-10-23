@@ -16,10 +16,8 @@
     baobab # gui disk usage analyser
     duf # Disk Usage/Free Utility
 
-    imv # image viewer
     vlc # video player
     mediawriter # bootable media writer (Fedora Writer)
-
 
     # System monitoring and management
     htop 
