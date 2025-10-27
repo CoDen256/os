@@ -28,18 +28,18 @@ function New-SafeSymlink {
     )
 
     if (Test-Path $Destination) {
-        Write-Host "Skipping existing: $Destination"
+        #Write-Host "Skipping existing: $Destination" -ForegroundColor Yellow
         return
     }
 
     # Create parent directories as needed
     $parent = Split-Path $Destination
     if (!(Test-Path $parent)) {
-        Write-Host "Creating $parent for $Destination"
+        Write-Host "Creating $parent for $Destination" -ForegroundColor Green
         New-Item -ItemType Directory -Force -Path $parent | Out-Null
     }
 
-    Write-Host "Linked $Destination -> $Source"
+    Write-Host "Linked $Destination -> $Source" -ForegroundColor Green
     New-Item -ItemType SymbolicLink -Path $Destination -Target $Source | Out-Null
 }
 
@@ -75,7 +75,7 @@ function Invoke-Stow {
     )
 
     $PkgPath = Join-Path $src $pkg
-    Write-Host "Stowing $PkgPath to $dest"
+    Write-Host "Stowing $PkgPath to $dest" -ForegroundColor Yellow
     if (!(Test-Path $PkgPath)) {
         Write-Host "Package not found: $pkg"
         return
