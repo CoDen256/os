@@ -8,7 +8,7 @@
 #>
 param(
     [Parameter(Position=0, Mandatory=$true)]
-    [ValidateSet("stow", "unstow")]
+    [ValidateSet("stow", "unstow", "restow")]
     [string]$Action,
 
     [Parameter(Position=1, Mandatory=$true)]
@@ -28,7 +28,7 @@ function New-SafeSymlink {
     )
 
     if (Test-Path $Destination) {
-        Write-Host "⚠️ Skipping existing: $Destination"
+        Write-Host "Skipping existing: $Destination"
         return
     }
 
@@ -39,7 +39,7 @@ function New-SafeSymlink {
         New-Item -ItemType Directory -Force -Path $parent | Out-Null
     }
 
-    Write-Host "✅ Linked $Destination -> $Source"
+    Write-Host "Linked $Destination -> $Source"
     New-Item -ItemType SymbolicLink -Path $Destination -Target $Source | Out-Null
 }
 
@@ -49,7 +49,7 @@ function Cleanup {
     )
     $parent = Split-Path $src
     if (-not (Get-ChildItem -Path $parent)) {
-        Write-Host "🗑️ Removing empty folder: $parent"
+        Write-Host "Removing empty folder: $parent"
         Remove-Item $parent
         Cleanup $parent
     }
@@ -61,7 +61,7 @@ function Remove-Symlink {
     )
     if (Test-Path $Destination) {
         Remove-Item -Force $Destination
-        Write-Host "❌ Removed link: $Destination"
+        Write-Host "Removed link: $Destination"
 
         Cleanup -src $Destination
     }
@@ -77,7 +77,7 @@ function Invoke-Stow {
     $PkgPath = Join-Path $src $pkg
     Write-Host "Stowing $PkgPath to $dest"
     if (!(Test-Path $PkgPath)) {
-        Write-Host "❌ Package not found: $pkg"
+        Write-Host "Package not found: $pkg"
         return
     }
 
@@ -100,7 +100,7 @@ function Invoke-Unstow {
 
     $PkgPath = Join-Path $src $pkg
     if (!(Test-Path $PkgPath)) {
-        Write-Host "❌ Package not found: $pkg"
+        Write-Host "Package not found: $pkg"
         return
     }
 
@@ -133,5 +133,6 @@ foreach ($pkg in $pkgs) {
     switch ($Action) {
         "stow"   { Invoke-Stow -src (Resolve-Path $src).Path -dest (Resolve-Path $dest).Path -pkg $pkg  }
         "unstow" { Invoke-Unstow -src (Resolve-Path $src).Path -dest (Resolve-Path $dest).Path -pkg $pkg }
+        "restow" { Invoke-Unstow -src (Resolve-Path $src).Path -dest (Resolve-Path $dest).Path -pkg $pkg; Invoke-Stow -src (Resolve-Path $src).Path -dest (Resolve-Path $dest).Path -pkg $pkg }
     }
 }

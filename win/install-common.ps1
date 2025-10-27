@@ -46,7 +46,7 @@ wsl sed -i s/robbyrussel/refined/g ~/.zshrc                     # change ZSH_THE
 
 ################################################### YAZI
 $env:YAZI_FILE_ONE = "$( $env:USERPROFILE )\scoop\apps\git\current\usr\bin\file.exe"
-$env:YAZI_CONFIG_HOME = "$HOME\.yazi"
+$env:YAZI_CONFIG_HOME = "$HOME\.config\yazi"
 
 ############################################################## EXTRA
 
