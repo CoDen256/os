@@ -90,6 +90,7 @@ scoop export -c > "$PSScriptRoot\..\cfg\scoop\${Env:UserName}.json"
 
 # git push
 if ($push){
+    Write-Host "#####"
     $timestamp = (Get-Date).ToString('MM/dd/yyyy HH:mm:ss')
     $message = "sync at $timestamp"
     $repo = Resolve-Path "$PSScriptRoot\.."
@@ -97,5 +98,5 @@ if ($push){
     git -C $repo update
     git -C $repo add $repo
     git -C $repo commit -m $message
-    git -C $repo push orgin/master
+    git -C $repo push origin/master
 }
