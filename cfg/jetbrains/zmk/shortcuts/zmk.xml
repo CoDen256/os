@@ -18,6 +18,9 @@
   <action id="ActivateFindToolWindow">
     <keyboard-shortcut first-keystroke="shift meta alt f" />
   </action>
+  <action id="ActivateGBrowserToolWindow">
+    <keyboard-shortcut first-keystroke="shift meta alt b" />
+  </action>
   <action id="ActivateGradleToolWindow" />
   <action id="ActivateHierarchyToolWindow" />
   <action id="ActivateILViewerToolWindow" />

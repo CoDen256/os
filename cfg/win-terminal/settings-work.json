@@ -61,13 +61,15 @@
     {
         "defaults": 
         {
-            "colorScheme": "Breeze",
+            "colorScheme": "Horizon",
             "font": 
             {
-                "face": "Inconsolata for Powerline",
+                "face": "JetBrainsMono Nerd Font Mono",
                 "size": 13,
-                "weight": "normal"
-            }
+                "weight": "medium"
+            },
+            "opacity": 50,
+            "useAcrylic": true
         },
         "list": 
         [
@@ -76,7 +78,6 @@
                 "elevate": false,
                 "font": 
                 {
-                    "face": "0xProto Nerd Font Mono",
                     "size": 14
                 },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
@@ -86,6 +87,10 @@
             {
                 "commandline": "%SystemRoot%\\System32\\cmd.exe",
                 "elevate": false,
+                "font": 
+                {
+                    "face": "0xProto Nerd Font Mono"
+                },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
                 "name": "Command Prompt"
@@ -104,20 +109,17 @@
             {
                 "antialiasingMode": "grayscale",
                 "closeOnExit": "never",
-                "colorScheme": "Sublette",
+                "colorScheme": 
+                {
+                    "light": "Mariana"
+                },
                 "commandline": "C:\\Windows\\system32\\wsl.exe",
                 "elevate": false,
                 "guid": "{56e50aa8-073e-486a-a083-e1afbfb3377b}",
                 "hidden": false,
                 "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
                 "name": "Ubuntu",
-                "startingDirectory": "/mnt/c/Users/denys"
-            },
-            {
-                "guid": "{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}",
-                "hidden": false,
-                "name": "Ubuntu 22.04.5 LTS",
-                "source": "CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc"
+                "startingDirectory": "/mnt/c/Users/dchernyshov"
             }
         ]
     },
@@ -7416,5 +7418,9 @@
         }
     ],
     "theme": "dark",
-    "themes": []
+    "themes": [],
+    "useAcrylicInTabRow": true,
+    "warning.confirmCloseAllTabs": false,
+    "warning.inputService": false,
+    "warning.multiLinePaste": false
 }

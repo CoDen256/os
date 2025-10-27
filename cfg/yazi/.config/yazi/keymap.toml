@@ -1,4 +1,4 @@
-[manager]
+[mgr]
 prepend_keymap = [
     { on = "i", run = 'leave' },
     { on = "n", run = 'enter' },
