@@ -1,143 +1,137 @@
 <#
 .SYNOPSIS
-    Creates symlinks for JetBrains IDE keymaps from a central configuration file.
+    Simple GNU stow-like implementation in PowerShell.
+
 .DESCRIPTION
-    This script finds all JetBrains IDE folders (IntelliJ, PyCharm, DataGrip) in a user's APPDATA directory,
-    creates 'keymaps' folders if they don't exist, and creates symlinks to a central keymap configuration file.
-.PARAMETER TargetUsername
-    The username of the user whose APPDATA directory should be used (required when running as admin).
-.PARAMETER KeymapSource
-    The source keymap file to create symlinks to (default: C:\os\cfg\jetbrains\zmk\shortcuts\zmk.xml).
-.EXAMPLE
-    .\Configure-JetBrainsKeymaps.ps1 -TargetUsername "johndoe"
+    This script allows you to stow (symlink) and unstow (remove) packages
+    from a 'src' directory into a target directory.
 #>
+param(
+    [Parameter(Position=0, Mandatory=$true)]
+    [ValidateSet("stow", "unstow")]
+    [string]$Action,
 
-param (
-    [Parameter(Mandatory=$true)]
-    [string]$user,
+    [Parameter(Position=1, Mandatory=$true)]
+    [string]$src,
 
-    [string]$base = "C:\os"
+    [Parameter(Position=2, Mandatory=$false)]
+    [string]$dest = "$HOME",
+
+    [Parameter(Position=3, Mandatory=$true)]
+    [string[]]$pkgs
 )
-# Function to get user's APPDATA path
-function Get-UserAppDataPath {
-    param (
-        [string]$username
+
+function New-SafeSymlink {
+    param(
+        [string]$Source,
+        [string]$Destination
     )
 
-    $appDataPath = "C:\Users\$username\AppData\Roaming"
-    if (Test-Path -Path $appDataPath)
-    {
-        return $appDataPath
+    if (Test-Path $Destination) {
+        Write-Host "⚠️ Skipping existing: $Destination"
+        return
     }
-    Write-Error "Failed to get APPDATA path for user '$username': $appDataPath does not exist"
-    exit 1
+
+    # Create parent directories as needed
+    $parent = Split-Path $Destination
+    if (!(Test-Path $parent)) {
+        Write-Host "Creating $parent for $Destination"
+        New-Item -ItemType Directory -Force -Path $parent | Out-Null
+    }
+
+    Write-Host "✅ Linked $Destination -> $Source"
+    New-Item -ItemType SymbolicLink -Path $Destination -Target $Source | Out-Null
 }
 
-$appDataPath = Get-UserAppDataPath -username $user
-$KeymapSource = "$base\cfg\jetbrains\zmk\shortcuts\zmk.xml"
-$LayoutSource = "$base\cfg\ahk\layout.ahk"
-$TerminalSource = "$base\cfg\win-terminal\settings-work.json" # TODO work -> dev or smhth
-$YaziSource = "$base\cfg\yazi\.config\yazi" # TODO work -> dev or smhth
-$TargetAutorun = "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
-$TerminalPath = "C:\Users\$user\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState"
-$jetBrainsPath = Join-Path $appDataPath "JetBrains"
-$YaziPath = "C:\Users\$user\.yazi"
-
-# Verify the source keymap file exists
-if (-not (Test-Path $KeymapSource)) {
-    Write-Error "Keymap source file does not exist: $KeymapSource"
-    exit 1
+function Cleanup {
+    param(
+        [string]$src
+    )
+    $parent = Split-Path $src
+    if (-not (Get-ChildItem -Path $parent)) {
+        Write-Host "🗑️ Removing empty folder: $parent"
+        Remove-Item $parent
+        Cleanup $parent
+    }
 }
 
-if (-not (Test-Path $jetBrainsPath)) {
-    Write-Error "JetBrains folder not found in $jetBrainsPath"
-    exit 1
+function Remove-Symlink {
+    param(
+        [string]$Destination
+    )
+    if (Test-Path $Destination) {
+        Remove-Item -Force $Destination
+        Write-Host "❌ Removed link: $Destination"
+
+        Cleanup -src $Destination
+    }
 }
 
-# Patterns to match JetBrains IDE folders
-$patterns = @("IntelliJIdea*", "PyCharm*", "DataGrip*")
+function Invoke-Stow {
+    param(
+        [string]$src,
+        [string]$dest,
+        [string]$pkg
+    )
 
-# Find all matching folders
-$ideFolders = Get-ChildItem -Path $jetBrainsPath -Directory |
-        Where-Object { $_.Name -like "IntelliJIdea*" -or $_.Name -like "PyCharm*" -or $_.Name -like "DataGrip*" }
+    $PkgPath = Join-Path $src $pkg
+    Write-Host "Stowing $PkgPath to $dest"
+    if (!(Test-Path $PkgPath)) {
+        Write-Host "❌ Package not found: $pkg"
+        return
+    }
 
-if ($ideFolders.Count -eq 0) {
-    Write-Host "No JetBrains IDE folders found in $jetBrainsPath"
-    exit 0
-}
-
-# Process each IDE folder
-foreach ($folder in $ideFolders) {
-    $keymapsPath = Join-Path $folder.FullName "keymaps"
-
-    # Create keymaps directory if it doesn't exist
-    if (-not (Test-Path $keymapsPath)) {
-        try {
-            New-Item -ItemType Directory -Path $keymapsPath -Force | Out-Null
-            Write-Host "Created directory: $keymapsPath"
+    Get-ChildItem -Path $PkgPath -Recurse | ForEach-Object {
+        if (-not $_.PSIsContainer) {
+            $relPath = $_.FullName.Substring($PkgPath.Length).TrimStart('\')
+            $resolved = Join-Path $dest $relPath
+            New-SafeSymlink -Source $_.FullName -Destination $resolved
         }
-        catch {
-            Write-Error "Failed to create directory $keymapsPath : $_"
-            continue
+    }
+    Write-Host ""
+}
+
+function Invoke-Unstow {
+    param(
+        [string]$src,
+        [string]$dest,
+        [string]$pkg
+    )
+
+    $PkgPath = Join-Path $src $pkg
+    if (!(Test-Path $PkgPath)) {
+        Write-Host "❌ Package not found: $pkg"
+        return
+    }
+
+    Get-ChildItem -Path $PkgPath -Recurse | ForEach-Object {
+        if (-not $_.PSIsContainer)
+        {
+            $relPath = $_.FullName.Substring($PkgPath.Length).TrimStart('\')
+            $resolved = Join-Path $dest $relPath
+            Remove-Symlink -Destination $resolved
         }
     }
+    Write-Host ""
+}
 
-    $symlinkPath = Join-Path $keymapsPath "zmk.xml"
+# --- Main Execution ---
 
-    # Create symlink (will overwrite if it exists)
-    try {
-        if (Test-Path $symlinkPath) {
-            Remove-Item $symlinkPath -Force
-        }
+$userRole = [Security.Principal.WindowsIdentity]::GetCurrent()
+$adminRole = [Security.Principal.WindowsBuiltInRole]::Administrator
+$userStatus = [Security.Principal.WindowsPrincipal]::new($userRole)
+if (!($userStatus.IsInRole($adminRole))) {
+    Write-Error -Category PermissionDenied 'You need administration permissions'
+    exit 5 # 5 is the 'Access denied.' error code (net helpmsg 5)
+}
 
-        $null = New-Item -ItemType SymbolicLink -Path $symlinkPath -Target $KeymapSource -Force
-        Write-Host "Created symlink: $symlinkPath -> $KeymapSource"
+if (-not $pkgs) {
+    $pkgs = Get-ChildItem -Directory -Path $src | Select-Object -ExpandProperty Name
+}
+
+foreach ($pkg in $pkgs) {
+    switch ($Action) {
+        "stow"   { Invoke-Stow -src (Resolve-Path $src).Path -dest (Resolve-Path $dest).Path -pkg $pkg  }
+        "unstow" { Invoke-Unstow -src (Resolve-Path $src).Path -dest (Resolve-Path $dest).Path -pkg $pkg }
     }
-    catch {
-        Write-Error "Failed to create symlink at $symlinkPath : $_"
-        exit 1
-    }
-}
-
-Write-Host "Keymap configuration completed for $($ideFolders.Count) JetBrains IDEs"
-
-
-$AutorunPath = "$TargetAutorun\layout.ahk"
-try
-{
-    $null = New-Item -ItemType SymbolicLink -Force -Path $AutorunPath -Target $LayoutSource
-    Write-Host "Created symlink: $AutorunPath -> $LayoutSource"
-}
-catch
-{
-    Write-Error "Failed to create symlink at $AutorunPath -> $LayoutSource : $_"
-    exit 1
-}
-
-
-$TerminalPathSettings = "$TerminalPath\settings.json"
-try
-{
-    $null = New-Item -ItemType SymbolicLink -Force -Path $TerminalPathSettings -Target $TerminalSource
-    Write-Host "Created symlink: $TerminalPathSettings -> $TerminalSource"
-}
-catch
-{
-    Write-Error "Failed to create symlink at $TerminalPathSettings -> $TerminalSource : $_"
-    exit 1
-}
-
-try
-{
-    if (Test-Path $YaziPath) {
-        Remove-Item $YaziPath -Force -Recurse
-        Write-Host "Removed $YaziPath"
-    }
-    $null = New-Item -ItemType Junction -Force -Path $YaziPath -Target $YaziSource
-    Write-Host "Created hardlink: $YaziPath -> $YaziSource"
-}
-catch
-{
-    Write-Error "Failed to create hardlink at $YaziPath -> $YaziSource : $_"
-    exit 1
 }
