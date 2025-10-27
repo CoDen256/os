@@ -98,5 +98,5 @@ if ($push){
     git -C $repo update
     git -C $repo add $repo
     git -C $repo commit -m $message
-    git -C $repo push origin/master
+    git -C $repo push -u origin master
 }
