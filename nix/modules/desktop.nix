@@ -15,7 +15,7 @@
     # remove dolphin
     dolphin
     dolphin-plugins
-];
+  ];
 
   # plasma-manager home manager for Plasma
 

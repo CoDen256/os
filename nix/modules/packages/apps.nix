@@ -25,6 +25,7 @@
     obsidian
     telegram-desktop
     discord
+    stirling-pdf
 
     steam
     prismlauncher
