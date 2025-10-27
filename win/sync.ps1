@@ -1,5 +1,6 @@
 param([Parameter(Position=1, Mandatory=$false)]
-[string]$action="stow"
+[string]$action="stow",
+[Switch]$push
 )
 
 & "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg -dest $HOME yazi,wt,starship,ps
@@ -86,3 +87,15 @@ Write-Host "#####"
 scoop update *
 
 scoop export -c > "$PSScriptRoot\..\cfg\scoop\${Env:UserName}.json"
+
+# git push
+if ($push){
+    $timestamp = (Get-Date).ToString('MM/dd/yyyy HH:mm:ss')
+    $message = "sync at $timestamp"
+    $repo = Resolve-Path "$PSScriptRoot\.."
+    Write-Host "Git pushing $repo : '$message'" -ForegroundColor Green
+    git -C $repo update
+    git -C $repo add $repo
+    git -C $repo commit -m $message
+    git -C $repo push orgin/master
+}
