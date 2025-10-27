@@ -8,7 +8,7 @@ param([Parameter(Position=1, Mandatory=$false)]
 Write-Host "#####"
 ############# sync keymap
 $base = Join-Path $HOME "AppData\Roaming\JetBrains"
-$dest = "$PSScriptRoot\..\cfg\jetbrains\zmk\shortcuts\zmk.xml"
+$dest = "$PSScriptRoot\..\cfg\jetbrains\idea"
 
 # Find all IntelliJIdea directories
 $ideaDirs = Get-ChildItem -Path $base -Directory -Filter "IntelliJIdea*" | Sort-Object Name -Descending
@@ -24,17 +24,18 @@ Write-Host "Latest IntelliJ IDEA config folder: $latestIdeaDir" -ForegroundColor
 
 # Build full source path
 $src = Join-Path $latestIdeaDir "keymaps\zmk.xml"
+$colors = Join-Path $latestIdeaDir "colors\_@user_GapStyle 4_3.icls"
 
 # Check if the source file exists
 if (Test-Path $src) {
     # Ensure destination directory exists
-    $destDir = Split-Path $dest -Parent
-    if (-not (Test-Path $destDir)) {
-        New-Item -ItemType Directory -Path $destDir -Force | Out-Null
+    if (-not (Test-Path $dest)) {
+        New-Item -ItemType Directory -Path $dest -Force | Out-Null
     }
 
     # Copy file
     Copy-Item -Path $src -Destination $dest -Force
+    Copy-Item -Path $colors -Destination $dest -Force
     Write-Host "Copied $src to $dest" -ForegroundColor Green
 } else {
     Write-Host "Keymap file not found at $src" -ForegroundColor Yellow
