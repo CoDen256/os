@@ -11,7 +11,7 @@ DIRS=(
     #zsh
     xonsh
 
-    jetbrains
+    # jetbrains
     input
 )
 stow --dir=$HOME/os/cfg --target=$HOME/ -R "${DIRS[@]}"
