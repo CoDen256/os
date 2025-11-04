@@ -20,9 +20,13 @@ readb:
   adb kill-server
   adb start-server
 
-reb:
+reb update="":
+  #!/usr/bin/env bash
+  if [ "{{update}}" = "flake" ]; then
+  echo -e "\033[0;32mUpdating flake...\033[0m"
+  nix flake update --flake ~/os/nix
+  fi
   nh os switch ~/os/nix
-  @#sudo nixos-rebuild switch --flake ~/os/nix#deimos
 
 
 dotest PROJECT TAG="latest":

@@ -31,7 +31,7 @@ in
 
     # utils
     postman
-    rpi-imager
+    #rpi-imager
     scrcpy
 
 

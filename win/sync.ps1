@@ -95,7 +95,7 @@ if ($push){
     $message = "sync at $timestamp"
     $repo = Resolve-Path "$PSScriptRoot\.."
     Write-Host "Git pushing $repo : '$message'" -ForegroundColor Green
-    git -C $repo update
+    git -C $repo fetch origin
     git -C $repo add $repo
     git -C $repo commit -m $message
     git -C $repo push -u origin master
