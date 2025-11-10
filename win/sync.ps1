@@ -94,7 +94,7 @@ Write-Host "#####"
 Write-Host "Syncing Choco"  -ForegroundColor Green
 choco upgrade all
 
-choco export "$PSScriptRoot\..\cfg\choco\${Env:UserName}.json"
+choco export "$PSScriptRoot\..\cfg\choco\${Env:UserName}.xml"
 
 # git push
 if ($push){
