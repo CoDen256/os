@@ -84,9 +84,17 @@ foreach ($item in $paths) {
 
 # sync scoop
 Write-Host "#####"
+Write-Host "Syncing Scoop" -ForegroundColor Green
 scoop update *
 
 scoop export -c > "$PSScriptRoot\..\cfg\scoop\${Env:UserName}.json"
+
+# sync scoop
+Write-Host "#####"
+Write-Host "Syncing Choco"  -ForegroundColor Green
+choco upgrade all
+
+choco export "$PSScriptRoot\..\cfg\choco\${Env:UserName}.json"
 
 # git push
 if ($push){
