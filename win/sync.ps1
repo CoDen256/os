@@ -60,7 +60,7 @@ $destBase = "$PSScriptRoot\..\cfg\flow-launcher\UserData"
 # Define paths to copy
 $paths = @(
     @{ Src = Join-Path $srcBase "Settings\Settings.json"; Dest = Join-Path $destBase "Settings\Settings.json" },
-    @{ Src = Join-Path $srcBase "Themes";                 Dest = Join-Path $destBase "Themes" }
+    @{ Src = Join-Path $srcBase "Themes";                 Dest = $destBase }
 )
 
 foreach ($item in $paths) {
