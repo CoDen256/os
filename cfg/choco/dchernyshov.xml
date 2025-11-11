@@ -16,5 +16,7 @@
   <package id="KB2919442" />
   <package id="logioptionsplus" />
   <package id="logitech-options-plus" />
+  <package id="logitech-setpoint" />
   <package id="PowerShell" />
+  <package id="setpoint" />
 </packages>

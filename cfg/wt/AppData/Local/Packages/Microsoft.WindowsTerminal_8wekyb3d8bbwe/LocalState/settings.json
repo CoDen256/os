@@ -23,6 +23,14 @@
         {
             "command": 
             {
+                "action": "newTab",
+                "index": 4
+            },
+            "id": "User.newTab.89E6CA61"
+        },
+        {
+            "command": 
+            {
                 "action": "copy",
                 "singleLine": false
             },
@@ -32,11 +40,22 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+    "firstWindowPreference": "defaultProfile",
+    "initialCols": 120,
+    "initialRows": 25,
     "keybindings": 
     [
         {
+            "id": "User.find",
+            "keys": "ctrl+f"
+        },
+        {
             "id": null,
-            "keys": "ctrl+shift+f"
+            "keys": "ctrl+numpad_minus"
+        },
+        {
+            "id": null,
+            "keys": "ctrl+comma"
         },
         {
             "id": "User.paste",
@@ -44,27 +63,19 @@
         },
         {
             "id": null,
-            "keys": "ctrl+comma"
+            "keys": "ctrl+shift+f"
         },
         {
-            "id": null,
-            "keys": "ctrl+numpad_minus"
-        },
-        {
-            "id": "User.find",
-            "keys": "ctrl+f"
-        },
-        {
-            "id": "Terminal.ResetFontSize",
-            "keys": "ctrl+plus"
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
         },
         {
             "id": "Terminal.DuplicateTab",
             "keys": "ctrl+g"
         },
         {
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": "Terminal.ResetFontSize",
+            "keys": "ctrl+plus"
         },
         {
             "id": "Terminal.OpenNewTab",
@@ -125,6 +136,10 @@
         {
             "id": null,
             "keys": "ctrl+numpad0"
+        },
+        {
+            "id": "User.newTab.89E6CA61",
+            "keys": "win+alt+shift+period"
         }
     ],
     "newTabMenu": 
@@ -151,7 +166,7 @@
         [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-                "elevate": true,
+                "elevate": false,
                 "font": 
                 {
                     "size": 14
@@ -196,6 +211,26 @@
                 "icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
                 "name": "Ubuntu",
                 "startingDirectory": "/mnt/c/Users/dchernyshov"
+            },
+            {
+                "altGrAliasing": true,
+                "antialiasingMode": "grayscale",
+                "closeOnExit": "automatic",
+                "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+                "cursorShape": "bar",
+                "elevate": true,
+                "font": 
+                {
+                    "size": 14
+                },
+                "guid": "{4f11de78-7c28-4f75-a443-9f3ee533a91e}",
+                "hidden": false,
+                "historySize": 9001,
+                "icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
+                "name": "Windows PowerShell (Admin)",
+                "padding": "8, 8, 8, 8",
+                "snapOnInput": true,
+                "startingDirectory": "%USERPROFILE%"
             }
         ]
     },
@@ -7498,5 +7533,6 @@
     "useAcrylicInTabRow": true,
     "warning.confirmCloseAllTabs": false,
     "warning.inputService": false,
-    "warning.multiLinePaste": false
+    "warning.multiLinePaste": false,
+    "windowingBehavior": "useAnyExisting"
 }
