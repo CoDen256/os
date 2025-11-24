@@ -46,16 +46,8 @@
     "keybindings": 
     [
         {
-            "id": "User.find",
-            "keys": "ctrl+f"
-        },
-        {
             "id": null,
-            "keys": "ctrl+numpad_minus"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+comma"
+            "keys": "ctrl+shift+f"
         },
         {
             "id": "User.paste",
@@ -63,19 +55,27 @@
         },
         {
             "id": null,
-            "keys": "ctrl+shift+f"
+            "keys": "ctrl+comma"
         },
         {
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": null,
+            "keys": "ctrl+numpad_minus"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+f"
+        },
+        {
+            "id": "Terminal.ResetFontSize",
+            "keys": "ctrl+plus"
         },
         {
             "id": "Terminal.DuplicateTab",
             "keys": "ctrl+g"
         },
         {
-            "id": "Terminal.ResetFontSize",
-            "keys": "ctrl+plus"
+            "id": "User.splitPane.A6751878",
+            "keys": "alt+shift+d"
         },
         {
             "id": "Terminal.OpenNewTab",
@@ -159,7 +159,7 @@
                 "size": 13,
                 "weight": "medium"
             },
-            "opacity": 50,
+            "opacity": 40,
             "useAcrylic": true
         },
         "list": 

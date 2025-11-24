@@ -156,7 +156,7 @@
   "CustomWindowTop": 0,
   "KeepMaxResults": false,
   "MaxResultsToShow": 6,
-  "ActivateTimes": 5436,
+  "ActivateTimes": 5449,
   "CustomPluginHotkeys": [],
   "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
@@ -185,7 +185,7 @@
   "AnimationSpeed": "Fast",
   "CustomAnimationLength": 360,
   "PluginSettings": {
-    "PythonExecutablePath": "C:\\Users\\dchernyshov\\scoop\\apps\\flow-launcher\\current\\app-2.0.2\\UserData\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
+    "PythonExecutablePath": "C:\\Users\\dchernyshov\\scoop\\apps\\flow-launcher\\current\\app-2.0.3\\UserData\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
     "NodeExecutablePath": "C:\\Users\\denys\\scoop\\persist\\nvm\\nodejs\\v20.11.0\\node.exe",
     "Plugins": {
       "9f8f9b14-2518-4907-b211-35ab6290dee7": {
