@@ -3,6 +3,7 @@
 
 # Inserts a blank line between shell prompts
 add_newline = true
+scan_timeout = 1000
 
 aws.disabled=true
 azure.disabled=true
