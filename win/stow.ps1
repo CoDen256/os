@@ -18,7 +18,9 @@ param(
     [string]$dest = "$HOME",
 
     [Parameter(Position=3, Mandatory=$true)]
-    [string[]]$pkgs
+    [string[]]$pkgs,
+
+    [Switch]$force=$false
 )
 
 function New-SafeSymlink {
@@ -27,8 +29,8 @@ function New-SafeSymlink {
         [string]$Destination
     )
 
-    if (Test-Path $Destination) {
-        #Write-Host "Skipping existing: $Destination" -ForegroundColor Yellow
+    if ((Test-Path $Destination) -and !($force)) {
+        Write-Host "Skipping existing: $Destination -> $Source" -ForegroundColor Yellow
         return
     }
 
@@ -40,7 +42,7 @@ function New-SafeSymlink {
     }
 
     Write-Host "Linked $Destination -> $Source" -ForegroundColor Green
-    New-Item -ItemType SymbolicLink -Path $Destination -Target $Source | Out-Null
+    New-Item -ItemType SymbolicLink -Path $Destination -Target $Source -Force | Out-Null
 }
 
 function Cleanup {

@@ -3,7 +3,7 @@ param([Parameter(Position=1, Mandatory=$false)]
 [Switch]$push
 )
 
-& "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg -dest $HOME yazi,wt,starship,ps
+& "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg -dest $HOME yazi,wt,starship,ps -force
 & "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg -dest C:\\ ahk
 
 Write-Host "#####"
@@ -42,7 +42,7 @@ if (Test-Path $src) {
     Write-Host "Keymap file not found at $src" -ForegroundColor Yellow
 }
 
-######## sync flow-launcher
+######## sync flow-launcher TODO: symlink is better
 Write-Host "#####"
 # Define base paths
 $base = Join-Path $HOME "scoop\apps\flow-launcher\current"
