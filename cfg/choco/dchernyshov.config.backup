@@ -10,16 +10,13 @@
   <package id="chocolatey-dotnetfx.extension" />
   <package id="devtoys" />
   <package id="docker-desktop" />
-  <package id="DotNet3.5" />
   <package id="dotnetfx" />
   <package id="freshbing" />
   <package id="KB2919355" />
   <package id="KB2919442" />
-  <package id="keyboard-layout-creator" />
   <package id="logioptionsplus" />
   <package id="logitech-options-plus" />
   <package id="logitech-setpoint" />
   <package id="PowerShell" />
   <package id="setpoint" />
-  <package id="wsl2" />
 </packages>
