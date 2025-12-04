@@ -24,13 +24,13 @@ git config user.name Denys Chernyshov                       # for this setup pro
 ### Install choco & choco packages system wide
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 choco feature enable -n allowGlobalConfirmation
-choco install docker-desktop devtoys autoruns
+
 
 ### Choose flavour
-# C:\os\win\install-dev.ps1
-# C:\os\win\install-work.ps1
-# C:\os\win\install-extra.ps1
-C:\os\win\install-common.ps1
+choco install C:\os\cfg\choco\dchernyshov.config # or other
+scoop install C:\os\cfg\scoop\dchernyshov.json # or other
+
+### Post install configuration by flavour
 
 ### Run stow at the end of the install to link all the needed files from admin
 C:\os\win\stow.ps1

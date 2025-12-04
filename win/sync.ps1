@@ -43,19 +43,19 @@ if (Test-Path $src) {
 }
 
 ######## sync flow-launcher
-Write-Host "#####"
-# Define base paths
-$base = Join-Path $HOME "scoop\apps\flow-launcher\current"
+# Write-Host "#####"
+# # Define base paths
+# $base = Join-Path $HOME "scoop\apps\flow-launcher\current"
 
-# Find the app folder that starts with "app-" (e.g., app-2.0.2, app-2.1.0)
-$appDir = Get-ChildItem -Path $base -Directory -Filter "app-*" | Sort-Object Name -Descending | Select-Object -First 1
+# # Find the app folder that starts with "app-" (e.g., app-2.0.2, app-2.1.0)
+# $appDir = Get-ChildItem -Path $base -Directory -Filter "app-*" | Sort-Object Name -Descending | Select-Object -First 1
 
-if (-not $appDir) {
-    Write-Host "No app-* folder found under $base" -ForegroundColor Red
-    exit 1
-}
-$srcBase = Join-Path $appDir.FullName "UserData"
-$destBase = "$PSScriptRoot\..\cfg\flow-launcher\UserData"
+# if (-not $appDir) {
+#     Write-Host "No app-* folder found under $base" -ForegroundColor Red
+#     exit 1
+# }
+# $srcBase = Join-Path $appDir.FullName "UserData"
+# $destBase = "$PSScriptRoot\..\cfg\flow-launcher\UserData"
 
 # Define paths to copy
 $paths = @(
@@ -94,7 +94,7 @@ Write-Host "#####"
 Write-Host "Syncing Choco"  -ForegroundColor Green
 choco upgrade all
 
-choco export "$PSScriptRoot\..\cfg\choco\${Env:UserName}.xml"
+choco export "$PSScriptRoot\..\cfg\choco\${Env:UserName}.config"
 
 # git push
 if ($push){
