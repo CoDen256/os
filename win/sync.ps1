@@ -87,14 +87,14 @@ Write-Host "#####"
 Write-Host "Syncing Scoop" -ForegroundColor Green
 scoop update *
 
-scoop export -c > "$PSScriptRoot\..\cfg\scoop\${Env:UserName}.json"
+scoop export -c > "$PSScriptRoot\..\cfg\scoop\${Env:COMPUTERNAME}.json"
 
 # sync scoop
 Write-Host "#####"
 Write-Host "Syncing Choco"  -ForegroundColor Green
 choco upgrade all
 
-choco export "$PSScriptRoot\..\cfg\choco\${Env:UserName}.config"
+choco export "$PSScriptRoot\..\cfg\choco\${Env:COMPUTERNAME}.config"
 
 # git push
 if ($push){
