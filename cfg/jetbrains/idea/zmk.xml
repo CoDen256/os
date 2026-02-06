@@ -372,9 +372,6 @@
   </action>
   <action id="ExtractSuperclass" />
   <action id="FileChooser.GotoDesktop" />
-  <action id="FileChooser.LightEditGotoOpenedFile">
-    <keyboard-shortcut first-keystroke="shift meta e" />
-  </action>
   <action id="FileChooser.NewFolder" />
   <action id="FileChooser.TogglePathBar" />
   <action id="FileStructurePopup">
@@ -391,9 +388,7 @@
     <keyboard-shortcut first-keystroke="shift f8" />
   </action>
   <action id="FindPrevious" />
-  <action id="FindUsages">
-    <keyboard-shortcut first-keystroke="alt slash" />
-  </action>
+  <action id="FindUsages" />
   <action id="FindUsagesInFile">
     <keyboard-shortcut first-keystroke="ctrl alt n" />
   </action>
@@ -491,7 +486,7 @@
     <keyboard-shortcut first-keystroke="shift ctrl e" />
   </action>
   <action id="GotoTest">
-    <keyboard-shortcut first-keystroke="alt t" />
+    <keyboard-shortcut first-keystroke="shift alt n" />
   </action>
   <action id="GotoTypeDeclaration">
     <keyboard-shortcut first-keystroke="shift ctrl n" />
@@ -510,6 +505,7 @@
   </action>
   <action id="HideAllWindows" />
   <action id="HighlightUsagesInFile" />
+  <action id="HippieCompletion" />
   <action id="Hotswap">
     <keyboard-shortcut first-keystroke="ctrl f18" />
   </action>
@@ -700,9 +696,7 @@
   <action id="QuickImplementations">
     <keyboard-shortcut first-keystroke="shift alt i" />
   </action>
-  <action id="QuickJavaDoc">
-    <keyboard-shortcut first-keystroke="shift alt n" />
-  </action>
+  <action id="QuickJavaDoc" />
   <action id="QuickTypeDefinition">
     <keyboard-shortcut first-keystroke="ctrl alt i" />
   </action>
@@ -809,7 +803,7 @@
     <keyboard-shortcut first-keystroke="shift alt v" />
   </action>
   <action id="SelectInProjectView">
-    <keyboard-shortcut first-keystroke="shift ctrl meta alt e" />
+    <keyboard-shortcut first-keystroke="alt slash" />
   </action>
   <action id="SelectNextOccurrence">
     <keyboard-shortcut first-keystroke="shift ctrl q" />
