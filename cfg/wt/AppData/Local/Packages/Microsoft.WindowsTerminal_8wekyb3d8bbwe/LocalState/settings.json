@@ -4,6 +4,10 @@
     "actions": 
     [
         {
+            "command": "find",
+            "id": "User.find"
+        },
+        {
             "command": 
             {
                 "action": "splitPane",
@@ -13,20 +17,8 @@
             "id": "User.splitPane.A6751878"
         },
         {
-            "command": "find",
-            "id": "User.find"
-        },
-        {
             "command": "paste",
             "id": "User.paste"
-        },
-        {
-            "command": 
-            {
-                "action": "newTab",
-                "index": 4
-            },
-            "id": "User.newTab.89E6CA61"
         },
         {
             "command": 
@@ -35,6 +27,14 @@
                 "singleLine": false
             },
             "id": "User.copy.644BA8F2"
+        },
+        {
+            "command": 
+            {
+                "action": "newTab",
+                "index": 4
+            },
+            "id": "User.newTab.89E6CA61"
         }
     ],
     "copyFormatting": "none",
@@ -47,6 +47,14 @@
     [
         {
             "id": null,
+            "keys": "ctrl+numpad_minus"
+        },
+        {
+            "id": "User.find",
+            "keys": "ctrl+f"
+        },
+        {
+            "id": null,
             "keys": "ctrl+shift+f"
         },
         {
@@ -56,14 +64,6 @@
         {
             "id": null,
             "keys": "ctrl+comma"
-        },
-        {
-            "id": null,
-            "keys": "ctrl+numpad_minus"
-        },
-        {
-            "id": "User.find",
-            "keys": "ctrl+f"
         },
         {
             "id": "Terminal.ResetFontSize",
@@ -82,20 +82,20 @@
             "keys": "ctrl+t"
         },
         {
-            "id": null,
-            "keys": "ctrl+shift+d"
-        },
-        {
             "id": "User.copy.644BA8F2",
             "keys": "ctrl+c"
         },
         {
-            "id": "Terminal.OpenSettingsUI",
-            "keys": "win+alt+shift+s"
+            "id": null,
+            "keys": "ctrl+shift+d"
         },
         {
             "id": null,
             "keys": "ctrl+shift+t"
+        },
+        {
+            "id": "Terminal.OpenSettingsUI",
+            "keys": "win+alt+shift+s"
         },
         {
             "id": "Terminal.ToggleCommandPalette",
@@ -127,11 +127,11 @@
         },
         {
             "id": null,
-            "keys": "ctrl+0"
+            "keys": "ctrl+shift+comma"
         },
         {
             "id": null,
-            "keys": "ctrl+shift+comma"
+            "keys": "ctrl+0"
         },
         {
             "id": null,
@@ -6140,7 +6140,7 @@
             "cyan": "#06989A",
             "foreground": "#EEEEEC",
             "green": "#4E9A06",
-            "name": "Ubuntu",
+            "name": "Ubuntu (modified)",
             "purple": "#75507B",
             "red": "#CC0000",
             "selectionBackground": "#B5D5FF",
