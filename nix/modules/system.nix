@@ -13,7 +13,7 @@
 # TODO when closing intellij or postman, they are closing in some incorrect state that i have to kill background process via ps aux after closing the window
 
 {
-  system.stateVersion = "25.05";
+  system.stateVersion = "25.11";
   nixpkgs.config.allowUnfree = true; # allow unfree packages
   nix = {
     settings = {
