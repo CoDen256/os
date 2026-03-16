@@ -23,7 +23,7 @@
   "Theme": "TranslucentFlow",
   "UseDropShadowEffect": false,
   "BackdropType": 1,
-  "ReleaseNotesVersion": "2.1.0",
+  "ReleaseNotesVersion": "2.1.1",
   "WindowHeightSize": 42,
   "ItemHeightSize": 58,
   "QueryBoxFontSize": 20,
@@ -147,7 +147,7 @@
   "QuerySearchPrecision": "Regular",
   "AutoUpdates": false,
   "WindowLeft": 442.4,
-  "WindowTop": 193.6,
+  "WindowTop": 193.60000000000002,
   "PreviousScreenWidth": 0,
   "PreviousScreenHeight": 0,
   "PreviousDpiX": 0,
@@ -156,7 +156,7 @@
   "CustomWindowTop": 0,
   "KeepMaxResults": false,
   "MaxResultsToShow": 6,
-  "ActivateTimes": 5796,
+  "ActivateTimes": 5875,
   "CustomPluginHotkeys": [],
   "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
@@ -186,7 +186,7 @@
   "AnimationSpeed": "Fast",
   "CustomAnimationLength": 360,
   "PluginSettings": {
-    "PythonExecutablePath": "C:\\Users\\dchernyshov\\scoop\\apps\\flow-launcher\\current\\app-2.1.0\\UserData\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
+    "PythonExecutablePath": "C:\\Users\\dchernyshov\\scoop\\apps\\flow-launcher\\current\\app-2.1.1\\UserData\\Environments\\Python\\PythonEmbeddable-v3.11.4\\pythonw.exe",
     "NodeExecutablePath": "C:\\Users\\denys\\scoop\\persist\\nvm\\nodejs\\v20.11.0\\node.exe",
     "Plugins": {
       "9f8f9b14-2518-4907-b211-35ab6290dee7": {
