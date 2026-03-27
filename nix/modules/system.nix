@@ -15,6 +15,9 @@
 {
   system.stateVersion = "25.11";
   nixpkgs.config.allowUnfree = true; # allow unfree packages
+  nixpkgs.config.permittedInsecurePackages = [
+                "electron-37.10.3"
+              ];
   nix = {
     settings = {
       auto-optimise-store = true;

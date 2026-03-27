@@ -33,6 +33,5 @@
     steam
     prismlauncher
 
-    slack
   ];
 }
