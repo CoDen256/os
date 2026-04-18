@@ -6,7 +6,13 @@
   ...
 }:
 let
-
+androidEnv = pkgs.androidenv.composeAndroidPackages {
+    buildToolsVersions = [ "36.0.0" ];
+    platformVersions = [ "36" ];   # add if you need android.jar etc.
+    includeEmulator = false;
+    includeSystemImages = false;
+    includeNDK = false;
+  };
 in
 {
   # https://nixos.wiki/wiki/Android
@@ -25,8 +31,12 @@ in
 
   programs.adb.enable = true; # includes android-tools -> adb + fastboot
   nixpkgs.config.android_sdk.accept_license = true;
+  environment.variables.ANDROID_HOME =
+    "${androidEnv.androidsdk}/libexec/android-sdk";
   environment.systemPackages = with pkgs; [
-    #androidenv.androidPkgs.platform-tools
+    androidenv.androidPkgs.platform-tools
+    androidEnv.androidsdk 
+    android-tools
 
     apktool
 

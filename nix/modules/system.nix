@@ -17,6 +17,8 @@
   nixpkgs.config.allowUnfree = true; # allow unfree packages
   nixpkgs.config.permittedInsecurePackages = [
                 "electron-37.10.3"
+                 "openssl-1.1.1w"
+
               ];
   nix = {
     settings = {
@@ -56,7 +58,7 @@
   environment.sessionVariables = rec {
     PATH = [
       "$HOME/rev/tools"
-      "$HOME/Android/Sdk/build-tools/35.0.1/"
+      "$ANDROID_HOME/build-tools/36.0.0"
     ];
 
     _JAVA_AWT_WM_NOREPARENTING = 1;

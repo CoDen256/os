@@ -3,6 +3,7 @@
   config,
   pkgs,
   inputs,
+  system,
   ...
 }:
 let
@@ -19,15 +20,15 @@ in
     };
   };
 
-
   environment.systemPackages = with pkgs; [
 
     # editors
     vscode
-    jetbrains.idea-ultimate
-    jetbrains.pycharm-community
+    jetbrains.idea
+    jetbrains.pycharm
     jetbrains.datagrip
     android-studio
+    sublime4
 
     # utils
     postman
@@ -36,7 +37,9 @@ in
 
 
     # Programming languages and tools
+    nodejs
     python3
+    uv
     # jdk23 # use jetbrains runtime
     # gradle # use wrapper
     maven # use  bundled jetbrains builtin / wrapper
@@ -47,6 +50,6 @@ in
     lazydocker
 
     # extra (xonsh vs code)
-    python311Packages.python-lsp-server
+    #python311Packages.python-lsp-server
   ];
 }
