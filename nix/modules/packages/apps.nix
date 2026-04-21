@@ -32,6 +32,8 @@
 
     steam
     prismlauncher
+    praat
+    zip
 
   ];
 }
