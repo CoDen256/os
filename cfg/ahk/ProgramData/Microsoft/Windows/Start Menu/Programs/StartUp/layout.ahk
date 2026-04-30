@@ -30,16 +30,20 @@ global immGetDefaultIMEWnd := DllCall("GetProcAddress", "Ptr",imm, "AStr","ImmGe
 ; add us english-us keyboard
 ; add russian keyboard
 ; add german-us keyboard
-$#F11:: {
-    SetInputLang(0x0419) ; 67699721
+$#F10:: { ; win F10
+    SetInputLang(0x0409) ; english-us
+}
+
+$#F11:: { ; win F11
+    SetInputLang(0x0419) ; russian
 }
 
 $#F12:: { ; win F12
-    SetInputLang(0x0407) ; de-de
+    SetInputLang(0x0407) ; german
 }
 
-$#F10:: {
-    SetInputLang(0x0409) ; english-ÜS
+$#F12:: { ; win F13
+    SetInputLang(0x0414) ; norwegian bokmal
 }
 
 
