@@ -42,7 +42,7 @@ $#F12:: { ; win F12
     SetInputLang(0x0407) ; german
 }
 
-$#F12:: { ; win F13
+$#F13:: { ; win F13
     SetInputLang(0x0414) ; norwegian bokmal
 }
 
