@@ -50,6 +50,8 @@ in
     jq
     lazydocker
 
+
+    python312Packages.parselmouth
     # nix lang server
     nixd
 
