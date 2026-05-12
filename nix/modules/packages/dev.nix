@@ -34,11 +34,12 @@ in
     postman
     #rpi-imager
     scrcpy
+    lmstudio
 
 
     # Programming languages and tools
     nodejs
-    python3
+    python312
     uv
     # jdk23 # use jetbrains runtime
     # gradle # use wrapper
@@ -49,7 +50,10 @@ in
     jq
     lazydocker
 
+    # nix lang server
+    nixd
+
     # extra (xonsh vs code)
-    #python311Packages.python-lsp-server
+    python312Packages.python-lsp-server
   ];
 }
