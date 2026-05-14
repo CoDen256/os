@@ -25,9 +25,7 @@ in
     # editors
     vscode
     jetbrains.idea
-    jetbrains.pycharm
     jetbrains.datagrip
-    jetbrains.webstorm
     android-studio
     sublime4
 
