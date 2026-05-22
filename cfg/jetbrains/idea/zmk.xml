@@ -5,6 +5,9 @@
   <action id="$Redo">
     <keyboard-shortcut first-keystroke="ctrl y" />
   </action>
+  <action id="$Undo">
+    <keyboard-shortcut first-keystroke="ctrl z" />
+  </action>
   <action id="ActivateAntToolWindow" />
   <action id="ActivateBookmarksToolWindow" />
   <action id="ActivateBuildToolWindow" />
@@ -84,18 +87,16 @@
     <keyboard-shortcut first-keystroke="shift f15" />
   </action>
   <action id="ChangesView.AddUnversioned">
-    <keyboard-shortcut first-keystroke="shift ctrl m" />
+    <keyboard-shortcut first-keystroke="shift ctrl open_bracket" />
   </action>
   <action id="ChangesView.GroupBy.Module" />
   <action id="ChangesView.Move" />
-  <action id="ChangesView.Rename">
-    <keyboard-shortcut first-keystroke="shift f6" />
-  </action>
+  <action id="ChangesView.Rename" />
   <action id="ChangesView.Revert">
-    <keyboard-shortcut first-keystroke="shift ctrl o" />
+    <keyboard-shortcut first-keystroke="shift j" />
   </action>
   <action id="ChangesView.RevertFiles">
-    <keyboard-shortcut first-keystroke="shift ctrl alt o" />
+    <keyboard-shortcut first-keystroke="alt o" />
   </action>
   <action id="ChangesView.ShelveSilently" />
   <action id="ChangesView.UnshelveSilently" />
@@ -132,16 +133,14 @@
     <keyboard-shortcut first-keystroke="ctrl alt subtract" />
   </action>
   <action id="CollapseSelection" />
-  <action id="CommentByBlockComment">
-    <keyboard-shortcut first-keystroke="ctrl alt k" />
-  </action>
+  <action id="CommentByBlockComment" />
   <action id="CommentByLineComment">
     <keyboard-shortcut first-keystroke="alt k" />
   </action>
   <action id="Compare.SameVersion" />
   <action id="CompareClipboardWithSelection" />
   <action id="CompareTwoFiles">
-    <keyboard-shortcut first-keystroke="ctrl alt h" />
+    <keyboard-shortcut first-keystroke="alt open_bracket" />
   </action>
   <action id="Compile" />
   <action id="CompileDirty" />
@@ -220,25 +219,24 @@
   </action>
   <action id="DeviceAndSnapshotComboBox" />
   <action id="Diagram.DeselectAll" />
-  <action id="Diff.ApplyLeftSide">
-    <keyboard-shortcut first-keystroke="shift f8" />
-  </action>
-  <action id="Diff.ApplyRightSide">
-    <keyboard-shortcut first-keystroke="shift f9" />
-  </action>
+  <action id="Diff.ApplyLeftSide" />
+  <action id="Diff.ApplyRightSide" />
   <action id="Diff.FocusOppositePane" />
   <action id="Diff.NextChange">
-    <keyboard-shortcut first-keystroke="shift ctrl c" />
+    <keyboard-shortcut first-keystroke="shift alt 9" />
   </action>
   <action id="Diff.PrevChange">
-    <keyboard-shortcut first-keystroke="shift ctrl h" />
+    <keyboard-shortcut first-keystroke="alt open_bracket" />
   </action>
   <action id="Diff.ShowDiff">
-    <keyboard-shortcut first-keystroke="shift alt c" />
+    <keyboard-shortcut first-keystroke="alt open_bracket" />
+  </action>
+  <action id="EditBookmark">
+    <keyboard-shortcut first-keystroke="ctrl l" />
   </action>
   <action id="EditPropertyValue" />
   <action id="EditSource">
-    <keyboard-shortcut first-keystroke="alt c" />
+    <keyboard-shortcut first-keystroke="alt n" />
   </action>
   <action id="EditSourceInNewWindow" />
   <action id="Editor Redo">
@@ -293,9 +291,7 @@
   <action id="EditorKillToWordEnd">
     <keyboard-shortcut first-keystroke="f10" />
   </action>
-  <action id="EditorMatchBrace">
-    <keyboard-shortcut first-keystroke="ctrl j" />
-  </action>
+  <action id="EditorMatchBrace" />
   <action id="EditorPasteFromX11" />
   <action id="EditorPasteSimple" />
   <action id="EditorReverseLines" />
@@ -305,6 +301,7 @@
   <action id="EditorScrollRight">
     <keyboard-shortcut first-keystroke="alt right" />
   </action>
+  <action id="EditorScrollToCenter" />
   <action id="EditorSelectLine">
     <keyboard-shortcut first-keystroke="ctrl o" />
   </action>
@@ -312,9 +309,6 @@
     <keyboard-shortcut first-keystroke="ctrl f7" />
   </action>
   <action id="EditorSortLines" />
-  <action id="EditorSplitLine">
-    <keyboard-shortcut first-keystroke="alt o" />
-  </action>
   <action id="EditorStartNewLine" />
   <action id="EditorSwapSelectionBoundaries">
     <keyboard-shortcut first-keystroke="ctrl q" />
@@ -349,6 +343,7 @@
   <action id="ExpandRegionRecursively">
     <keyboard-shortcut first-keystroke="ctrl alt add" />
   </action>
+  <action id="ExportToTextFile" />
   <action id="ExpressionTypeInfo">
     <keyboard-shortcut first-keystroke="shift alt w" />
   </action>
@@ -375,7 +370,7 @@
   <action id="FileChooser.NewFolder" />
   <action id="FileChooser.TogglePathBar" />
   <action id="FileStructurePopup">
-    <keyboard-shortcut first-keystroke="alt i" />
+    <mouse-shortcut keystroke="alt button2" />
   </action>
   <action id="Find">
     <keyboard-shortcut first-keystroke="ctrl f" />
@@ -389,9 +384,7 @@
   </action>
   <action id="FindPrevious" />
   <action id="FindUsages" />
-  <action id="FindUsagesInFile">
-    <keyboard-shortcut first-keystroke="ctrl alt n" />
-  </action>
+  <action id="FindUsagesInFile" />
   <action id="FindWordAtCaret">
     <keyboard-shortcut first-keystroke="shift f9" />
   </action>
@@ -401,20 +394,19 @@
   <action id="ForceStepInto" />
   <action id="ForceStepOver" />
   <action id="Forward">
-    <keyboard-shortcut first-keystroke="alt c" />
     <mouse-shortcut keystroke="button5" />
+    <keyboard-shortcut first-keystroke="alt c" />
   </action>
+  <action id="Frontend.ChangesView.ShowDiff" />
+  <action id="Frontend.ChangesView.UnshelveSilently" />
   <action id="GBrowserBookmarkAddAction" />
   <action id="GBrowserFindAction" />
   <action id="GBrowserRefreshAction" />
   <action id="Generate">
     <keyboard-shortcut first-keystroke="alt y" />
   </action>
-  <action id="GenerateTestMethod">
-    <keyboard-shortcut first-keystroke="shift ctrl y" />
-  </action>
   <action id="Git.Branches">
-    <keyboard-shortcut first-keystroke="shift f21" />
+    <keyboard-shortcut first-keystroke="ctrl m" />
   </action>
   <action id="Git.Clone">
     <keyboard-shortcut first-keystroke="shift alt open_bracket" />
@@ -423,10 +415,8 @@
   <action id="Git.Commit.Stage">
     <keyboard-shortcut first-keystroke="alt m" />
   </action>
+  <action id="Git.CreateNewBranch" />
   <action id="Git.Fetch" />
-  <action id="Git.Ignore.File">
-    <keyboard-shortcut first-keystroke="shift alt m" />
-  </action>
   <action id="Git.New.Branch.In.Log" />
   <action id="Git.Pull" />
   <action id="Git.Rename.Local.Branch" />
@@ -479,9 +469,7 @@
     <keyboard-shortcut first-keystroke="ctrl alt home" />
   </action>
   <action id="GotoRow" />
-  <action id="GotoSuperMethod">
-    <keyboard-shortcut first-keystroke="ctrl alt u" />
-  </action>
+  <action id="GotoSuperMethod" />
   <action id="GotoSymbol">
     <keyboard-shortcut first-keystroke="shift ctrl e" />
   </action>
@@ -491,6 +479,7 @@
   <action id="GotoTypeDeclaration">
     <keyboard-shortcut first-keystroke="shift ctrl n" />
   </action>
+  <action id="Graph.DistributeNodes.Horizontally" />
   <action id="Graph.RouteEdges" />
   <action id="GuiDesigner.Duplicate" />
   <action id="GuiDesigner.EditComponent" />
@@ -548,6 +537,7 @@
   <action id="Jdbc.OpenConsole.New.Generate" />
   <action id="Jdbc.OpenEditor.DDL" />
   <action id="Jdbc.OpenEditor.Data" />
+  <action id="JsonPathExportEvaluateResultAction" />
   <action id="JumpToLastChange">
     <keyboard-shortcut first-keystroke="shift ctrl h" />
   </action>
@@ -558,12 +548,14 @@
     <keyboard-shortcut first-keystroke="shift ctrl c" />
   </action>
   <action id="JumpToStatement" />
+  <action id="JupyterExpandSelectionToCellBelowCommandModeAction" />
+  <action id="JupyterNotebookInterruptKernelCommandModeAction" />
+  <action id="JupyterNotebookMoveCellDownCommandModeAction">
+    <keyboard-shortcut first-keystroke="alt down" />
+  </action>
   <action id="Kotlin.RunScratch" />
   <action id="KotlinConsoleREPL">
     <keyboard-shortcut first-keystroke="shift meta alt z" />
-  </action>
-  <action id="KotlinGenerateTestMethod">
-    <keyboard-shortcut first-keystroke="shift ctrl y" />
   </action>
   <action id="LocalHistory" />
   <action id="LocalHistory.ShowSelectionHistory">
@@ -590,14 +582,8 @@
   </action>
   <action id="MavenHelper.QuickRunRootMavenGoal" />
   <action id="MaximizeToolWindow" />
-  <action id="MemberPushDown">
-    <keyboard-shortcut first-keystroke="shift ctrl alt p" />
-  </action>
-  <action id="MembersPullUp">
-    <keyboard-shortcut first-keystroke="shift ctrl alt u" />
-  </action>
   <action id="MethodDown">
-    <keyboard-shortcut first-keystroke="alt p" />
+    <mouse-shortcut keystroke="alt button142" />
   </action>
   <action id="MethodHierarchy">
     <keyboard-shortcut first-keystroke="shift ctrl alt i" />
@@ -612,7 +598,7 @@
     <keyboard-shortcut first-keystroke="ctrl down" />
   </action>
   <action id="MethodUp">
-    <keyboard-shortcut first-keystroke="alt u" />
+    <mouse-shortcut keystroke="alt button143" />
   </action>
   <action id="ModifyObject" />
   <action id="Move">
@@ -644,14 +630,13 @@
   </action>
   <action id="NewScratchFile" />
   <action id="NextDiff">
-    <keyboard-shortcut first-keystroke="shift f4" />
+    <keyboard-shortcut first-keystroke="alt p" />
   </action>
   <action id="NextSplitter">
     <keyboard-shortcut first-keystroke="shift ctrl meta alt c" />
   </action>
-  <action id="NextTab">
-    <keyboard-shortcut first-keystroke="shift meta alt n" />
-  </action>
+  <action id="NextTab" />
+  <action id="NotebookMoveCellDownAction" />
   <action id="OpenFile" />
   <action id="OpenInRightSplit">
     <mouse-shortcut keystroke="alt button1 doubleClick" />
@@ -678,13 +663,15 @@
     <keyboard-shortcut first-keystroke="f2" />
   </action>
   <action id="PlantUML.Update" />
+  <action id="PrevInlineCompletionSuggestionAction" />
   <action id="PrevSplitter">
     <keyboard-shortcut first-keystroke="shift ctrl meta alt h" />
   </action>
   <action id="PreviousDiff">
-    <keyboard-shortcut first-keystroke="shift f3" />
+    <keyboard-shortcut first-keystroke="alt u" />
   </action>
   <action id="PreviousTab" />
+  <action id="PyCellMoveDownAction" />
   <action id="PyExecuteCellAction" />
   <action id="PyRunFileInConsole">
     <keyboard-shortcut first-keystroke="shift alt r" />
@@ -709,7 +696,10 @@
     <keyboard-shortcut first-keystroke="shift ctrl alt h" />
   </action>
   <action id="RecentFiles">
-    <keyboard-shortcut first-keystroke="ctrl h" />
+    <keyboard-shortcut first-keystroke="shift alt c" />
+  </action>
+  <action id="RecentFilesFallback">
+    <keyboard-shortcut first-keystroke="shift alt c" />
   </action>
   <action id="RecentLocations">
     <keyboard-shortcut first-keystroke="ctrl f4" />
@@ -792,6 +782,7 @@
     <keyboard-shortcut first-keystroke="alt delete" />
   </action>
   <action id="SaveAsTemplate" />
+  <action id="ScrollTreeToCenter" />
   <action id="SearchEverywhere">
     <keyboard-shortcut first-keystroke="shift alt e" />
   </action>
@@ -814,13 +805,8 @@
   <action id="ServiceView.GroupByContributor" />
   <action id="ServiceView.ShowServices" />
   <action id="ShelveChanges.UnshelveWithDialog" />
-  <action id="ShelvedChanges.Rename">
-    <keyboard-shortcut first-keystroke="shift f6" />
-  </action>
+  <action id="ShelvedChanges.Rename" />
   <action id="ShowBookmarks" />
-  <action id="ShowDiscoveredTests">
-    <keyboard-shortcut first-keystroke="shift ctrl alt t" />
-  </action>
   <action id="ShowErrorDescription" />
   <action id="ShowExecutionPoint">
     <keyboard-shortcut first-keystroke="f5" />
@@ -841,14 +827,15 @@
     <keyboard-shortcut first-keystroke="shift f17" />
   </action>
   <action id="ShowReformatFileDialog" />
-  <action id="ShowSearchHistory">
-    <keyboard-shortcut first-keystroke="alt p" />
-  </action>
+  <action id="ShowSearchHistory" />
   <action id="ShowSettings">
     <keyboard-shortcut first-keystroke="shift meta alt s" />
   </action>
   <action id="ShowSettingsAndFindUsages" />
-  <action id="ShowUsages" />
+  <action id="ShowUmlDiagramPopup" />
+  <action id="ShowUsages">
+    <keyboard-shortcut first-keystroke="alt i" />
+  </action>
   <action id="SilentCodeCleanup" />
   <action id="SingleUserFollowAction" />
   <action id="SmartSelect" />
@@ -890,12 +877,6 @@
   <action id="SwitchCoverage" />
   <action id="SwitchHeaderSource" />
   <action id="Switcher" />
-  <action id="SwitcherBackward">
-    <keyboard-shortcut first-keystroke="shift alt 2" />
-  </action>
-  <action id="SwitcherForward">
-    <keyboard-shortcut first-keystroke="alt back_quote" />
-  </action>
   <action id="SwitcherIterateItems" />
   <action id="SwitcherRecentEditedChangedToggleCheckBox" />
   <action id="Synchronize">
@@ -923,6 +904,7 @@
   <action id="TodoViewGroupByShowPackages" />
   <action id="ToggleBookmark" />
   <action id="ToggleBookmark3" />
+  <action id="ToggleBookmark7" />
   <action id="ToggleBookmark9" />
   <action id="ToggleBookmarkWithMnemonic" />
   <action id="ToggleBreakpointEnabled">
@@ -959,9 +941,7 @@
   <action id="UnselectPreviousOccurrence">
     <keyboard-shortcut first-keystroke="shift alt q" />
   </action>
-  <action id="Unwrap">
-    <keyboard-shortcut first-keystroke="alt j" />
-  </action>
+  <action id="Unwrap" />
   <action id="UpdateRunningApplication" />
   <action id="UsageFiltering.Imports" />
   <action id="UsageFiltering.ReadAccess" />
@@ -974,22 +954,21 @@
   <action id="UsageGrouping.Package" />
   <action id="UsageGrouping.UsageType" />
   <action id="UsageView.Rerun" />
+  <action id="UsageView.ShowRecentFindUsages" />
   <action id="Vcs.Log.FocusTextFilter" />
   <action id="Vcs.Log.Refresh" />
   <action id="Vcs.Log.ShowAllAffected" />
-  <action id="Vcs.Log.ShowTooltip">
-    <mouse-shortcut keystroke="alt button2" />
-  </action>
+  <action id="Vcs.Log.ShowTooltip" />
   <action id="Vcs.MoveChangedLinesToChangelist" />
   <action id="Vcs.Push">
-    <keyboard-shortcut first-keystroke="ctrl alt m" />
+    <keyboard-shortcut first-keystroke="shift f21" />
   </action>
   <action id="Vcs.QuickListPopupAction">
-    <keyboard-shortcut first-keystroke="ctrl m" />
+    <keyboard-shortcut first-keystroke="shift open_bracket" />
   </action>
   <action id="Vcs.RefreshFileHistory" />
   <action id="Vcs.RevertSelectedChanges">
-    <keyboard-shortcut first-keystroke="shift ctrl o" />
+    <keyboard-shortcut first-keystroke="shift f6" />
   </action>
   <action id="Vcs.RollbackChangedLines">
     <keyboard-shortcut first-keystroke="shift f6" />
@@ -1003,10 +982,10 @@
   </action>
   <action id="VcsHistory.ShowAllAffected" />
   <action id="VcsShowNextChangeMarker">
-    <keyboard-shortcut first-keystroke="shift f4" />
+    <keyboard-shortcut first-keystroke="alt p" />
   </action>
   <action id="VcsShowPrevChangeMarker">
-    <keyboard-shortcut first-keystroke="shift f3" />
+    <keyboard-shortcut first-keystroke="alt u" />
   </action>
   <action id="ViewBreakpoints">
     <keyboard-shortcut first-keystroke="alt f3" />
@@ -1022,8 +1001,8 @@
   <action id="XDebugger.CopyWatch" />
   <action id="XDebugger.EditWatch" />
   <action id="XDebugger.JumpToSource">
-    <keyboard-shortcut first-keystroke="alt c" />
     <keyboard-shortcut first-keystroke="f19" />
+    <keyboard-shortcut first-keystroke="alt n" />
   </action>
   <action id="XDebugger.MuteBreakpoints">
     <keyboard-shortcut first-keystroke="f3" />
