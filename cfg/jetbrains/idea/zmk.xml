@@ -95,14 +95,10 @@
   <action id="ChangesView.Revert">
     <keyboard-shortcut first-keystroke="shift j" />
   </action>
-  <action id="ChangesView.RevertFiles">
-    <keyboard-shortcut first-keystroke="alt o" />
-  </action>
   <action id="ChangesView.ShelveSilently" />
+  <action id="ChangesView.ToggleCommitUi" />
   <action id="ChangesView.UnshelveSilently" />
-  <action id="CheckinProject">
-    <keyboard-shortcut first-keystroke="alt m" />
-  </action>
+  <action id="CheckinProject" />
   <action id="ChooseDebugConfiguration">
     <keyboard-shortcut first-keystroke="ctrl alt d" />
   </action>
@@ -266,6 +262,7 @@
   <action id="EditorCodeBlockStartWithSelection">
     <keyboard-shortcut first-keystroke="shift alt home" />
   </action>
+  <action id="EditorContextInfo" />
   <action id="EditorCreateRectangularSelectionOnMouseDrag">
     <mouse-shortcut keystroke="button2" />
   </action>
@@ -344,9 +341,8 @@
     <keyboard-shortcut first-keystroke="ctrl alt add" />
   </action>
   <action id="ExportToTextFile" />
-  <action id="ExpressionTypeInfo">
-    <keyboard-shortcut first-keystroke="shift alt w" />
-  </action>
+  <action id="ExpressionTypeInfo" />
+  <action id="ExternalJavaDoc" />
   <action id="ExternalSystem.CollapseAll">
     <keyboard-shortcut first-keystroke="ctrl subtract" />
   </action>
@@ -371,6 +367,7 @@
   <action id="FileChooser.TogglePathBar" />
   <action id="FileStructurePopup">
     <mouse-shortcut keystroke="alt button2" />
+    <keyboard-shortcut first-keystroke="alt y" />
   </action>
   <action id="Find">
     <keyboard-shortcut first-keystroke="ctrl f" />
@@ -402,27 +399,18 @@
   <action id="GBrowserBookmarkAddAction" />
   <action id="GBrowserFindAction" />
   <action id="GBrowserRefreshAction" />
-  <action id="Generate">
-    <keyboard-shortcut first-keystroke="alt y" />
-  </action>
+  <action id="Generate" />
+  <action id="Git.Add" />
   <action id="Git.Branches">
-    <keyboard-shortcut first-keystroke="ctrl m" />
-  </action>
-  <action id="Git.Clone">
-    <keyboard-shortcut first-keystroke="shift alt open_bracket" />
+    <keyboard-shortcut first-keystroke="alt x" />
   </action>
   <action id="Git.Commit.And.Push.Executor" />
-  <action id="Git.Commit.Stage">
-    <keyboard-shortcut first-keystroke="alt m" />
-  </action>
+  <action id="Git.Commit.Stage" />
   <action id="Git.CreateNewBranch" />
   <action id="Git.Fetch" />
   <action id="Git.New.Branch.In.Log" />
   <action id="Git.Pull" />
   <action id="Git.Rename.Local.Branch" />
-  <action id="Git.Reset">
-    <keyboard-shortcut first-keystroke="ctrl alt o" />
-  </action>
   <action id="Git.Reword.Commit" />
   <action id="Git.Stage.Add" />
   <action id="GitLab.Merge.Request.List.Refresh" />
@@ -433,30 +421,29 @@
   </action>
   <action id="Github.PullRequest.Diff.Comment.Create" />
   <action id="GoToMenu">
-    <keyboard-shortcut first-keystroke="alt v" />
+    <keyboard-shortcut first-keystroke="alt e" />
+    <mouse-shortcut keystroke="alt button5" />
   </action>
   <action id="GoToProject">
-    <keyboard-shortcut first-keystroke="shift meta alt t" />
+    <keyboard-shortcut first-keystroke="shift alt comma" />
   </action>
   <action id="GotoAction">
-    <keyboard-shortcut first-keystroke="alt e" />
+    <keyboard-shortcut first-keystroke="alt r" />
   </action>
   <action id="GotoClass">
-    <keyboard-shortcut first-keystroke="ctrl e" />
+    <keyboard-shortcut first-keystroke="alt v" />
   </action>
   <action id="GotoDeclaration">
     <keyboard-shortcut first-keystroke="alt n" />
     <mouse-shortcut keystroke="button2" />
   </action>
   <action id="GotoFile">
-    <keyboard-shortcut first-keystroke="shift f19" />
+    <keyboard-shortcut first-keystroke="alt l" />
   </action>
   <action id="GotoImplementation">
     <keyboard-shortcut first-keystroke="ctrl alt p" />
   </action>
-  <action id="GotoLine">
-    <keyboard-shortcut first-keystroke="shift f2" />
-  </action>
+  <action id="GotoLine" />
   <action id="GotoNextBookmark" />
   <action id="GotoNextError">
     <keyboard-shortcut first-keystroke="ctrl w" />
@@ -471,7 +458,7 @@
   <action id="GotoRow" />
   <action id="GotoSuperMethod" />
   <action id="GotoSymbol">
-    <keyboard-shortcut first-keystroke="shift ctrl e" />
+    <keyboard-shortcut first-keystroke="alt z" />
   </action>
   <action id="GotoTest">
     <keyboard-shortcut first-keystroke="shift alt n" />
@@ -494,6 +481,7 @@
   </action>
   <action id="HideAllWindows" />
   <action id="HighlightUsagesInFile" />
+  <action id="HippieBackwardCompletion" />
   <action id="HippieCompletion" />
   <action id="Hotswap">
     <keyboard-shortcut first-keystroke="ctrl f18" />
@@ -508,9 +496,7 @@
   <action id="ImplementMethods">
     <keyboard-shortcut first-keystroke="ctrl alt y" />
   </action>
-  <action id="Inline">
-    <keyboard-shortcut first-keystroke="alt w" />
-  </action>
+  <action id="Inline" />
   <action id="InsertLiveTemplate" />
   <action id="InspectCode" />
   <action id="InspectThis" />
@@ -527,9 +513,7 @@
   <action id="IntroduceProperty">
     <keyboard-shortcut first-keystroke="shift alt b" />
   </action>
-  <action id="IntroduceVariable">
-    <keyboard-shortcut first-keystroke="alt b" />
-  </action>
+  <action id="IntroduceVariable" />
   <action id="JShell.Console">
     <keyboard-shortcut first-keystroke="shift meta alt j" />
   </action>
@@ -538,14 +522,9 @@
   <action id="Jdbc.OpenEditor.DDL" />
   <action id="Jdbc.OpenEditor.Data" />
   <action id="JsonPathExportEvaluateResultAction" />
-  <action id="JumpToLastChange">
-    <keyboard-shortcut first-keystroke="shift ctrl h" />
-  </action>
+  <action id="JumpToLastChange" />
   <action id="JumpToLastWindow">
     <keyboard-shortcut first-keystroke="shift meta alt h" />
-  </action>
-  <action id="JumpToNextChange">
-    <keyboard-shortcut first-keystroke="shift ctrl c" />
   </action>
   <action id="JumpToStatement" />
   <action id="JupyterExpandSelectionToCellBelowCommandModeAction" />
@@ -558,8 +537,8 @@
     <keyboard-shortcut first-keystroke="shift meta alt z" />
   </action>
   <action id="LocalHistory" />
-  <action id="LocalHistory.ShowSelectionHistory">
-    <keyboard-shortcut first-keystroke="shift ctrl meta alt c" />
+  <action id="LocalHistory.ShowHistory">
+    <keyboard-shortcut first-keystroke="alt j" />
   </action>
   <action id="LocateInSolutionView" />
   <action id="Log.JumpToSource" />
@@ -584,6 +563,7 @@
   <action id="MaximizeToolWindow" />
   <action id="MethodDown">
     <mouse-shortcut keystroke="alt button142" />
+    <keyboard-shortcut first-keystroke="alt d" />
   </action>
   <action id="MethodHierarchy">
     <keyboard-shortcut first-keystroke="shift ctrl alt i" />
@@ -599,6 +579,7 @@
   </action>
   <action id="MethodUp">
     <mouse-shortcut keystroke="alt button143" />
+    <keyboard-shortcut first-keystroke="alt m" />
   </action>
   <action id="ModifyObject" />
   <action id="Move">
@@ -638,24 +619,20 @@
   <action id="NextTab" />
   <action id="NotebookMoveCellDownAction" />
   <action id="OpenFile" />
-  <action id="OpenInRightSplit">
-    <mouse-shortcut keystroke="alt button1 doubleClick" />
-  </action>
+  <action id="OpenInRightSplit" />
   <action id="OpenKeymapPanel">
     <keyboard-shortcut first-keystroke="shift meta alt w" />
   </action>
   <action id="OpenKeymapSettings" />
   <action id="OpenModuleSettings" />
   <action id="OptimizeImports">
-    <keyboard-shortcut first-keystroke="shift f20" />
+    <keyboard-shortcut first-keystroke="shift back_quote" />
   </action>
   <action id="OverrideMethods">
     <keyboard-shortcut first-keystroke="shift alt y" />
   </action>
   <action id="PCFindUsagesAction" />
-  <action id="ParameterInfo">
-    <keyboard-shortcut first-keystroke="alt g" />
-  </action>
+  <action id="ParameterInfo" />
   <action id="PasteMultiple">
     <keyboard-shortcut first-keystroke="shift alt p" />
   </action>
@@ -680,13 +657,8 @@
   <action id="QuickEvaluateExpression">
     <keyboard-shortcut first-keystroke="alt f15" />
   </action>
-  <action id="QuickImplementations">
-    <keyboard-shortcut first-keystroke="shift alt i" />
-  </action>
+  <action id="QuickImplementations" />
   <action id="QuickJavaDoc" />
-  <action id="QuickTypeDefinition">
-    <keyboard-shortcut first-keystroke="ctrl alt i" />
-  </action>
   <action id="ReSharperGotoImplementation" />
   <action id="ReSharperNavigateTo" />
   <action id="RearrangeCode" />
@@ -695,20 +667,17 @@
   <action id="RecentChanges">
     <keyboard-shortcut first-keystroke="shift ctrl alt h" />
   </action>
-  <action id="RecentFiles">
-    <keyboard-shortcut first-keystroke="shift alt c" />
-  </action>
+  <action id="RecentFiles" />
   <action id="RecentFilesFallback">
-    <keyboard-shortcut first-keystroke="shift alt c" />
+    <keyboard-shortcut first-keystroke="alt b" />
+    <mouse-shortcut keystroke="alt button4" />
   </action>
   <action id="RecentLocations">
     <keyboard-shortcut first-keystroke="ctrl f4" />
   </action>
-  <action id="Refactorings.QuickListPopupAction">
-    <keyboard-shortcut first-keystroke="alt l" />
-  </action>
+  <action id="Refactorings.QuickListPopupAction" />
   <action id="ReformatCode">
-    <keyboard-shortcut first-keystroke="ctrl f20" />
+    <keyboard-shortcut first-keystroke="shift slash" />
   </action>
   <action id="Refresh" />
   <action id="RenameElement">
@@ -721,9 +690,7 @@
   <action id="ReplaceInPath">
     <keyboard-shortcut first-keystroke="shift alt f" />
   </action>
-  <action id="Rerun">
-    <keyboard-shortcut first-keystroke="alt r" />
-  </action>
+  <action id="Rerun" />
   <action id="RerunFailedTests">
     <keyboard-shortcut first-keystroke="ctrl t" />
   </action>
@@ -784,7 +751,7 @@
   <action id="SaveAsTemplate" />
   <action id="ScrollTreeToCenter" />
   <action id="SearchEverywhere">
-    <keyboard-shortcut first-keystroke="shift alt e" />
+    <keyboard-shortcut first-keystroke="alt t" />
   </action>
   <action id="SelectAllOccurrences">
     <keyboard-shortcut first-keystroke="ctrl alt f" />
@@ -871,9 +838,7 @@
   <action id="StructuralSearchPlugin.StructuralSearchAction">
     <keyboard-shortcut first-keystroke="shift ctrl alt f" />
   </action>
-  <action id="SurroundWith">
-    <keyboard-shortcut first-keystroke="shift f10" />
-  </action>
+  <action id="SurroundWith" />
   <action id="SwitchCoverage" />
   <action id="SwitchHeaderSource" />
   <action id="Switcher" />
@@ -897,7 +862,7 @@
   <action id="Terminal.SearchInCommandHistory" />
   <action id="Terminal.ShowDocumentation" />
   <action id="TextSearchAction">
-    <keyboard-shortcut first-keystroke="ctrl alt e" />
+    <keyboard-shortcut first-keystroke="alt w" />
   </action>
   <action id="TodoViewGroupByFlattenPackage" />
   <action id="TodoViewGroupByShowModules" />
@@ -915,9 +880,7 @@
     <keyboard-shortcut first-keystroke="ctrl f" />
   </action>
   <action id="ToggleFullScreen" />
-  <action id="ToggleLineBreakpoint">
-    <keyboard-shortcut first-keystroke="alt d" />
-  </action>
+  <action id="ToggleLineBreakpoint" />
   <action id="TogglePresentationMode" />
   <action id="ToggleTemporaryLineBreakpoint">
     <mouse-shortcut keystroke="shift button1" />
@@ -964,7 +927,7 @@
     <keyboard-shortcut first-keystroke="shift f21" />
   </action>
   <action id="Vcs.QuickListPopupAction">
-    <keyboard-shortcut first-keystroke="shift open_bracket" />
+    <keyboard-shortcut first-keystroke="alt s" />
   </action>
   <action id="Vcs.RefreshFileHistory" />
   <action id="Vcs.RevertSelectedChanges">
@@ -975,8 +938,9 @@
   </action>
   <action id="Vcs.ShowMessageHistory" />
   <action id="Vcs.ShowTabbedFileHistory">
-    <keyboard-shortcut first-keystroke="shift meta alt c" />
+    <keyboard-shortcut first-keystroke="alt o" />
   </action>
+  <action id="Vcs.ToggleAmendCommitMode" />
   <action id="Vcs.UpdateProject">
     <keyboard-shortcut first-keystroke="shift ctrl alt m" />
   </action>
@@ -1027,6 +991,7 @@
   <action id="com.github.jk1.ytplugin.timeTracker.actions.ShowAllSavedTimeTrackingItems" />
   <action id="com.github.jk1.ytplugin.timeTracker.actions.StartTrackerAction" />
   <action id="com.github.jk1.ytplugin.timeTracker.actions.StopTrackerAction" />
+  <action id="com.godwin.jsonparser.generator.insert" />
   <action id="context.clear" />
   <action id="context.load" />
   <action id="context.save" />
