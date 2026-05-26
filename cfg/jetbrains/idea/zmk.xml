@@ -1,4 +1,7 @@
 <keymap version="1" name="zmk" parent="$default">
+  <action id="$Copy">
+    <keyboard-shortcut first-keystroke="ctrl c" />
+  </action>
   <action id="$Paste">
     <keyboard-shortcut first-keystroke="ctrl v" />
   </action>
@@ -79,31 +82,30 @@
   <action id="CIDR.Lang.ImportsHierarchy" />
   <action id="CSharpInteractive" />
   <action id="CWMHostShowPopupAction" />
-  <action id="CallHierarchy">
-    <keyboard-shortcut first-keystroke="shift ctrl alt n" />
-  </action>
+  <action id="CallHierarchy" />
   <action id="CancelBuildAction" />
   <action id="ChangeSignature">
-    <keyboard-shortcut first-keystroke="shift f15" />
+    <keyboard-shortcut first-keystroke="ctrl b" />
   </action>
-  <action id="ChangesView.AddUnversioned">
-    <keyboard-shortcut first-keystroke="shift ctrl open_bracket" />
-  </action>
+  <action id="ChangesView.AddUnversioned" />
   <action id="ChangesView.GroupBy.Module" />
   <action id="ChangesView.Move" />
   <action id="ChangesView.Rename" />
   <action id="ChangesView.Revert">
-    <keyboard-shortcut first-keystroke="shift j" />
+    <keyboard-shortcut first-keystroke="shift f10" />
   </action>
   <action id="ChangesView.ShelveSilently" />
+  <action id="ChangesView.ShowCommitOptions" />
   <action id="ChangesView.ToggleCommitUi" />
   <action id="ChangesView.UnshelveSilently" />
-  <action id="CheckinProject" />
+  <action id="CheckinProject">
+    <keyboard-shortcut first-keystroke="shift f20" />
+  </action>
   <action id="ChooseDebugConfiguration">
-    <keyboard-shortcut first-keystroke="ctrl alt d" />
+    <keyboard-shortcut first-keystroke="shift f23" />
   </action>
   <action id="ChooseRunConfiguration">
-    <keyboard-shortcut first-keystroke="ctrl alt r" />
+    <keyboard-shortcut first-keystroke="shift f19" />
   </action>
   <action id="CleanSolutionAction" />
   <action id="ClickLink" />
@@ -111,7 +113,6 @@
   <action id="CloseContent" />
   <action id="CodeCleanup" />
   <action id="CodeInspection.OnEditor" />
-  <action id="CodeMenu" />
   <action id="CollapseAll">
     <keyboard-shortcut first-keystroke="ctrl subtract" />
   </action>
@@ -131,7 +132,7 @@
   <action id="CollapseSelection" />
   <action id="CommentByBlockComment" />
   <action id="CommentByLineComment">
-    <keyboard-shortcut first-keystroke="alt k" />
+    <keyboard-shortcut first-keystroke="shift back_space" />
   </action>
   <action id="Compare.SameVersion" />
   <action id="CompareClipboardWithSelection" />
@@ -147,6 +148,7 @@
   <action id="Console.TableResult.CloneColumn" />
   <action id="Console.TableResult.CloneRow" />
   <action id="Console.TableResult.CompareCells" />
+  <action id="Console.TableResult.CopyAggregatorResult" />
   <action id="Console.TableResult.DeleteRows" />
   <action id="Console.TableResult.EditFilterCriteria" />
   <action id="Console.TableResult.EditValue">
@@ -168,16 +170,11 @@
   <action id="Console.TableResult.SetDefault" />
   <action id="Console.TableResult.SetNull" />
   <action id="ContextHelp" />
+  <action id="ConvertJavaToKotlin" />
+  <action id="CopyAbsolutePath" />
   <action id="CopyAsPlainText" />
-  <action id="CopyElement">
-    <keyboard-shortcut first-keystroke="ctrl alt l" />
-  </action>
-  <action id="CopyFileName">
-    <keyboard-shortcut first-keystroke="shift f14" />
-  </action>
-  <action id="CopyPaths">
-    <keyboard-shortcut first-keystroke="ctrl f14" />
-  </action>
+  <action id="CopyElement" />
+  <action id="CopyPaths" />
   <action id="CopyReferencePopupGroup" />
   <action id="Coverage" />
   <action id="CppIncludesHierarchy" />
@@ -194,12 +191,15 @@
   <action id="DatabaseView.CopyAction" />
   <action id="DatabaseView.CopyDdlAction" />
   <action id="DatabaseView.Ddl.AlterObject" />
+  <action id="DatabaseView.DeactivateAction">
+    <keyboard-shortcut first-keystroke="alt f2" />
+  </action>
   <action id="DatabaseView.FullTextSearch" />
   <action id="DatabaseView.PropertiesAction" />
   <action id="DatabaseView.SqlGenerator" />
   <action id="DatabaseView.Tools.RevertChanges" />
   <action id="Debug">
-    <keyboard-shortcut first-keystroke="ctrl d" />
+    <keyboard-shortcut first-keystroke="shift f22" />
     <keyboard-shortcut first-keystroke="f1" />
   </action>
   <action id="DebugClass">
@@ -227,6 +227,12 @@
   <action id="Diff.ShowDiff">
     <keyboard-shortcut first-keystroke="alt open_bracket" />
   </action>
+  <action id="Docker.RemoteServers.StopComposeService">
+    <keyboard-shortcut first-keystroke="alt f2" />
+  </action>
+  <action id="Docker.RemoteServers.StopContainer">
+    <keyboard-shortcut first-keystroke="alt f2" />
+  </action>
   <action id="EditBookmark">
     <keyboard-shortcut first-keystroke="ctrl l" />
   </action>
@@ -241,14 +247,22 @@
   <action id="EditorAddCaretPerSelectedLine">
     <keyboard-shortcut first-keystroke="shift f11" />
   </action>
+  <action id="EditorAddOrRemoveCaret">
+    <mouse-shortcut keystroke="control button1" />
+  </action>
+  <action id="EditorBackSpace">
+    <keyboard-shortcut first-keystroke="back_space" />
+  </action>
   <action id="EditorBackwardParagraph">
     <keyboard-shortcut first-keystroke="shift meta alt period" />
   </action>
   <action id="EditorCloneCaretAbove">
-    <keyboard-shortcut first-keystroke="shift f12" />
+    <mouse-shortcut keystroke="control button143" />
+    <keyboard-shortcut first-keystroke="ctrl o" />
   </action>
   <action id="EditorCloneCaretBelow">
-    <keyboard-shortcut first-keystroke="shift f13" />
+    <mouse-shortcut keystroke="control button142" />
+    <keyboard-shortcut first-keystroke="ctrl j" />
   </action>
   <action id="EditorCodeBlockEnd">
     <keyboard-shortcut first-keystroke="alt end" />
@@ -271,10 +285,7 @@
   </action>
   <action id="EditorDeleteLine" />
   <action id="EditorDuplicate">
-    <keyboard-shortcut first-keystroke="ctrl g" />
-  </action>
-  <action id="EditorDuplicateLines">
-    <keyboard-shortcut first-keystroke="shift ctrl g" />
+    <keyboard-shortcut first-keystroke="ctrl f2" />
   </action>
   <action id="EditorIncreaseFontSizeGlobal">
     <keyboard-shortcut first-keystroke="shift meta alt equals" />
@@ -282,12 +293,7 @@
   <action id="EditorIndentLineOrSelection">
     <keyboard-shortcut first-keystroke="ctrl tab" />
   </action>
-  <action id="EditorJoinLines">
-    <keyboard-shortcut first-keystroke="shift alt o" />
-  </action>
-  <action id="EditorKillToWordEnd">
-    <keyboard-shortcut first-keystroke="f10" />
-  </action>
+  <action id="EditorJoinLines" />
   <action id="EditorMatchBrace" />
   <action id="EditorPasteFromX11" />
   <action id="EditorPasteSimple" />
@@ -300,24 +306,22 @@
   </action>
   <action id="EditorScrollToCenter" />
   <action id="EditorSelectLine">
-    <keyboard-shortcut first-keystroke="ctrl o" />
+    <keyboard-shortcut first-keystroke="ctrl f12" />
   </action>
   <action id="EditorSelectWord">
-    <keyboard-shortcut first-keystroke="ctrl f7" />
+    <keyboard-shortcut first-keystroke="ctrl f8" />
   </action>
   <action id="EditorSortLines" />
   <action id="EditorStartNewLine" />
   <action id="EditorSwapSelectionBoundaries">
-    <keyboard-shortcut first-keystroke="ctrl q" />
+    <keyboard-shortcut first-keystroke="ctrl f6" />
   </action>
-  <action id="EditorToggleCase">
-    <keyboard-shortcut first-keystroke="alt a" />
-  </action>
+  <action id="EditorToggleCase" />
   <action id="EditorToggleColumnMode" />
   <action id="EditorToggleShowLineNumbers" />
   <action id="EditorToggleUseSoftWraps" />
   <action id="EditorUnSelectWord">
-    <keyboard-shortcut first-keystroke="shift ctrl a" />
+    <keyboard-shortcut first-keystroke="ctrl f7" />
   </action>
   <action id="EmmetNextEditPoint" />
   <action id="EmmetPreviousEditPoint" />
@@ -354,12 +358,12 @@
     <keyboard-shortcut first-keystroke="ctrl k" />
   </action>
   <action id="ExtractFunction">
-    <keyboard-shortcut first-keystroke="ctrl b" />
+    <keyboard-shortcut first-keystroke="ctrl m" />
   </action>
   <action id="ExtractFunctionToScope" />
   <action id="ExtractInterface" />
   <action id="ExtractMethod">
-    <keyboard-shortcut first-keystroke="ctrl b" />
+    <keyboard-shortcut first-keystroke="ctrl m" />
   </action>
   <action id="ExtractSuperclass" />
   <action id="FileChooser.GotoDesktop" />
@@ -373,7 +377,7 @@
     <keyboard-shortcut first-keystroke="ctrl f" />
   </action>
   <action id="FindInPath">
-    <keyboard-shortcut first-keystroke="shift ctrl f" />
+    <keyboard-shortcut first-keystroke="alt f" />
   </action>
   <action id="FindNext" />
   <action id="FindPrevWordAtCaret">
@@ -399,7 +403,9 @@
   <action id="GBrowserBookmarkAddAction" />
   <action id="GBrowserFindAction" />
   <action id="GBrowserRefreshAction" />
-  <action id="Generate" />
+  <action id="Generate">
+    <keyboard-shortcut first-keystroke="shift ctrl open_bracket" />
+  </action>
   <action id="Git.Add" />
   <action id="Git.Branches">
     <keyboard-shortcut first-keystroke="alt x" />
@@ -420,6 +426,9 @@
     <keyboard-shortcut first-keystroke="ctrl alt m" />
   </action>
   <action id="Github.PullRequest.Diff.Comment.Create" />
+  <action id="GoToCodeGroup">
+    <keyboard-shortcut first-keystroke="alt z" />
+  </action>
   <action id="GoToMenu">
     <keyboard-shortcut first-keystroke="alt e" />
     <mouse-shortcut keystroke="alt button5" />
@@ -445,9 +454,7 @@
   </action>
   <action id="GotoLine" />
   <action id="GotoNextBookmark" />
-  <action id="GotoNextError">
-    <keyboard-shortcut first-keystroke="ctrl w" />
-  </action>
+  <action id="GotoNextError" />
   <action id="GotoPreviousBookmark" />
   <action id="GotoPreviousError">
     <keyboard-shortcut first-keystroke="shift ctrl w" />
@@ -458,7 +465,7 @@
   <action id="GotoRow" />
   <action id="GotoSuperMethod" />
   <action id="GotoSymbol">
-    <keyboard-shortcut first-keystroke="alt z" />
+    <keyboard-shortcut first-keystroke="alt minus" />
   </action>
   <action id="GotoTest">
     <keyboard-shortcut first-keystroke="shift alt n" />
@@ -466,6 +473,7 @@
   <action id="GotoTypeDeclaration">
     <keyboard-shortcut first-keystroke="shift ctrl n" />
   </action>
+  <action id="Graph.ApplyCurrentLayout" />
   <action id="Graph.DistributeNodes.Horizontally" />
   <action id="Graph.RouteEdges" />
   <action id="GuiDesigner.Duplicate" />
@@ -493,27 +501,30 @@
     <keyboard-shortcut first-keystroke="ctrl subtract" />
   </action>
   <action id="Images.Thumbnails.Hide" />
-  <action id="ImplementMethods">
-    <keyboard-shortcut first-keystroke="ctrl alt y" />
+  <action id="ImplementMethods" />
+  <action id="Inline">
+    <keyboard-shortcut first-keystroke="ctrl f3" />
   </action>
-  <action id="Inline" />
   <action id="InsertLiveTemplate" />
   <action id="InspectCode" />
   <action id="InspectThis" />
   <action id="IntroduceConstant">
-    <keyboard-shortcut first-keystroke="ctrl alt b" />
+    <keyboard-shortcut first-keystroke="ctrl d" />
   </action>
   <action id="IntroduceField">
-    <keyboard-shortcut first-keystroke="shift alt b" />
+    <keyboard-shortcut first-keystroke="ctrl f23" />
   </action>
   <action id="IntroduceFunctionalParameter" />
   <action id="IntroduceParameter">
-    <keyboard-shortcut first-keystroke="shift f16" />
+    <keyboard-shortcut first-keystroke="ctrl e" />
   </action>
   <action id="IntroduceProperty">
-    <keyboard-shortcut first-keystroke="shift alt b" />
+    <keyboard-shortcut first-keystroke="ctrl f23" />
   </action>
-  <action id="IntroduceVariable" />
+  <action id="IntroduceTypeAlias" />
+  <action id="IntroduceVariable">
+    <keyboard-shortcut first-keystroke="ctrl r" />
+  </action>
   <action id="JShell.Console">
     <keyboard-shortcut first-keystroke="shift meta alt j" />
   </action>
@@ -532,6 +543,7 @@
   <action id="JupyterNotebookMoveCellDownCommandModeAction">
     <keyboard-shortcut first-keystroke="alt down" />
   </action>
+  <action id="Just.QuickRunRecipes" />
   <action id="Kotlin.RunScratch" />
   <action id="KotlinConsoleREPL">
     <keyboard-shortcut first-keystroke="shift meta alt z" />
@@ -556,18 +568,14 @@
   <action id="MavenHelper.OpenTerminalAction">
     <keyboard-shortcut first-keystroke="shift meta b" />
   </action>
-  <action id="MavenHelper.QuickRunMavenGoal">
-    <keyboard-shortcut first-keystroke="ctrl f19" />
-  </action>
+  <action id="MavenHelper.QuickRunMavenGoal" />
   <action id="MavenHelper.QuickRunRootMavenGoal" />
   <action id="MaximizeToolWindow" />
   <action id="MethodDown">
     <mouse-shortcut keystroke="alt button142" />
     <keyboard-shortcut first-keystroke="alt d" />
   </action>
-  <action id="MethodHierarchy">
-    <keyboard-shortcut first-keystroke="shift ctrl alt i" />
-  </action>
+  <action id="MethodHierarchy" />
   <action id="MethodHierarchy.BaseOnThisMethod" />
   <action id="MethodHierarchy.ImplementMethodAction" />
   <action id="MethodHierarchy.OverrideMethodAction" />
@@ -582,9 +590,7 @@
     <keyboard-shortcut first-keystroke="alt m" />
   </action>
   <action id="ModifyObject" />
-  <action id="Move">
-    <keyboard-shortcut first-keystroke="shift ctrl l" />
-  </action>
+  <action id="Move" />
   <action id="MoveElementLeft">
     <keyboard-shortcut first-keystroke="ctrl i" />
   </action>
@@ -607,7 +613,7 @@
   <action id="MoveTabRight" />
   <action id="NavigateToImmediateWindow" />
   <action id="NewElement">
-    <keyboard-shortcut first-keystroke="shift f23" />
+    <keyboard-shortcut first-keystroke="shift ctrl 1" />
   </action>
   <action id="NewScratchFile" />
   <action id="NextDiff">
@@ -629,7 +635,7 @@
     <keyboard-shortcut first-keystroke="shift back_quote" />
   </action>
   <action id="OverrideMethods">
-    <keyboard-shortcut first-keystroke="shift alt y" />
+    <keyboard-shortcut first-keystroke="ctrl cancel" />
   </action>
   <action id="PCFindUsagesAction" />
   <action id="ParameterInfo" />
@@ -675,26 +681,33 @@
   <action id="RecentLocations">
     <keyboard-shortcut first-keystroke="ctrl f4" />
   </action>
-  <action id="Refactorings.QuickListPopupAction" />
+  <action id="Refactorings.QuickListPopupAction">
+    <keyboard-shortcut first-keystroke="ctrl t" />
+  </action>
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="shift slash" />
   </action>
   <action id="Refresh" />
+  <action id="RemoteHostView.CopyPaths" />
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="ctrl l" />
   </action>
-  <action id="RenameFile" />
+  <action id="RenameFile">
+    <keyboard-shortcut first-keystroke="ctrl f14" />
+  </action>
   <action id="Replace">
-    <keyboard-shortcut first-keystroke="alt f" />
+    <keyboard-shortcut first-keystroke="ctrl f11" />
   </action>
   <action id="ReplaceInPath">
     <keyboard-shortcut first-keystroke="shift alt f" />
   </action>
   <action id="Rerun" />
   <action id="RerunFailedTests">
-    <keyboard-shortcut first-keystroke="ctrl t" />
+    <keyboard-shortcut first-keystroke="shift f5" />
   </action>
-  <action id="RerunTests" />
+  <action id="RerunTests">
+    <keyboard-shortcut first-keystroke="shift f15" />
+  </action>
   <action id="ResizeToolWindowDown">
     <keyboard-shortcut first-keystroke="shift meta alt p" />
   </action>
@@ -731,7 +744,7 @@
   <action id="RiderUnitTestSessionAbortAction" />
   <action id="RiderUnitTestSessionRerunFailedTestsAction" />
   <action id="Run">
-    <keyboard-shortcut first-keystroke="ctrl r" />
+    <keyboard-shortcut first-keystroke="shift f18" />
   </action>
   <action id="RunAnything">
     <keyboard-shortcut first-keystroke="ctrl alt t" />
@@ -740,6 +753,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl r" />
   </action>
   <action id="RunDashboard.CopyConfiguration" />
+  <action id="RunDashboard.Stop">
+    <keyboard-shortcut first-keystroke="alt f2" />
+  </action>
   <action id="RunInspection" />
   <action id="RunTargetAction" />
   <action id="RunToCursor">
@@ -754,18 +770,16 @@
     <keyboard-shortcut first-keystroke="alt t" />
   </action>
   <action id="SelectAllOccurrences">
-    <keyboard-shortcut first-keystroke="ctrl alt f" />
+    <keyboard-shortcut first-keystroke="ctrl f10" />
   </action>
   <action id="SelectIn" />
   <action id="SelectInProject">
     <keyboard-shortcut first-keystroke="shift alt v" />
   </action>
   <action id="SelectInProjectView">
-    <keyboard-shortcut first-keystroke="alt slash" />
+    <keyboard-shortcut first-keystroke="shift meta alt a" />
   </action>
-  <action id="SelectNextOccurrence">
-    <keyboard-shortcut first-keystroke="shift ctrl q" />
-  </action>
+  <action id="SelectNextOccurrence" />
   <action id="SelectVirtualTemplateElement" />
   <action id="SendEOF" />
   <action id="ServiceView.AddService" />
@@ -778,12 +792,8 @@
   <action id="ShowExecutionPoint">
     <keyboard-shortcut first-keystroke="f5" />
   </action>
-  <action id="ShowFilePath">
-    <keyboard-shortcut first-keystroke="ctrl alt v" />
-  </action>
-  <action id="ShowNavBar">
-    <keyboard-shortcut first-keystroke="shift ctrl v" />
-  </action>
+  <action id="ShowFilePath" />
+  <action id="ShowNavBar" />
   <action id="ShowPopupMenu">
     <keyboard-shortcut first-keystroke="shift enter" />
   </action>
@@ -791,7 +801,7 @@
     <keyboard-shortcut first-keystroke="shift meta alt x" />
   </action>
   <action id="ShowRecentTests">
-    <keyboard-shortcut first-keystroke="shift f17" />
+    <keyboard-shortcut first-keystroke="shift f16" />
   </action>
   <action id="ShowReformatFileDialog" />
   <action id="ShowSearchHistory" />
@@ -820,15 +830,16 @@
   <action id="Sql.EditParameter" />
   <action id="StepInto">
     <keyboard-shortcut first-keystroke="f11" />
+    <mouse-shortcut keystroke="shift button142" />
   </action>
   <action id="StepIntoMyCode" />
   <action id="StepOut" />
   <action id="StepOver">
     <keyboard-shortcut first-keystroke="f12" />
+    <mouse-shortcut keystroke="shift button143" />
   </action>
   <action id="Stop">
-    <keyboard-shortcut first-keystroke="shift f18" />
-    <keyboard-shortcut first-keystroke="alt f2" />
+    <keyboard-shortcut first-keystroke="shift f17" />
   </action>
   <action id="StopBackgroundProcesses" />
   <action id="StretchSplitToBottom" />
@@ -854,6 +865,9 @@
   <action id="Terminal.ClearBuffer" />
   <action id="Terminal.CloseSession" />
   <action id="Terminal.CloseTab" />
+  <action id="Terminal.CopySelectedText">
+    <keyboard-shortcut first-keystroke="ctrl c" />
+  </action>
   <action id="Terminal.DeletePreviousWord" />
   <action id="Terminal.NewTab" />
   <action id="Terminal.OpenInTerminal">
@@ -868,23 +882,22 @@
   <action id="TodoViewGroupByShowModules" />
   <action id="TodoViewGroupByShowPackages" />
   <action id="ToggleBookmark" />
+  <action id="ToggleBookmark1" />
   <action id="ToggleBookmark3" />
   <action id="ToggleBookmark7" />
   <action id="ToggleBookmark9" />
   <action id="ToggleBookmarkWithMnemonic" />
-  <action id="ToggleBreakpointEnabled">
-    <mouse-shortcut keystroke="control button1" />
-  </action>
   <action id="ToggleDistractionFreeMode" />
   <action id="ToggleFindInSelection">
     <keyboard-shortcut first-keystroke="ctrl f" />
   </action>
   <action id="ToggleFullScreen" />
-  <action id="ToggleLineBreakpoint" />
-  <action id="TogglePresentationMode" />
-  <action id="ToggleTemporaryLineBreakpoint">
+  <action id="ToggleLineBreakpoint">
     <mouse-shortcut keystroke="shift button1" />
+    <keyboard-shortcut first-keystroke="shift f21" />
   </action>
+  <action id="TogglePresentationMode" />
+  <action id="ToggleTemporaryLineBreakpoint" />
   <action id="ToggleZenMode" />
   <action id="ToolWindowsGroup" />
   <action id="TouchBarDebug" />
@@ -901,9 +914,7 @@
   <action id="Uml.NewElement" />
   <action id="Uml.ShowDiff" />
   <action id="Unscramble" />
-  <action id="UnselectPreviousOccurrence">
-    <keyboard-shortcut first-keystroke="shift alt q" />
-  </action>
+  <action id="UnselectPreviousOccurrence" />
   <action id="Unwrap" />
   <action id="UpdateRunningApplication" />
   <action id="UsageFiltering.Imports" />
@@ -924,7 +935,7 @@
   <action id="Vcs.Log.ShowTooltip" />
   <action id="Vcs.MoveChangedLinesToChangelist" />
   <action id="Vcs.Push">
-    <keyboard-shortcut first-keystroke="shift f21" />
+    <keyboard-shortcut first-keystroke="ctrl f20" />
   </action>
   <action id="Vcs.QuickListPopupAction">
     <keyboard-shortcut first-keystroke="alt s" />
@@ -956,12 +967,11 @@
   </action>
   <action id="WD.UploadCurrentRemoteFileAction" />
   <action id="WebOpenInAction" />
+  <action id="WelcomeScreen.CopyProjectPath" />
   <action id="WelcomeScreen.Plugins">
     <keyboard-shortcut first-keystroke="shift meta alt comma" />
   </action>
-  <action id="XDebugger.AttachToProcess">
-    <keyboard-shortcut first-keystroke="shift alt d" second-keystroke="a" />
-  </action>
+  <action id="XDebugger.AttachToProcess" />
   <action id="XDebugger.CopyWatch" />
   <action id="XDebugger.EditWatch" />
   <action id="XDebugger.JumpToSource">
@@ -996,7 +1006,7 @@
   <action id="context.load" />
   <action id="context.save" />
   <action id="editRunConfigurations">
-    <keyboard-shortcut first-keystroke="shift ctrl alt r" />
+    <keyboard-shortcut first-keystroke="shift f14" />
   </action>
   <action id="hg4idea.QFold" />
   <action id="hg4idea.QGotoFromPatches" />
@@ -1009,9 +1019,14 @@
   <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleCodeSpanAction" />
   <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleItalicAction" />
   <action id="org.intellij.plugins.markdown.ui.actions.styling.ToggleStrikethroughAction" />
-  <action id="osmedile.intellij.stringmanip.PopupChoiceAction" />
+  <action id="osmedile.intellij.stringmanip.PopupChoiceAction">
+    <keyboard-shortcut first-keystroke="ctrl insert" />
+  </action>
   <action id="refactoring.extract.dependency" />
   <action id="refactoring.introduce.property" />
+  <action id="sql.ExtractFunctionAction">
+    <keyboard-shortcut first-keystroke="ctrl m" />
+  </action>
   <action id="sql.SelectInDatabaseView" />
   <action id="tasks.close" />
   <action id="tasks.goto" />
