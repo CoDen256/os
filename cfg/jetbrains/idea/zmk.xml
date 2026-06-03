@@ -18,7 +18,9 @@
   <action id="ActivateAntToolWindow" />
   <action id="ActivateBookmarksToolWindow" />
   <action id="ActivateBuildToolWindow" />
-  <action id="ActivateCommitToolWindow" />
+  <action id="ActivateCommitToolWindow">
+    <keyboard-shortcut first-keystroke="shift meta alt s" />
+  </action>
   <action id="ActivateDatabaseToolWindow" />
   <action id="ActivateDebugToolWindow">
     <keyboard-shortcut first-keystroke="shift meta alt f" />
@@ -206,13 +208,13 @@
   <action id="DebugClass">
     <mouse-shortcut keystroke="shift button4" />
   </action>
+  <action id="DebugMainMenu">
+    <keyboard-shortcut first-keystroke="f5" />
+  </action>
   <action id="Debugger.AddToWatch" />
   <action id="Debugger.EditArrayFilter" />
   <action id="Debugger.EditCustomField" />
   <action id="Debugger.MarkObject" />
-  <action id="DebuggingActionsGroup">
-    <keyboard-shortcut first-keystroke="f5" />
-  </action>
   <action id="DeviceAndSnapshotComboBox" />
   <action id="Diagram.DeselectAll" />
   <action id="Diff.ApplyLeftSide" />
@@ -226,6 +228,7 @@
   </action>
   <action id="Diff.ShowDiff">
     <keyboard-shortcut first-keystroke="alt open_bracket" />
+    <keyboard-shortcut first-keystroke="shift alt 9" />
   </action>
   <action id="Docker.RemoteServers.StopComposeService" />
   <action id="Docker.RemoteServers.StopContainer" />
@@ -421,7 +424,7 @@
   <action id="Github.PullRequest.Diff.Comment.Create" />
   <action id="GoToMenu">
     <keyboard-shortcut first-keystroke="alt e" />
-    <mouse-shortcut keystroke="alt button5" />
+    <mouse-shortcut keystroke="alt button4" />
   </action>
   <action id="GoToProject">
     <keyboard-shortcut first-keystroke="shift alt comma" />
@@ -652,7 +655,7 @@
     <keyboard-shortcut first-keystroke="ctrl t" />
   </action>
   <action id="ReformatCode">
-    <keyboard-shortcut first-keystroke="alt f18" />
+    <keyboard-shortcut first-keystroke="shift enter" />
   </action>
   <action id="Refresh" />
   <action id="RemoteHostView.CopyPaths" />
