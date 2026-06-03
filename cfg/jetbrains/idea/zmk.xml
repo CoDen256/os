@@ -2,11 +2,18 @@
   <action id="$Copy">
     <keyboard-shortcut first-keystroke="ctrl c" />
   </action>
+  <action id="$Cut">
+    <keyboard-shortcut first-keystroke="ctrl x" />
+  </action>
   <action id="$Paste">
     <keyboard-shortcut first-keystroke="ctrl v" />
   </action>
   <action id="$Redo">
     <keyboard-shortcut first-keystroke="ctrl y" />
+  </action>
+  <action id="$SelectAll">
+    <keyboard-shortcut first-keystroke="ctrl a" />
+    <keyboard-shortcut first-keystroke="shift f4" />
   </action>
   <action id="$Undo">
     <keyboard-shortcut first-keystroke="ctrl z" />
@@ -248,15 +255,15 @@
   <action id="Editor Redo">
     <keyboard-shortcut first-keystroke="ctrl y" />
   </action>
+  <action id="Editor SelectAll">
+    <keyboard-shortcut first-keystroke="shift f4" />
+  </action>
   <action id="EditorAddCaretPerSelectedLine" />
   <action id="EditorAddOrRemoveCaret">
     <mouse-shortcut keystroke="control button1" />
   </action>
   <action id="EditorBackSpace">
     <keyboard-shortcut first-keystroke="back_space" />
-  </action>
-  <action id="EditorBackwardParagraph">
-    <keyboard-shortcut first-keystroke="shift meta alt period" />
   </action>
   <action id="EditorChooseLookupItemDot" />
   <action id="EditorCloneCaretAbove">
@@ -529,9 +536,7 @@
   <action id="Jdbc.OpenEditor.Data" />
   <action id="JsonPathExportEvaluateResultAction" />
   <action id="JumpToLastChange" />
-  <action id="JumpToLastWindow">
-    <keyboard-shortcut first-keystroke="shift meta alt h" />
-  </action>
+  <action id="JumpToLastWindow" />
   <action id="JumpToStatement" />
   <action id="JupyterExpandSelectionToCellBelowCommandModeAction" />
   <action id="JupyterNotebookInterruptKernelCommandModeAction" />

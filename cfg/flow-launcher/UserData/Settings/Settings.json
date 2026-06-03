@@ -156,7 +156,7 @@
   "CustomWindowTop": 0,
   "KeepMaxResults": false,
   "MaxResultsToShow": 6,
-  "ActivateTimes": 6282,
+  "ActivateTimes": 6293,
   "CustomPluginHotkeys": [],
   "CustomShortcuts": [],
   "DontPromptUpdateMsg": false,
@@ -345,6 +345,18 @@
         "Version": "2.0.2",
         "ActionKeywords": [
           "\u003E"
+        ],
+        "Priority": 0,
+        "SearchDelayTime": null,
+        "Disabled": false,
+        "HomeDisabled": false
+      },
+      "525995402BEF4A8CA860D92F6D108092": {
+        "ID": "525995402BEF4A8CA860D92F6D108092",
+        "Name": "VS Code Workspaces",
+        "Version": "1.4.1",
+        "ActionKeywords": [
+          "vs"
         ],
         "Priority": 0,
         "SearchDelayTime": null,
