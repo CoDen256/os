@@ -25,7 +25,7 @@ in
     # editors
     vscode
     jetbrains.idea
-    jetbrains.datagrip
+    dbeaver-bin
     android-studio
     sublime4
 
@@ -49,8 +49,6 @@ in
     jq
     lazydocker
 
-
-    python312Packages.parselmouth
     # nix lang server
     nixd
 

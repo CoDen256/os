@@ -35,8 +35,6 @@
     # system info
     lshw
     inxi
-    neofetch
-
 
     # extra tools
     yt-dlp # audio and video downloader

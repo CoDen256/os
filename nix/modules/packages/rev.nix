@@ -29,7 +29,6 @@ in
     })
   ];
 
-  programs.adb.enable = true; # includes android-tools -> adb + fastboot
   nixpkgs.config.android_sdk.accept_license = true;
   environment.variables.ANDROID_HOME =
     "${androidEnv.androidsdk}/libexec/android-sdk";

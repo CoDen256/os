@@ -13,11 +13,11 @@
 # TODO when closing intellij or postman, they are closing in some incorrect state that i have to kill background process via ps aux after closing the window
 
 {
-  system.stateVersion = "25.11";
+  system.stateVersion = "26.05";
   nixpkgs.config.allowUnfree = true; # allow unfree packages
   nixpkgs.config.permittedInsecurePackages = [
                 "electron-39.8.10"
-                 "openssl-1.1.1w"
+                 "openssl-1.1.1w" # sublimetext4 uses it still
                  "docker-28.5.2"
 
               ];
@@ -78,9 +78,10 @@
     xonsh.enable = true;
   };
 
+  documentation.doc.enable = false;
   environment.systemPackages = with pkgs; [
-    xorg.xmodmap # remaps fn keys
-    xorg.xev # checks key presses on x server
+    xmodmap # remaps fn keys
+    xev # checks key presses on x server
     wev # checks key presses on wayland
 
     udiskie # front-end for udisks2
