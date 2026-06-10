@@ -34,6 +34,7 @@
     prismlauncher
     praat
     zip
+    in-formant
 
   ];
 }

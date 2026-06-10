@@ -16,8 +16,9 @@
   system.stateVersion = "25.11";
   nixpkgs.config.allowUnfree = true; # allow unfree packages
   nixpkgs.config.permittedInsecurePackages = [
-                "electron-37.10.3"
+                "electron-39.8.10"
                  "openssl-1.1.1w"
+                 "docker-28.5.2"
 
               ];
   nix = {
