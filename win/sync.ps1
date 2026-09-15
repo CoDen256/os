@@ -8,24 +8,13 @@ param([Parameter(Position=1, Mandatory=$false)]
 
 Write-Host "#####"
 ############# sync keymap
-$base = Join-Path $HOME "AppData\Roaming\JetBrains"
+$base = Join-Path $HOME "scoop\apps\idea\current\profile\config"
 $dest = "$PSScriptRoot\..\cfg\jetbrains\idea"
 
-# Find all IntelliJIdea directories
-$ideaDirs = Get-ChildItem -Path $base -Directory -Filter "IntelliJIdea*" | Sort-Object Name -Descending
-
-if ($ideaDirs.Count -eq 0) {
-    Write-Host "No IntelliJIdea directories found in $base" -ForegroundColor Red
-    exit 1
-}
-
-# Pick the latest (by name)
-$latestIdeaDir = $ideaDirs[0].FullName
-Write-Host "Latest IntelliJ IDEA config folder: $latestIdeaDir" -ForegroundColor Cyan
 
 # Build full source path
-$src = Join-Path $latestIdeaDir "keymaps\zmk.xml"
-$colors = Join-Path $latestIdeaDir "colors\_@user_GapStyle 4_3.icls"
+$src = Join-Path $base "keymaps\zmk.xml"
+$colors = Join-Path $base "colors\_@user_GapStyle 4_3.icls"
 
 # Check if the source file exists
 if (Test-Path $src) {
