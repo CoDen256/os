@@ -3,45 +3,44 @@ param([Parameter(Position=1, Mandatory=$false)]
 [Switch]$push
 )
 
+function Copy-ConfigFile {
+    param(
+        [Parameter(Mandatory)]
+        [string]$Src,
+
+        [Parameter(Mandatory)]
+        [string]$Dest
+    )
+
+    if (Test-Path $Src) {
+        if (-not (Test-Path $Dest)) {
+            New-Item -ItemType Directory -Path $Dest -Force | Out-Null
+        }
+
+        Copy-Item -Path $Src -Destination $Dest -Force
+        Write-Host "Copied $Src to $Dest" -ForegroundColor Green
+    } else {
+        Write-Host "File not found at $Src" -ForegroundColor Yellow
+    }
+}
+
 & "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg -dest $HOME yazi,wt,starship,ps -force
 & "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg -dest C:\\ ahk
 
 Write-Host "#####"
 ############# sync keymap
-$base = Join-Path $HOME "scoop\apps\idea\current\profile\config"
+$base = Join-Path $HOME "scoop\apps\idea\current\"
 $dest_colors = "$PSScriptRoot\..\cfg\jetbrains\idea\profile\config\colors"
 $dest_zmk = "$PSScriptRoot\..\cfg\jetbrains\idea\profile\config\keymaps"
+$dest_properties = "$PSScriptRoot\..\cfg\jetbrains\idea\IDE\bin"
 
+$zmk = Join-Path $base "profile\config\keymaps\zmk.xml"
+$colors = Join-Path $base "profile\config\colors\_@user_GapStyle 4_3.icls"
+$properties = Join-Path $base "IDE\bin\idea.properties"
 
-# Build full source path
-$zmk = Join-Path $base "keymaps\zmk.xml"
-$colors = Join-Path $base "colors\_@user_GapStyle 4_3.icls"
-
-# Check if the source file exists
-if (Test-Path $zmk) {
-    if (-not (Test-Path $dest_zmk)) {
-        New-Item -ItemType Directory -Path $dest_zmk -Force | Out-Null
-    }
-
-    Copy-Item -Path $zmk -Destination $dest_zmk -Force
-    Write-Host "Copied $zmk to $dest_zmk" -ForegroundColor Green
-} else {
-    Write-Host "Keymap file not found at $zmk" -ForegroundColor Yellow
-}
-
-if (Test-Path $colors) {
-    # Ensure destination directory exists
-    if (-not (Test-Path $dest_colors)) {
-        New-Item -ItemType Directory -Path $dest_colors -Force | Out-Null
-    }
-
-    # Copy file
-    Copy-Item -Path $colors -Destination $dest_colors -Force
-    Write-Host "Copied $colors to $dest_colors" -ForegroundColor Green
-} else {
-    Write-Host "Keymap file not found at $colors" -ForegroundColor Yellow
-}
-
+Copy-ConfigFile -Src $zmk -Dest $dest_zmk
+Copy-ConfigFile -Src $colors -Dest $dest_colors
+Copy-ConfigFile -Src $properties -Dest $dest_properties
 
 ######## sync flow-launcher TODO: symlink is better
 Write-Host "#####"
