@@ -23,24 +23,12 @@ function Copy-ConfigFile {
         Write-Host "File not found at $Src" -ForegroundColor Yellow
     }
 }
-
+$idea_base = Join-Path $HOME "scoop\apps\idea\current\"
 & "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg -dest $HOME yazi,wt,starship,ps -force
 & "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg -dest C:\\ ahk
-& "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg\idea -dest C:\\ ahk
+& "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg\jetbrains\ -dest $idea_base idea
 Write-Host "#####"
-############# sync keymap
-$base = Join-Path $HOME "scoop\apps\idea\current\"
-$dest_colors = "$PSScriptRoot\..\cfg\jetbrains\idea\profile\config\colors"
-$dest_zmk = "$PSScriptRoot\..\cfg\jetbrains\idea\profile\config\keymaps"
-$dest_properties = "$PSScriptRoot\..\cfg\jetbrains\idea\IDE\bin"
 
-$zmk = Join-Path $base "profile\config\keymaps\zmk.xml"
-$colors = Join-Path $base "profile\config\colors\_@user_GapStyle 4_3.icls"
-$properties = Join-Path $base "IDE\bin\idea.properties"
-
-Copy-ConfigFile -Src $zmk -Dest $dest_zmk
-Copy-ConfigFile -Src $colors -Dest $dest_colors
-Copy-ConfigFile -Src $properties -Dest $dest_properties
 
 ######## sync flow-launcher TODO: symlink is better
 Write-Host "#####"
