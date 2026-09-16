@@ -1,0 +1,63 @@
+<templateSet group="Java">
+  <template name="tcsv" value="@org.junit.jupiter.params.ParameterizedTest&#10;@org.junit.jupiter.params.provider.CsvSource(textBlock = &quot;&quot;&quot;&#10;            #in    | expected&#10;             13    | 0&#10;            &quot;&quot;&quot;, delimiter = '|')&#10;void $TEST_NAME$($ARG1_TYPE$ in, $ARG3_TYPE$ expected){&#10;    // setup&#10;&#10;    // exercise&#10;    $ARG3_TYPE$ result = $COMPUTE$$END$;&#10;&#10;    // verify&#10;    org.junit.jupiter.api.Assertions.assertEquals(expected, result);&#10;}" description="csv source test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TEST_NAME" expression="" defaultValue="&quot;compute&quot;" alwaysStopAt="true" />
+    <variable name="ARG1_TYPE" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
+    <variable name="ARG3_TYPE" expression="" defaultValue="&quot;long&quot;" alwaysStopAt="true" />
+    <variable name="COMPUTE" expression="" defaultValue="&quot;0&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="tmet" value="static java.util.stream.Stream&lt;Arguments&gt; $TEST_NAME$() {&#10;    return Stream.of( //&#10;            arg(null, null, $ARG3_VALUE$), //&#10;            arg(null, null, $ARG3_VALUE$)&#10;    );&#10;}&#10;&#10;static org.junit.jupiter.params.provider.Arguments arg($ARG1_TYPE$ $ARG1$, $ARG2_TYPE$ $ARG2$, $ARG3_TYPE$ $ARG3$) {&#10;    return Arguments.arguments($ARG1$, $ARG2$, $ARG3$);&#10;}&#10;&#10;@org.junit.jupiter.params.ParameterizedTest&#10;@org.junit.jupiter.params.provider.MethodSource&#10;void $TEST_NAME$($ARG1_TYPE$ $ARG1$, $ARG2_TYPE$ $ARG2$, $ARG3_TYPE$ expected) {&#10;    // setup&#10;    &#10;    // exercise&#10;    $ARG3_TYPE$ result = $END$;&#10;&#10;    // verify&#10;    org.junit.jupiter.api.Assertions.assertEquals(expected, result);&#10;}" description="test method source" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TEST_NAME" expression="" defaultValue="&quot;compute&quot;" alwaysStopAt="true" />
+    <variable name="ARG3_VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARG1_TYPE" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
+    <variable name="ARG1" expression="" defaultValue="&quot;in&quot;" alwaysStopAt="true" />
+    <variable name="ARG2_TYPE" expression="" defaultValue="&quot;String&quot;" alwaysStopAt="true" />
+    <variable name="ARG2" expression="" defaultValue="&quot;arg&quot;" alwaysStopAt="true" />
+    <variable name="ARG3_TYPE" expression="" defaultValue="&quot;long&quot;" alwaysStopAt="true" />
+    <variable name="ARG3" expression="" defaultValue="&quot;expected&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="test" value="@org.junit.jupiter.api.Test&#10;void $TEST_NAME$(){&#10;    // setup&#10;&#10;    // exercise&#10;    $END$&#10;&#10;    // verify&#10;    org.junit.jupiter.api.Assertions.assertEquals(0, 0);&#10;}" description="test" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TEST_NAME" expression="" defaultValue="&quot;compute&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="mock" value="@org.mockito.Mock&#10;$TYPE$ " description="" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <variable name="TYPE" expression="" defaultValue="&quot;Object&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="com" value="/* $END$ */" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="comm" value="/** $END$ */" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="ln" value="{@link $END$}" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_COMMENT" value="true" />
+    </context>
+  </template>
+  <template name="con" value="$CONSTRUCTOR$" description="" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="CONSTRUCTOR" expression="groovyScript(&quot;C:\\os\\cfg\\jetbrains\\idea\\constructor.groovy&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="pf" value="private final $END$;" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+</templateSet>
