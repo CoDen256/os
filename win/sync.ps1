@@ -26,7 +26,7 @@ function Copy-ConfigFile {
 
 & "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg -dest $HOME yazi,wt,starship,ps -force
 & "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg -dest C:\\ ahk
-
+& "$PSScriptRoot\stow.ps1" $action -src $PSScriptRoot\..\cfg\idea -dest C:\\ ahk
 Write-Host "#####"
 ############# sync keymap
 $base = Join-Path $HOME "scoop\apps\idea\current\"
