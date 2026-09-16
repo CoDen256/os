@@ -33,29 +33,29 @@
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="com" value="/* $END$ */" description="" toReformat="false" toShortenFQNames="true">
+  <template name="com" value="/* $END$ */" description="/* Comment" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="comm" value="/** $END$ */" description="" toReformat="false" toShortenFQNames="true">
+  <template name="comm" value="/** $END$ */" description="/** Comment" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
-  <template name="ln" value="{@link $END$}" description="" toReformat="false" toShortenFQNames="true">
+  <template name="ln" value="{@link $END$}" description="Link" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_COMMENT" value="true" />
     </context>
   </template>
-  <template name="con" value="$CONSTRUCTOR$" description="" toReformat="true" toShortenFQNames="true" useStaticImport="true">
-    <variable name="CONSTRUCTOR" expression="groovyScript(&quot;C:\\os\\cfg\\jetbrains\\idea\\constructor.groovy&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
+  <template name="con" value="$CONSTRUCTOR$" description="Constructor of all fields" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <variable name="CONSTRUCTOR" expression="groovyScript(&quot;C:\\os\\cfg\\jetbrains\\idea\\live-templates\\constructor.groovy&quot;, &quot;&quot;)" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
       <option name="JAVA_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="pf" value="private final $END$;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="pf" value="private final " description="privat final" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_DECLARATION" value="true" />
     </context>
