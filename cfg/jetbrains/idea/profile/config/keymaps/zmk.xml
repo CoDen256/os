@@ -114,9 +114,7 @@
   <action id="CloseActiveTab" />
   <action id="CloseContent" />
   <action id="CodeCleanup" />
-  <action id="CodeCompletion">
-    <keyboard-shortcut first-keystroke="shift alt 1" />
-  </action>
+  <action id="CodeCompletion" />
   <action id="CodeInspection.OnEditor" />
   <action id="CollapseAll" />
   <action id="CollapseAllRegions" />
@@ -526,9 +524,7 @@
   <action id="Jdbc.OpenEditor.DDL" />
   <action id="Jdbc.OpenEditor.Data" />
   <action id="JsonPathExportEvaluateResultAction" />
-  <action id="JumpToLastChange">
-    <keyboard-shortcut first-keystroke="alt back_slash" />
-  </action>
+  <action id="JumpToLastChange" />
   <action id="JumpToLastWindow" />
   <action id="JumpToStatement" />
   <action id="JupyterExpandSelectionToCellBelowCommandModeAction" />
@@ -646,15 +642,8 @@
   <action id="PyExecuteCellActionWithMove" />
   <action id="QuickChangeScheme" />
   <action id="QuickEvaluateExpression" />
-  <action id="QuickImplementations">
-    <keyboard-shortcut first-keystroke="shift alt equals" />
-  </action>
-  <action id="QuickJavaDoc">
-    <keyboard-shortcut first-keystroke="alt z" />
-  </action>
-  <action id="QuickTypeDefinition">
-    <keyboard-shortcut first-keystroke="alt minus" />
-  </action>
+  <action id="QuickImplementations" />
+  <action id="QuickJavaDoc" />
   <action id="ReSharperGotoImplementation" />
   <action id="ReSharperNavigateTo" />
   <action id="RearrangeCode" />
@@ -759,7 +748,6 @@
   </action>
   <action id="SelectIn">
     <keyboard-shortcut first-keystroke="shift meta alt back_quote" />
-    <keyboard-shortcut first-keystroke="shift alt open_bracket" />
   </action>
   <action id="SelectInProject">
     <keyboard-shortcut first-keystroke="shift alt v" />
