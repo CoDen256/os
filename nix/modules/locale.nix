@@ -11,7 +11,7 @@
   # custom phonetic russian and german layout
   services.xserver = {
     enable = true;
-    xkb = {
+    xkb = { # shortcuts -> add new command -> /run/current-system/sw/bin/qdbus org.kde.keyboard /Layouts org.kde.KeyboardLayouts.setLayout 3 # 0,1,2,3
       layout = "us,rupho,depho,nopho";
       variant = "";
 
