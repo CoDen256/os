@@ -12,7 +12,7 @@
   services.xserver = {
     enable = true;
     xkb = {
-      layout = "us,rupho,depho";
+      layout = "us,rupho,depho,nopho";
       variant = "";
 
       extraLayouts.rupho = {
@@ -24,6 +24,11 @@
         description = "German Phonetic Mirror of US";
         languages = [ "ger" ];
         symbolsFile = pkgs.copyPathToStore ../../input/symbols/depho;
+      };
+      extraLayouts.nopho = {
+        description = "Norwegian Phonetic Mirror of US";
+        languages = [ "nor" ];
+        symbolsFile = pkgs.copyPathToStore ../../input/symbols/nopho;
       };
     };
   };

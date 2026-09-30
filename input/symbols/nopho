@@ -1,0 +1,19 @@
+xkb_symbols "nopho"
+{
+  include "us(basic)"            // includes the base US keys
+
+  name[Group1]= "Norwegian(ENG-Phonetic)";
+
+  // left side
+  key <AE03> { [ 3, ae  ] };               // #
+  key <TLDE> { [ AE, asciitilde  ] };      // ~
+
+  key <AE07>  {[   7,  oslash  ]};           // &
+  key <AE06>  {[   6,  Oslash  ]};           // ^
+
+
+  // right side
+
+  key <BKSL>  {[ backslash,     aring ]};       //  |
+  key <AE04>  {[   4,           Aring  ]};      //  $
+};
