@@ -38,5 +38,6 @@
 
     # extra tools
     yt-dlp # audio and video downloader
+    claude-code
   ];
 }

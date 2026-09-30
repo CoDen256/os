@@ -51,6 +51,7 @@ in
 
     # nix lang server
     nixd
+    tinymist
 
     # extra (xonsh vs code)
     python312Packages.python-lsp-server

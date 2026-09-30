@@ -69,6 +69,10 @@
     BROWSER = "google-chrome-stable";
     ANDROID_DEBUG_KEYSTORE_PASS = "android";
   };
+  services.avahi = {
+  enable = true;
+  nssmdns4 = true;
+};
 
   ### SYSTEM PACKAGES ###
   programs = {
